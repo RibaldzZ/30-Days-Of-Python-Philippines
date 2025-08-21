@@ -1,58 +1,58 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 8 - Dictionaries</h1>
+  <h1> ۳۰ روز پایتون: روز ۸ - دیکشنری‌ها</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
   <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> Second Edition: July, 2021</small>
+<small> ویرایش دوم: ژوئیه ۲۰۲۱</small>
 </sub>
 
 </div>
 
-[<< Day 7 ](../07_Day_Sets/07_sets.md) | [Day 9 >>](../09_Day_Conditionals/09_conditionals.md)
+[<< روز ۷ ](../07_Day_Sets/07_sets.md) | [روز ۹ >>](../09_Day_Conditionals/09_conditionals.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 8](#-day-8)
-  - [Dictionaries](#dictionaries)
-    - [Creating a Dictionary](#creating-a-dictionary)
-    - [Dictionary Length](#dictionary-length)
-    - [Accessing Dictionary Items](#accessing-dictionary-items)
-    - [Adding Items to a Dictionary](#adding-items-to-a-dictionary)
-    - [Modifying Items in a Dictionary](#modifying-items-in-a-dictionary)
-    - [Checking Keys in a Dictionary](#checking-keys-in-a-dictionary)
-    - [Removing Key and Value Pairs from a Dictionary](#removing-key-and-value-pairs-from-a-dictionary)
-    - [Changing Dictionary to a List of Items](#changing-dictionary-to-a-list-of-items)
-    - [Clearing a Dictionary](#clearing-a-dictionary)
-    - [Deleting a Dictionary](#deleting-a-dictionary)
-    - [Copy a Dictionary](#copy-a-dictionary)
-    - [Getting Dictionary Keys as a List](#getting-dictionary-keys-as-a-list)
-    - [Getting Dictionary Values as a List](#getting-dictionary-values-as-a-list)
-  - [💻 Exercises: Day 8](#-exercises-day-8)
+- [📘 روز ۸](#-روز-۸)
+  - [دیکشنری‌ها](#دیکشنریها)
+    - [ایجاد یک دیکشنری](#ایجاد-یک-دیکشنری)
+    - [طول دیکشنری](#طول-دیکشنری)
+    - [دسترسی به آیتم‌های دیکشنری](#دسترسی-به-آیتمهای-دیکشنری)
+    - [افزودن آیتم به دیکشنری](#افزودن-آیتم-به-دیکشنری)
+    - [ویرایش آیتم‌ها در دیکشنری](#ویرایش-آیتمها-در-دیکشنری)
+    - [بررسی وجود کلید در دیکشنری](#بررسی-وجود-کلید-در-دیکشنری)
+    - [حذف زوج‌های کلید و مقدار از دیکشنری](#حذف-زوجهای-کلید-و-مقدار-از-دیکشنری)
+    - [تبدیل دیکشنری به فهرستی از آیتم‌ها](#تبدیل-دیکشنری-به-فهرستی-از-آیتمها)
+    - [پاک‌سازی دیکشنری](#پاکسازی-دیکشنری)
+    - [حذف یک دیکشنری](#حذف-یک-دیکشنری)
+    - [کپی گرفتن از دیکشنری](#کپی-گرفتن-از-دیکشنری)
+    - [دریافت کلیدهای دیکشنری به صورت فهرست](#دریافت-کلیدهای-دیکشنری-به-صورت-فهرست)
+    - [دریافت مقادیر دیکشنری به صورت فهرست](#دریافت-مقادیر-دیکشنری-به-صورت-فهرست)
+  - [💻 تمرین‌ها: روز ۸](#-تمرینها-روز-۸)
 
-# 📘 Day 8
+# 📘 روز ۸
 
-## Dictionaries
+## دیکشنری‌ها
 
-A dictionary is a collection of unordered, modifiable(mutable) paired (key: value) data type.
+دیکشنری یک نوع دادهٔ مجموعه‌ایِ بدون ترتیب، قابل تغییر (mutable) و زوجی (کلید: مقدار) است.
 
-### Creating a Dictionary
+### ایجاد یک دیکشنری
 
-To create a dictionary we use curly brackets, {} or the *dict()* built-in function.
+برای ایجاد دیکشنری از آکولادها {} یا تابع داخلی *dict()* استفاده می‌کنیم.
 
 ```py
-# syntax
+# سینتکس
 empty_dict = {}
-# Dictionary with data values
+# دیکشنری با مقادیر داده
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-```
 
-**Example:**
+
+**مثال:**
 
 ```py
 person = {
@@ -69,19 +69,19 @@ person = {
     }
 ```
 
-The dictionary above shows that a value could be any data types:string, boolean, list, tuple, set or a dictionary.
+دیکشنری بالا نشان می‌دهد که مقدار می‌تواند هر نوع داده‌ای باشد: string، boolean، list، tuple، set یا یک دیکشنری.
 
-### Dictionary Length
+### طول دیکشنری
 
-It checks the number of 'key: value' pairs in the dictionary.
+تعداد زوج‌های 'کلید: مقدار' را در دیکشنری بررسی می‌کند.
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 print(len(dct)) # 4
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 person = {
@@ -100,18 +100,18 @@ print(len(person)) # 7
 
 ```
 
-### Accessing Dictionary Items
+### دسترسی به آیتم‌های دیکشنری
 
-We can access Dictionary items by referring to its key name.
+می‌توانیم با ارجاع به نام کلید، به آیتم‌های دیکشنری دسترسی پیدا کنیم.
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 print(dct['key1']) # value1
 print(dct['key4']) # value4
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 person = {
@@ -134,7 +134,8 @@ print(person['address']['street']) # Space street
 print(person['city'])       # Error
 ```
 
-Accessing an item by key name raises an error if the key does not exist. To avoid this error first we have to check if a key exist or we can use the _get_ method. The get method returns None, which is a NoneType object data type, if the key does not exist.
+دسترسی به یک آیتم با نام کلید اگر کلید وجود نداشته باشد خطا ایجاد می‌کند. برای اجتناب از این خطا ابتدا باید بررسی کنیم که آیا کلید وجود دارد یا می‌توانیم از متد *get* استفاده کنیم. متد get اگر کلید وجود نداشته باشد مقدار None (نوع دادهٔ NoneType) را برمی‌گرداند.
+
 ```py
 person = {
     'first_name':'Asabeneh',
@@ -154,17 +155,17 @@ print(person.get('skills')) #['HTML','CSS','JavaScript', 'React', 'Node', 'Mongo
 print(person.get('city'))   # None
 ```
 
-### Adding Items to a Dictionary
+### افزودن آیتم به دیکشنری
 
-We can add new key and value pairs to a dictionary
+می‌توانیم زوج‌های کلید و مقدار جدید به دیکشنری اضافه کنیم
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 dct['key5'] = 'value5'
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 person = {
@@ -184,17 +185,17 @@ person['skills'].append('HTML')
 print(person)
 ```
 
-### Modifying Items in a Dictionary
+### ویرایش آیتم‌ها در دیکشنری
 
-We can modify items in a dictionary
+می‌توانیم آیتم‌ها را در یک دیکشنری ویرایش کنیم
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 dct['key1'] = 'value-one'
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 person = {
@@ -213,25 +214,25 @@ person['first_name'] = 'Eyob'
 person['age'] = 252
 ```
 
-### Checking Keys in a Dictionary
+### بررسی وجود کلید در دیکشنری
 
-We use the _in_ operator to check if a key exist in a dictionary
+برای بررسی وجود یک کلید در دیکشنری از عملگر *in* استفاده می‌کنیم
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 print('key2' in dct) # True
 print('key5' in dct) # False
 ```
 
-### Removing Key and Value Pairs from a Dictionary
+### حذف زوج‌های کلید و مقدار از دیکشنری
 
-- _pop(key)_: removes the item with the specified key name:
-- _popitem()_: removes the last item
-- _del_: removes an item with specified key name
+* *pop(key)*: آیتم با نام کلید مشخص‌شده را حذف می‌کند:
+* *popitem()*: آخرین آیتم را حذف می‌کند
+* *del*: آیتم با نام کلید مشخص‌شده را حذف می‌کند
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 dct.pop('key1') # removes key1 item
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
@@ -239,7 +240,7 @@ dct.popitem() # removes the last item
 del dct['key2'] # removes key2 item
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 person = {
@@ -259,84 +260,85 @@ person.popitem()                # Removes the address item
 del person['is_married']        # Removes the is_married item
 ```
 
-### Changing Dictionary to a List of Items
+### تبدیل دیکشنری به فهرستی از آیتم‌ها
 
-The _items()_ method changes dictionary to a list of tuples.
+متد *items()* دیکشنری را به فهرستی از تاپل‌ها تبدیل می‌کند.
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 print(dct.items()) # dict_items([('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), ('key4', 'value4')])
 ```
 
-### Clearing a Dictionary
+### پاک‌سازی دیکشنری
 
-If we don't want the items in a dictionary we can clear them using _clear()_ method
+اگر آیتم‌های یک دیکشنری را نمی‌خواهیم، می‌توانیم با متد *clear()* آن‌ها را پاک کنیم
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 print(dct.clear()) # None
 ```
 
-### Deleting a Dictionary
+### حذف یک دیکشنری
 
-If we do not use the dictionary we can delete it completely
+اگر از دیکشنری استفاده نمی‌کنیم می‌توانیم آن را به طور کامل حذف کنیم
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 del dct
 ```
 
-### Copy a Dictionary
+### کپی گرفتن از دیکشنری
 
-We can copy a dictionary using a _copy()_ method. Using copy we can avoid mutation of the original dictionary.
+می‌توانیم با متد *copy()* از دیکشنری کپی بگیریم. با استفاده از copy می‌توانیم از تغییر (mutation) دیکشنری اصلی جلوگیری کنیم.
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 dct_copy = dct.copy() # {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 ```
 
-### Getting Dictionary Keys as a List
+### دریافت کلیدهای دیکشنری به صورت فهرست
 
-The _keys()_ method gives us all the keys of a a dictionary as a list.
+متد *keys()* همهٔ کلیدهای یک دیکشنری را به صورت یک فهرست به ما می‌دهد.
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 keys = dct.keys()
 print(keys)     # dict_keys(['key1', 'key2', 'key3', 'key4'])
 ```
 
-### Getting Dictionary Values as a List
+### دریافت مقادیر دیکشنری به صورت فهرست
 
-The _values_ method gives us all the values of a a dictionary as a list.
+متد *values* همهٔ مقادیر یک دیکشنری را به صورت یک فهرست به ما می‌دهد.
 
 ```py
-# syntax
+# سینتکس
 dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 values = dct.values()
 print(values)     # dict_values(['value1', 'value2', 'value3', 'value4'])
 ```
 
-🌕 You are astonishing. Now, you are super charged with the power of dictionaries. You have just completed day 8 challenges and you are 8 steps a head in to your way to greatness. Now do some exercises for your brain and  muscles.
+🌕 تو شگفت‌انگیزی. حالا با قدرت دیکشنری‌ها شارژ فوق‌العاده‌ای گرفته‌ای. همین حالا چالش‌های روز ۸ را کامل کردی و ۸ قدم به سوی عظمت جلوتر رفتی. حالا کمی تمرین برای مغز و عضلاتت انجام بده.
 
-## 💻 Exercises: Day 8
+## 💻 تمرین‌ها: روز ۸
 
-1. Create  an empty dictionary called dog
-2. Add name, color, breed, legs, age to the dog dictionary
-3. Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
-4. Get the length of the student dictionary
-5. Get the value of skills and check the data type, it should be a list
-6. Modify the skills values by adding one or two skills
-7. Get the dictionary keys as a list
-8. Get the dictionary values as a list
-9. Change the dictionary to a list of tuples using _items()_ method
-10. Delete one of the items in the dictionary
-11. Delete one of the dictionaries
+1. یک دیکشنری خالی به نام dog ایجاد کن
+2. name، color، breed، legs، age را به دیکشنری dog اضافه کن
+3. یک دیکشنری student بساز و first\_name، last\_name، gender، age، marital status، skills، country، city و address را به عنوان کلیدهای آن اضافه کن
+4. طول دیکشنری student را بگیر
+5. مقدار skills را بگیر و نوع دادهٔ آن را بررسی کن؛ باید list باشد
+6. مقادیر skills را با افزودن یک یا دو مهارت تغییر بده
+7. کلیدهای دیکشنری را به صورت فهرست بگیر
+8. مقادیر دیکشنری را به صورت فهرست بگیر
+9. دیکشنری را با استفاده از متد *items()* به یک فهرست از تاپل‌ها تبدیل کن
+10. یکی از آیتم‌های دیکشنری را حذف کن
+11. یکی از دیکشنری‌ها را حذف کن
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک! 🎉
 
-[<< Day 7 ](../07_Day_Sets/07_sets.md) | [Day 9 >>](../09_Day_Conditionals/09_conditionals.md)
+[<< روز ۷ ](../07_Day_Sets/07_sets.md) | [روز ۹ >>](../09_Day_Conditionals/09_conditionals.md)
+
