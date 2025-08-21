@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 9 - Conditionals</h1>
+  <h1> ۳۰ روز با پایتون: روز ۹ - دستورات شرطی</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,51 +7,51 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> Second Edition: July, 2021</small>
+<small> ویرایش دوم: جولای ۲۰۲۱</small>
 </sub>
 
 </div>
 
-[<< Day 8](../08_Day_Dictionaries/08_dictionaries.md) | [Day 10 >>](../10_Day_Loops/10_loops.md)
+[>> روز ۸](../08_Day_Dictionaries/08_dictionaries.md) | [روز ۱۰ <<](../10_Day_Loops/10_loops.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 9](#-day-9)
-  - [Conditionals](#conditionals)
-    - [If Condition](#if-condition)
+- [📘 روز ۹](#-روز-۹)
+  - [دستورات شرطی](#دستورات-شرطی)
+    - [شرط If](#شرط-if)
     - [If Else](#if-else)
     - [If Elif Else](#if-elif-else)
-    - [Short Hand](#short-hand)
-    - [Nested Conditions](#nested-conditions)
-    - [If Condition and Logical Operators](#if-condition-and-logical-operators)
-    - [If and Or Logical Operators](#if-and-or-logical-operators)
-  - [💻 Exercises: Day 9](#-exercises-day-9)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+    - [شکل کوتاه](#شکل-کوتاه)
+    - [شرط‌های تودرتو](#شرط‌های-تودرتو)
+    - [شرط If و عملگرهای منطقی](#شرط-if-و-عملگرهای-منطقی)
+    - [عملگرهای منطقی If و Or](#عملگرهای-منطقی-if-و-or)
+  - [💻 تمرین‌ها: روز ۹](#-تمرین‌ها-روز-۹)
+    - [تمرین‌ها: سطح ۱](#تمرین‌ها-سطح-۱)
+    - [تمرین‌ها: سطح ۲](#تمرین‌ها-سطح-۲)
+    - [تمرین‌ها: سطح ۳](#تمرین‌ها-سطح-۳)
 
-# 📘 Day 9
+# 📘 روز ۹
 
-## Conditionals
+## دستورات شرطی
 
-By default, statements in Python script are executed sequentially from top to bottom. If the processing logic require so, the sequential flow of execution can be altered in two way:
+به‌طور پیش‌فرض، دستورات در اسکریپت پایتون به ترتیب از بالا به پایین اجرا می‌شوند. اگر منطق پردازش ایجاب کند، جریان اجرای ترتیبی می‌تواند به دو روش تغییر کند:
 
-- Conditional execution: a block of one or more statements will be executed if a certain expression is true
-- Repetitive execution: a block of one or more statements will be repetitively executed as long as a certain expression is true. In this section, we will cover _if_, _else_, _elif_ statements. The comparison and logical operators we learned in previous sections will be useful here.
+- اجرای شرطی: یک بلوک از یک یا چند دستور در صورت درست (true) بودن یک عبارت خاص اجرا خواهد شد.
+- اجرای تکراری: یک بلوک از یک یا چند دستور تا زمانی که یک عبارت خاص درست (true) باشد، به طور مکرر اجرا خواهد شد. در این بخش، ما دستورات _if_، _else_ و _elif_ را پوشش خواهیم داد. عملگرهای مقایسه‌ای و منطقی که در بخش‌های قبل یاد گرفتیم در اینجا مفید خواهند بود.
 
-### If Condition
+### شرط If
 
-In python and other programming languages the key word _if_ is used to check if a condition is true and to execute the block code. Remember the indentation after the colon.
+در پایتون و سایر زبان‌های برنامه‌نویسی، کلمه کلیدی _if_ برای بررسی درست بودن یک شرط و اجرای یک بلوک کد استفاده می‌شود. تورفتگی بعد از دو نقطه را به خاطر بسپارید.
 
 ```py
-# syntax
+# سینتکس
 if condition:
-    this part of code runs for truthy conditions
+    # این بخش از کد برای شرایط درست اجرا می‌شود
 ```
 
-**Example: 1**
+**مثال: ۱**
 
 ```py
 a = 3
@@ -60,21 +60,21 @@ if a > 0:
 # A is a positive number
 ```
 
-As you can see in the example above, 3 is greater than 0. The condition was true and the block code was executed. However, if the condition is false, we do not see the result. In order to see the result of the falsy condition, we should have another block, which is going to be _else_.
+همانطور که در مثال بالا می‌بینید، ۳ بزرگتر از ۰ است. شرط درست بود و بلوک کد اجرا شد. با این حال، اگر شرط نادرست باشد، نتیجه را نمی‌بینیم. برای دیدن نتیجه شرط نادرست، باید بلوک دیگری داشته باشیم که _else_ خواهد بود.
 
 ### If Else
 
-If condition is true the first block will be executed, if not the else condition will run.
+اگر شرط درست باشد، بلوک اول اجرا می‌شود، در غیر این صورت شرط else اجرا خواهد شد.
 
 ```py
-# syntax
+# سینتکس
 if condition:
-    this part of code runs for truthy conditions
+    # این بخش از کد برای شرایط درست اجرا می‌شود
 else:
-     this part of code runs for false conditions
+     # این بخش از کد برای شرایط نادرست اجرا می‌شود
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 a = 3
@@ -84,24 +84,24 @@ else:
     print('A is a positive number')
 ```
 
-The condition above proves false, therefore the else block was executed. How about if our condition is more than two? We could use _elif_.
+شرط بالا نادرست است، بنابراین بلوک else اجرا شد. اگر شرایط ما بیش از دو حالت باشد چه؟ می‌توانیم از _elif_ استفاده کنیم.
 
 ### If Elif Else
 
-In our daily life, we make decisions on daily basis. We make decisions not by checking one or two conditions but multiple conditions. As similar to life, programming is also full of conditions. We use _elif_ when we have multiple conditions.
+در زندگی روزمره، ما به صورت روزانه تصمیم‌گیری می‌کنیم. ما با بررسی یک یا دو شرط تصمیم نمی‌گیریم بلکه با چندین شرط. همانند زندگی، برنامه‌نویسی نیز پر از شرط است. ما از _elif_ زمانی استفاده می‌کنیم که چندین شرط داشته باشیم.
 
 ```py
-# syntax
+# سینتکس
 if condition:
-    code
+    # کد
 elif condition:
-    code
+    # کد
 else:
-    code
+    # کد
 
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 a = 0
@@ -113,33 +113,33 @@ else:
     print('A is zero')
 ```
 
-### Short Hand
+### شکل کوتاه
 
 ```py
-# syntax
+# سینتکس
 code if condition else code
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 a = 3
-print('A is positive') if a > 0 else print('A is negative') # first condition met, 'A is positive' will be printed
+print('A is positive') if a > 0 else print('A is negative') # شرط اول برقرار شد، 'A is positive' چاپ می‌شود
 ```
 
-### Nested Conditions
+### شرط‌های تودرتو
 
-Conditions can be nested
+شرط‌ها می‌توانند تودرتو باشند.
 
 ```py
-# syntax
+# سینتکس
 if condition:
-    code
+    # کد
     if condition:
-    code
+    # کد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 a = 0
@@ -155,17 +155,17 @@ else:
 
 ```
 
-We can avoid writing nested condition by using logical operator _and_.
+می‌توانیم با استفاده از عملگر منطقی _and_ از نوشتن شرط‌های تودرتو جلوگیری کنیم.
 
-### If Condition and Logical Operators
+### شرط If و عملگرهای منطقی
 
 ```py
-# syntax
+# سینتکس
 if condition and condition:
-    code
+    # کد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 a = 0
@@ -179,15 +179,15 @@ else:
     print('A is negative')
 ```
 
-### If and Or Logical Operators
+### عملگرهای منطقی If و Or
 
 ```py
-# syntax
+# سینتکس
 if condition or condition:
-    code
+    # کد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 user = 'James'
@@ -198,13 +198,13 @@ else:
     print('Access denied!')
 ```
 
-🌕 You are doing great.Never give up because great things take time. You have just completed day 9 challenges and you are 9 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+🌕 شما عالی عمل می‌کنید. هرگز تسلیم نشوید زیرا چیزهای بزرگ زمان می‌برند. شما به تازگی چالش‌های روز ۹ را به پایان رسانده‌اید و ۹ قدم در راه رسیدن به بزرگی خود جلوتر هستید. اکنون چند تمرین برای مغز و عضلات خود انجام دهید.
 
-## 💻 Exercises: Day 9
+## 💻 تمرین‌ها: روز ۹
 
-### Exercises: Level 1
+### تمرین‌ها: سطح ۱
 
-1. Get user input using input(“Enter your age: ”). If user is 18 or older, give feedback: You are old enough to drive. If below 18 give feedback to wait for the missing amount of years. Output:
+۱. ورودی کاربر را با استفاده از `input(“Enter your age: ”)‍` دریافت کنید. اگر کاربر ۱۸ سال یا بیشتر سن داشت، به او بازخورد دهید: شما برای رانندگی به اندازه کافی بزرگ شده‌اید. اگر زیر ۱۸ سال بود، به او بازخورد دهید تا تعداد سال‌های باقیمانده را منتظر بماند. خروجی:
 
     ```sh
     Enter your age: 30
@@ -214,14 +214,14 @@ else:
     You need 3 more years to learn to drive.
     ```
 
-2. Compare the values of my_age and your_age using if … else. Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. You can use a nested condition to print 'year' for 1 year difference in age, 'years' for bigger differences, and a custom text if my_age = your_age. Output:
+۲. مقادیر `my_age` و `your_age` را با استفاده از `if...else` مقایسه کنید. چه کسی بزرگتر است (من یا شما)؟ از `input(“Enter your age: ”)‍` برای دریافت سن به عنوان ورودی استفاده کنید. می‌توانید از یک شرط تودرتو برای چاپ "سال" برای اختلاف سنی ۱ سال، "سال‌ها" برای اختلاف‌های بزرگتر، و یک متن سفارشی اگر `my_age = your_age` استفاده کنید. خروجی:
 
     ```sh
     Enter your age: 30
     You are 5 years older than me.
     ```
 
-3. Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, if a is less b return a is smaller than b, else a is equal to b. Output:
+۳. دو عدد از کاربر با استفاده از `input` دریافت کنید. اگر a بزرگتر از b بود، `a is greater than b` را برگردانید، اگر a کوچکتر از b بود، `a is smaller than b` را برگردانید، در غیر این صورت `a is equal to b` را برگردانید. خروجی:
 
 ```sh
 Enter number one: 4
@@ -229,9 +229,9 @@ Enter number two: 3
 4 is greater than 3
 ```
 
-### Exercises: Level 2
+### تمرین‌ها: سطح ۲
 
-   1. Write a code which gives grade to students according to theirs scores:
+   ۱. کدی بنویسید که به دانش‌آموزان بر اساس نمراتشان نمره بدهد:
 
         ```sh
         80-100, A
@@ -241,22 +241,22 @@ Enter number two: 3
         0-49, F
         ```
 
-   1. Check if the season is Autumn, Winter, Spring or Summer. If the user input is:
-    September, October or November, the season is Autumn.
-    December, January or February, the season is Winter.
-    March, April or May, the season is Spring
-    June, July or August, the season is Summer
-   2. The following list contains some fruits:
+   ۲. بررسی کنید که فصل پاییز، زمستان، بهار یا تابستان است. اگر ورودی کاربر:
+    سپتامبر، اکتبر یا نوامبر باشد، فصل پاییز است.
+    دسامبر، ژانویه یا فوریه باشد، فصل زمستان است.
+    مارس، آوریل یا مه باشد، فصل بهار است.
+    ژوئن، ژوئیه یا اوت باشد، فصل تابستان است.
+   ۳. لیست زیر شامل چند میوه است:
 
     ```sh
     fruits = ['banana', 'orange', 'mango', 'lemon']
     ```
 
-    If a fruit doesn't exist in the list add the fruit to the list and print the modified list. If the fruit exists print('That fruit already exist in the list')
+    اگر میوه‌ای در لیست وجود نداشت، آن را به لیست اضافه کرده و لیست اصلاح شده را چاپ کنید. اگر میوه وجود داشت، چاپ کنید ('That fruit already exist in the list').
 
-### Exercises: Level 3
+### تمرین‌ها: سطح ۳
 
-   1. Here we have a person dictionary. Feel free to modify it!
+   ۱. در اینجا یک دیکشنری شخص داریم. با خیال راحت آن را تغییر دهید!
 
 ```py
         person={
@@ -273,15 +273,15 @@ Enter number two: 3
     }
 ```
 
-     * Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
-     * Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
-     * If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
-     * If the person is married and if he lives in Finland, print the information in the following format:
+     * بررسی کنید که آیا دیکشنری شخص کلید `skills` را دارد، اگر چنین است مهارت میانی را در لیست `skills` چاپ کنید.
+     * بررسی کنید که آیا دیکشنری شخص کلید `skills` را دارد، اگر چنین است بررسی کنید که آیا شخص مهارت 'Python' را دارد و نتیجه را چاپ کنید.
+     * اگر مهارت‌های یک شخص فقط شامل `JavaScript` و `React` باشد، چاپ کنید ('He is a front end developer')، اگر مهارت‌های شخص شامل `Node`، `Python`، `MongoDB` باشد، چاپ کنید ('He is a backend developer')، اگر مهارت‌های شخص شامل `React`، `Node` و `MongoDB` باشد، چاپ کنید ('He is a fullstack developer')، در غیر این صورت چاپ کنید ('unknown title') - برای نتایج دقیق‌تر می‌توان شرایط بیشتری را تودرتو کرد!
+     * اگر شخص متاهل است و در فنلاند زندگی می‌کند، اطلاعات را در قالب زیر چاپ کنید:
 
 ```py
     Asabeneh Yetayeh lives in Finland. He is married.
 ```
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک! 🎉
 
-[<< Day 8](../08_Day_Dictionaries/08_dictionaries.md) | [Day 10 >>](../10_Day_Loops/10_loops.md)
+[>> روز ۸](../08_Day_Dictionaries/08_dictionaries.md) | [روز ۱۰ <<](../10_Day_Loops/10_loops.md)
