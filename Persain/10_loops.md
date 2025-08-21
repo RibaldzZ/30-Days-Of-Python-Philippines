@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 10 - Loops</h1>
+  <h1> ۳۰ روز با پایتون: روز ۱۰ - حلقه‌ها</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,72 +7,72 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> Second Edition: July, 2021</small>
+<small> ویرایش دوم: جولای ۲۰۲۱</small>
 </sub>
 </div>
 
-[<< Day 9](../09_Day_Conditionals/09_conditionals.md) | [Day 11 >>](../11_Day_Functions/11_functions.md)
+[>> روز ۹](../09_Day_Conditionals/09_conditionals.md) | [روز ۱۱ <<](../11_Day_Functions/11_functions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 10](#-day-10)
-  - [Loops](#loops)
-    - [While Loop](#while-loop)
-    - [Break and Continue - Part 1](#break-and-continue---part-1)
-    - [For Loop](#for-loop)
-    - [Break and Continue - Part 2](#break-and-continue---part-2)
-    - [The Range Function](#the-range-function)
-    - [Nested For Loop](#nested-for-loop)
+- [📘 روز ۱۰](#-روز-۱۰)
+  - [حلقه‌ها](#حلقه‌ها)
+    - [حلقه While](#حلقه-while)
+    - [Break و Continue - بخش ۱](#break-و-continue---بخش-۱)
+    - [حلقه For](#حلقه-for)
+    - [Break و Continue - بخش ۲](#break-و-continue---بخش-۲)
+    - [تابع Range](#تابع-range)
+    - [حلقه For تودرتو](#حلقه-for-تودرتو)
     - [For Else](#for-else)
     - [Pass](#pass)
-  - [💻 Exercises: Day 10](#-exercises-day-10)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+  - [💻 تمرین‌ها: روز ۱۰](#-تمرین‌ها-روز-۱۰)
+    - [تمرین‌ها: سطح ۱](#تمرین‌ها-سطح-۱)
+    - [تمرین‌ها: سطح ۲](#تمرین‌ها-سطح-۲)
+    - [تمرین‌ها: سطح ۳](#تمرین‌ها-سطح-۳)
 
-# 📘 Day 10
+# 📘 روز ۱۰
 
-## Loops
+## حلقه‌ها
 
-Life is full of routines. In programming we also do lots of repetitive tasks. In order to handle repetitive task programming languages use loops. Python programming language also provides the following types of two loops:
+زندگی پر از کارهای روزمره است. در برنامه‌نویسی نیز ما کارهای تکراری زیادی انجام می‌دهیم. برای مدیریت کارهای تکراری، زبان‌های برنامه‌نویسی از حلقه‌ها استفاده می‌کنند. زبان برنامه‌نویسی پایتون نیز دو نوع حلقه زیر را ارائه می‌دهد:
 
-1. while loop
-2. for loop
+۱. حلقه while
+۲. حلقه for
 
-### While Loop
+### حلقه While
 
-We use the reserved word _while_ to make a while loop. It is used to execute a block of statements repeatedly until a given condition is satisfied. When the condition becomes false, the lines of code after the loop will be continued to be executed.
+ما از کلمه رزرو شده _while_ برای ساختن حلقه while استفاده می‌کنیم. این حلقه برای اجرای مکرر یک بلوک از دستورات تا زمانی که یک شرط معین برآورده شود، استفاده می‌شود. هنگامی که شرط نادرست (false) می‌شود، خطوط کد بعد از حلقه به اجرا ادامه می‌دهند.
 
 ```py
-  # syntax
+  # سینتکس
 while condition:
-    code goes here
+    # کد اینجا قرار می‌گیرد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 count = 0
 while count < 5:
     print(count)
     count = count + 1
-#prints from 0 to 4
+#اعداد ۰ تا ۴ را چاپ می‌کند
 ```
 
-In the above while loop, the condition becomes false when count is 5. That is when the loop stops.
-If we are interested to run block of code once the condition is no longer true, we can use _else_.
+در حلقه while بالا، شرط زمانی که count برابر ۵ شود نادرست می‌شود. در آن زمان حلقه متوقف می‌شود.
+اگر علاقه‌مند باشیم که بلوک کد را پس از اینکه شرط دیگر درست نبود اجرا کنیم، می‌توانیم از _else_ استفاده کنیم.
 
 ```py
-  # syntax
+  # سینتکس
 while condition:
-    code goes here
+    # کد اینجا قرار می‌گیرد
 else:
-    code goes here
+    # کد اینجا قرار می‌گیرد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 count = 0
@@ -83,22 +83,22 @@ else:
     print(count)
 ```
 
-The above loop condition will be false when count is 5 and the loop stops, and execution starts the else statement. As a result 5 will be printed.
+شرط حلقه بالا زمانی که count برابر ۵ شود نادرست خواهد بود و حلقه متوقف می‌شود، و اجرای دستور else شروع می‌شود. در نتیجه ۵ چاپ خواهد شد.
 
 
-### Break and Continue - Part 1
+### Break و Continue - بخش ۱
 
-- Break: We use break when we like to get out of or stop the loop.
+- Break: ما از break زمانی استفاده می‌کنیم که بخواهیم از حلقه خارج شویم یا آن را متوقف کنیم.
 
 ```py
-# syntax
+# سینتکس
 while condition:
-    code goes here
+    # کد اینجا قرار می‌گیرد
     if another_condition:
         break
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 count = 0
@@ -109,19 +109,19 @@ while count < 5:
         break
 ```
 
-The above while loop only prints 0, 1, 2, but when it reaches 3 it stops.
+حلقه while بالا فقط ۰، ۱، ۲ را چاپ می‌کند، اما وقتی به ۳ می‌رسد متوقف می‌شود.
 
-- Continue: With the continue statement we can skip the current iteration, and continue with the next:
+- Continue: با دستور continue می‌توانیم از تکرار فعلی صرف‌نظر کرده و به تکرار بعدی ادامه دهیم:
 
 ```py
-  # syntax
+  # سینتکس
 while condition:
-    code goes here
+    # کد اینجا قرار می‌گیرد
     if another_condition:
         continue
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 count = 0
@@ -133,37 +133,37 @@ while count < 5:
     count = count + 1
 ```
 
-The above while loop only prints 0, 1, 2 and 4 (skips 3).
+حلقه while بالا فقط ۰، ۱، ۲ و ۴ را چاپ می‌کند (۳ را رد می‌کند).
 
-### For Loop
+### حلقه For
 
-A _for_ keyword is used to make a for loop, similar with other programming languages, but with some syntax differences. Loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+کلمه کلیدی _for_ برای ایجاد یک حلقه for استفاده می‌شود، مشابه سایر زبان‌های برنامه‌نویسی، اما با تفاوت‌هایی در سینتکس. حلقه برای پیمایش یک دنباله (که می‌تواند یک لیست، یک تاپل، یک دیکشنری، یک مجموعه یا یک رشته باشد) استفاده می‌شود.
 
-- For loop with list
+- حلقه For با لیست
 
 ```py
-# syntax
+# سینتکس
 for iterator in lst:
-    code goes here
+    # کد اینجا قرار می‌گیرد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 numbers = [0, 1, 2, 3, 4, 5]
-for number in numbers: # number is temporary name to refer to the list's items, valid only inside this loop
-    print(number)       # the numbers will be printed line by line, from 0 to 5
+for number in numbers: # number یک نام موقت برای اشاره به آیتم‌های لیست است، که فقط در داخل این حلقه معتبر است
+    print(number)       # اعداد به ترتیب از ۰ تا ۵، هر کدام در یک خط چاپ می‌شوند
 ```
 
-- For loop with string
+- حلقه For با رشته
 
 ```py
-# syntax
+# سینتکس
 for iterator in string:
-    code goes here
+    # کد اینجا قرار می‌گیرد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 language = 'Python'
@@ -175,15 +175,15 @@ for i in range(len(language)):
     print(language[i])
 ```
 
-- For loop with tuple
+- حلقه For با تاپل
 
 ```py
-# syntax
+# سینتکس
 for iterator in tpl:
-    code goes here
+    # کد اینجا قرار می‌گیرد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 numbers = (0, 1, 2, 3, 4, 5)
@@ -191,16 +191,16 @@ for number in numbers:
     print(number)
 ```
 
-- For loop with dictionary
-  Looping through a dictionary gives you the key of the dictionary.
+- حلقه For با دیکشنری
+  پیمایش یک دیکشنری، کلیدهای آن را به شما می‌دهد.
 
 ```py
-  # syntax
+  # سینتکس
 for iterator in dct:
-    code goes here
+    # کد اینجا قرار می‌گیرد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 person = {
@@ -219,18 +219,18 @@ for key in person:
     print(key)
 
 for key, value in person.items():
-    print(key, value) # this way we get both keys and values printed out
+    print(key, value) # به این ترتیب هم کلیدها و هم مقادیر چاپ می‌شوند
 ```
 
-- Loops in set
+- حلقه‌ها در مجموعه
 
 ```py
-# syntax
+# سینتکس
 for iterator in st:
-    code goes here
+    # کد اینجا قرار می‌گیرد
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
@@ -238,20 +238,20 @@ for company in it_companies:
     print(company)
 ```
 
-### Break and Continue - Part 2
+### Break و Continue - بخش ۲
 
-Short reminder:
-_Break_: We use break when we like to stop our loop before it is completed.
+یادآوری کوتاه:
+_Break_: ما از break زمانی استفاده می‌کنیم که بخواهیم حلقه را قبل از اتمام آن متوقف کنیم.
 
 ```py
-# syntax
+# سینتکس
 for iterator in sequence:
-    code goes here
+    # کد اینجا قرار می‌گیرد
     if condition:
         break
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 numbers = (0,1,2,3,4,5)
@@ -261,19 +261,19 @@ for number in numbers:
         break
 ```
 
-In the above example, the loop stops when it reaches 3.
+در مثال بالا، حلقه زمانی که به ۳ می‌رسد متوقف می‌شود.
 
-Continue: We use continue when we like to skip some of the steps in the iteration of the loop.
+Continue: ما از continue زمانی استفاده می‌کنیم که بخواهیم از برخی مراحل در تکرار حلقه صرف‌نظر کنیم.
 
 ```py
-  # syntax
+  # سینتکس
 for iterator in sequence:
-    code goes here
+    # کد اینجا قرار می‌گیرد
     if condition:
         continue
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 numbers = (0,1,2,3,4,5)
@@ -281,21 +281,21 @@ for number in numbers:
     print(number)
     if number == 3:
         continue
-    print('Next number should be ', number + 1) if number != 5 else print("loop's end") # for short hand conditions need both if and else statements
+    print('Next number should be ', number + 1) if number != 5 else print("loop's end") # برای شرط‌های کوتاه، هر دو عبارت if و else مورد نیاز است
 print('outside the loop')
 ```
 
-In the example above, if the number equals 3, the step *after* the condition (but inside the loop) is skipped and the execution of the loop continues if there are any iterations left.
+در مثال بالا، اگر عدد برابر با ۳ باشد، مرحله *بعد* از شرط (اما داخل حلقه) نادیده گرفته می‌شود و اجرای حلقه در صورت وجود تکرارهای باقیمانده ادامه می‌یابد.
 
-### The Range Function
+### تابع Range
 
-The _range()_ function is used list of numbers. The _range(start, end, step)_ takes three parameters: starting, ending and increment. By default it starts from 0 and the increment is 1. The range sequence needs at least 1 argument (end).
-Creating sequences using range
+تابع _range()_ برای ایجاد لیستی از اعداد استفاده می‌شود. _range(start, end, step)_ سه پارامتر می‌گیرد: شروع، پایان و گام. به طور پیش‌فرض از ۰ شروع می‌شود و گام آن ۱ است. دنباله range حداقل به ۱ آرگومان (پایان) نیاز دارد.
+ایجاد دنباله‌ها با استفاده از range
 
 ```py
 lst = list(range(11)) 
 print(lst) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-st = set(range(1, 11))    # 2 arguments indicate start and end of the sequence, step set to default 1
+st = set(range(1, 11))    # ۲ آرگومان، شروع و پایان دنباله را مشخص می‌کنند، گام به طور پیش‌فرض ۱ است
 print(st) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 lst = list(range(0,11,2))
@@ -305,29 +305,29 @@ print(st) #  {0, 2, 4, 6, 8, 10}
 ```
 
 ```py
-# syntax
+# سینتکس
 for iterator in range(start, end, step):
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 for number in range(11):
-    print(number)   # prints 0 to 10, not including 11
+    print(number)   # اعداد ۰ تا ۱۰ را چاپ می‌کند، بدون احتساب ۱۱
 ```
 
-### Nested For Loop
+### حلقه For تودرتو
 
-We can write loops inside a loop.
+می‌توانیم حلقه‌ها را در داخل یکدیگر بنویسیم.
 
 ```py
-# syntax
+# سینتکس
 for x in y:
     for t in x:
         print(t)
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 person = {
@@ -350,45 +350,45 @@ for key in person:
 
 ### For Else
 
-If we want to execute some message when the loop ends, we use else.
+اگر بخواهیم پیامی را هنگام پایان حلقه اجرا کنیم، از else استفاده می‌کنیم.
 
 ```py
-# syntax
+# سینتکس
 for iterator in range(start, end, step):
-    do something
+    # کاری انجام بده
 else:
-    print('The loop ended')
+    print('حلقه به پایان رسید')
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 for number in range(11):
-    print(number)   # prints 0 to 10, not including 11
+    print(number)   # اعداد ۰ تا ۱۰ را چاپ می‌کند، بدون احتساب ۱۱
 else:
-    print('The loop stops at', number)
+    print('حلقه در', number, 'متوقف می‌شود')
 ```
 
 ### Pass
 
-In python when statement is required (after semicolon), but we don't like to execute any code there, we can write the word _pass_ to avoid errors. Also we can use it as a placeholder, for future statements.
+در پایتون، زمانی که یک دستور مورد نیاز است (بعد از دو نقطه)، اما نمی‌خواهیم هیچ کدی در آنجا اجرا کنیم، می‌توانیم کلمه _pass_ را برای جلوگیری از خطا بنویسیم. همچنین می‌توانیم از آن به عنوان یک جایگزین برای دستورات آینده استفاده کنیم.
 
-**Example:**
+**مثال:**
 
 ```py
 for number in range(6):
     pass
 ```
 
-🌕 You established a big milestone, you are unstoppable. Keep going! You have just completed day 10 challenges and you are 10 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+🌕 شما به یک نقطه عطف بزرگ رسیدید، شما غیرقابل توقف هستید. ادامه دهید! شما به تازگی چالش‌های روز ۱۰ را به پایان رسانده‌اید و ۱۰ قدم در راه رسیدن به بزرگی خود جلوتر هستید. اکنون چند تمرین برای مغز و عضلات خود انجام دهید.
 
-## 💻 Exercises: Day 10
+## 💻 تمرین‌ها: روز ۱۰
 
-### Exercises: Level 1
+### تمرین‌ها: سطح ۱
 
-1. Iterate 0 to 10 using for loop, do the same using while loop.
-2. Iterate 10 to 0 using for loop, do the same using while loop.
-3. Write a loop that makes seven calls to print(), so we get on the output the following triangle:
+۱. با استفاده از حلقه for از ۰ تا ۱۰ پیمایش کنید، همین کار را با حلقه while انجام دهید.
+۲. با استفاده از حلقه for از ۱۰ تا ۰ پیمایش کنید، همین کار را با حلقه while انجام دهید.
+۳. حلقه‌ای بنویسید که هفت بار print() را فراخوانی کند تا مثلث زیر را در خروجی بدست آوریم:
 
    ```py
      #
@@ -400,7 +400,7 @@ for number in range(6):
      #######
    ```
 
-4. Use nested loops to create the following:
+۴. از حلقه‌های تودرتو برای ایجاد شکل زیر استفاده کنید:
 
    ```sh
    # # # # # # # #
@@ -413,7 +413,7 @@ for number in range(6):
    # # # # # # # #
    ```
 
-5. Print the following pattern:
+۵. الگوی زیر را چاپ کنید:
 
    ```sh
    0 x 0 = 0
@@ -429,33 +429,33 @@ for number in range(6):
    10 x 10 = 100
    ```
 
-6. Iterate through the list, ['Python', 'Numpy','Pandas','Django', 'Flask'] using a for loop and print out the items.
-7. Use for loop to iterate from 0 to 100 and print only even numbers
-8. Use for loop to iterate from 0 to 100 and print only odd numbers
+۶. با استفاده از حلقه for، لیست ['Python', 'Numpy','Pandas','Django', 'Flask'] را پیمایش کرده و آیتم‌ها را چاپ کنید.
+۷. از حلقه for برای پیمایش از ۰ تا ۱۰۰ استفاده کنید و فقط اعداد زوج را چاپ کنید.
+۸. از حلقه for برای پیمایش از ۰ تا ۱۰۰ استفاده کنید و فقط اعداد فرد را چاپ کنید.
    
-### Exercises: Level 2
+### تمرین‌ها: سطح ۲
     
-1.  Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+۱.  با استفاده از حلقه for از ۰ تا ۱۰۰ پیمایش کنید و مجموع همه اعداد را چاپ کنید.
 
    ```sh
-   The sum of all numbers is 5050.
+   مجموع همه اعداد ۵۰۵۰ است.
    ```
 
-1. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+۱. با استفاده از حلقه for از ۰ تا ۱۰۰ پیمایش کنید و مجموع همه اعداد زوج و مجموع همه اعداد فرد را چاپ کنید.
 
     ```sh
-    The sum of all evens is 2550. And the sum of all odds is 2500.
+    مجموع همه اعداد زوج ۲۵۵۰ است. و مجموع همه اعداد فرد ۲۵۰۰ است.
     ```
 
-### Exercises: Level 3
+### تمرین‌ها: سطح ۳
 
-1. Go to the data folder and use the [countries.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) file. Loop through the countries and extract all the countries containing the word _land_.
-1. This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
-2. Go to the data folder and use the [countries_data.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) file. 
-   1. What are the total number of languages in the data
-   2. Find the ten most spoken languages from the data
-   3. Find the 10 most populated countries in the world
+۱. به پوشه data بروید و از فایل [countries.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) استفاده کنید. کشورها را پیمایش کرده و همه کشورهایی که شامل کلمه _land_ هستند را استخراج کنید.
+۱. این یک لیست میوه است: ['banana', 'orange', 'mango', 'lemon']. ترتیب آن را با استفاده از حلقه معکوس کنید.
+۲. به پوشه data بروید و از فایل [countries_data.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) استفاده کنید. 
+   ۱. تعداد کل زبان‌ها در داده‌ها چقدر است؟
+   ۲. ده زبان پرگویشور از داده‌ها را پیدا کنید.
+   ۳. ۱۰ کشور پرجمعیت جهان را پیدا کنید.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک! 🎉
 
-[<< Day 9](../09_Day_Conditionals/09_conditionals.md) | [Day 11 >>](../11_Day_Functions/11_functions.md)
+[>> روز ۹](../09_Day_Conditionals/09_conditionals.md) | [روز ۱۱ <<](../11_Day_Functions/11_functions.md)
