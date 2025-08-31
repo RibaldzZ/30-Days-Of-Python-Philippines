@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 12 - Modules </h1>
+  <h1> ۳۰ روز پایتون: روز ۱۲ - ماژول‌ها </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,73 +7,73 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> Second Edition: July, 2021</small>
+<small> ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 
 </div>
 </div>
 
-[<< Day 11](../11_Day_Functions/11_functions.md) | [Day 13>>](../13_Day_List_comprehension/13_list_comprehension.md)
+[>> روز ۱۱](../11_Day_Functions/11_functions.md) | [<< روز ۱۳](../13_Day_List_comprehension/13_list_comprehension.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 12](#-day-12)
-  - [Modules](#modules)
-    - [What is a Module](#what-is-a-module)
-    - [Creating a Module](#creating-a-module)
-    - [Importing a Module](#importing-a-module)
-    - [Import Functions from a Module](#import-functions-from-a-module)
-    - [Import Functions from a Module and Renaming](#import-functions-from-a-module-and-renaming)
-  - [Import Built-in Modules](#import-built-in-modules)
-    - [OS Module](#os-module)
-    - [Sys Module](#sys-module)
-    - [Statistics Module](#statistics-module)
-    - [Math Module](#math-module)
-    - [String Module](#string-module)
-    - [Random Module](#random-module)
-  - [💻 Exercises: Day 12](#-exercises-day-12)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+- [📘 روز ۱۲](#-روز-۱۲)
+  - [ماژول‌ها](#ماژول‌ها)
+    - [ماژول چیست](#ماژول-چیست)
+    - [ایجاد یک ماژول](#ایجاد-یک-ماژول)
+    - [وارد کردن (Import) یک ماژول](#وارد-کردن-import-یک-ماژول)
+    - [وارد کردن توابع از یک ماژول](#وارد-کردن-توابع-از-یک-ماژول)
+    - [وارد کردن توابع از یک ماژول و تغییر نام آن‌ها](#وارد-کردن-توابع-از-یک-ماژول-و-تغییر-نام-آن‌ها)
+  - [وارد کردن ماژول‌های داخلی (Built-in)](#وارد-کردن-ماژول‌های-داخلی-built-in)
+    - [ماژول OS](#ماژول-os)
+    - [ماژول Sys](#ماژول-sys)
+    - [ماژول Statistics](#ماژول-statistics)
+    - [ماژول Math](#ماژول-math)
+    - [ماژول String](#ماژول-string)
+    - [ماژول Random](#ماژول-random)
+  - [💻 تمرین‌ها: روز ۱۲](#-تمرین‌ها-روز-۱۲)
+    - [تمرین‌ها: سطح ۱](#تمرین‌ها-سطح-۱)
+    - [تمرین‌ها: سطح ۲](#تمرین‌ها-سطح-۲)
+    - [تمرین‌ها: سطح ۳](#تمرین‌ها-سطح-۳)
 
-# 📘 Day 12
+# 📘 روز ۱۲
 
-## Modules
+## ماژول‌ها
 
-### What is a Module
+### ماژول چیست
 
-A module is a file containing a set of codes or a set of functions which can be included to an application. A module could be a file containing a single variable, a function or a big code base.
+ماژول فایلی است حاوی مجموعه‌ای از کدها یا مجموعه‌ای از توابع که می‌توان آن را به یک برنامه اضافه کرد. یک ماژول می‌تواند فایلی حاوی یک متغیر، یک تابع یا یک پایگاه کد بزرگ باشد.
 
-### Creating a Module
+### ایجاد یک ماژول
 
-To create a module we write our codes in a python script and we save it as a .py file. Create a file named mymodule.py inside your project folder. Let us write some code in this file.
+برای ایجاد یک ماژول، کدهای خود را در یک اسکریپت پایتون می‌نویسیم و آن را با پسوند .py ذخیره می‌کنیم. فایلی به نام mymodule.py در پوشه پروژه خود ایجاد کنید. بیایید کدی را در این فایل بنویسیم.
 
 ```py
-# mymodule.py file
+# فایل mymodule.py
 def generate_full_name(firstname, lastname):
     return firstname + ' ' + lastname
 ```
 
-Create main.py file in your project directory and import the mymodule.py file.
+فایل main.py را در دایرکتوری پروژه خود ایجاد کرده و فایل mymodule.py را وارد (import) کنید.
 
-### Importing a Module
+### وارد کردن (Import) یک ماژول
 
-To import the file we use the _import_ keyword and the name of the file only.
+برای وارد کردن فایل، از کلمه کلیدی _import_ و فقط نام فایل استفاده می‌کنیم.
 
 ```py
-# main.py file
+# فایل main.py
 import mymodule
 print(mymodule.generate_full_name('Asabeneh', 'Yetayeh')) # Asabeneh Yetayeh
 ```
 
-### Import Functions from a Module
+### وارد کردن توابع از یک ماژول
 
-We can have many functions in a file and we can import all the functions differently.
+ما می‌توانیم توابع زیادی در یک فایل داشته باشیم و می‌توانیم همه توابع را به صورت جداگانه وارد کنیم.
 
 ```py
-# main.py file
+# فایل main.py
 from mymodule import generate_full_name, sum_two_nums, person, gravity
 print(generate_full_name('Asabneh','Yetayeh'))
 print(sum_two_nums(1,9))
@@ -83,12 +83,12 @@ print(weight)
 print(person['firstname'])
 ```
 
-### Import Functions from a Module and Renaming
+### وارد کردن توابع از یک ماژول و تغییر نام آن‌ها
 
-During importing we can rename the name of the module.
+هنگام وارد کردن، می‌توانیم نام ماژول را تغییر دهیم.
 
 ```py
-# main.py file
+# فایل main.py
 from mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
 print(fullname('Asabneh','Yetayeh'))
 print(total(1, 9))
@@ -99,70 +99,69 @@ print(p)
 print(p['firstname'])
 ```
 
-## Import Built-in Modules
+## وارد کردن ماژول‌های داخلی (Built-in)
 
-Like other programming languages we can also import modules by importing the file/function using the key word _import_. Let's import the common module we will use most of the time. Some of the common built-in modules: _math_, _datetime_, _os_,_sys_, _random_, _statistics_, _collections_, _json_,_re_
+مانند سایر زبان‌های برنامه‌نویسی، ما نیز می‌توانیم با استفاده از کلمه کلیدی _import_، ماژول‌ها را با وارد کردن فایل/تابع مربوطه وارد کنیم. بیایید ماژول‌های رایجی را که بیشتر اوقات استفاده خواهیم کرد، وارد کنیم. برخی از ماژول‌های داخلی رایج عبارتند از: _math_، _datetime_، _os_، _sys_، _random_، _statistics_، _collections_، _json_، _re_.
 
-### OS Module
+### ماژول OS
 
-Using python _os_ module it is possible to automatically perform many operating system tasks. The OS module in Python provides functions for creating, changing current working directory, and removing a directory (folder), fetching its contents, changing and identifying the current directory.
+با استفاده از ماژول _os_ پایتون، امکان انجام خودکار بسیاری از وظایف سیستم‌عامل وجود دارد. ماژول OS در پایتون توابعی را برای ایجاد، تغییر دایرکتوری کاری فعلی و حذف یک دایرکتوری (پوشه)، دریافت محتویات آن، تغییر و شناسایی دایرکتوری فعلی فراهم می‌کند.
 
 ```py
-# import the module
+# وارد کردن ماژول
 import os
-# Creating a directory
+# ایجاد یک دایرکتوری
 os.mkdir('directory_name')
-# Changing the current directory
+# تغییر دایرکتوری فعلی
 os.chdir('path')
-# Getting current working directory
+# دریافت دایرکتوری کاری فعلی
 os.getcwd()
-# Removing directory
+# حذف دایرکتوری
 os.rmdir()
 ```
 
-### Sys Module
+### ماژول Sys
 
-The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. Function sys.argv returns a list of command line arguments passed to a Python script. The item at index 0 in this list is always the name of the script, at index 1 is the argument passed from the command line.
+ماژول sys توابع و متغیرهایی را فراهم می‌کند که برای دستکاری بخش‌های مختلف محیط زمان اجرای پایتون استفاده می‌شوند. تابع sys.argv لیستی از آرگومان‌های خط فرمان را که به یک اسکریپت پایتون ارسال شده‌اند، برمی‌گرداند. آیتم با ایندکس 0 در این لیست همیشه نام اسکریپت است، در ایندکس 1 آرگومانی است که از خط فرمان ارسال شده است.
 
-Example of a script.py file:
+مثالی از فایل script.py:
 
 ```py
 import sys
-#print(sys.argv[0], argv[1],sys.argv[2])  # this line would print out: filename argument1 argument2
-print('Welcome {}. Enjoy  {} challenge!'.format(sys.argv[1], sys.argv[2]))
+#print(sys.argv[0], argv[1],sys.argv[2]) # این خط چاپ می‌کند: filename argument1 argument2
+print('Welcome {}. Enjoy {} challenge!'.format(sys.argv[1], sys.argv[2]))
 ```
 
-Now to check how this script works I wrote in command line:
+حالا برای بررسی نحوه عملکرد این اسکریپت، در خط فرمان نوشتم:
 
 ```sh
-python script.py Asabeneh 30DaysOfPython
-```
+python script.py Asabeneh 30DaysOfPython```
 
-The result:
+نتیجه:
 
 ```sh
-Welcome Asabeneh. Enjoy  30DayOfPython challenge! 
+Welcome Asabeneh. Enjoy 30DayOfPython challenge!
 ```
 
-Some useful sys commands:
+برخی از دستورات مفید sys:
 
 ```py
-# to exit sys
+# برای خروج از sys
 sys.exit()
-# To know the largest integer variable it takes
+# برای دانستن بزرگترین مقدار صحیحی که یک متغیر می‌تواند بگیرد
 sys.maxsize
-# To know environment path
+# برای دانستن مسیر محیطی (environment path)
 sys.path
-# To know the version of python you are using
+# برای دانستن نسخه پایتونی که استفاده می‌کنید
 sys.version
 ```
 
-### Statistics Module
+### ماژول Statistics
 
-The statistics module provides functions for mathematical statistics of numeric data. The popular statistical functions which are defined in this module: _mean_, _median_, _mode_, _stdev_ etc.
+ماژول statistics توابعی برای آمار ریاضی داده‌های عددی فراهم می‌کند. توابع آماری محبوبی که در این ماژول تعریف شده‌اند عبارتند از: _mean_، _median_، _mode_، _stdev_ و غیره.
 
 ```py
-from statistics import * # importing all the statistics modules
+from statistics import * # وارد کردن تمام ماژول‌های statistics
 ages = [20, 20, 4, 24, 25, 22, 26, 20, 23, 22, 26]
 print(mean(ages))       # ~22.9
 print(median(ages))     # 23
@@ -170,31 +169,29 @@ print(mode(ages))       # 20
 print(stdev(ages))      # ~2.3
 ```
 
-### Math Module
+### ماژول Math
 
-Module containing many mathematical operations and constants.
+ماژولی حاوی بسیاری از عملیات‌ها و ثابت‌های ریاضی.
 
 ```py
 import math
-print(math.pi)           # 3.141592653589793, pi constant
-print(math.sqrt(2))      # 1.4142135623730951, square root
-print(math.pow(2, 3))    # 8.0, exponential function
-print(math.floor(9.81))  # 9, rounding to the lowest
-print(math.ceil(9.81))   # 10, rounding to the highest
-print(math.log10(100))   # 2, logarithm with 10 as base
+print(math.pi)           # 3.141592653589793, ثابت پی
+print(math.sqrt(2))      # 1.4142135623730951, ریشه دوم
+print(math.pow(2, 3))    # 8.0, تابع توان
+print(math.floor(9.81))  # 9, گرد کردن به سمت پایین
+print(math.ceil(9.81))   # 10, گرد کردن به سمت بالا
+print(math.log10(100))   # 2, لگاریتم در مبنای 10
 ```
 
-Now, we have imported the *math* module which contains lots of function which can help us to perform mathematical calculations. To check what functions the module has got, we can use _help(math)_, or _dir(math)_. This will display the available functions in the module. If we want to import only a specific function from the module we import it as follows:
+اکنون، ما ماژول *math* را وارد کرده‌ایم که حاوی توابع زیادی است که می‌تواند به ما در انجام محاسبات ریاضی کمک کند. برای بررسی اینکه ماژول چه توابعی دارد، می‌توانیم از _help(math)_ یا _dir(math)_ استفاده کنیم. این کار توابع موجود در ماژول را نمایش می‌دهد. اگر بخواهیم فقط یک تابع خاص از ماژول را وارد کنیم، آن را به صورت زیر وارد می‌کنیم:
 
 ```py
 from math import pi
-print(pi)
-```
+print(pi)```
 
-It is also possible to import multiple functions at once
+همچنین امکان وارد کردن چندین تابع به صورت همزمان وجود دارد
 
 ```py
-
 from math import pi, sqrt, pow, floor, ceil, log10
 print(pi)                 # 3.141592653589793
 print(sqrt(2))            # 1.4142135623730951
@@ -202,31 +199,30 @@ print(pow(2, 3))          # 8.0
 print(floor(9.81))        # 9
 print(ceil(9.81))         # 10
 print(math.log10(100))    # 2
-
 ```
 
-But if we want to import all the function in math module we can use \* .
+اما اگر بخواهیم تمام توابع موجود در ماژول math را وارد کنیم، می‌توانیم از * استفاده کنیم.
 
 ```py
 from math import *
-print(pi)                  # 3.141592653589793, pi constant
-print(sqrt(2))             # 1.4142135623730951, square root
-print(pow(2, 3))           # 8.0, exponential
-print(floor(9.81))         # 9, rounding to the lowest
-print(ceil(9.81))          # 10, rounding to the highest
+print(pi)                  # 3.141592653589793, ثابت پی
+print(sqrt(2))             # 1.4142135623730951, ریشه دوم
+print(pow(2, 3))           # 8.0, تابع توان
+print(floor(9.81))         # 9, گرد کردن به سمت پایین
+print(ceil(9.81))          # 10, گرد کردن به سمت بالا
 print(math.log10(100))     # 2
 ```
 
-When we import we can also rename the name of the function.
+هنگام وارد کردن، می‌توانیم نام تابع را نیز تغییر دهیم.
 
 ```py
-from math import pi as  PI
+from math import pi as PI
 print(PI) # 3.141592653589793
 ```
 
-### String Module
+### ماژول String
 
-A string module is a useful module for many purposes. The example below shows some use of the string module.
+ماژول string یک ماژول مفید برای اهداف بسیاری است. مثال زیر برخی از کاربردهای ماژول string را نشان می‌دهد.
 
 ```py
 import string
@@ -235,32 +231,32 @@ print(string.digits)        # 0123456789
 print(string.punctuation)   # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
 ```
 
-### Random Module
+### ماژول Random
 
-By now you are familiar with importing modules. Let us do one more import to get very familiar with it. Let us import _random_ module which gives us a random number between 0 and 0.9999.... The _random_ module has lots of functions but in this section we will only use _random_ and _randint_.
+تا الان با وارد کردن ماژول‌ها آشنا شده‌اید. بیایید یک وارد کردن دیگر انجام دهیم تا با آن کاملاً آشنا شویم. بیایید ماژول _random_ را وارد کنیم که به ما یک عدد تصادفی بین 0 و 0.9999.... می‌دهد. ماژول _random_ توابع زیادی دارد اما در این بخش ما فقط از _random_ و _randint_ استفاده خواهیم کرد.
 
 ```py
 from random import random, randint
-print(random())   # it doesn't take any arguments; it returns a value between 0 and 0.9999
-print(randint(5, 20)) # it returns a random integer number between [5, 20] inclusive
+print(random())   # هیچ آرگومانی نمی‌گیرد؛ مقداری بین 0 و 0.9999 برمی‌گرداند
+print(randint(5, 20)) # یک عدد صحیح تصادفی بین [5, 20] به صورت inclusive (شامل خود اعداد) برمی‌گرداند
 ```
 
-🌕 You are going far. Keep going! You have just completed day 12 challenges and you are 12 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+🌕 شما دارید پیشرفت زیادی می‌کنید. ادامه دهید! شما به تازگی چالش‌های روز ۱۲ را به پایان رسانده‌اید و ۱۲ قدم در مسیر خود به سوی بزرگی جلوتر هستید. اکنون تمرین‌هایی برای مغز و عضلات خود انجام دهید.
 
-## 💻 Exercises: Day 12
+## 💻 تمرین‌ها: روز ۱۲
 
-### Exercises: Level 1
+### تمرین‌ها: سطح ۱
 
-1. Writ a function which generates a six digit/character random_user_id.
-   ```py
-     print(random_user_id());
-     '1ee33d'
-   ```
-2. Modify the previous task. Declare a function named user_id_gen_by_user. It doesn’t take any parameters but it takes two inputs using input(). One of the inputs is the number of characters and the second input is the number of IDs which are supposed to be generated.
-   
+1.  تابعی بنویسید که یک random_user_id شش رقمی/کاراکتری تولید کند.
+    ```py
+      print(random_user_id());
+      '1ee33d'
+    ```
+2.  وظیفه قبلی را اصلاح کنید. تابعی به نام user_id_gen_by_user تعریف کنید. این تابع هیچ پارامتری نمی‌گیرد اما دو ورودی را با استفاده از input() دریافت می‌کند. یکی از ورودی‌ها تعداد کاراکترها و ورودی دوم تعداد IDهایی است که قرار است تولید شوند.
+
 ```py
-print(user_id_gen_by_user()) # user input: 5 5
-#output:
+print(user_id_gen_by_user()) # ورودی کاربر: 5 5
+#خروجی:
 #kcsy2
 #SMFYb
 #bWmeq
@@ -275,18 +271,18 @@ print(user_id_gen_by_user()) # 16 5
 #dIV0SSUTgAdKwStr
 ```
 
-3. Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
-   
+3.  تابعی به نام rgb_color_gen بنویسید. این تابع رنگ‌های rgb (3 مقدار که هر کدام در محدوده 0 تا 255 هستند) تولید خواهد کرد.
+
 ```py
 print(rgb_color_gen())
-# rgb(125,244,255) - the output should be in this form
+# rgb(125,244,255) - خروجی باید به این شکل باشد
 ```
 
-### Exercises: Level 2
+### تمرین‌ها: سطح ۲
 
-1. Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f. Check the task 6 for output examples).
-1. Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
-1. Write a function generate_colors which can generate any number of hexa or rgb colors.
+1.  تابعی به نام list_of_hexa_colors بنویسید که هر تعداد رنگ هگزادسیمال را در یک آرایه برمی‌گرداند (شش عدد هگزادسیمال که بعد از # نوشته می‌شوند. سیستم اعداد هگزادسیمال از 16 نماد، 0-9 و شش حرف اول الفبا، a-f تشکیل شده است. برای نمونه‌های خروجی به تمرین ۶ مراجعه کنید).
+2.  تابعی به نام list_of_rgb_colors بنویسید که هر تعداد رنگ RGB را در یک آرایه برمی‌گرداند.
+3.  تابعی به نام generate_colors بنویسید که بتواند هر تعداد رنگ hexa یا rgb تولید کند.
 
 ```py
    generate_colors('hexa', 3) # ['#a3e12f','#03ed55','#eb3d2b'] 
@@ -295,11 +291,11 @@ print(rgb_color_gen())
    generate_colors('rgb', 1)  # ['rgb(33,79, 176)']
    ```
 
-### Exercises: Level 3
+### تمرین‌ها: سطح ۳
 
-1. Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled list
-1. Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
+1.  تابع خود را shuffle_list بنامید، این تابع یک لیست به عنوان پارامتر می‌گیرد و یک لیست درهم‌ریخته (shuffled) برمی‌گرداند.
+2.  تابعی بنویسید که آرایه‌ای از هفت عدد تصادفی در محدوده 0-9 را برگرداند. همه اعداد باید منحصر به فرد باشند.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم! 🎉
 
-[<< Day 11](../11_Day_Functions/11_functions.md) | [Day 13>>](../13_Day_List_comprehension/13_list_comprehension.md)
+[>> روز ۱۱](../11_Day_Functions/11_functions.md) | [<< روز ۱۳](../13_Day_List_comprehension/13_list_comprehension.md)
