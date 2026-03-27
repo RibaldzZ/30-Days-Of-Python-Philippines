@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1> 30 Days Of Python: Day 30- Conclusions</h1>
+  <h1> ۳۰ روز با پایتون: روز ۳۰ - نتیجه‌گیری</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -9,33 +9,33 @@
   </a>
 
   
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
+<small>ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 
 </div>
 
-[<< Day 29](../29_Day_Building_API/29_building_API.md)
+[>> روز ۲۹](../29_Day_Building_API/29_building_API.md)
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [Day 30](#day-30)
-  - [Conclusions](#conclusions)
-  - [Testimony](#testimony)
+- [روز ۳۰](#روز-۳۰)
+  - [نتیجه‌گیری](#نتیجهگیری)
+  - [توصیه‌نامه](#توصیهنامه)
 
-# Day 30
+# روز ۳۰
 
 
-## Conclusions
+## نتیجه‌گیری
 
-In the process of preparing this material I  have learned quite a lot and you have inspired me to do more. Congratulations for making it to this level. If you have done all the exercise and the projects, now you are capable to go to  a data analysis, data science, machine learning or web development paths. [Support the author for more educational materials](https://www.paypal.com/paypalme/asabeneh).
+در فرآیند آماده‌سازی این مطالب، من چیزهای زیادی یاد گرفتم و شما به من انگیزه دادید تا کارهای بیشتری انجام دهم. برای رسیدن به این سطح تبریک می‌گویم. اگر تمام تمرین‌ها و پروژه‌ها را انجام داده‌اید، اکنون قادر به ورود به مسیرهای تحلیل داده، علم داده، یادگیری ماشین یا توسعه وب هستید. [برای مطالب آموزشی بیشتر از نویسنده حمایت کنید](https://www.paypal.com/paypalme/asabeneh).
 
-## Testimony
-Now it is time to express your thoughts about the Author and 30DaysOfPyhton. You can leave your testimonial on this [link](https://www.asabeneh.com/testimonials)
+## توصیه‌نامه
+اکنون زمان آن رسیده است که نظرات خود را در مورد نویسنده و 30DaysOfPyhton بیان کنید. می‌توانید توصیه‌نامه خود را در این [لینک](https://www.asabeneh.com/testimonials) ثبت کنید.
 
-GIVE FEEDBACK:
+ارسال بازخورد:
 http://thirtydayofpython-api.herokuapp.com/feedback
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم ! 🎉
 
-[<< Day 29](../29_Day_Building_API/29_building_API.md)
+[>> روز ۲۹](../29_Day_Building_API/29_building_API.md)
