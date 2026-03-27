@@ -14,7 +14,7 @@
 
 \</div\>
 
-[\<\< روز ۶](./06_Day_Tuples/06_tuples.md) | [روز ۸ \>\>](./08_Day_Dictionaries/08_dictionaries.md)
+[\<\< روز ۶](./06_tuples.md) | [روز ۸ \>\>](./08_dictionaries.md)
 
 - [📘 روز ۷](#-روز-۷)
   - [مجموعه‌ها](#مجموعهها)
@@ -438,4 +438,4 @@ age = [22, 19, 24, 25, 26, 24, 25, 24]
 
 🎉 تبریک می‌گویم\! 🎉
 
-[\<\< روز ۶](./06_Day_Tuples/06_tuples.md) | [روز ۸ \>\>](./08_Day_Dictionaries/08_dictionaries.md)
+[\<\< روز ۶](./06_tuples.md) | [روز ۸ \>\>](./08_dictionaries.md)

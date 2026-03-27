@@ -14,7 +14,7 @@
 
 \</div\>
 
-[\<\< روز ۲](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md) | [روز ۴ \>\>](./04_Day_Strings/04_strings.md)
+[\<\< روز ۲](./02_variables_builtin_functions.md) | [روز ۴ \>\>](./04_strings.md)
 
 - [📘 روز ۳](#-روز-۳)
   - [بولین](#بولین)
@@ -317,4 +317,4 @@ print(not not False) # False
 
 🎉 تبریک می‌گویم\! 🎉
 
-[\<\< روز ۲](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md) | [روز ۴ \>\>](./04_Day_Strings/04_strings.md)
+[\<\< روز ۲](./02_variables_builtin_functions.md) | [روز ۴ \>\>](./04_strings.md)

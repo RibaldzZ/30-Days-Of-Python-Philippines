@@ -14,7 +14,7 @@
 
 \</div\>
 
-[\<\< روز ۱](./readme.md) | [روز ۳ \>\>](./03_Day_Operators/03_operators.md)
+[\<\< روز ۱](./readme.md) | [روز ۳ \>\>](./03_operators.md)
 
 - [📘 روز ۲](#-روز-۲)
   - [توابع داخلی](#توابع-داخلی)
@@ -293,4 +293,4 @@ print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 
 🎉 تبریک می‌گویم\! 🎉
 
-[\<\< روز ۱](./readme.md) | [روز ۳ \>\>](./03_Day_Operators/03_operators.md)
+[\<\< روز ۱](./readme.md) | [روز ۳ \>\>](./03_operators.md)

@@ -13,7 +13,7 @@
 </sub>
 </div>
 
-[>> روز ۹](../09_Day_Conditionals/09_conditionals.md) | [روز ۱۱ <<](../11_Day_Functions/11_functions.md)
+[>> روز ۹](../09_conditionals.md) | [روز ۱۱ <<](../11_functions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -458,4 +458,4 @@ for number in range(6):
 
 🎉 تبریک! 🎉
 
-[>> روز ۹](../09_Day_Conditionals/09_conditionals.md) | [روز ۱۱ <<](../11_Day_Functions/11_functions.md)
+[>> روز ۹](../09_conditionals.md) | [روز ۱۱ <<](../11_functions.md)

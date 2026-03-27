@@ -14,7 +14,7 @@
 
 \</div\>
 
-[\>\> روز سوم](./03_Day_Operators/03_operators.md) | [روز پنجم \<\<](./05_Day_Lists/05_lists.md)
+[\>\> روز سوم](./03_operators.md) | [روز پنجم \<\<](./05_lists.md)
 
 - [روز چهارم](#روز-چهارم)
   - [رشته‌ها](#رشته‌ها)
@@ -648,4 +648,4 @@ The area of a circle with radius 10 is 314 meters square.
 
 🎉 تبریک می‌گویم\! 🎉
 
-[\>\> روز سوم](./03_Day_Operators/03_operators.md) | [روز پنجم \<\<](./05_Day_Lists/05_lists.md)
+[\>\> روز سوم](./03_operators.md) | [روز پنجم \<\<](./05_lists.md)

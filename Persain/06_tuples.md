@@ -14,7 +14,7 @@
 
 \</div\>
 
-[\>\> روز پنجم](./05_Day_Lists/05_lists.md) | [روز هفتم \<\<](./07_Day_Sets/07_sets.md)
+[\>\> روز پنجم](./05_lists.md) | [روز هفتم \<\<](./07_sets.md)
 
 - [روز ششم:](#روز-ششم)
   - [تاپل‌ها](#تاپل‌ها)
@@ -248,4 +248,4 @@ del fruits
     nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
     ```
 
-[\>\> روز پنجم](./05_Day_Lists/05_lists.md) | [روز هفتم \<\<](./07_Day_Sets/07_sets.md)
+[\>\> روز پنجم](./05_lists.md) | [روز هفتم \<\<](./07_sets.md)
