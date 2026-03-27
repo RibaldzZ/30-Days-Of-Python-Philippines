@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 17 - Exception Handling </h1>
+  <h1> ۳۰ روز با پایتون: روز ۱۷ - مدیریت استثناء </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,194 +7,193 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Author:
+  <sub>نویسنده:
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small> Second Edition: July, 2021</small>
+  <small> ویرایش دوم: جولای، ۲۰۲۱</small>
   </sub>
 </div>
 
-[<< Day 16](../16_Day_Python_date_time/16_python_datetime.md) | [Day 18 >>](../18_Day_Regular_expressions/18_regular_expressions.md)
+[>> روز ۱۸](../18_Day_Regular_expressions/18_regular_expressions.md) | [<< روز ۱۶](../16_Day_Python_date_time/16_python_datetime.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 17](#-day-17)
-  - [Exception Handling](#exception-handling)
-  - [Packing and Unpacking Arguments in Python](#packing-and-unpacking-arguments-in-python)
-    - [Unpacking](#unpacking)
-      - [Unpacking Lists](#unpacking-lists)
-      - [Unpacking Dictionaries](#unpacking-dictionaries)
-    - [Packing](#packing)
-    - [Packing Lists](#packing-lists)
-      - [Packing Dictionaries](#packing-dictionaries)
-  - [Spreading in Python](#spreading-in-python)
+- [📘 روز ۱۷](#-روز-۱۷)
+  - [مدیریت استثناء](#مدیریت-استثناء)
+  - [پکینگ و آنپکینگ آرگومان‌ها در پایتون](#پکینگ-و-آنپکینگ-آرگومانها-در-پایتون)
+    - [آنپکینگ](#آنپکینگ)
+      - [آنپکینگ لیست‌ها](#آنپکینگ-لیستها)
+      - [آنپکینگ دیکشنری‌ها](#آنپکینگ-دیکشنریها)
+    - [پکینگ](#پکینگ)
+    - [پکینگ لیست‌ها](#پکینگ-لیستها)
+      - [پکینگ دیکشنری‌ها](#پکینگ-دیکشنریها)
+  - [اسپردینگ در پایتون](#اسپردینگ-در-پایتون)
   - [Enumerate](#enumerate)
   - [Zip](#zip)
-  - [Exercises: Day 17](#exercises-day-17)
+  - [تمرین‌ها: روز ۱۷](#تمرینها-روز-۱۷)
 
-# 📘 Day 17
+# 📘 روز ۱۷
 
-## Exception Handling
+## مدیریت استثناء
 
-Python uses _try_ and _except_ to handle errors gracefully. A graceful exit (or graceful handling) of errors is a simple programming idiom - a program detects a serious error condition and "exits gracefully", in a controlled manner as a result. Often the program prints a descriptive error message to a terminal or log as part of the graceful exit, this makes our application more robust. The cause of an exception is often external to the program itself. An example of exceptions could be an incorrect input, wrong file name, unable to find a file, a malfunctioning IO device. Graceful handling of errors prevents our applications from crashing.
+پایتون از _try_ و _except_ برای مدیریت خطاها به صورت کنترل‌شده (gracefully) استفاده می‌کند. خروج کنترل‌شده (یا مدیریت کنترل‌شده) خطاها یک اصطلاح برنامه‌نویسی ساده است - یک برنامه یک وضعیت خطای جدی را شناسایی کرده و در نتیجه به صورت کنترل‌شده "خارج می‌شود". اغلب برنامه به عنوان بخشی از خروج کنترل‌شده، یک پیام خطای توصیفی را در ترمینال یا لاگ چاپ می‌کند، این کار باعث می‌شود برنامه ما مستحکم‌تر (robust) شود. علت یک استثناء اغلب خارج از خود برنامه است. نمونه‌هایی از استثناءها می‌تواند ورودی نادرست، نام فایل اشتباه، عدم توانایی در پیدا کردن فایل، یا یک دستگاه ورودی/خروجی خراب باشد. مدیریت کنترل‌شده خطاها از کرش کردن برنامه‌های ما جلوگیری می‌کند.
 
-We have covered the different Python _error_ types in the previous section. If we use _try_ and _except_ in our program, then it will not raise errors in those blocks.
+ما انواع مختلف _خطاهای_ پایتون را در بخش قبلی پوشش داده‌ایم. اگر از _try_ و _except_ در برنامه خود استفاده کنیم، در آن بلوک‌ها خطایی ایجاد نخواهد شد.
 
 ![Try and Except](../images/try_except.png)
 
 ```py
 try:
-    code in this block if things go well
+    # کدی که در صورت اجرای موفق در این بلوک قرار می‌گیرد
 except:
-    code in this block run if things go wrong
+    # کدی که در صورت بروز خطا در این بلوک اجرا می‌شود
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 try:
     print(10 + '5')
 except:
-    print('Something went wrong')
+    print('مشکلی پیش آمد')
 ```
 
-In the example above the second operand is a string. We could change it to float or int to add it with the number to make it work. But without any changes, the second block, _except_, will be executed.
+در مثال بالا، عملوند دوم یک رشته است. می‌توانستیم آن را به float یا int تغییر دهیم تا با عدد جمع شود و کار کند. اما بدون هیچ تغییری، بلوک دوم، یعنی _except_، اجرا خواهد شد.
 
-**Example:**
+**مثال:**
 
 ```py
 try:
-    name = input('Enter your name:')
-    year_born = input('Year you were born:')
+    name = input('نام خود را وارد کنید:')
+    year_born = input('سال تولدتان را وارد کنید:')
     age = 2019 - year_born
-    print(f'You are {name}. And your age is {age}.')
+    print(f'شما {name} هستید. و سن شما {age} است.')
 except:
-    print('Something went wrong')
+    print('مشکلی پیش آمد')
 ```
 
 ```sh
-Something went wrong
+مشکلی پیش آمد
 ```
 
-In the above example, the exception block will run and we do not know exactly the problem. To analyze the problem, we can use the different error types with except.
+در مثال بالا، بلوک استثناء اجرا خواهد شد و ما دقیقاً نمی‌دانیم مشکل چیست. برای تحلیل مشکل، می‌توانیم از انواع مختلف خطاها با except استفاده کنیم.
 
-In the following example, it will handle the error and will also tell us the kind of error raised.
+در مثال زیر، هم خطا را مدیریت می‌کند و هم به ما می‌گوید چه نوع خطایی رخ داده است.
 
 ```py
 try:
-    name = input('Enter your name:')
-    year_born = input('Year you were born:')
+    name = input('نام خود را وارد کنید:')
+    year_born = input('سال تولدتان را وارد کنید:')
     age = 2019 - year_born
-    print(f'You are {name}. And your age is {age}.')
+    print(f'شما {name} هستید. و سن شما {age} است.')
 except TypeError:
-    print('Type error occured')
+    print('خطای نوع (Type error) رخ داد')
 except ValueError:
-    print('Value error occured')
+    print('خطای مقدار (Value error) رخ داد')
 except ZeroDivisionError:
-    print('zero division error occured')
+    print('خطای تقسیم بر صفر رخ داد')
 ```
 
 ```sh
 Enter your name:Asabeneh
 Year you born:1920
-Type error occured
+خطای نوع (Type error) رخ داد
 ```
 
-In the code above the output is going to be _TypeError_.
-Now, let's add an additional block:
+در کد بالا، خروجی _TypeError_ خواهد بود.
+حالا، یک بلوک اضافی اضافه کنیم:
 
 ```py
 try:
-    name = input('Enter your name:')
-    year_born = input('Year you born:')
+    name = input('نام خود را وارد کنید:')
+    year_born = input('سال تولدتان را وارد کنید:')
     age = 2019 - int(year_born)
-    print(f'You are {name}. And your age is {age}.')
+    print(f'شما {name} هستید. و سن شما {age} است.')
 except TypeError:
-    print('Type error occur')
+    print('خطای نوع (Type error) رخ داد')
 except ValueError:
-    print('Value error occur')
+    print('خطای مقدار (Value error) رخ داد')
 except ZeroDivisionError:
-    print('zero division error occur')
+    print('خطای تقسیم بر صفر رخ داد')
 else:
-    print('I usually run with the try block')
+    print('من معمولاً با بلوک try اجرا می‌شوم')
 finally:
-    print('I alway run.')
+    print('من همیشه اجرا می‌شوم.')
 ```
 
 ```sh
 Enter your name:Asabeneh
 Year you born:1920
-You are Asabeneh. And your age is 99.
-I usually run with the try block
-I alway run.
+شما Asabeneh هستید. و سن شما 99 است.
+من معمولاً با بلوک try اجرا می‌شوم
+من همیشه اجرا می‌شوم.
 ```
 
-It is also shorten the above code as follows:
+همچنین می‌توان کد بالا را به صورت زیر کوتاه کرد:
 
 ```py
 try:
-    name = input('Enter your name:')
-    year_born = input('Year you born:')
+    name = input('نام خود را وارد کنید:')
+    year_born = input('سال تولدتان را وارد کنید:')
     age = 2019 - int(year_born)
-    print(f'You are {name}. And your age is {age}.')
+    print(f'شما {name} هستید. و سن شما {age} است.')
 except Exception as e:
     print(e)
 
 ```
 
-## Packing and Unpacking Arguments in Python
+## پکینگ و آنپکینگ آرگومان‌ها در پایتون
 
-We use two operators:
+ما از دو عملگر استفاده می‌کنیم:
 
-- \* for tuples
-- \*\* for dictionaries
+- \* برای تاپل‌ها
+- \*\* برای دیکشنری‌ها
 
-Let us take as an example below. It takes only arguments but we have list. We can unpack the list and changes to argument.
+بیایید مثال زیر را در نظر بگیریم. این تابع فقط آرگومان‌ها را می‌پذیرد اما ما یک لیست داریم. می‌توانیم لیست را آنپک کرده و آن را به آرگومان‌ها تبدیل کنیم.
 
-### Unpacking
+### آنپکینگ
 
-#### Unpacking Lists
+#### آنپکینگ لیست‌ها
 
 ```py
 def sum_of_five_nums(a, b, c, d, e):
     return a + b + c + d + e
 
-lst = [1, 2, 3, 4, 5]
+lst =
 print(sum_of_five_nums(lst)) # TypeError: sum_of_five_nums() missing 4 required positional arguments: 'b', 'c', 'd', and 'e'
 ```
 
-When we run the this code, it raises an error, because this function takes numbers (not a list) as arguments. Let us unpack/destructure the list.
+وقتی این کد را اجرا می‌کنیم، با خطا مواجه می‌شویم، زیرا این تابع به عنوان آرگومان اعداد را می‌پذیرد (نه یک لیست). بیایید لیست را آنپک/تخریب (unpack/destructure) کنیم.
 
 ```py
 def sum_of_five_nums(a, b, c, d, e):
     return a + b + c + d + e
 
-lst = [1, 2, 3, 4, 5]
+lst =
 print(sum_of_five_nums(*lst))  # 15
 ```
 
-We can also use unpacking in the range built-in function that expects a start and an end.
+همچنین می‌توانیم از آنپکینگ در تابع داخلی range که به یک نقطه شروع و پایان نیاز دارد، استفاده کنیم.
 
 ```py
-numbers = range(2, 7)  # normal call with separate arguments
-print(list(numbers)) # [2, 3, 4, 5, 6]
-args = [2, 7]
-numbers = range(*args)  # call with arguments unpacked from a list
-print(numbers)      # [2, 3, 4, 5,6]
-
+numbers = range(2, 7)  # فراخوانی عادی با آرگومان‌های جداگانه
+print(list(numbers)) #
+args =
+numbers = range(*args)  # فراخوانی با آرگومان‌های آنپک‌شده از یک لیست
+print(list(numbers))      #
 ```
 
-A list or a tuple can also be unpacked like this:
+یک لیست یا تاپل را نیز می‌توان به این صورت آنپک کرد:
 
 ```py
 countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
 fin, sw, nor, *rest = countries
 print(fin, sw, nor, rest)   # Finland Sweden Norway ['Denmark', 'Iceland']
-numbers = [1, 2, 3, 4, 5, 6, 7]
+numbers =
 one, *middle, last = numbers
-print(one, middle, last)      #  1 [2, 3, 4, 5, 6] 7
+print(one, middle, last)      #  1 7
 ```
 
-#### Unpacking Dictionaries
+#### آنپکینگ دیکشنری‌ها
 
 ```py
 def unpacking_person_info(name, country, city, age):
@@ -203,11 +202,11 @@ dct = {'name':'Asabeneh', 'country':'Finland', 'city':'Helsinki', 'age':250}
 print(unpacking_person_info(**dct)) # Asabeneh lives in Finland, Helsinki. He is 250 years old.
 ```
 
-### Packing
+### پکینگ
 
-Sometimes we never know how many arguments need to be passed to a python function. We can use the packing method to allow our function to take unlimited number or arbitrary number of arguments.
+گاهی اوقات ما هرگز نمی‌دانیم چه تعداد آرگومان باید به یک تابع پایتون ارسال شود. می‌توانیم از روش پکینگ استفاده کنیم تا به تابع خود اجازه دهیم تعداد نامحدود یا دلخواهی از آرگومان‌ها را بپذیرد.
 
-### Packing Lists
+### پکینگ لیست‌ها
 
 ```py
 def sum_all(*args):
@@ -219,13 +218,13 @@ print(sum_all(1, 2, 3))             # 6
 print(sum_all(1, 2, 3, 4, 5, 6, 7)) # 28
 ```
 
-#### Packing Dictionaries
+#### پکینگ دیکشنری‌ها
 
 ```py
 def packing_person_info(**kwargs):
-    # check the type of kwargs and it is a dict type
+    # نوع kwargs را بررسی می‌کنیم و می‌بینیم که از نوع dict است
     # print(type(kwargs))
-    # Printing dictionary items
+    # چاپ آیتم‌های دیکشنری
     for key in kwargs:
         print(f"{key} = {kwargs[key]}")
     return kwargs
@@ -242,15 +241,15 @@ age = 250
 {'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
 ```
 
-## Spreading in Python
+## اسپردینگ در پایتون
 
-Like in JavaScript, spreading is possible in Python. Let us check it in an example below:
+مانند جاوا اسکریپت، اسپردینگ (spreading) در پایتون نیز امکان‌پذیر است. بیایید آن را در مثال زیر بررسی کنیم:
 
 ```py
-lst_one = [1, 2, 3]
-lst_two = [4, 5, 6, 7]
+lst_one =
+lst_two =
 lst = [0, *lst_one, *lst_two]
-print(lst)          # [0, 1, 2, 3, 4, 5, 6, 7]
+print(lst)          #
 country_lst_one = ['Finland', 'Sweden', 'Norway']
 country_lst_two = ['Denmark', 'Iceland']
 nordic_countries = [*country_lst_one, *country_lst_two]
@@ -259,10 +258,10 @@ print(nordic_countries)  # ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
 
 ## Enumerate
 
-If we are interested in an index of a list, we use _enumerate_ built-in function to get the index of each item in the list.
+اگر به اندیس یک لیست علاقه‌مند باشیم، از تابع داخلی _enumerate_ برای به دست آوردن اندیس هر آیتم در لیست استفاده می‌کنیم.
 
 ```py
-for index, item in enumerate([20, 30, 40]):
+for index, item in enumerate():
     print(index, item)
 ```
 
@@ -270,16 +269,16 @@ for index, item in enumerate([20, 30, 40]):
 for index, i in enumerate(countries):
     print('hi')
     if i == 'Finland':
-        print('The country {i} has been found at index {index}')
+        print(f'کشور {i} در اندیس {index} پیدا شد')
 ```
 
 ```sh
-The country Finland has been found at index 1.
+کشور Finland در اندیس 1 پیدا شد.
 ```
 
 ## Zip
 
-Sometimes we would like to combine lists when looping through them. See the example below:
+گاهی اوقات می‌خواهیم لیست‌ها را هنگام پیمایش در آن‌ها ترکیب کنیم. مثال زیر را ببینید:
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon', 'lime']                    
@@ -295,12 +294,12 @@ print(fruits_and_veges)
 [{'fruit': 'banana', 'veg': 'Tomato'}, {'fruit': 'orange', 'veg': 'Potato'}, {'fruit': 'mango', 'veg': 'Cabbage'}, {'fruit': 'lemon', 'veg': 'Onion'}, {'fruit': 'lime', 'veg': 'Carrot'}]
 ```
 
-🌕 You are determined. You are 17 steps a head to your way to greatness. Now do some exercises for your brain and muscles.
+🌕 شما مصمم هستید. شما ۱۷ قدم در مسیر خود به سوی بزرگی جلوتر هستید. اکنون چند تمرین برای مغز و عضلات خود انجام دهید.
 
-## Exercises: Day 17
+## تمرین‌ها: روز ۱۷
 
-1. names = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']. Unpack the first five countries and store them in a variable nordic_countries, store Estonia and Russia in es, and ru respectively.
+1. `names = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']`. پنج کشور اول را آنپک کرده و در متغیری به نام `nordic_countries` ذخیره کنید، و `Estonia` و `Russia` را به ترتیب در `es` و `ru` ذخیره کنید.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم! 🎉
 
-[<< Day 16](../16_Day_Python_date_time/16_python_datetime.md) | [Day 18 >>](../18_Day_Regular_expressions/18_regular_expressions.md)
+[>> روز ۱۸](../18_Day_Regular_expressions/18_regular_expressions.md) | [<< روز ۱۶](../16_Day_Python_date_time/16_python_datetime.md)
