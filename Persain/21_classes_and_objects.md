@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 21 - Classes and Objects</h1>
+  <h1> ۳۰ روز پایتون: روز ۲۱ - کلاس‌ها و اشیاء</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,40 +7,39 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
+<small>ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 
 </div>
 
-[<< Day 20](../20_Day_Python_package_manager/20_python_package_manager.md) | [Day 22 >>](../22_Day_Web_scraping/22_web_scraping.md)
+[>> روز ۲۰](../20_Day_Python_package_manager/20_python_package_manager.md) | [روز ۲۲ >>](../22_Day_Web_scraping/22_web_scraping.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 21](#-day-21)
-  - [Classes and Objects](#classes-and-objects)
-    - [Creating a Class](#creating-a-class)
-    - [Creating an Object](#creating-an-object)
-    - [Class Constructor](#class-constructor)
-    - [Object Methods](#object-methods)
-    - [Object Default Methods](#object-default-methods)
-    - [Method to Modify Class Default Values](#method-to-modify-class-default-values)
-    - [Inheritance](#inheritance)
-    - [Overriding parent method](#overriding-parent-method)
-  - [💻 Exercises: Day 21](#-exercises-day-21)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+- [📘 روز ۲۱](#-روز-۲۱)
+  - [کلاس‌ها و اشیاء](#کلاسها-و-اشیاء)
+    - [ایجاد یک کلاس](#ایجاد-یک-کلاس)
+    - [ایجاد یک شیء](#ایجاد-یک-شیء)
+    - [سازنده کلاس](#سازنده-کلاس)
+    - [متدهای پیش‌فرض شیء](#متدهای-پیشفرض-شیء)
+    - [متدی برای تغییر مقادیر پیش‌فرض کلاس](#متدی-برای-تغییر-مقادیر-پیشفرض-کلاس)
+    - [ارث‌بری (Inheritance)](#ارثبری-inheritance)
+    - [بازنویسی (Overriding) متد والد](#بازنویسی-overriding-متد-والد)
+  - [💻 تمرین‌ها: روز ۲۱](#-تمرینها-روز-۲۱)
+    - [تمرین‌ها: سطح ۱](#تمرینها-سطح-۱)
+    - [تمرین‌ها: سطح ۲](#تمرینها-سطح-۲)
+    - [تمرین‌ها: سطح ۳](#تمرینها-سطح-۳)
 
-# 📘 Day 21
+# 📘 روز ۲۱
 
-## Classes and Objects
+## کلاس‌ها و اشیاء
 
-Python is an object oriented programming language. Everything in Python is an object, with its properties and methods. A number, string, list, dictionary, tuple, set etc. used in a program is an object of a corresponding built-in class. We create class to create an object. A class is like an object constructor, or a "blueprint" for creating objects. We instantiate a class to create an object. The class defines attributes and the behavior of the object, while the object, on the other hand, represents the class.
+پایتون یک زبان برنامه‌نویسی شیءگرا است. [9] همه چیز در پایتون یک شیء (object) است، با خصوصیات (properties) و متدهای (methods) خود. [9, 14] یک عدد، رشته، لیست، دیکشنری، تاپل، مجموعه و غیره که در یک برنامه استفاده می‌شود، یک شیء از یک کلاس داخلی مربوط به خود است. ما کلاس را برای ایجاد یک شیء می‌سازیم. یک کلاس مانند یک سازنده شیء (object constructor) یا یک «طرح اولیه» (blueprint) برای ایجاد اشیاء است. [14] ما برای ایجاد یک شیء، یک کلاس را نمونه‌سازی (instantiate) می‌کنیم. کلاس، صفات (attributes) و رفتار (behavior) شیء را تعریف می‌کند، در حالی که شیء، از طرف دیگر، نماینده کلاس است.
 
-We have been working with classes and objects right from the beginning of this challenge unknowingly. Every element in a Python program is an object of a class.
-Let us check if everything in python is a class:
+ما از همان ابتدای این چالش، ندانسته با کلاس‌ها و اشیاء کار کرده‌ایم. هر عنصری در یک برنامه پایتون، یک شیء از یک کلاس است. [3]
+بیایید بررسی کنیم که آیا همه چیز در پایتون یک کلاس است یا نه:
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -70,9 +69,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 <class 'dict'>
 ```
 
-### Creating a Class
+### ایجاد یک کلاس
 
-To create a class we need the key word **class** followed by the name and colon. Class name should be **CamelCase**.
+برای ایجاد یک کلاس، به کلمه کلیدی **class** و سپس نام کلاس و یک دو نقطه نیاز داریم. نام کلاس باید به صورت **CamelCase** باشد.
 
 ```sh
 # syntax
@@ -80,7 +79,7 @@ class ClassName:
   code goes here
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 class Person:
@@ -92,19 +91,19 @@ print(Person)
 <__main__.Person object at 0x10804e510>
 ```
 
-### Creating an Object
+### ایجاد یک شیء
 
-We can create an object by calling the class.
+ما می‌توانیم با فراخوانی کلاس، یک شیء ایجاد کنیم.
 
 ```py
 p = Person()
 print(p)
 ```
 
-### Class Constructor
+### سازنده کلاس
 
-In the examples above, we have created an object from the Person class. However, a class without a constructor is not really useful in real applications. Let us use constructor function to make our class more useful. Like the constructor function in Java or JavaScript, Python has also a built-in **__init__**() constructor function. The **__init__** constructor function has self parameter which is a reference to the current instance of the class
-**Examples:**
+در مثال‌های بالا، ما یک شیء از کلاس Person ایجاد کرده‌ایم. با این حال، یک کلاس بدون سازنده (constructor) در کاربردهای واقعی چندان مفید نیست. [12] بیایید از تابع سازنده استفاده کنیم تا کلاس خود را مفیدتر کنیم. مانند تابع سازنده در جاوا یا جاوا اسکریپت، پایتون نیز یک تابع سازنده داخلی به نام **__init__**() دارد. [3, 4, 14] تابع سازنده **__init__** دارای پارامتر self است که یک ارجاع به نمونه فعلی کلاس است.
+**مثال‌ها:**
 
 ```py
 class Person:
@@ -123,7 +122,7 @@ Asabeneh
 <__main__.Person object at 0x2abf46907e80>
 ```
 
-Let us add more parameters to the constructor function.
+بیایید پارامترهای بیشتری به تابع سازنده اضافه کنیم.
 
 ```py
 class Person:
@@ -149,14 +148,13 @@ Asabeneh
 Yetayeh
 250
 Finland
-Helsinki
-```
+Helsinki```
 
-### Object Methods
+### متدهای شیء
 
-Objects can have methods. The methods are functions which belong to the object.
+اشیاء می‌توانند متد داشته باشند. متدها توابعی هستند که به شیء تعلق دارند. [16]
 
-**Example:**
+**مثال:**
 
 ```py
 class Person:
@@ -178,11 +176,11 @@ print(p.person_info())
 Asabeneh Yetayeh is 250 years old. He lives in Helsinki, Finland
 ```
 
-### Object Default Methods
+### متدهای پیش‌فرض شیء
 
-Sometimes, you may want to have a default values for your object methods. If we give default values for the parameters in the constructor, we can avoid errors when we call or instantiate our class without parameters. Let's see how it looks:
+گاهی اوقات، ممکن است بخواهید برای متدهای شیء خود مقادیر پیش‌فرض داشته باشید. اگر در سازنده، برای پارامترها مقادیر پیش‌فرض تعیین کنیم، می‌توانیم از بروز خطا هنگام فراخوانی یا نمونه‌سازی کلاس بدون پارامتر جلوگیری کنیم. بیایید ببینیم چگونه به نظر می‌رسد:
 
-**Example:**
+**مثال:**
 
 ```py
 class Person:
@@ -208,9 +206,9 @@ Asabeneh Yetayeh is 250 years old. He lives in Helsinki, Finland.
 John Doe is 30 years old. He lives in Noman city, Nomanland.
 ```
 
-### Method to Modify Class Default Values
+### متدی برای تغییر مقادیر پیش‌فرض کلاس
 
-In the example below, the person class, all the constructor parameters have default values. In addition to that, we have skills parameter, which we can access using a method. Let us create add_skill method to add skills to the skills list.
+در مثال زیر، در کلاس Person، تمام پارامترهای سازنده دارای مقادیر پیش‌فرض هستند. علاوه بر این، ما یک پارامتر skills داریم که می‌توانیم با استفاده از یک متد به آن دسترسی پیدا کنیم. بیایید متد add_skill را برای افزودن مهارت‌ها به لیست skills ایجاد کنیم.
 
 ```py
 class Person:
@@ -246,10 +244,10 @@ John Doe is 30 years old. He lives in Noman city, Nomanland.
 []
 ```
 
-### Inheritance
+### ارث‌بری (Inheritance)
 
-Using inheritance we can reuse parent class code. Inheritance allows us to define a class that inherits all the methods and properties from parent class. The parent class or super or base class is the class which gives all the methods and properties. Child class is the class that inherits from another or parent class.
-Let us create a student class by inheriting from person class.
+با استفاده از ارث‌بری می‌توانیم از کدهای کلاس والد مجدداً استفاده کنیم. [6, 8] ارث‌بری به ما این امکان را می‌دهد که کلاسی را تعریف کنیم که تمام متدها و خصوصیات را از کلاس والد به ارث ببرد. [6, 11] کلاس والد یا سوپرکلاس یا کلاس پایه، کلاسی است که تمام متدها و خصوصیات را ارائه می‌دهد. کلاس فرزند کلاسی است که از کلاس دیگری یا کلاس والد ارث می‌برد. [7, 8]
+بیایید با ارث‌بری از کلاس Person، یک کلاس Student ایجاد کنیم.
 
 ```py
 class Student(Person):
@@ -280,10 +278,10 @@ Lidiya Teklemariam is 28 years old. He lives in Espoo, Finland.
 ['Organizing', 'Marketing', 'Digital Marketing']
 ```
 
-We did not call the **__init__**() constructor in the child class. If we didn't call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling _super_.  
-We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the **__init__**() function, the child class will no longer inherit the parent's **__init__**() function.
+ما در کلاس فرزند، سازنده **__init__**() را فراخوانی نکردیم. اگر آن را فراخوانی نکنیم، همچنان می‌توانیم به تمام خصوصیات از کلاس والد دسترسی داشته باشیم. اما اگر سازنده را فراخوانی کنیم، می‌توانیم با فراخوانی _super_ به خصوصیات والد دسترسی پیدا کنیم.
+ما می‌توانیم یک متد جدید به کلاس فرزند اضافه کنیم یا می‌توانیم متدهای کلاس والد را با ایجاد متدی با همان نام در کلاس فرزند، بازنویسی (override) کنیم. [2] وقتی تابع **__init__**() را اضافه می‌کنیم، کلاس فرزند دیگر تابع **__init__**() والد را به ارث نخواهد برد. [7]
 
-### Overriding parent method
+### بازنویسی (Overriding) متد والد
 
 ```py
 class Student(Person):
@@ -306,8 +304,7 @@ print(s2.person_info())
 s2.add_skill('Organizing')
 s2.add_skill('Marketing')
 s2.add_skill('Digital Marketing')
-print(s2.skills)
-```
+print(s2.skills)```
 
 ```sh
 Eyob Yetayeh is 30 years old. He lives in Helsinki, Finland.
@@ -316,18 +313,18 @@ Lidiya Teklemariam is 28 years old. She lives in Espoo, Finland.
 ['Organizing', 'Marketing', 'Digital Marketing']
 ```
 
-We can use super() built-in function or the parent name Person to automatically inherit the methods and properties from its parent. In the example above we override the parent method. The child method has a different feature, it can identify, if the gender is male or female and assign the proper pronoun(He/She).
+ما می‌توانیم از تابع داخلی super() یا نام والد یعنی Person برای به ارث بردن خودکار متدها و خصوصیات از والدش استفاده کنیم. در مثال بالا ما متد والد را بازنویسی کردیم. متد فرزند یک ویژگی متفاوت دارد، می‌تواند تشخیص دهد که جنسیت مذکر است یا مؤنث و ضمیر مناسب (He/She) را تخصیص دهد.
 
-🌕 Now, you are fully charged with a super power of programming.  Now do some exercises for your brain and muscles.
+🌕 اکنون، شما با یک قدرت فوق‌العاده برنامه‌نویسی کاملاً شارژ شده‌اید. حالا برای مغز و عضلات خود چند تمرین انجام دهید.
 
-## 💻 Exercises: Day 21
+## 💻 تمرین‌ها: روز ۲۱
 
-### Exercises: Level 1
+### تمرین‌ها: سطح ۱
 
-1. Python has the module called _statistics_ and we can use this module to do all the statistical calculations. However, to learn how to make function and reuse function let us try to develop a program, which calculates the measure of central tendency of a sample (mean, median, mode) and measure of variability (range, variance, standard deviation). In addition to those measures, find the min, max, count, percentile, and frequency distribution of the sample. You can create a class called Statistics and create all the functions that do statistical calculations as methods for the Statistics class. Check the output below.
+1. پایتون ماژولی به نام _statistics_ دارد و ما می‌توانیم از این ماژول برای انجام تمام محاسبات آماری استفاده کنیم. با این حال، برای یادگیری نحوه ساختن تابع و استفاده مجدد از آن، بیایید سعی کنیم برنامه‌ای توسعه دهیم که معیارهای گرایش به مرکز یک نمونه (میانگین، میانه، مد) و معیارهای پراکندگی (دامنه، واریانس، انحراف معیار) را محاسبه کند. علاوه بر این معیارها، حداقل، حداکثر، تعداد، صدک و توزیع فراوانی نمونه را پیدا کنید. شما می‌توانید کلاسی به نام Statistics ایجاد کنید و تمام توابعی که محاسبات آماری را انجام می‌دهند به عنوان متدهای کلاس Statistics ایجاد کنید. خروجی زیر را بررسی کنید.
 
 ```py
-ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
+ages =
 
 print('Count:', data.count()) # 25
 print('Sum: ', data.sum()) # 744
@@ -358,13 +355,13 @@ Standard Deviation:  4.2
 Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 ```
 
-### Exercises: Level 2
+### تمرین‌ها: سطح ۲
 
-1. Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has total_income, total_expense, account_info, add_income, add_expense and account_balance methods. Incomes is a set of incomes and its description. The same goes for expenses.
+1.  کلاسی به نام PersonAccount ایجاد کنید. این کلاس دارای خصوصیات firstname, lastname, incomes, expenses و متدهای total_income, total_expense, account_info, add_income, add_expense و account_balance است. Incomes مجموعه‌ای از درآمدها و توضیحات آنهاست. همین امر در مورد expenses نیز صدق می‌کند.
 
-### Exercises: Level 3
+### تمرین‌ها: سطح ۳
 
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک! 🎉
 
-[<< Day 20](../20_Day_Python_package_manager/20_python_package_manager.md) | [Day 22 >>](../22_Day_Web_scraping/22_web_scraping.md)
+[>> روز ۲۰](../20_Day_Python_package_manager/20_python_package_manager.md) | [روز ۲۲ >>](../22_Day_Web_scraping/22_web_scraping.md)
