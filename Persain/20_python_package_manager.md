@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 20 - PIP </h1>
+  <h1> ۳۰ روز با پایتون: روز ۲۰ - PIP </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,49 +7,49 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
+<small>ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 </div>
 
-[<< Day 19](../19_Day_File_handling/19_file_handling.md) | [Day 21 >>](../21_Day_Classes_and_objects/21_classes_and_objects.md)
+[>> روز ۲۱](../21_Day_Classes_and_objects/21_classes_and_objects.md) | [<< روز ۱۹](../19_Day_File_handling/19_file_handling.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 20](#-day-20)
-  - [Python PIP - Python Package Manager](#python-pip---python-package-manager)
-    - [What is PIP ?](#what-is-pip-)
-    - [Installing PIP](#installing-pip)
-    - [Installing packages using pip](#installing-packages-using-pip)
-    - [Uninstalling Packages](#uninstalling-packages)
-    - [List of Packages](#list-of-packages)
-    - [Show Package](#show-package)
+- [📘 روز ۲۰](#-روز-۲۰)
+  - [PIP پایتون - مدیر بسته پایتون](#pip-پایتون---مدیر-بسته-پایتون)
+    - [PIP چیست؟](#pip-چیست)
+    - [نصب PIP](#نصب-pip)
+    - [نصب بسته‌ها با استفاده از pip](#نصب-بستهها-با-استفاده-از-pip)
+    - [حذف بسته‌ها](#حذف-بستهها)
+    - [لیست بسته‌ها](#لیست-بستهها)
+    - [نمایش بسته](#نمایش-بسته)
     - [PIP Freeze](#pip-freeze)
-    - [Reading from URL](#reading-from-url)
-    - [Creating a Package](#creating-a-package)
-    - [Further Information About Packages](#further-information-about-packages)
-  - [Exercises: Day 20](#exercises-day-20)
+    - [خواندن از URL](#خواندن-از-url)
+    - [ایجاد یک بسته](#ایجاد-یک-بسته)
+    - [اطلاعات بیشتر در مورد بسته‌ها](#اطلاعات-بیشتر-در-مورد-بستهها)
+  - [تمرین‌ها: روز ۲۰](#تمرینها-روز-۲۰)
 
-# 📘 Day 20
+# 📘 روز ۲۰
 
-## Python PIP - Python Package Manager
+## PIP پایتون - مدیر بسته پایتون
 
-### What is PIP ?
+### PIP چیست؟
 
-PIP stands for Preferred installer program. We use _pip_ to install different Python packages.
-Package is a Python module that can contain one or more modules or other packages. A module or modules that we can install to our application is a package.
-In programming, we do not have to write every utility program, instead we install packages and import them to our applications.
+PIP مخفف Preferred Installer Program (برنامه نصب کننده ترجیحی) است. ما از _pip_ برای نصب بسته‌های مختلف پایتون استفاده می‌کنیم.
+بسته (Package) یک ماژول پایتون است که می‌تواند شامل یک یا چند ماژول یا بسته‌های دیگر باشد. یک ماژول یا ماژول‌هایی که می‌توانیم در برنامه خود نصب کنیم، یک بسته است.
+در برنامه‌نویسی، لازم نیست هر برنامه کاربردی را خودمان بنویسیم، در عوض بسته‌ها را نصب کرده و آنها را در برنامه‌های خود وارد (import) می‌کنیم.
 
-### Installing PIP
+### نصب PIP
 
-If you did not install pip, let us install it now. Go to your terminal or command prompt and copy and paste this:
+اگر pip را نصب نکرده‌اید، بیایید اکنون آن را نصب کنیم. به ترمینال یا خط فرمان خود بروید و این را کپی و جایگذاری کنید:
 
 ```sh
 asabeneh@Asabeneh:~$ pip install pip
 ```
 
-Check if pip is installed by writing
+با نوشتن دستور زیر بررسی کنید که آیا pip نصب شده است یا خیر:
 
 ```sh
 pip --version
@@ -60,25 +60,25 @@ asabeneh@Asabeneh:~$ pip --version
 pip 21.1.3 from /usr/local/lib/python3.7/site-packages/pip (python 3.9.6)
 ```
 
-As you can see, I am using pip version 21.1.3, if you see some number a bit below or above that, means you have pip installed.
+همانطور که می‌بینید، من از نسخه 21.1.3 pip استفاده می‌کنم. اگر شما عددی کمی پایین‌تر یا بالاتر از این مشاهده کردید، به این معنی است که pip را نصب کرده‌اید.
 
-Let us check some of the packages used in the Python community for different purposes. Just to let you know that there are lots of packages available for use with different applications.
+بیایید برخی از بسته‌هایی را که در جامعه پایتون برای اهداف مختلف استفاده می‌شوند، بررسی کنیم. فقط برای اطلاع شما، بسته‌های زیادی برای استفاده در برنامه‌های مختلف موجود است.
 
-### Installing packages using pip
+### نصب بسته‌ها با استفاده از pip
 
-Let us try to install _numpy_, called numeric python. It is one of the most popular packages in machine learning and data science community.
+بیایید سعی کنیم _numpy_ را که پایتون عددی (numeric python) نامیده می‌شود، نصب کنیم. این یکی از محبوب‌ترین بسته‌ها در جامعه یادگیری ماشین و علم داده است.
 
-- NumPy is the fundamental package for scientific computing with Python. It contains among other things:
-  - a powerful N-dimensional array object
-  - sophisticated (broadcasting) functions
-  - tools for integrating C/C++ and Fortran code
-  - useful linear algebra, Fourier transform, and random number capabilities
+- NumPy بسته بنیادی برای محاسبات علمی با پایتون است. این بسته شامل موارد زیر است:
+  - یک شیء آرایه N-بعدی قدرتمند
+  - توابع پیچیده (broadcasting)
+  - ابزارهایی برای ادغام کدهای C/C++ و Fortran
+  - قابلیت‌های مفید جبر خطی، تبدیل فوریه و اعداد تصادفی
 
 ```sh
 asabeneh@Asabeneh:~$ pip install numpy
 ```
 
-Let us start using numpy. Open your python interactive shell, write python and then import numpy as follows:
+بیایید شروع به استفاده از numpy کنیم. پوسته تعاملی پایتون خود را باز کنید، `python` را بنویسید و سپس numpy را به صورت زیر وارد کنید:
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -88,20 +88,20 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import numpy
 >>> numpy.version.version
 '1.20.1'
->>> lst = [1, 2, 3,4, 5]
+>>> lst =
 >>> np_arr = numpy.array(lst)
 >>> np_arr
-array([1, 2, 3, 4, 5])
+array()
 >>> len(np_arr)
 5
 >>> np_arr * 2
 array([ 2,  4,  6,  8, 10])
 >>> np_arr  + 2
-array([3, 4, 5, 6, 7])
+array()
 >>>
 ```
 
-Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Let us install the big brother of numpy, _pandas_:
+Pandas یک کتابخانه منبع باز با مجوز BSD است که ساختارهای داده‌ای با کارایی بالا و آسان برای استفاده و ابزارهای تحلیل داده را برای زبان برنامه‌نویسی پایتون فراهم می‌کند. بیایید برادر بزرگتر numpy، یعنی _pandas_ را نصب کنیم:
 
 ```sh
 asabeneh@Asabeneh:~$ pip install pandas
@@ -115,14 +115,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import pandas
 ```
 
-This section is not about numpy nor pandas, here we are trying to learn how to install packages and how to import them. If it is needed, we will talk about different packages in other sections.
+این بخش در مورد numpy یا pandas نیست، در اینجا ما سعی داریم یاد بگیریم که چگونه بسته‌ها را نصب کنیم و چگونه آنها را وارد کنیم. در صورت لزوم، در بخش‌های دیگر در مورد بسته‌های مختلف صحبت خواهیم کرد.
 
-Let us import a web browser module, which can help us to open any website. We do not need to install this module, it is already installed by default with Python 3. For instance if you like to open any number of websites at any time or if you like to schedule something, this _webbrowser_ module can be used.
+بیایید یک ماژول مرورگر وب (web browser) را وارد کنیم که می‌تواند به ما در باز کردن هر وب‌سایتی کمک کند. نیازی به نصب این ماژول نداریم، زیرا به طور پیش‌فرض با پایتون ۳ نصب شده است. به عنوان مثال، اگر دوست دارید هر تعداد وب‌سایت را در هر زمانی باز کنید یا اگر دوست دارید چیزی را زمان‌بندی کنید، می‌توان از این ماژول _webbrowser_ استفاده کرد.
 
 ```py
-import webbrowser # web browser module to open websites
+import webbrowser # ماژول مرورگر وب برای باز کردن وب‌سایت‌ها
 
-# list of urls: python
+# لیستی از آدرس‌ها: پایتون
 url_lists = [
     'http://www.python.org',
     'https://www.linkedin.com/in/asabeneh/',
@@ -130,30 +130,30 @@ url_lists = [
     'https://twitter.com/Asabeneh',
 ]
 
-# opens the above list of websites in a different tab
+# لیست وب‌سایت‌های بالا را در تب‌های جداگانه باز می‌کند
 for url in url_lists:
     webbrowser.open_new_tab(url)
 ```
 
-### Uninstalling Packages
+### حذف بسته‌ها
 
-If you do not like to keep the installed packages, you can remove them using the following command.
+اگر نمی‌خواهید بسته‌های نصب شده را نگه دارید، می‌توانید آنها را با استفاده از دستور زیر حذف کنید.
 
 ```sh
 pip uninstall packagename
 ```
 
-### List of Packages
+### لیست بسته‌ها
 
-To see the installed packages on our machine. We can use pip followed by list.
+برای دیدن بسته‌های نصب شده روی دستگاه خود، می‌توانیم از `pip` و به دنبال آن `list` استفاده کنیم.
 
 ```sh
 pip list
 ```
 
-### Show Package
+### نمایش بسته
 
-To show information about a package
+برای نمایش اطلاعات در مورد یک بسته:
 
 ```sh
 pip show packagename
@@ -173,7 +173,7 @@ Requires: python-dateutil, pytz, numpy
 Required-by:
 ```
 
-If we want even more details, just add --verbose
+اگر جزئیات بیشتری بخواهیم، کافیست `--verbose` را اضافه کنیم.
 
 ```sh
 asabeneh@Asabeneh:~$ pip show --verbose pandas
@@ -209,7 +209,7 @@ Entry-points:
 
 ### PIP Freeze
 
-Generate installed Python packages with their version and the output is suitable to use it in a requirements file. A requirements.txt file is a file that should contain all the installed Python packages in a Python project.
+بسته‌های پایتون نصب شده را به همراه نسخه آنها تولید می‌کند و خروجی برای استفاده در یک فایل نیازمندی‌ها (requirements file) مناسب است. فایل `requirements.txt` فایلی است که باید شامل تمام بسته‌های پایتون نصب شده در یک پروژه پایتون باشد.
 
 ```sh
 asabeneh@Asabeneh:~$ pip freeze
@@ -220,59 +220,59 @@ Pygments==1.6
 Sphinx==1.2.2
 ```
 
-The pip freeze gave us the packages used, installed and their version. We use it with requirements.txt file for deployment.
+دستور `pip freeze` به ما بسته‌های استفاده شده، نصب شده و نسخه آنها را می‌دهد. ما از آن با فایل `requirements.txt` برای استقرار (deployment) استفاده می‌کنیم.
 
-### Reading from URL
+### خواندن از URL
 
-By now you are familiar with how to read or write on a file located on you local machine. Sometimes, we would like to read from a website using url or from an API.
-API stands for Application Program Interface. It is a means to exchange structured data between servers primarily as json data. To open a network connection, we need a package called _requests_ - it allows to open a network connection and to implement CRUD(create, read, update and delete) operations. In this section, we will cover only reading ore getting part of a CRUD.
+تا به حال با نحوه خواندن یا نوشتن روی فایلی که در دستگاه محلی شما قرار دارد، آشنا شده‌اید. گاهی اوقات، ما می‌خواهیم از یک وب‌سایت با استفاده از URL یا از یک API بخوانیم.
+API مخفف Application Program Interface (رابط برنامه‌نویسی کاربردی) است. این وسیله‌ای برای تبادل داده‌های ساختاریافته بین سرورها، عمدتاً به صورت داده‌های JSON است. برای باز کردن یک اتصال شبکه، به بسته‌ای به نام _requests_ نیاز داریم - این بسته به ما امکان می‌دهد یک اتصال شبکه باز کرده و عملیات CRUD (ایجاد، خواندن، به‌روزرسانی و حذف) را پیاده‌سازی کنیم. در این بخش، ما فقط بخش خواندن یا گرفتن (getting) از CRUD را پوشش خواهیم داد.
 
-Let us install _requests_:
+بیایید _requests_ را نصب کنیم:
 
 ```py
 asabeneh@Asabeneh:~$ pip install requests
 ```
 
-We will see _get_, _status_code_, _headers_, _text_ and _json_ methods in _requests_ module:
-  - _get()_: to open a network and fetch data from url - it returns a response object
-  - _status_code_: After we fetched data, we can check the status of the operation (success, error, etc)
-  - _headers_: To check the header types
-  - _text_: to extract the text from the fetched response object 
-  - _json_: to extract json data
-Let's read a txt file from this website, https://www.w3.org/TR/PNG/iso_8859-1.txt.
+ما متدهای _get_، _status_code_، _headers_، _text_ و _json_ را در ماژول _requests_ خواهیم دید:
+  - _get()_: برای باز کردن یک شبکه و واکشی داده از URL - یک شیء response برمی‌گرداند.
+  - _status_code_: پس از واکشی داده، می‌توانیم وضعیت عملیات را بررسی کنیم (موفق، خطا و غیره).
+  - _headers_: برای بررسی انواع هدر.
+  - _text_: برای استخراج متن از شیء response واکشی شده.
+  - _json_: برای استخراج داده‌های JSON.
+بیایید یک فایل txt را از این وب‌سایت بخوانیم: https://www.w3.org/TR/PNG/iso_8859-1.txt.
 
 ```py
-import requests # importing the request module
+import requests # وارد کردن ماژول request
 
-url = 'https://www.w3.org/TR/PNG/iso_8859-1.txt' # text from a website
+url = 'https://www.w3.org/TR/PNG/iso_8859-1.txt' # متنی از یک وب‌سایت
 
-response = requests.get(url) # opening a network and fetching a data
+response = requests.get(url) # باز کردن یک شبکه و واکشی داده
 print(response)
-print(response.status_code) # status code, success:200
-print(response.headers)     # headers information
-print(response.text) # gives all the text from the page
+print(response.status_code) # کد وضعیت، موفق: ۲۰۰
+print(response.headers)     # اطلاعات هدرها
+print(response.text) # تمام متن صفحه را می‌دهد
 ```
 
 ```sh
-<Response [200]>
+<Response>
 200
 {'date': 'Sun, 08 Dec 2019 18:00:31 GMT', 'last-modified': 'Fri, 07 Nov 2003 05:51:11 GMT', 'etag': '"17e9-3cb82080711c0;50c0b26855880-gzip"', 'accept-ranges': 'bytes', 'cache-control': 'max-age=31536000', 'expires': 'Mon, 07 Dec 2020 18:00:31 GMT', 'vary': 'Accept-Encoding', 'content-encoding': 'gzip', 'access-control-allow-origin': '*', 'content-length': '1616', 'content-type': 'text/plain', 'strict-transport-security': 'max-age=15552000; includeSubdomains; preload', 'content-security-policy': 'upgrade-insecure-requests'}
 ```
 
-- Let us read from an API. API stands for Application Program Interface. It is a means to exchange structure data between servers primarily a json data. An example of an API:https://restcountries.eu/rest/v2/all. Let us read this API using _requests_ module.
+- بیایید از یک API بخوانیم. API مخفف Application Program Interface است. این وسیله‌ای برای تبادل داده‌های ساختاریافته بین سرورها، عمدتاً به صورت داده‌های JSON است. یک نمونه از API: https://restcountries.eu/rest/v2/all. بیایید این API را با استفاده از ماژول _requests_ بخوانیم.
 
 ```py
 import requests
-url = 'https://restcountries.eu/rest/v2/all'  # countries api
-response = requests.get(url)  # opening a network and fetching a data
-print(response) # response object
-print(response.status_code)  # status code, success:200
+url = 'https://restcountries.eu/rest/v2/all'  # API کشورها
+response = requests.get(url)  # باز کردن یک شبکه و واکشی داده
+print(response) # شیء response
+print(response.status_code)  # کد وضعیت، موفق: ۲۰۰
 countries = response.json()
-print(countries[:1])  # we sliced only the first country, remove the slicing to see all countries
+print(countries[:1])  # ما فقط کشور اول را برش دادیم، برای دیدن همه کشورها برش را حذف کنید
 ```
 
 ```sh
-<Response [200]>
+<Response>
 200
 [{'alpha2Code': 'AF',
   'alpha3Code': 'AFG',
@@ -323,15 +323,15 @@ print(countries[:1])  # we sliced only the first country, remove the slicing to 
                    'pt': 'Afeganistão'}}]
 ```
 
-We use _json()_ method from response object, if the we are fetching JSON data. For txt, html, xml and other file formats we can use _text_.
+اگر در حال واکشی داده‌های JSON هستیم، از متد _json()_ از شیء response استفاده می‌کنیم. برای txt، html، xml و سایر فرمت‌های فایل می‌توانیم از _text_ استفاده کنیم.
 
-### Creating a Package
+### ایجاد یک بسته
 
-We organize a large number of files in different folders and sub-folders based on some criteria, so that we can find and manage them easily. As you know, a module can contain multiple objects, such as classes, functions, etc. A package can contain one or more relevant modules. A package is actually a folder containing one or more module files. Let us create a package named mypackage, using the following steps:
+ما تعداد زیادی فایل را بر اساس معیارهایی در پوشه‌ها و زیرپوشه‌های مختلف سازماندهی می‌کنیم تا بتوانیم آنها را به راحتی پیدا و مدیریت کنیم. همانطور که می‌دانید، یک ماژول می‌تواند شامل چندین شیء مانند کلاس‌ها، توابع و غیره باشد. یک بسته می‌تواند شامل یک یا چند ماژول مرتبط باشد. یک بسته در واقع یک پوشه است که شامل یک یا چند فایل ماژول است. بیایید با استفاده از مراحل زیر، بسته‌ای به نام mypackage ایجاد کنیم:
 
-Create a new folder named mypacakge inside 30DaysOfPython folder
-Create an empty **__init__**.py file in the mypackage folder.
-Create modules arithmetic.py and greet.py with following code:
+یک پوشه جدید به نام mypackage در داخل پوشه 30DaysOfPython ایجاد کنید.
+یک فایل خالی **__init__**.py در پوشه mypackage ایجاد کنید.
+ماژول‌های arithmetic.py و greet.py را با کدهای زیر ایجاد کنید:
 
 ```py
 # mypackage/arithmetics.py
@@ -370,7 +370,7 @@ def greet_person(firstname, lastname):
     return f'{firstname} {lastname}, welcome to 30DaysOfPython Challenge!'
 ```
 
-The folder structure of your package should look like this:
+ساختار پوشه بسته شما باید به این شکل باشد:
 
 ```sh
 ─ mypackage
@@ -379,7 +379,7 @@ The folder structure of your package should look like this:
     └── greet.py
 ```
 
-Now let's open the python interactive shell and try the package we have created:
+حالا بیایید پوسته تعاملی پایتون را باز کرده و بسته‌ای را که ایجاد کرده‌ایم امتحان کنیم:
 
 ```sh
 asabeneh@Asabeneh:~/Desktop/30DaysOfPython$ python
@@ -405,55 +405,55 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-As you can see our package works perfectly. The package folder contains a special file called **__init__**.py - it stores the package's content. If we put **__init__**.py in the package folder, python start recognizes it as a package.
-The **__init__**.py exposes specified resources from its modules to be imported to other python files. An empty **__init__**.py file makes all functions available when a package is imported. The **__init__**.py is essential for the folder to be recognized by Python as a package.
+همانطور که می‌بینید، بسته ما به خوبی کار می‌کند. پوشه بسته شامل یک فایل ویژه به نام **__init__**.py است - این فایل محتویات بسته را ذخیره می‌کند. اگر **__init__**.py را در پوشه بسته قرار دهیم، پایتون شروع به شناسایی آن به عنوان یک بسته می‌کند.
+فایل **__init__**.py منابع مشخص شده از ماژول‌های خود را برای وارد شدن به سایر فایل‌های پایتون در معرض دید قرار می‌دهد. یک فایل **__init__**.py خالی، تمام توابع را هنگام وارد کردن یک بسته در دسترس قرار می‌دهد. **__init__**.py برای اینکه پوشه توسط پایتون به عنوان یک بسته شناسایی شود، ضروری است.
 
-### Further Information About Packages
+### اطلاعات بیشتر در مورد بسته‌ها
 
-- Database
-  - SQLAlchemy or SQLObject - Object oriented access to several different database systems
+- پایگاه داده
+  - SQLAlchemy یا SQLObject - دسترسی شیءگرا به چندین سیستم پایگاه داده مختلف
     - _pip install SQLAlchemy_
-- Web Development
-  - Django - High-level web framework.
+- توسعه وب
+  - Django - چارچوب وب سطح بالا.
     - _pip install django_
-  - Flask - micro framework for Python based on Werkzeug, Jinja 2. (It's BSD licensed)
+  - Flask - میکرو چارچوب برای پایتون بر اساس Werkzeug، Jinja 2. (دارای مجوز BSD)
     - _pip install flask_
-- HTML Parser
-  - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - HTML/XML parser designed for quick turnaround projects like screen-scraping, will accept bad markup.
+- تجزیه کننده HTML
+  - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - تجزیه کننده HTML/XML که برای پروژه‌های سریع مانند استخراج داده از صفحات وب (screen-scraping) طراحی شده است، مارک‌آپ‌های نامعتبر را می‌پذیرد.
     - _pip install beautifulsoup4_
-  - PyQuery - implements jQuery in Python; faster than BeautifulSoup, apparently.
+  - PyQuery - jQuery را در پایتون پیاده‌سازی می‌کند؛ ظاهراً سریع‌تر از BeautifulSoup است.
 
-- XML Processing
-  - ElementTree - The Element type is a simple but flexible container object, designed to store hierarchical data structures, such as simplified XML infosets, in memory. --Note: Python 2.5 and up has ElementTree in the Standard Library
-- GUI
-  - PyQt - Bindings for the cross-platform Qt framework.
-  - TkInter - The traditional Python user interface toolkit.
-- Data Analysis, Data Science and Machine learning
-  - Numpy: Numpy(numeric python) is known as one of the most popular machine learning library in Python.
-  - Pandas: is a data analysis, data science and a machine learning library in Python that provides data structures of high-level and a wide variety of tools for analysis.
-  - SciPy: SciPy is a machine learning library for application developers and engineers. SciPy library contains modules for optimization, linear algebra, integration, image processing, and statistics.
-  - Scikit-Learn: It is NumPy and SciPy. It is considered as one of the best libraries for working with complex data.
-  - TensorFlow: is a machine learning library built by Google.
-  - Keras: is considered as one of the coolest machine learning libraries in Python. It provides an easier mechanism to express neural networks. Keras also provides some of the best utilities for compiling models, processing data-sets, visualization of graphs, and much more.
-- Network:
-  - requests: is a package which we can use to send requests to a server(GET, POST, DELETE, PUT)
+- پردازش XML
+  - ElementTree - نوع Element یک شیء کانتینر ساده اما انعطاف‌پذیر است که برای ذخیره ساختارهای داده سلسله مراتبی، مانند مجموعه اطلاعات ساده شده XML، در حافظه طراحی شده است. --توجه: پایتون ۲.۵ و بالاتر ElementTree را در کتابخانه استاندارد خود دارد.
+- رابط کاربری گرافیکی (GUI)
+  - PyQt - اتصالاتی برای چارچوب چندسکویی Qt.
+  - TkInter - ابزار سنتی رابط کاربری پایتون.
+- تحلیل داده، علم داده و یادگیری ماشین
+  - Numpy: Numpy (پایتون عددی) به عنوان یکی از محبوب‌ترین کتابخانه‌های یادگیری ماشین در پایتون شناخته می‌شود.
+  - Pandas: یک کتابخانه تحلیل داده، علم داده و یادگیری ماشین در پایتون است که ساختارهای داده سطح بالا و طیف گسترده‌ای از ابزارها را برای تحلیل فراهم می‌کند.
+  - SciPy: SciPy یک کتابخانه یادگیری ماشین برای توسعه‌دهندگان برنامه‌ها و مهندسان است. کتابخانه SciPy شامل ماژول‌هایی برای بهینه‌سازی، جبر خطی، انتگرال‌گیری، پردازش تصویر و آمار است.
+  - Scikit-Learn: این کتابخانه بر پایه NumPy و SciPy ساخته شده است. به عنوان یکی از بهترین کتابخانه‌ها برای کار با داده‌های پیچیده در نظر گرفته می‌شود.
+  - TensorFlow: یک کتابخانه یادگیری ماشین است که توسط گوگل ساخته شده است.
+  - Keras: به عنوان یکی از جالب‌ترین کتابخانه‌های یادگیری ماشین در پایتون در نظر گرفته می‌شود. مکانیزم ساده‌تری برای بیان شبکه‌های عصبی فراهم می‌کند. Keras همچنین برخی از بهترین ابزارها را برای کامپایل مدل‌ها، پردازش مجموعه داده‌ها، تجسم نمودارها و موارد دیگر ارائه می‌دهد.
+- شبکه:
+  - requests: بسته‌ای است که می‌توانیم از آن برای ارسال درخواست به یک سرور (GET, POST, DELETE, PUT) استفاده کنیم.
     - _pip install requests_
 
-🌕 You are always progressing and you are a head of 20 steps to your way to greatness. Now do some exercises for your brain and muscles.
+🌕 شما همیشه در حال پیشرفت هستید و ۲۰ قدم در مسیر خود به سوی بزرگی جلوتر هستید. اکنون چند تمرین برای مغز و عضلات خود انجام دهید.
 
-## Exercises: Day 20
+## تمرین‌ها: روز ۲۰
 
-1. Read this url and find the 10 most frequent words. romeo_and_juliet = 'http://www.gutenberg.org/files/1112/1112.txt'
-2. Read the cats API and cats_api = 'https://api.thecatapi.com/v1/breeds' and find :
-   1. the min, max, mean, median, standard deviation of cats' weight in metric units.
-   2. the min, max, mean, median, standard deviation of cats' lifespan in years.
-   3. Create a frequency table of country and breed of cats
-3. Read the [countries API](https://restcountries.eu/rest/v2/all) and find
-   1. the 10 largest countries
-   2. the 10 most spoken languages
-   3. the total number of languages in the countries API
-4. UCI is one of the most common places to get data sets for data science and machine learning. Read the content of UCL (https://archive.ics.uci.edu/ml/datasets.php). Without additional libraries it will be difficult, so you may try it with BeautifulSoup4
+۱. این url را بخوانید و ۱۰ کلمه پرتکرار را پیدا کنید. romeo_and_juliet = 'http://www.gutenberg.org/files/1112/1112.txt'
+۲. API گربه‌ها را بخوانید: cats_api = 'https://api.thecatapi.com/v1/breeds' و موارد زیر را پیدا کنید:
+   ۱. حداقل، حداکثر، میانگین، میانه و انحراف معیار وزن گربه‌ها بر حسب واحدهای متریک.
+   ۲. حداقل، حداکثر، میانگین، میانه و انحراف معیار طول عمر گربه‌ها بر حسب سال.
+   ۳. یک جدول فراوانی از کشور و نژاد گربه‌ها ایجاد کنید.
+۳. [API کشورها](https://restcountries.eu/rest/v2/all) را بخوانید و موارد زیر را پیدا کنید:
+   ۱. ۱۰ کشور بزرگ.
+   ۲. ۱۰ زبان پرگویش‌ترین.
+   ۳. تعداد کل زبان‌ها در API کشورها.
+۴. UCI یکی از رایج‌ترین مکان‌ها برای به دست آوردن مجموعه داده برای علم داده و یادگیری ماشین است. محتوای UCL (https://archive.ics.uci.edu/ml/datasets.php) را بخوانید. بدون کتابخانه‌های اضافی این کار دشوار خواهد بود، بنابراین ممکن است آن را با BeautifulSoup4 امتحان کنید.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم! 🎉
 
-[<< Day 19](../19_Day_File_handling/19_file_handling.md) | [Day 21 >>](../21_Day_Classes_and_objects/21_classes_and_objects.md)
+[>> روز ۲۱](../21_Day_Classes_and_objects/21_classes_and_objects.md) | [<< روز ۱۹](../19_Day_File_handling/19_file_handling.md)
