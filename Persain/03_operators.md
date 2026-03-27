@@ -16,14 +16,14 @@
 
 [\<\< روز ۲](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md) | [روز ۴ \>\>](./04_Day_Strings/04_strings.md)
 
-  - [📘 روز ۳](https://www.google.com/search?q=%23-%D8%B1%D9%88%D8%B2-%DB%B3)
-      - [بولین](https://www.google.com/search?q=%23%D8%A8%D9%88%D9%84%DB%8C%D9%86)
-      - [عملگرها](https://www.google.com/search?q=%23%D8%B9%D9%85%D9%84%DA%AF%D8%B1%D9%87%D8%A7)
-          - [عملگرهای انتساب](https://www.google.com/search?q=%23%D8%B9%D9%85%D9%84%DA%AF%D8%B1%D9%87%D8%A7%DB%8C-%D8%A7%D9%86%D8%AA%D8%B3%D8%A7%D8%A8)
-          - [عملگرهای حسابی:](https://www.google.com/search?q=%23%D8%B9%D9%85%D9%84%DA%AF%D8%B1%D9%87%D8%A7%DB%8C-%D8%AD%D8%B3%D8%A7%D8%A8%DB%8C)
-          - [عملگرهای مقایسه‌ای](https://www.google.com/search?q=%23%D8%B9%D9%85%D9%84%DA%AF%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87%D8%A7%DB%8C)
-          - [عملگرهای منطقی](https://www.google.com/search?q=%23%D8%B9%D9%85%D9%84%DA%AF%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D9%86%D8%B7%D9%82%DB%8C)
-      - [💻 تمرینات - روز ۳](https://www.google.com/search?q=%23-%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA---%D8%B1%D9%88%D8%B2-%DB%B3)
+- [📘 روز ۳](#-روز-۳)
+  - [بولین](#بولین)
+  - [عملگرها](#عملگرها)
+    - [عملگرهای انتساب](#عملگرهای-انتساب)
+    - [عملگرهای حسابی:](#عملگرهای-حسابی)
+    - [عملگرهای مقایسه‌ای](#عملگرهای-مقایسه‌ای)
+    - [عملگرهای منطقی](#عملگرهای-منطقی)
+  - [💻 تمرینات - روز ۳](#-تمرینات---روز-۳)
 
 # 📘 روز ۳
 
