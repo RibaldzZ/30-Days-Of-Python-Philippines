@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 14 - Higher Order Functions</h1>
+  <h1> ۳۰ روز پایتون: روز ۱۴ - توابع مرتبه بالا</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,80 +7,79 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Author:
+  <sub>نویسنده:
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small>Second Edition: July, 2021</small>
+  <small>ویرایش دوم: جولای ۲۰۲۱</small>
   </sub>
 </div>
 </div>
 
-[<< Day 13](../13_Day_List_comprehension/13_list_comprehension.md) | [Day 15>>](../15_Day_Python_type_errors/15_python_type_errors.md)
+[<< روز ۱۳](../13_Day_List_comprehension/13_list_comprehension.md) | [روز ۱۵>>](../15_Day_Python_type_errors/15_python_type_errors.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
-- [📘 Day 14](#-day-14)
-  - [Higher Order Functions](#higher-order-functions)
-    - [Function as a Parameter](#function-as-a-parameter)
-    - [Function as a Return Value](#function-as-a-return-value)
-  - [Python Closures](#python-closures)
-  - [Python Decorators](#python-decorators)
-    - [Creating Decorators](#creating-decorators)
-    - [Applying Multiple Decorators to a Single Function](#applying-multiple-decorators-to-a-single-function)
-    - [Accepting Parameters in Decorator Functions](#accepting-parameters-in-decorator-functions)
-  - [Built-in Higher Order Functions](#built-in-higher-order-functions)
-    - [Python - Map Function](#python---map-function)
-    - [Python - Filter Function](#python---filter-function)
-    - [Python - Reduce Function](#python---reduce-function)
-  - [💻 Exercises: Day 14](#-exercises-day-14)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+- [📘 روز ۱۴](#-روز-۱۴)
+  - [توابع مرتبه بالا](#توابع-مرتبه-بالا)
+    - [تابع به عنوان پارامتر](#تابع-به-عنوان-پارامتر)
+    - [تابع به عنوان مقدار بازگشتی](#تابع-به-عنوان-مقدار-بازگشتی)
+  - [Closureهای پایتون](#closureهای-پایتون)
+  - [Decoratorهای پایتون](#decoratorهای-پایتون)
+    - [ایجاد Decoratorها](#ایجاد-decoratorها)
+    - [اعمال چند Decorator به یک تابع](#اعمال-چند-decorator-به-یک-تابع)
+    - [پذیرش پارامتر در توابع Decorator](#پذیرش-پارامتر-در-توابع-decorator)
+  - [توابع داخلی مرتبه بالا](#توابع-داخلی-مرتبه-بالا)
+    - [پایتون - تابع Map](#پایتون---تابع-map)
+    - [پایتون - تابع Filter](#پایتون---تابع-filter)
+    - [پایتون - تابع Reduce](#پایتون---تابع-reduce)
+  - [💻 تمرین‌ها: روز ۱۴](#-تمرین‌ها-روز-۱۴)
+    - [تمرین‌ها: سطح ۱](#تمرین‌ها-سطح-۱)
+    - [تمرین‌ها: سطح ۲](#تمرین‌ها-سطح-۲)
+    - [تمرین‌ها: سطح ۳](#تمرین‌ها-سطح-۳)
 
-# 📘 Day 14
+# 📘 روز ۱۴
 
-## Higher Order Functions
+## توابع مرتبه بالا
 
-In Python functions are treated as first class citizens, allowing you to perform the following operations on functions:
+در پایتون با توابع به عنوان شهروندان درجه یک (first class citizens) رفتار می‌شود، که به شما امکان می‌دهد عملیات زیر را روی توابع انجام دهید:
 
-- A function can take one or more functions as parameters
-- A function can be returned as a result of another function
-- A function can be modified
-- A function can be assigned to a variable
+- یک تابع می‌تواند یک یا چند تابع را به عنوان پارامتر بپذیرد
+- یک تابع می‌تواند به عنوان نتیجه یک تابع دیگر بازگردانده شود
+- یک تابع می‌تواند اصلاح شود
+- یک تابع می‌تواند به یک متغیر تخصیص داده شود
 
-In this section, we will cover:
+در این بخش، ما موارد زیر را پوشش خواهیم داد:
 
-1. Handling functions as parameters
-2. Returning functions as return value from another functions
-3. Using Python closures and decorators
+1. مدیریت توابع به عنوان پارامتر
+2. بازگرداندن توابع به عنوان مقدار بازگشتی از توابع دیگر
+3. استفاده از closureها و decoratorهای پایتون
 
-### Function as a Parameter
+### تابع به عنوان پارامتر
 
 ```py
-def sum_numbers(nums):  # normal function
-    return sum(nums)    # a sad function abusing the built-in sum function :<
+def sum_numbers(nums):  # تابع معمولی
+    return sum(nums)    # یک تابع غمگین که از تابع داخلی sum سوءاستفاده می‌کند :<
 
-def higher_order_function(f, lst):  # function as a parameter
+def higher_order_function(f, lst):  # تابع به عنوان پارامتر
     summation = f(lst)
     return summation
 result = higher_order_function(sum_numbers, [1, 2, 3, 4, 5])
-print(result)       # 15
-```
+print(result)       # 15```
 
-### Function as a Return Value
+### تابع به عنوان مقدار بازگشتی
 
 ```py
-def square(x):          # a square function
+def square(x):          # تابع توان دو
     return x ** 2
 
-def cube(x):            # a cube function
+def cube(x):            # تابع توان سه
     return x ** 3
 
-def absolute(x):        # an absolute value function
+def absolute(x):        # تابع قدر مطلق
     if x >= 0:
         return x
     else:
         return -(x)
 
-def higher_order_function(type): # a higher order function returning a function
+def higher_order_function(type): # یک تابع مرتبه بالا که یک تابع را باز می‌گرداند
     if type == 'square':
         return square
     elif type == 'cube':
@@ -96,13 +95,13 @@ result = higher_order_function('absolute')
 print(result(-3))      # 3
 ```
 
-You can see from the above example that the higher order function is returning different functions depending on the passed parameter
+از مثال بالا می‌توانید ببینید که تابع مرتبه بالا بسته به پارامتر ارسال شده، توابع مختلفی را باز می‌گرداند.
 
-## Python Closures
+## Closureهای پایتون
 
-Python allows a nested function to access the outer scope of the enclosing function. This is is known as a Closure. Let us have a look at how closures work in Python. In Python, closure is created by nesting a function inside another encapsulating function and then returning the inner function. See the example below.
+پایتون به یک تابع تودرتو (nested function) اجازه می‌دهد تا به اسکوپ (scope) بیرونی تابع دربرگیرنده خود دسترسی داشته باشد. این قابلیت به عنوان Closure شناخته می‌شود. بیایید نگاهی بیندازیم که closureها در پایتون چگونه کار می‌کنند. در پایتون، closure با تودرتو کردن یک تابع در داخل یک تابع دربرگیرنده دیگر و سپس بازگرداندن تابع داخلی ایجاد می‌شود. مثال زیر را ببینید.
 
-**Example:**
+**مثال:**
 
 ```py
 def add_ten():
@@ -116,18 +115,18 @@ print(closure_result(5))  # 15
 print(closure_result(10))  # 20
 ```
 
-## Python Decorators
+## Decoratorهای پایتون
 
-A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. Decorators are usually called before the definition of a function you want to decorate.
+Decorator یک الگوی طراحی (design pattern) در پایتون است که به کاربر اجازه می‌دهد تا قابلیت‌های جدیدی را به یک شیء موجود بدون تغییر ساختار آن اضافه کند. Decoratorها معمولاً قبل از تعریف تابعی که می‌خواهید آن را decorate کنید، فراخوانی می‌شوند.
 
-### Creating Decorators
+### ایجاد Decoratorها
 
-To create a decorator function, we need an outer function with an inner wrapper function.
+برای ایجاد یک تابع decorator، ما به یک تابع بیرونی با یک تابع wrapper داخلی نیاز داریم.
 
-**Example:**
+**مثال:**
 
 ```py
-# Normal function
+# تابع معمولی
 def greeting():
     return 'Welcome to Python'
 def uppercase_decorator(function):
@@ -139,10 +138,10 @@ def uppercase_decorator(function):
 g = uppercase_decorator(greeting)
 print(g())          # WELCOME TO PYTHON
 
-## Let us implement the example above with a decorator
+## بیایید مثال بالا را با یک decorator پیاده‌سازی کنیم
 
-'''This decorator function is a higher order function
-that takes a function as a parameter'''
+'''این تابع decorator یک تابع مرتبه بالا است
+که یک تابع را به عنوان پارامتر می‌گیرد'''
 def uppercase_decorator(function):
     def wrapper():
         func = function()
@@ -152,18 +151,15 @@ def uppercase_decorator(function):
 @uppercase_decorator
 def greeting():
     return 'Welcome to Python'
-print(greeting())   # WELCOME TO PYTHON
+print(greeting())   # WELCOME TO PYTHON```
 
-```
-
-### Applying Multiple Decorators to a Single Function
+### اعمال چند Decorator به یک تابع
 
 ```py
+'''این توابع decorator، توابع مرتبه بالایی هستند
+که توابع را به عنوان پارامتر می‌گیرند'''
 
-'''These decorator functions are higher order functions
-that take functions as parameters'''
-
-# First Decorator
+# Decorator اول
 def uppercase_decorator(function):
     def wrapper():
         func = function()
@@ -171,25 +167,24 @@ def uppercase_decorator(function):
         return make_uppercase
     return wrapper
 
-# Second decorator
+# Decorator دوم
 def split_string_decorator(function):
     def wrapper():
         func = function()
         splitted_string = func.split()
         return splitted_string
-
     return wrapper
 
 @split_string_decorator
-@uppercase_decorator     # order with decorators is important in this case - .upper() function does not work with lists
+@uppercase_decorator     # ترتیب decoratorها در این مورد مهم است - تابع .upper() روی لیست‌ها کار نمی‌کند
 def greeting():
     return 'Welcome to Python'
-print(greeting())   # WELCOME TO PYTHON
+print(greeting())   # ['WELCOME', 'TO', 'PYTHON']
 ```
 
-### Accepting Parameters in Decorator Functions
+### پذیرش پارامتر در توابع Decorator
 
-Most of the time we need our functions to take parameters, so we might need to define a decorator that accepts parameters.
+بیشتر اوقات ما نیاز داریم که توابعمان پارامترهایی را بپذیرند، بنابراین ممکن است نیاز به تعریف یک decorator داشته باشیم که پارامترها را بپذیرد.
 
 ```py
 def decorator_with_parameters(function):
@@ -206,21 +201,21 @@ def print_full_name(first_name, last_name, country):
 print_full_name("Asabeneh", "Yetayeh",'Finland')
 ```
 
-## Built-in Higher Order Functions
+## توابع داخلی مرتبه بالا
 
-Some of the built-in higher order functions that we cover in this part are _map()_, _filter_, and _reduce_.
-Lambda function can be passed as a parameter and the best use case of lambda functions is in functions like map, filter and reduce.
+برخی از توابع داخلی مرتبه بالا که در این بخش پوشش می‌دهیم _map()_، _filter_ و _reduce_ هستند.
+تابع لامبدا (Lambda) می‌تواند به عنوان پارامتر ارسال شود و بهترین مورد استفاده از توابع لامبدا در توابعی مانند map، filter و reduce است.
 
-### Python - Map Function
+### پایتون - تابع Map
 
-The map() function is a built-in function that takes a function and iterable as parameters.
+تابع ()map یک تابع داخلی است که یک تابع و یک iterable (شیء قابل پیمایش) را به عنوان پارامتر می‌گیرد.
 
 ```py
-    # syntax
+    # سینتکس
     map(function, iterable)
 ```
 
-**Example:1**
+**مثال ۱:**
 
 ```py
 numbers = [1, 2, 3, 4, 5] # iterable
@@ -228,12 +223,12 @@ def square(x):
     return x ** 2
 numbers_squared = map(square, numbers)
 print(list(numbers_squared))    # [1, 4, 9, 16, 25]
-# Lets apply it with a lambda function
+# بیایید آن را با یک تابع لامبدا اعمال کنیم
 numbers_squared = map(lambda x : x ** 2, numbers)
 print(list(numbers_squared))    # [1, 4, 9, 16, 25]
 ```
 
-**Example:2**
+**مثال ۲:**
 
 ```py
 numbers_str = ['1', '2', '3', '4', '5']  # iterable
@@ -241,7 +236,7 @@ numbers_int = map(int, numbers_str)
 print(list(numbers_int))    # [1, 2, 3, 4, 5]
 ```
 
-**Example:3**
+**مثال ۳:**
 
 ```py
 names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
@@ -252,26 +247,26 @@ def change_to_upper(name):
 names_upper_cased = map(change_to_upper, names)
 print(list(names_upper_cased))    # ['ASABENEH', 'LIDIYA', 'ERMIAS', 'ABRAHAM']
 
-# Let us apply it with a lambda function
+# بیایید آن را با یک تابع لامبدا اعمال کنیم
 names_upper_cased = map(lambda name: name.upper(), names)
 print(list(names_upper_cased))    # ['ASABENEH', 'LIDIYA', 'ERMIAS', 'ABRAHAM']
 ```
 
-What actually map does is iterating over a list. For instance, it changes the names to upper case and returns a new list.
+کاری که map واقعاً انجام می‌دهد، پیمایش روی یک لیست است. به عنوان مثال، نام‌ها را به حروف بزرگ تبدیل کرده و یک لیست جدید را باز می‌گرداند.
 
-### Python - Filter Function
+### پایتون - تابع Filter
 
-The filter() function calls the specified function which returns boolean for each item of the specified iterable (list). It filters the items that satisfy the filtering criteria.
+تابع ()filter تابع مشخص‌شده را که برای هر آیتم از iterable (لیست) مشخص‌شده، یک مقدار بولین (boolean) برمی‌گرداند، فراخوانی می‌کند. این تابع آیتم‌هایی را که معیار فیلترینگ را برآورده می‌کنند، فیلتر می‌کند.
 
 ```py
-    # syntax
+    # سینتکس
     filter(function, iterable)
 ```
 
-**Example:1**
+**مثال ۱:**
 
 ```py
-# Lets filter only even nubers
+# بیایید فقط اعداد زوج را فیلتر کنیم
 numbers = [1, 2, 3, 4, 5]  # iterable
 
 def is_even(num):
@@ -283,7 +278,7 @@ even_numbers = filter(is_even, numbers)
 print(list(even_numbers))       # [2, 4]
 ```
 
-**Example:2**
+**مثال ۲:**
 
 ```py
 numbers = [1, 2, 3, 4, 5]  # iterable
@@ -298,7 +293,7 @@ print(list(odd_numbers))       # [1, 3, 5]
 ```
 
 ```py
-# Filter long name
+# فیلتر کردن نام‌های طولانی
 names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
 def is_name_long(name):
     if len(name) > 7:
@@ -309,12 +304,14 @@ long_names = filter(is_name_long, names)
 print(list(long_names))         # ['Asabeneh']
 ```
 
-### Python - Reduce Function
+### پایتون - تابع Reduce
 
-The _reduce()_ function is defined in the functools module and we should import it from this module. Like map and filter it takes two parameters, a function and an iterable. However, it does not return another iterable, instead it returns a single value.
-**Example:1**
+تابع _reduce()_ در ماژول functools تعریف شده است و ما باید آن را از این ماژول import کنیم. مانند map و filter، این تابع دو پارامتر، یک تابع و یک iterable، می‌گیرد. با این حال، یک iterable دیگر را باز نمی‌گرداند، بلکه یک مقدار واحد را برمی‌گرداند.
+**مثال ۱:**
 
 ```py
+from functools import reduce
+
 numbers_str = ['1', '2', '3', '4', '5']  # iterable
 def add_two_nums(x, y):
     return int(x) + int(y)
@@ -323,7 +320,7 @@ total = reduce(add_two_nums, numbers_str)
 print(total)    # 15
 ```
 
-## 💻 Exercises: Day 14
+## 💻 تمرین‌ها: روز ۱۴
 
 ```py
 countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
@@ -331,40 +328,40 @@ names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
-### Exercises: Level 1
+### تمرین‌ها: سطح ۱
 
-1. Explain the difference between map, filter, and reduce.
-2. Explain the difference between higher order function, closure and decorator
-3. Define a call function before map, filter or reduce, see examples.
-4. Use for loop to print each country in the countries list.
-5. Use for to print each name in the names list.
-6. Use for to print each number in the numbers list.
+1. تفاوت بین map، filter و reduce را توضیح دهید.
+2. تفاوت بین تابع مرتبه بالا، closure و decorator را توضیح دهید.
+3. یک تابع فراخوانی قبل از map، filter یا reduce تعریف کنید، به مثال‌ها مراجعه کنید.
+4. از حلقه for برای چاپ هر کشور در لیست countries استفاده کنید.
+5. از for برای چاپ هر نام در لیست names استفاده کنید.
+6. از for برای چاپ هر عدد در لیست numbers استفاده کنید.
 
-### Exercises: Level 2
+### تمرین‌ها: سطح ۲
 
-1. Use map to create a new list by changing each country to uppercase in the countries list
-1. Use map to create a new list by changing each number to its square in the numbers list
-1. Use map to change each name to uppercase in the names list
-1. Use filter to filter out countries containing 'land'.
-1. Use filter to filter out countries having exactly six characters.
-1. Use filter to filter out countries containing six letters and more in the country list.
-1. Use filter to filter out countries starting with an 'E'
-1. Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
-1. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
-1. Use reduce to sum all the numbers in the numbers list.
-1. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
-1. Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the [countries list](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
-1. Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
-2. Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
-1. Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
+1. از map برای ایجاد یک لیست جدید با تبدیل هر کشور به حروف بزرگ در لیست countries استفاده کنید.
+1. از map برای ایجاد یک لیست جدید با تبدیل هر عدد به توان دوی آن در لیست numbers استفاده کنید.
+1. از map برای تبدیل هر نام به حروف بزرگ در لیست names استفاده کنید.
+1. از filter برای فیلتر کردن کشورهایی که شامل 'land' هستند، استفاده کنید.
+1. از filter برای فیلتر کردن کشورهایی که دقیقاً شش کاراکتر دارند، استفاده کنید.
+1. از filter برای فیلتر کردن کشورهایی که شش حرف یا بیشتر در لیست کشورها دارند، استفاده کنید.
+1. از filter برای فیلتر کردن کشورهایی که با 'E' شروع می‌شوند، استفاده کنید.
+1. دو یا چند پیمایشگر لیست را زنجیره‌ای کنید (مثلاً arr.map(callback).filter(callback).reduce(callback)).
+1. تابعی به نام get_string_lists تعریف کنید که یک لیست به عنوان پارامتر می‌گیرد و سپس لیستی را برمی‌گرداند که فقط شامل آیتم‌های رشته‌ای است.
+1. از reduce برای جمع کردن تمام اعداد در لیست numbers استفاده کنید.
+1. از reduce برای الحاق تمام کشورها و تولید این جمله استفاده کنید: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+1. تابعی به نام categorize_countries تعریف کنید که لیستی از کشورها با الگوی مشترک را برمی‌گرداند (شما می‌توانید [لیست کشورها](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) را در این مخزن به عنوان countries.js پیدا کنید (مثلاً 'land', 'ia', 'island', 'stan')).
+1. تابعی ایجاد کنید که یک دیکشنری برمی‌گرداند، که در آن کلیدها حروف ابتدایی کشورها و مقادیر تعداد نام کشورهایی است که با آن حرف شروع می‌شوند.
+2. تابعی به نام get_first_ten_countries تعریف کنید - این تابع لیستی از ده کشور اول را از لیست countries.js در پوشه data برمی‌گرداند.
+1. تابعی به نام get_last_ten_countries تعریف کنید که ده کشور آخر در لیست countries را برمی‌گرداند.
 
-### Exercises: Level 3
+### تمرین‌ها: سطح ۳
 
-1. Use the countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) file and follow the tasks below:
-   - Sort countries by name, by capital, by population
-   - Sort out the ten most spoken languages by location.
-   - Sort out the ten most populated countries.
+1. از فایل countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) استفاده کنید و وظایف زیر را دنبال کنید:
+   - کشورها را بر اساس نام، پایتخت، جمعیت مرتب کنید.
+   - ده زبان پرتکلم را بر اساس موقعیت مکانی مرتب کنید.
+   - ده کشور پرجمعیت را مرتب کنید.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم! 🎉
 
-[<< Day 13](../13_Day_List_comprehension/13_list_comprehension.md) | [Day 15>>](../15_Day_Python_type_errors/15_python_type_errors.md)
+[<< روز ۱۳](../13_Day_List_comprehension/13_list_comprehension.md) | [روز ۱۵>>](../15_Day_Python_type_errors/15_python_type_errors.md)
