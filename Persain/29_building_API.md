@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 29 - Building an API </h1>
+  <h1> ۳۰ روز با پایتون: روز ۲۹ - ساخت یک API </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,81 +7,81 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
+<small>ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 
 </div>
 
-[<< Day 28](../28_Day_API/28_API.md) | [Day 29 >>](../30_Day_Conclusions/30_conclusions.md)
+[>> روز ۲۸](../28_Day_API/28_API.md) | [روز ۳۰ <<](../30_Day_Conclusions/30_conclusions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [Day 29](#day-29)
-- [Building API](#building-api)
-  - [Structure of an API](#structure-of-an-api)
-  - [Retrieving data using get](#retrieving-data-using-get)
-  - [Getting a document by id](#getting-a-document-by-id)
-  - [Creating data using POST](#creating-data-using-post)
-  - [Updating using PUT](#updating-using-put)
-  - [Deleting a document using Delete](#deleting-a-document-using-delete)
-- [💻 Exercises: Day 29](#-exercises-day-29)
+- [روز ۲۹](#روز-۲۹)
+- [ساخت API](#ساخت-api)
+  - [ساختار یک API](#ساختار-یک-api)
+  - [بازیابی داده با استفاده از get](#بازیابی-داده-با-استفاده-از-get)
+  - [دریافت یک سند بر اساس id](#دریافت-یک-سند-بر-اساس-id)
+  - [ایجاد داده با استفاده از POST](#ایجاد-داده-با-استفاده-از-post)
+  - [به‌روزرسانی با استفاده از PUT](#بهروزرسانی-با-استفاده-از-put)
+  - [حذف یک سند با استفاده از Delete](#حذف-یک-سند-با-استفاده-از-delete)
+- [💻 تمرینات: روز ۲۹](#-تمرینات-روز-۲۹)
 
-## Day 29
+## روز ۲۹
 
-## Building API
+## ساخت API
 
 
-In this section, we will cove a RESTful API that uses HTTP request methods to GET, PUT, POST and DELETE data.
+در این بخش، ما یک API به سبک RESTful را پوشش خواهیم داد که از متدهای درخواست HTTP برای دریافت (GET)، قرار دادن (PUT)، ارسال (POST) و حذف (DELETE) داده‌ها استفاده می‌کند.
 
-RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. In the previous sections, we have learned about python, flask and mongoDB. We will use the knowledge we acquire to develop a RESTful API using python flask and mongoDB. Every application which has CRUD(Create, Read, Update, Delete) operation has an API to create data, to get data, to update data or to delete data from database.
+API به سبک RESTful یک واسط برنامه‌نویسی کاربردی (API) است که از درخواست‌های HTTP برای دریافت (GET)، قرار دادن (PUT)، ارسال (POST) و حذف (DELETE) داده‌ها استفاده می‌کند. در بخش‌های قبلی، ما با پایتون، فلسک و مانگو‌دی‌بی آشنا شدیم. ما از دانشی که به دست آورده‌ایم برای توسعه یک API به سبک RESTful با استفاده از پایتون فلسک و مانگو‌دی‌بی استفاده خواهیم کرد. هر برنامه‌ای که عملیات CRUD (ایجاد، خواندن، به‌روزرسانی، حذف) را دارد، یک API برای ایجاد داده، دریافت داده، به‌روزرسانی داده یا حذف داده از پایگاه داده دارد.
 
-The browser can handle only get request. Therefore, we have to have a tool which can help us to handle all request methods(GET, POST, PUT, DELETE).
+مرورگر فقط می‌تواند درخواست get را مدیریت کند. بنابراین، ما باید ابزاری داشته باشیم که به ما در مدیریت تمام متدهای درخواست (GET، POST، PUT، DELETE) کمک کند.
 
-Examples of API
+نمونه‌هایی از API
 
 - Countries API: https://restcountries.eu/rest/v2/all
 - Cats breed API: https://api.thecatapi.com/v1/breeds
 
-[Postman](https://www.getpostman.com/) is a very popular tool when it comes to API development. So, if you like to do this section you need to [download postman](https://www.getpostman.com/). An alternative of Postman is [Insomnia](https://insomnia.rest/download).
+[Postman](https://www.getpostman.com/) یک ابزار بسیار محبوب در زمینه توسعه API است. بنابراین، اگر می‌خواهید این بخش را انجام دهید، باید [Postman را دانلود کنید](https://www.getpostman.com/). یک جایگزین برای Postman، [Insomnia](https://insomnia.rest/download) است.
 
 ![Postman](../images/postman.png)
 
-### Structure of an API
+### ساختار یک API
 
-An API end point is a URL which can help to retrieve, create, update or delete a resource. The structure looks like this:
-Example:
+یک نقطه پایانی (end point) API یک URL است که می‌تواند به بازیابی، ایجاد، به‌روزرسانی یا حذف یک منبع کمک کند. ساختار آن به این شکل است:
+مثال:
 https://api.twitter.com/1.1/lists/members.json
-Returns the members of the specified list. Private list members will only be shown if the authenticated user owns the specified list.
-The name of the company name followed by version followed by the purpose of the API.
-The methods:
-HTTP methods & URLs
+اعضای لیست مشخص شده را برمی‌گرداند. اعضای لیست خصوصی فقط در صورتی نشان داده می‌شوند که کاربر احراز هویت شده مالک لیست مشخص شده باشد.
+نام شرکت، سپس نسخه و سپس هدف API می‌آید.
+متدها:
+متدهای HTTP و URLها
 
-The API uses the following HTTP methods for object manipulation:
+API از متدهای HTTP زیر برای دستکاری اشیاء استفاده می‌کند:
 
 ```sh
-GET        Used for object retrieval
-POST       Used for object creation and object actions
-PUT        Used for object update
-DELETE     Used for object deletion
+GET        برای بازیابی شیء استفاده می‌شود
+POST       برای ایجاد شیء و عملیات روی شیء استفاده می‌شود
+PUT        برای به‌روزرسانی شیء استفاده می‌شود
+DELETE     برای حذف شیء استفاده می‌شود
 ```
 
-Let us build an API which collects information about 30DaysOfPython students. We will collect the name, country, city, date of birth, skills and bio.
+بیایید یک API بسازیم که اطلاعات مربوط به دانشجویان دوره 30DaysOfPython را جمع‌آوری کند. ما نام، کشور، شهر، تاریخ تولد، مهارت‌ها و بیوگرافی را جمع‌آوری خواهیم کرد.
 
-To implement this API, we will use:
+برای پیاده‌سازی این API، از موارد زیر استفاده خواهیم کرد:
 
 - Postman
-- Python
+- پایتون
 - Flask
 - MongoDB
 
-### Retrieving data using get
+### بازیابی داده با استفاده از get
 
-In this step, let us use dummy data and return it as a json. To return it as json, will use json module and Response module.
+در این مرحله، بیایید از داده‌های ساختگی (dummy data) استفاده کرده و آن را به صورت json برگردانیم. برای بازگرداندن آن به صورت json، از ماژول json و ماژول Response استفاده خواهیم کرد.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 
 from flask import Flask,  Response
 import json
@@ -114,24 +114,23 @@ def students ():
 
 
 if __name__ == '__main__':
-    # for deployment
-    # to make it work for both production and development
+    # برای استقرار
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
-```
+    app.run(debug=True, host='0.0.0.0', port=port)```
 
-When you request the http://localhost:5000/api/v1.0/students url on the browser you will get this:
+وقتی آدرس http://localhost:5000/api/v1.0/students را در مرورگر درخواست می‌کنید، این نتیجه را دریافت خواهید کرد:
 
 ![Get on browser](../images/get_on_browser.png)
 
-When you request the http://localhost:5000/api/v1.0/students url on the browser you will get this:
+وقتی آدرس http://localhost:5000/api/v1.0/students را در Postman درخواست می‌کنید، این نتیجه را دریافت خواهید کرد:
 
 ![Get on postman](../images/get_on_postman.png)
 
-In stead of displaying dummy data let us connect the flask application with MongoDB and get data from mongoDB database.
+به جای نمایش داده‌های ساختگی، بیایید اپلیکیشن فلسک را به MongoDB متصل کرده و داده‌ها را از پایگاه داده mongoDB دریافت کنیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 
 from flask import Flask,  Response
 import json
@@ -143,7 +142,7 @@ app = Flask(__name__)
 #
 MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 @app.route('/api/v1.0/students', methods = ['GET'])
 def students ():
@@ -152,13 +151,13 @@ def students ():
 
 
 if __name__ == '__main__':
-    # for deployment
-    # to make it work for both production and development
+    # برای استقرار
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
 
-By connecting the flask, we can fetch students collection data from the thirty_days_of_python database.
+با اتصال فلسک، می‌توانیم داده‌های کالکشن students را از پایگاه داده thirty_days_of_python واکشی کنیم.
 
 ```sh
 [
@@ -192,13 +191,13 @@ By connecting the flask, we can fetch students collection data from the thirty_d
 ]
 ```
 
-### Getting a document by id
+### دریافت یک سند بر اساس id
 
-We can access signle document using an id, let's access Asabeneh using his id.
+ما می‌توانیم با استفاده از یک id به یک سند واحد دسترسی پیدا کنیم، بیایید با استفاده از id به Asabeneh دسترسی پیدا کنیم.
 http://localhost:5000/api/v1.0/students/5df68a21f106fe2d315bbc8b
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 
 from flask import Flask,  Response
 import json
@@ -213,7 +212,7 @@ app = Flask(__name__)
 #
 MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 @app.route('/api/v1.0/students', methods = ['GET'])
 def students ():
@@ -225,8 +224,8 @@ def single_student (id):
     return Response(dumps(student), mimetype='application/json')
 
 if __name__ == '__main__':
-    # for deployment
-    # to make it work for both production and development
+    # برای استقرار
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -245,12 +244,12 @@ if __name__ == '__main__':
 ]
 ```
 
-### Creating data using POST
+### ایجاد داده با استفاده از POST
 
-We use the POST request method to create data
+ما از متد درخواست POST برای ایجاد داده استفاده می‌کنیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 
 from flask import Flask,  Response
 import json
@@ -266,7 +265,7 @@ app = Flask(__name__)
 #
 MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 @app.route('/api/v1.0/students', methods = ['GET'])
 def students ():
@@ -299,16 +298,16 @@ def create_student ():
     return ;
 def update_student (id):
 if __name__ == '__main__':
-    # for deployment
-    # to make it work for both production and development
+    # برای استقرار
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
 
-### Updating using PUT
+### به‌روزرسانی با استفاده از PUT
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 
 from flask import Flask,  Response
 import json
@@ -324,7 +323,7 @@ app = Flask(__name__)
 #
 MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 @app.route('/api/v1.0/students', methods = ['GET'])
 def students ():
@@ -355,7 +354,7 @@ def create_student ():
     }
     db.students.insert_one(student)
     return
-@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # this decorator create the home route
+@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # این دکوراتور route را ایجاد می‌کند
 def update_student (id):
     query = {"_id":ObjectId(id)}
     name = request.form['name']
@@ -380,16 +379,16 @@ def update_student (id):
     return
 def update_student (id):
 if __name__ == '__main__':
-    # for deployment
-    # to make it work for both production and development
+    # برای استقرار
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
 
-### Deleting a document using Delete
+### حذف یک سند با استفاده از Delete
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 
 from flask import Flask,  Response
 import json
@@ -405,7 +404,7 @@ app = Flask(__name__)
 #
 MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 @app.route('/api/v1.0/students', methods = ['GET'])
 def students ():
@@ -436,7 +435,7 @@ def create_student ():
     }
     db.students.insert_one(student)
     return
-@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # this decorator create the home route
+@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # این دکوراتور route را ایجاد می‌کند
 def update_student (id):
     query = {"_id":ObjectId(id)}
     name = request.form['name']
@@ -459,7 +458,7 @@ def update_student (id):
     db.students.update_one(query, student)
     # return Response(dumps({"result":"a new student has been created"}), mimetype='application/json')
     return
-@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # this decorator create the home route
+@app.route('/api/v1.0/students/<id>', methods = ['PUT']) # این دکوراتور route را ایجاد می‌کند
 def update_student (id):
     query = {"_id":ObjectId(id)}
     name = request.form['name']
@@ -487,16 +486,16 @@ def delete_student (id):
     db.students.delete_one({"_id":ObjectId(id)})
     return
 if __name__ == '__main__':
-    # for deployment
-    # to make it work for both production and development
+    # برای استقرار
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
 
-## 💻 Exercises: Day 29
+## 💻 تمرینات: روز ۲۹
 
-1. Implement the above example and develop [this](https://thirtydayofpython-api.herokuapp.com/)
+1. مثال بالا را پیاده‌سازی کرده و [این](https://thirtydayofpython-api.herokuapp.com/) را توسعه دهید.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم ! 🎉
 
-[<< Day 28](../28_Day_API/28_API.md) | [Day 30 >>](../30_Day_Conclusions/30_conclusions.md)
+[>> روز ۲۸](../28_Day_API/28_API.md) | [روز ۳۰ <<](../30_Day_Conclusions/30_conclusions.md)
