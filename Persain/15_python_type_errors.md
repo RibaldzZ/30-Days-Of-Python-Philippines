@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 15 - Python Type Errors </h1>
+  <h1> ۳۰ روز پایتون: روز ۱۵ - خطاهای نوع در پایتون </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,18 +7,18 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Author:
+  <sub>نویسنده:
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small> Second Edition: July, 2021</small>
+  <small> ویرایش دوم: جولای، ۲۰۲۱</small>
   </sub>
 </div>
 </div>
 
-[<< Day 14](../14_Day_Higher_order_functions/14_higher_order_functions.md) | [Day 16 >>](../16_Day_Python_date_time/16_python_datetime.md)
+[>> روز ۱۴](../14_Day_Higher_order_functions/14_higher_order_functions.md) | [روز ۱۶ <<](../16_Day_Python_date_time/16_python_datetime.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
-- [📘 Day 15](#-day-15)
-  - [Python Error Types](#python-error-types)
+- [📘 روز ۱۵](#-روز-۱۵)
+  - [انواع خطاهای پایتون](#انواع-خطاهای-پایتون)
     - [SyntaxError](#syntaxerror)
     - [NameError](#nameerror)
     - [IndexError](#indexerror)
@@ -29,19 +29,19 @@
     - [ImportError](#importerror)
     - [ValueError](#valueerror)
     - [ZeroDivisionError](#zerodivisionerror)
-  - [💻 Exercises: Day 15](#-exercises-day-15)
+  - [💻 تمرین‌ها: روز ۱۵](#-تمرین‌ها-روز-۱۵)
 
-# 📘 Day 15
+# 📘 روز ۱۵
 
-## Python Error Types
+## انواع خطاهای پایتون
 
-When we write code it is common that we make a typo or some other common error. If our code fails to run, the Python interpreter will display a message, containing feedback with information on where the problem occurs and the type of an error. It will also sometimes gives us suggestions on a possible fix. Understanding different types of errors in programming languages will help us to debug our code quickly and also it makes us better at what we do.
+وقتی کد می‌نویسیم، رایج است که یک غلط املایی یا خطای رایج دیگری داشته باشیم. اگر کد ما اجرا نشود، مفسر پایتون پیامی را نمایش می‌دهد که حاوی بازخوردی با اطلاعاتی در مورد محل وقوع مشکل و نوع خطا است. همچنین گاهی اوقات پیشنهادهایی برای رفع احتمالی آن به ما ارائه می‌دهد. درک انواع مختلف خطاها در زبان‌های برنامه‌نویسی به ما کمک می‌کند تا کد خود را به سرعت اشکال‌زدایی (debug) کنیم و همچنین ما را در کاری که انجام می‌دهیم بهتر می‌کند.
 
-Let us see the most common error types one by one. First let us open our Python interactive shell. Go to your you computer terminal and write 'python'. The python interactive shell will be opened.
+بیایید رایج‌ترین انواع خطا را یک به یک ببینیم. ابتدا بیایید شل تعاملی پایتون (Python interactive shell) خود را باز کنیم. به ترمینال کامپیوتر خود بروید و 'python' را بنویسید. شل تعاملی پایتون باز خواهد شد.
 
 ### SyntaxError
 
-**Example 1: SyntaxError**
+**مثال ۱: SyntaxError**
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -56,7 +56,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello w
 >>>
 ```
 
-As you can see we made a syntax error because we forgot to enclose the string with parenthesis and Python already suggests the solution. Let us fix it.
+همانطور که می‌بینید، ما یک خطای نحوی (syntax error) داشتیم زیرا فراموش کردیم رشته را داخل پرانتز قرار دهیم و پایتون از قبل راه‌حل را پیشنهاد می‌دهد. بیایید آن را اصلاح کنیم.
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -73,11 +73,11 @@ hello world
 >>>
 ```
 
-The error was a _SyntaxError_. After the fix our code was executed without a hitch. Let see more error types.
+خطا از نوع _SyntaxError_ بود. پس از اصلاح، کد ما بدون هیچ مشکلی اجرا شد. بیایید انواع خطای بیشتری را ببینیم.
 
 ### NameError
 
-**Example 1: NameError**
+**مثال ۱: NameError**
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -91,7 +91,7 @@ NameError: name 'age' is not defined
 >>>
 ```
 
-As you can see from the message above, name age is not defined. Yes, it is true that we did not define an age variable but we were trying to print it out as if we had had declared it. Now, lets fix this by declaring it and assigning with a value.
+همانطور که از پیام بالا می‌بینید، نام age تعریف نشده است. بله، درست است که ما متغیر age را تعریف نکرده بودیم اما سعی داشتیم آن را طوری چاپ کنیم که گویی آن را تعریف کرده‌ایم. حالا، بیایید با تعریف و تخصیص یک مقدار به آن، این مشکل را برطرف کنیم.
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -108,11 +108,11 @@ NameError: name 'age' is not defined
 >>>
 ```
 
-The type of error was a _NameError_. We debugged the error by defining the variable name.
+نوع خطا _NameError_ بود. ما با تعریف نام متغیر، خطا را اشکال‌زدایی کردیم.
 
 ### IndexError
 
-**Example 1: IndexError**
+**مثال ۱: IndexError**
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -127,11 +127,11 @@ IndexError: list index out of range
 >>>
 ```
 
-In the example above, Python raised an _IndexError_, because the list has only indexes from 0 to 4 , so it was out of range.
+در مثال بالا، پایتون یک _IndexError_ ایجاد کرد، زیرا لیست فقط اندیس‌هایی از ۰ تا ۴ دارد، بنابراین این اندیس خارج از محدوده بود.
 
 ### ModuleNotFoundError
 
-**Example 1: ModuleNotFoundError**
+**مثال ۱: ModuleNotFoundError**
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -145,7 +145,7 @@ ModuleNotFoundError: No module named 'maths'
 >>>
 ```
 
-In the example above, I added an extra s to math deliberately and _ModuleNotFoundError_ was raised. Lets fix it by removing the extra s from math.
+در مثال بالا، من عمداً یک s اضافی به math اضافه کردم و خطای _ModuleNotFoundError_ ایجاد شد. بیایید با حذف s اضافی از math آن را اصلاح کنیم.
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -160,11 +160,11 @@ ModuleNotFoundError: No module named 'maths'
 >>>
 ```
 
-We fixed it, so let's use some of the functions from the math module.
+ما آن را اصلاح کردیم، پس بیایید از برخی از توابع ماژول math استفاده کنیم.
 
 ### AttributeError
 
-**Example 1: AttributeError**
+**مثال ۱: AttributeError**
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -183,7 +183,7 @@ AttributeError: module 'math' has no attribute 'PI'
 >>>
 ```
 
-As you can see, I made a mistake again! Instead of pi, I tried to call a PI function from maths module. It raised an attribute error, it means, that the function does not exist in the module. Lets fix it by changing from PI to pi.
+همانطور که می‌بینید، من دوباره اشتباه کردم! به جای pi، سعی کردم یک تابع PI را از ماژول math فراخوانی کنم. این کار یک خطای attribute error ایجاد کرد، یعنی آن تابع در ماژول وجود ندارد. بیایید با تغییر PI به pi آن را اصلاح کنیم.
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -204,11 +204,11 @@ AttributeError: module 'math' has no attribute 'PI'
 >>>
 ```
 
-Now, when we call pi from the math module we got the result.
+حالا، وقتی pi را از ماژول math فراخوانی می‌کنیم، نتیجه را دریافت کردیم.
 
 ### KeyError
 
-**Example 1: KeyError**
+**مثال ۱: KeyError**
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -225,7 +225,7 @@ KeyError: 'county'
 >>>
 ```
 
-As you can see, there was a typo in the key used to get the dictionary value. so, this is a key error and the fix is quite straight forward. Let's do this!
+همانطور که می‌بینید، در کلیدی که برای گرفتن مقدار دیکشنری استفاده شد، یک غلط املایی وجود داشت. بنابراین، این یک key error است و رفع آن کاملاً ساده است. بیایید این کار را انجام دهیم!
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -244,11 +244,11 @@ KeyError: 'county'
 >>>
 ```
 
-We debugged the error, our code ran and we got the value.
+ما خطا را اشکال‌زدایی کردیم، کد ما اجرا شد و ما مقدار را دریافت کردیم.
 
 ### TypeError
 
-**Example 1: TypeError**
+**مثال ۱: TypeError**
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -262,7 +262,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 >>>
 ```
 
-In the example above, a TypeError is raised because we cannot add a number to a string. First solution would be to convert the string to int or float. Another solution would be converting the number to a string (the result then would be '43'). Let us follow the first fix.
+در مثال بالا، یک TypeError ایجاد می‌شود زیرا ما نمی‌توانیم یک عدد را به یک رشته اضافه کنیم. راه‌حل اول این است که رشته را به int یا float تبدیل کنیم. راه‌حل دیگر این است که عدد را به یک رشته تبدیل کنیم (در این صورت نتیجه '43' خواهد بود). بیایید راه‌حل اول را دنبال کنیم.
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -280,11 +280,11 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 >>>
 ```
 
-Error removed and we got the result we expected.
+خطا برطرف شد و ما نتیجه‌ای را که انتظار داشتیم، دریافت کردیم.
 
 ### ImportError
 
-**Example 1: TypeError**
+**مثال ۱: TypeError**
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -298,7 +298,7 @@ ImportError: cannot import name 'power' from 'math'
 >>>
 ```
 
-There is no function called power in the math module, it goes with a different name: _pow_. Let's correct it:
+تابعی به نام power در ماژول math وجود ندارد، نام آن چیز دیگری است: _pow_. بیایید آن را اصلاح کنیم:
 
 ```py
 asabeneh@Asabeneh:~$ python
@@ -329,7 +329,7 @@ ValueError: invalid literal for int() with base 10: '12a'
 >>>
 ```
 
-In this case we cannot change the given string to a number, because of the 'a' letter in it.
+در این حالت ما نمی‌توانیم رشته داده شده را به عدد تبدیل کنیم، به دلیل وجود حرف 'a' در آن.
 
 ### ZeroDivisionError
 
@@ -345,17 +345,17 @@ ZeroDivisionError: division by zero
 >>>
 ```
 
-We cannot divide a number by zero.
+ما نمی‌توانیم یک عدد را بر صفر تقسیم کنیم.
 
-We have covered some of the python error types, if you want to check more about it check the python documentation about python error types.
-If you are good at reading the error types then you will be able to fix your bugs fast and you will also become a better programmer.
+ما برخی از انواع خطاهای پایتون را پوشش دادیم، اگر می‌خواهید در مورد آن بیشتر بدانید، مستندات پایتون در مورد انواع خطاهای پایتون را بررسی کنید.
+اگر در خواندن انواع خطاها خوب باشید، قادر خواهید بود باگ‌های خود را به سرعت برطرف کنید و همچنین به برنامه‌نویس بهتری تبدیل خواهید شد.
 
-🌕 You are excelling. You made it to half way to your way to greatness. Now do some exercises for your brain and for your muscle.
+🌕 شما در حال درخشیدن هستید. شما نیمی از راه خود را به سوی عظمت طی کرده‌اید. اکنون چند تمرین برای مغز و عضلات خود انجام دهید.
 
-## 💻 Exercises: Day 15
+## 💻 تمرین‌ها: روز ۱۵
 
-1. Open you python interactive shell and try all the examples covered in this section.
+۱. شل تعاملی پایتون خود را باز کنید و تمام مثال‌های پوشش داده شده در این بخش را امتحان کنید.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم! 🎉
 
-[<< Day 14](../14_Day_Higher_order_functions/14_higher_order_functions.md) | [Day 16 >>](../16_Day_Python_date_time/16_python_datetime.md)
+[>> روز ۱۴](../14_Day_Higher_order_functions/14_higher_order_functions.md) | [روز ۱۶ <<](../16_Day_Python_date_time/16_python_datetime.md)
