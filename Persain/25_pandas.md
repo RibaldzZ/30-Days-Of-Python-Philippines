@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 25 - Pandas </h1>
+  <h1> ۳۰ روز با پایتون: روز ۲۵ - Pandas </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,75 +7,75 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Author:
+  <sub>نویسنده:
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small>Second Edition: July, 2021</small>
+  <small>ویرایش دوم: جولای، ۲۰۲۱</small>
   </sub>
 
 </div>
 
-[<< Day 24](../24_Day_Statistics/24_statistics.md) | [Day 26 >>](../26_Day_Python_web/26_python_web.md)
+[>> روز ۲۴](../24_Day_Statistics/24_statistics.md) | [روز ۲۶ <<](../26_Day_Python_web/26_python_web.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 25](#-day-25)
+- [📘 روز ۲۵](#-روز-۲۵)
   - [Pandas](#pandas)
-    - [Installing Pandas](#installing-pandas)
-    - [Importing Pandas](#importing-pandas)
-    - [Creating Pandas Series with Default Index](#creating-pandas-series-with-default-index)
-    - [Creating  Pandas Series with custom index](#creating--pandas-series-with-custom-index)
-    - [Creating Pandas Series from a Dictionary](#creating-pandas-series-from-a-dictionary)
-    - [Creating a Constant Pandas Series](#creating-a-constant-pandas-series)
-    - [Creating a  Pandas Series Using Linspace](#creating-a--pandas-series-using-linspace)
-  - [DataFrames](#dataframes)
-    - [Creating DataFrames from List of Lists](#creating-dataframes-from-list-of-lists)
-    - [Creating DataFrame Using Dictionary](#creating-dataframe-using-dictionary)
-    - [Creating DataFrames from a List of Dictionaries](#creating-dataframes-from-a-list-of-dictionaries)
-  - [Reading CSV File Using Pandas](#reading-csv-file-using-pandas)
-    - [Data Exploration](#data-exploration)
-  - [Modifying a DataFrame](#modifying-a-dataframe)
-    - [Creating a DataFrame](#creating-a-dataframe)
-    - [Adding a New Column](#adding-a-new-column)
-    - [Modifying column values](#modifying-column-values)
-    - [Formating DataFrame columns](#formating-dataframe-columns)
-  - [Checking data types of Column values](#checking-data-types-of-column-values)
-    - [Boolean Indexing](#boolean-indexing)
-  - [Exercises: Day 25](#exercises-day-25)
+    - [نصب Pandas](#نصب-pandas)
+    - [وارد کردن Pandas](#وارد-کردن-pandas)
+    - [ایجاد Series در Pandas با ایندکس پیش‌فرض](#ایجاد-series-در-pandas-با-ایندکس-پیشفرض)
+    - [ایجاد Series در Pandas با ایندکس سفارشی](#ایجاد-series-در-pandas-با-ایندکس-سفارشی)
+    - [ایجاد Series در Pandas از یک دیکشنری](#ایجاد-series-در-pandas-از-یک-دیکشنری)
+    - [ایجاد یک Series ثابت در Pandas](#ایجاد-یک-series-ثابت-در-pandas)
+    - [ایجاد یک Series در Pandas با استفاده از Linspace](#ایجاد-یک-series-در-pandas-با-استفاده-از-linspace)
+  - [DataFrameها](#dataframeها)
+    - [ایجاد DataFrame از لیستی از لیست‌ها](#ایجاد-dataframe-از-لیستی-از-لیستها)
+    - [ایجاد DataFrame با استفاده از دیکشنری](#ایجاد-dataframe-با-استفاده-از-دیکشنری)
+    - [ایجاد DataFrame از لیستی از دیکشنری‌ها](#ایجاد-dataframe-از-لیستی-از-دیکشنریها)
+  - [خواندن فایل CSV با استفاده از Pandas](#خواندن-فایل-csv-با-استفاده-از-pandas)
+    - [کاوش داده‌ها](#کاوش-دادهها)
+  - [تغییر یک DataFrame](#تغییر-یک-dataframe)
+    - [ایجاد یک DataFrame](#ایجاد-یک-dataframe)
+    - [افزودن یک ستون جدید](#افزودن-یک-ستون-جدید)
+    - [تغییر مقادیر ستون](#تغییر-مقادیر-ستون)
+    - [قالب‌بندی ستون‌های DataFrame](#قالببندی-ستونهای-dataframe)
+  - [بررسی نوع داده‌های مقادیر ستون](#بررسی-نوع-دادههای-مقادیر-ستون)
+    - [ایندکس‌گذاری بولین](#ایندکسگذاری-بولین)
+  - [تمرینات: روز ۲۵](#تمرینات-روز-۲۵)
   
-# 📘 Day 25
+# 📘 روز ۲۵
 
 ## Pandas
 
-Pandas is an open source, high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
-Pandas adds data structures and tools designed to work with table-like data which is *Series* and *Data Frames*.
-Pandas provides tools for data manipulation: 
+Pandas یک کتابخانه متن‌باز، با کارایی بالا و با ساختارهای داده و ابزارهای تحلیل داده آسان برای زبان برنامه‌نویسی پایتون است.
+Pandas ساختارهای داده و ابزارهایی را اضافه می‌کند که برای کار با داده‌های جدولی مانند *Series* و *DataFrames* طراحی شده‌اند.
+Pandas ابزارهایی برای دستکاری داده‌ها فراهم می‌کند: 
 
-- reshaping
-- merging
-- sorting
-- slicing
-- aggregation
-- imputation.
-If you are using anaconda, you do not have install pandas.
+- تغییر شکل (reshaping)
+- ادغام (merging)
+- مرتب‌سازی (sorting)
+- برش‌دهی (slicing)
+- تجمیع (aggregation)
+- جایگزینی مقادیر گمشده (imputation).
+اگر از anaconda استفاده می‌کنید، نیازی به نصب pandas ندارید.
 
-### Installing Pandas
+### نصب Pandas
 
-For Mac:
+برای مک:
 ```py
 pip install conda
 conda install pandas
 ```
 
-For Windows:
+برای ویندوز:
 ```py
 pip install conda
 pip install pandas
 ```
 
-Pandas data structure is based on *Series* and *DataFrames*. 
+ساختار داده Pandas بر اساس *Series* و *DataFrames* است.
 
-A *series* is a *column* and a DataFrame is a *multidimensional table* made up of collection of *series*. In order to create a pandas series we should use numpy to create a one dimensional arrays or a python list.
-Let us see an example of a series:
+یک *series* یک *ستون* است و یک DataFrame یک *جدول چندبعدی* است که از مجموعه‌ای از *series*ها تشکیل شده است. برای ایجاد یک series در pandas باید از numpy برای ایجاد آرایه‌های یک‌بعدی یا یک لیست پایتون استفاده کنیم.
+بیایید یک مثال از series ببینیم:
 
 Names Pandas Series
 
@@ -89,29 +89,29 @@ Cities Series
 
 ![pandas series](../images/pandas-series-3.png)
 
-As you can see, pandas series is just one column of data. If we want to have multiple columns we use data frames. The example below shows pandas DataFrames.
+همانطور که می‌بینید، pandas series تنها یک ستون از داده‌ها است. اگر بخواهیم چندین ستون داشته باشیم از data frames استفاده می‌کنیم. مثال زیر pandas DataFrames را نشان می‌دهد.
 
-Let us see, an example of a pandas data frame:
+بیایید یک مثال از یک pandas data frame ببینیم:
 
 ![Pandas data frame](../images/pandas-dataframe-1.png)
 
-Data frame is a collection of rows and columns. Look at the table below; it has many more columns than the example above:
+Data frame مجموعه‌ای از سطرها و ستون‌ها است. به جدول زیر نگاه کنید؛ این جدول ستون‌های بسیار بیشتری نسبت به مثال بالا دارد:
 
 ![Pandas data frame](../images/pandas-dataframe-2.png)
 
-Next, we will see how to import pandas and how to create Series and DataFrames using pandas
+در ادامه، خواهیم دید که چگونه pandas را وارد کنیم و چگونه با استفاده از pandas، Series و DataFrames ایجاد کنیم.
 
-### Importing Pandas
+### وارد کردن Pandas
 
 ```python
-import pandas as pd # importing pandas as pd
-import numpy  as np # importing numpy as np
+import pandas as pd # وارد کردن pandas با نام مستعار pd
+import numpy  as np # وارد کردن numpy با نام مستعار np
 ```
 
-### Creating Pandas Series with Default Index
+### ایجاد Series در Pandas با ایندکس پیش‌فرض
 
 ```python
-nums = [1, 2, 3, 4,5]
+nums =
 s = pd.Series(nums)
 print(s)
 ```
@@ -125,11 +125,11 @@ print(s)
     dtype: int64
 ```
 
-### Creating  Pandas Series with custom index
+### ایجاد Series در Pandas با ایندکس سفارشی
 
 ```python
-nums = [1, 2, 3, 4, 5]
-s = pd.Series(nums, index=[1, 2, 3, 4, 5])
+nums =
+s = pd.Series(nums, index=)
 print(s)
 ```
 
@@ -144,18 +144,18 @@ print(s)
 
 ```python
 fruits = ['Orange','Banana','Mango']
-fruits = pd.Series(fruits, index=[1, 2, 3])
+fruits = pd.Series(fruits, index=)
 print(fruits)
 ```
 
 ```sh
     1    Orange
     2    Banana
-    3    Mango
+    3     Mango
     dtype: object
 ```
 
-### Creating Pandas Series from a Dictionary
+### ایجاد Series در Pandas از یک دیکشنری
 
 ```python
 dct = {'name':'Asabeneh','country':'Finland','city':'Helsinki'}
@@ -173,10 +173,10 @@ print(s)
     dtype: object
 ```
 
-### Creating a Constant Pandas Series
+### ایجاد یک Series ثابت در Pandas
 
 ```python
-s = pd.Series(10, index = [1, 2, 3])
+s = pd.Series(10, index =)
 print(s)
 ```
 
@@ -187,12 +187,11 @@ print(s)
     dtype: int64
 ```
 
-### Creating a  Pandas Series Using Linspace
+### ایجاد یک Series در Pandas با استفاده از Linspace
 
 ```python
-s = pd.Series(np.linspace(5, 20, 10)) # linspace(starting, end, items)
-print(s)
-```
+s = pd.Series(np.linspace(5, 20, 10)) # linspace(شروع, پایان, تعداد آیتم‌ها)
+print(s)```
 
 ```sh
     0     5.000000
@@ -208,11 +207,11 @@ print(s)
     dtype: float64
 ```
 
-## DataFrames
+## DataFrameها
 
-Pandas data frames can be created in different ways.
+DataFrameهای Pandas را می‌توان به روش‌های مختلفی ایجاد کرد.
 
-### Creating DataFrames from List of Lists
+### ایجاد DataFrame از لیستی از لیست‌ها
 
 ```python
 data = [
@@ -255,7 +254,7 @@ print(df)
   </tbody>
 </table>
 
-### Creating DataFrame Using Dictionary
+### ایجاد DataFrame با استفاده از دیکشنری
 
 ```python
 data = {'Name': ['Asabeneh', 'David', 'John'], 'Country':[
@@ -295,7 +294,7 @@ print(df)
   </tbody>
 </table>
 
-### Creating DataFrames from a List of Dictionaries
+### ایجاد DataFrame از لیستی از دیکشنری‌ها
 
 ```python
 data = [
@@ -337,15 +336,15 @@ print(df)
   </tbody>
 </table>
 
-## Reading CSV File Using Pandas
+## خواندن فایل CSV با استفاده از Pandas
 
-To download the CSV file, what is needed in this example, console/command line is enough:
+برای دانلود فایل CSV مورد نیاز در این مثال، استفاده از کنسول/خط فرمان کافی است:
 
 ```sh
 curl -O https://raw.githubusercontent.com/Asabeneh/30-Days-Of-Python/master/data/weight-height.csv
 ```
 
-Put the downloaded file in your working directory.
+فایل دانلود شده را در پوشه کاری خود قرار دهید.
 
 ```python
 import pandas as pd
@@ -354,12 +353,12 @@ df = pd.read_csv('weight-height.csv')
 print(df)
 ```
 
-### Data Exploration
+### کاوش داده‌ها
 
-Let us read only the first 5 rows using head()
+بیایید با استفاده از ()head فقط ۵ سطر اول را بخوانیم.
 
 ```python
-print(df.head()) # give five rows we can increase the number of rows by passing argument to the head() method
+print(df.head()) # پنج سطر را می‌دهد، می‌توانیم با ارسال آرگومان به متد ()head تعداد سطرها را افزایش دهیم
 ```
 
 
@@ -406,10 +405,10 @@ print(df.head()) # give five rows we can increase the number of rows by passing 
   </tbody>
 </table>
 
-Let us also explore the last recordings of the dataframe using the tail() methods.
+بیایید با استفاده از متد ()tail، آخرین رکوردهای dataframe را نیز بررسی کنیم.
 
 ```python
-print(df.tail()) # tails give the last five rows, we can increase the rows by passing argument to tail method
+print(df.tail()) # tails پنج سطر آخر را می‌دهد، می‌توانیم با ارسال آرگومان به متد tail تعداد سطرها را افزایش دهیم
 ```
 
 <table border="1" class="dataframe">
@@ -455,15 +454,15 @@ print(df.tail()) # tails give the last five rows, we can increase the rows by pa
   </tbody>
 </table>
 
-As you can see the csv file has three rows: Gender, Height and Weight. If the DataFrame would have a long rows, it would be hard to know all the columns. Therefore, we should use a method to know the colums.  we do not know the number of rows. Let's use shape meathod.
+همانطور که می‌بینید، فایل csv سه ستون دارد: Gender، Height و Weight. اگر DataFrame سطرهای زیادی داشت، دانستن تمام ستون‌ها دشوار بود. بنابراین، باید از یک متد برای دانستن ستون‌ها استفاده کنیم. ما تعداد سطرها را نمی‌دانیم. بیایید از متد shape استفاده کنیم.
 
 ```python
-print(df.shape) # as you can see 10000 rows and three columns
+print(df.shape) # همانطور که می‌بینید ۱۰۰۰۰ سطر و سه ستون
 ```
 
     (10000, 3)
 
-Let us get all the columns using columns.
+بیایید با استفاده از columns تمام ستون‌ها را بگیریم.
 
 ```python
 print(df.columns)
@@ -471,10 +470,10 @@ print(df.columns)
 
     Index(['Gender', 'Height', 'Weight'], dtype='object')
 
-Now, let us get a specific column using the column key
+حالا، بیایید با استفاده از کلید ستون، یک ستون خاص را بگیریم.
 
 ```python
-heights = df['Height'] # this is now a series
+heights = df['Height'] # این اکنون یک series است
 ```
 
 ```python
@@ -497,7 +496,7 @@ print(heights)
 ```
 
 ```python
-weights = df['Weight'] # this is now a series
+weights = df['Weight'] # این اکنون یک series است
 ```
 
 ```python
@@ -525,10 +524,10 @@ print(len(heights) == len(weights))
 
     True
 
-The describe() method provides a descriptive statistical values of a dataset.
+متد ()describe مقادیر آماری توصیفی یک مجموعه داده را فراهم می‌کند.
 
 ```python
-print(heights.describe()) # give statisical information about height data
+print(heights.describe()) # اطلاعات آماری درباره داده‌های قد را می‌دهد
 ```
 
 ```sh
@@ -556,11 +555,10 @@ print(weights.describe())
     50%        161.212928
     75%        187.169525
     max        269.989699
-    Name: Weight, dtype: float64
-```
+    Name: Weight, dtype: float64```
 
 ```python
-print(df.describe())  # describe can also give statistical information from a dataFrame
+print(df.describe())  # describe همچنین می‌تواند اطلاعات آماری از یک dataFrame بدهد
 ```
 
 <table border="1" class="dataframe">
@@ -615,20 +613,20 @@ print(df.describe())  # describe can also give statistical information from a da
   </tbody>
 </table>
 
-Similar to describe(), the info() method also give information about the dataset.
+مشابه ()describe، متد ()info نیز اطلاعاتی درباره مجموعه داده می‌دهد.
 
-## Modifying a DataFrame
+## تغییر یک DataFrame
 
-Modifying a DataFrame:
-    * We can create a new DataFrame
-    * We can create a new column and add it to the DataFrame, 
-    * we can remove an existing column from a DataFrame, 
-    * we can modify an existing column in a DataFrame, 
-    * we can change the data type of column values in the DataFrame
+تغییر یک DataFrame:
+    * ما می‌توانیم یک DataFrame جدید ایجاد کنیم
+    * ما می‌توانیم یک ستون جدید ایجاد کرده و آن را به DataFrame اضافه کنیم،
+    * ما می‌توانیم یک ستون موجود را از DataFrame حذف کنیم،
+    * ما می‌توانیم یک ستون موجود در DataFrame را تغییر دهیم،
+    * ما می‌توانیم نوع داده مقادیر ستون در DataFrame را تغییر دهیم
 
-### Creating a DataFrame
+### ایجاد یک DataFrame
 
-As always, first we import the necessary packages. Now, lets import pandas and numpy, two best friends ever.
+مثل همیشه، ابتدا بسته‌های لازم را وارد می‌کنیم. اکنون، بیایید pandas و numpy، دو دوست همیشگی را وارد کنیم.
 
 ```python
 import pandas as pd
@@ -672,16 +670,16 @@ print(df)
   </tbody>
 </table>
 
-Adding a column to a DataFrame is like adding a key to a dictionary.
+افزودن یک ستون به DataFrame مانند افزودن یک کلید به دیکشنری است.
 
-First let's use the previous example to create a DataFrame. After we create the DataFrame, we will start modifying the columns and column values.
+ابتدا بیایید از مثال قبلی برای ایجاد یک DataFrame استفاده کنیم. پس از ایجاد DataFrame، شروع به تغییر ستون‌ها و مقادیر ستون‌ها خواهیم کرد.
 
-### Adding a New Column
+### افزودن یک ستون جدید
 
-Let's add a weight column in the DataFrame
+بیایید یک ستون وزن (Weight) به DataFrame اضافه کنیم
 
 ```python
-weights = [74, 78, 69]
+weights =
 df['Weight'] = weights
 df
 ```
@@ -721,10 +719,10 @@ df
   </tbody>
 </table>
 
-Let's add a height column into the DataFrame aswell
+بیایید یک ستون قد (Height) نیز به DataFrame اضافه کنیم
 
 ```python
-heights = [173, 175, 169]
+heights =
 df['Height'] = heights
 print(df)
 ```
@@ -768,11 +766,11 @@ print(df)
   </tbody>
 </table>
 
-As you can see in the DataFrame above, we did add new columns, Weight and Height. Let's add one additional column called BMI(Body Mass Index) by calculating their BMI using thier mass and height. BMI is mass divided by height squared (in meters) - Weight/Height * Height.
+همانطور که در DataFrame بالا می‌بینید، ما ستون‌های جدید Weight و Height را اضافه کردیم. بیایید یک ستون اضافی دیگر به نام BMI (شاخص توده بدنی) با محاسبه BMI آنها با استفاده از جرم و قدشان اضافه کنیم. BMI برابر است با جرم تقسیم بر مجذور قد (به متر) - Weight/Height * Height.
 
-As you can see, the height is in centimeters, so we shoud change it to meters. Let's modify the height row.
+همانطور که می‌بینید، قد به سانتی‌متر است، بنابراین باید آن را به متر تغییر دهیم. بیایید سطر قد را تغییر دهیم.
 
-### Modifying column values
+### تغییر مقادیر ستون
 
 ```python
 df['Height'] = df['Height'] * 0.01
@@ -819,7 +817,7 @@ df
 </table>
 
 ```python
-# Using functions makes our code clean, but you can calculate the bmi without one
+# استفاده از توابع کد ما را تمیزتر می‌کند، اما می‌توانید bmi را بدون آن محاسبه کنید
 def calculate_bmi ():
     weights = df['Weight']
     heights = df['Height']
@@ -882,9 +880,9 @@ df
   </tbody>
 </table>
 
-### Formating DataFrame columns
+### قالب‌بندی ستون‌های DataFrame
 
-The BMI column values of the DataFrame are float with many significant digits after decimal. Let's change it to one significant digit after point.
+مقادیر ستون BMI در DataFrame از نوع float با ارقام معنی‌دار زیادی بعد از اعشار هستند. بیایید آن را به یک رقم معنی‌دار بعد از نقطه تغییر دهیم.
 
 ```python
 df['BMI'] = round(df['BMI'], 1)
@@ -934,11 +932,11 @@ print(df)
   </tbody>
 </table>
 
-The information in the DataFrame seems not yet complete, let's add birth year and current year columns.
+اطلاعات در DataFrame هنوز کامل به نظر نمی‌رسد، بیایید ستون‌های سال تولد و سال جاری را اضافه کنیم.
 
 ```python
 birth_year = ['1769', '1985', '1990']
-current_year = pd.Series(2020, index=[0, 1,2])
+current_year = pd.Series(2020, index=)
 df['Birth Year'] = birth_year
 df['Current Year'] = current_year
 df
@@ -995,7 +993,7 @@ df
   </tbody>
 </table>
 
-## Checking data types of Column values
+## بررسی نوع داده‌های مقادیر ستون
 
 ```python
 print(df.Weight.dtype)
@@ -1006,20 +1004,20 @@ print(df.Weight.dtype)
 ```
 
 ```python
-df['Birth Year'].dtype # it gives string object , we should change this to number
+df['Birth Year'].dtype # این یک شیء رشته‌ای می‌دهد، باید آن را به عدد تغییر دهیم
 
 ```
 
 ```python
 df['Birth Year'] = df['Birth Year'].astype('int')
-print(df['Birth Year'].dtype) # let's check the data type now
+print(df['Birth Year'].dtype) # بیایید اکنون نوع داده را بررسی کنیم
 ```
 
 ```sh
     dtype('int32')
 ```
 
-Now same for the current year:
+حالا همین کار را برای سال جاری انجام می‌دهیم:
 
 ```python
 df['Current Year'] = df['Current Year'].astype('int')
@@ -1030,7 +1028,7 @@ df['Current Year'].dtype
     dtype('int32')
 ```
 
-Now, the column values of birth year and current year are integers. We can calculate the age.
+اکنون، مقادیر ستون سال تولد و سال جاری از نوع integer هستند. می‌توانیم سن را محاسبه کنیم.
 
 ```python
 ages = df['Current Year'] - df['Birth Year']
@@ -1102,24 +1100,23 @@ print(df)
   </tbody>
 </table>
 
-The person in the first row lived so far for 251 years. It is unlikely for someone to live so long. Either it is a typo or the data is cooked. So lets fill that data with average of the columns without including outlier. 
+فردی که در سطر اول قرار دارد تاکنون ۲۵۱ سال زندگی کرده است. بعید است کسی اینقدر عمر کند. یا این یک اشتباه تایپی است یا داده‌ها ساختگی هستند. پس بیایید آن داده را با میانگین ستون‌ها بدون در نظر گرفتن داده پرت پر کنیم.
 
 mean = (35 + 30)/ 2
 
 ```python
 mean = (35 + 30)/ 2
-print('Mean: ',mean)	#it is good to add some description to the output, so we know what is what
+print('Mean: ',mean)	#خوب است که توضیحاتی به خروجی اضافه کنیم، تا بدانیم هر چیز چیست
 ```
 
 ```sh
    Mean:  32.5
 ```
 
-### Boolean Indexing
+### ایندکس‌گذاری بولین
 
 ```python
-print(df[df['Ages'] > 120])
-```
+print(df[df['Ages'] > 120])```
 
 <table border="1" class="dataframe">
   <thead>
@@ -1200,17 +1197,17 @@ print(df[df['Ages'] < 120])
   </tbody>
 </table>
 
-## Exercises: Day 25
+## تمرینات: روز ۲۵
 
-1. Read the hacker_news.csv file from data directory 
-1. Get the first five rows
-1. Get the last five rows
-1. Get the title column as pandas series
-1. Count the number of rows and columns
-    - Filter the titles which contain python
-    - Filter the titles which contain JavaScript
-    - Explore the data and make sense of it
+1. فایل hacker_news.csv را از پوشه data بخوانید
+2. پنج سطر اول را بگیرید
+3. پنج سطر آخر را بگیرید
+4. ستون title را به عنوان یک pandas series بگیرید
+5. تعداد سطرها و ستون‌ها را بشمارید
+    - عناوینی که شامل python هستند را فیلتر کنید
+    - عناوینی که شامل JavaScript هستند را فیلتر کنید
+    - داده‌ها را کاوش کرده و مفهوم آن را درک کنید
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم ! 🎉
 
-[<< Day 24](../24_Day_Statistics/24_statistics.md) | [Day 26 >>](../26_Day_Python_web/26_python_web.md)
+[>> روز ۲۴](../24_Day_Statistics/24_statistics.md) | [روز ۲۶ <<](../26_Day_Python_web/26_python_web.md)
