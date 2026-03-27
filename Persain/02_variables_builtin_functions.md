@@ -16,16 +16,16 @@
 
 [\<\< روز ۱](./readme.md) | [روز ۳ \>\>](./03_Day_Operators/03_operators.md)
 
-  - [📘 روز ۲](https://www.google.com/search?q=%23-%D8%B1%D9%88%D8%B2-%DB%B2)
-      - [توابع داخلی](https://www.google.com/search?q=%23%D8%AA%D9%88%D8%A7%D8%A8%D8%B9-%D8%AF%D8%A7%D8%AE%D9%84%DB%8C)
-      - [متغیرها](https://www.google.com/search?q=%23%D9%85%D8%AA%D8%BA%DB%8C%D8%B1%D9%87%D8%A7)
-          - [تعریف چند متغیر در یک خط](https://www.google.com/search?q=%23%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%DA%86%D9%86%D8%AF-%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%AE%D8%B7)
-      - [انواع داده](https://www.google.com/search?q=%23%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D8%AF%D9%87)
-      - [بررسی انواع داده و تبدیل نوع (Casting)](https://www.google.com/search?q=%23%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D8%AF%D9%87-%D9%88-%D8%AA%D8%A8%D8%AF%DB%8C%D9%84-%D9%86%D9%88%D8%B9-casting)
-      - [اعداد](https://www.google.com/search?q=%23%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF)
-      - [💻 تمرینات - روز ۲](https://www.google.com/search?q=%23-%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA---%D8%B1%D9%88%D8%B2-%DB%B2)
-          - [تمرینات: سطح ۱](https://www.google.com/search?q=%23%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%B3%D8%B7%D8%AD-%DB%B1)
-          - [تمرینات: سطح ۲](https://www.google.com/search?q=%23%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%B3%D8%B7%D8%AD-%DB%B2)
+- [📘 روز ۲](#-روز-۲)
+  - [توابع داخلی](#توابع-داخلی)
+  - [متغیرها](#متغیرها)
+    - [تعریف چند متغیر در یک خط](#تعریف-چند-متغیر-در-یک-خط)
+  - [انواع داده](#انواع-داده)
+  - [بررسی انواع داده و تبدیل نوع (Casting)](#بررسی-انواع-داده-و-تبدیل-نوع-casting)
+  - [اعداد](#اعداد)
+  - [💻 تمرینات - روز ۲](#-تمرینات---روز-۲)
+    - [تمرینات: سطح ۱](#تمرینات-سطح-۱)
+    - [تمرینات: سطح ۲](#تمرینات-سطح-۲)
 
 # 📘 روز ۲
 
