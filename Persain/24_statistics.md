@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 24 - Statistics</h1>
+  <h1> ۳۰ روز پایتون: روز ۲۴ - آمار</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,121 +7,121 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
+<small>ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 </div>
 
-[<< Day 23](../23_Day_Virtual_environment/23_virtual_environment.md) | [Day 25 >>](../25_Day_Pandas/25_pandas.md)
+[>> روز ۲۳](../23_Day_Virtual_environment/23_virtual_environment.md) | [روز ۲۵ >>](../25_Day_Pandas/25_pandas.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 24](#-day-24)
-  - [Python for Statistical Analysis](#python-for-statistical-analysis)
-  - [Statistics](#statistics)
-  - [Data](#data)
-  - [Statistics Module](#statistics-module)
+- [📘 روز ۲۴](#-روز-۲۴)
+  - [پایتون برای تحلیل آماری](#پایتون-برای-تحلیل-آماری)
+  - [آمار](#آمار)
+  - [داده](#داده)
+  - [ماژول Statistics](#ماژول-statistics)
 - [NumPy](#numpy)
 
-# 📘 Day 24
+# 📘 روز ۲۴
 
-## Python for Statistical Analysis
+## پایتون برای تحلیل آماری
 
-## Statistics
+## آمار
 
-Statistics is the discipline that studies the _collection_, _organization_, _displaying_, _analysing_, _interpretation_ and _presentation_ of data.
-Statistics is a branch of Mathematics that is recommended to be a prerequisite for data science and machine learning. Statistics is a very broad field but we will focus in this section only on the most relevant part.
-After completing this challenge, you may go onto the web development, data analysis, machine learning and data science path. Whatever path you may follow, at some point in your career you will get data which you may work on. Having some statistical knowledge will help you to make decisions based on data, _data tells as they say_.
+آمار رشته‌ای است که به مطالعه _جمع‌آوری_، _سازماندهی_، _نمایش_، _تحلیل_، _تفسیر_ و _ارائه_ داده‌ها می‌پردازد.
+آمار شاخه‌ای از ریاضیات است که به عنوان پیش‌نیاز برای علم داده و یادگیری ماشین توصیه می‌شود. آمار یک حوزه بسیار گسترده است اما ما در این بخش فقط بر روی مرتبط‌ترین قسمت آن تمرکز خواهیم کرد.
+پس از اتمام این چالش، ممکن است به مسیر توسعه وب، تحلیل داده، یادگیری ماشین و علم داده بروید. هر مسیری را که دنبال کنید، در مقطعی از حرفه‌تان با داده‌هایی مواجه خواهید شد که باید روی آنها کار کنید. داشتن دانش آماری به شما کمک می‌کند تا بر اساس داده‌ها تصمیم‌گیری کنید، _همانطور که می‌گویند داده‌ها سخن می‌گویند_.
 
-## Data
+## داده
 
-What is data? Data is any set of characters that is gathered and translated for some purpose, usually analysis. It can be any character, including text and numbers, pictures, sound, or video. If data is not put in a context, it doesn't make any sense to a human or computer. To make sense from data we need to work on the data using different tools.
+داده چیست؟ داده مجموعه‌ای از کاراکترها است که برای هدفی خاص، معمولاً تحلیل، جمع‌آوری و ترجمه می‌شود. این می‌تواند هر کاراکتری باشد، از جمله متن و اعداد، تصاویر، صدا یا ویدیو. اگر داده در یک زمینه قرار نگیرد، برای انسان یا کامپیوتر معنایی ندارد. برای درک داده‌ها، باید با استفاده از ابزارهای مختلف روی آنها کار کنیم.
 
-The work flow of data analysis, data science or machine learning starts from data. Data can be provided from some data source or it can be created. There are structured and unstructured data.
+جریان کاری تحلیل داده، علم داده یا یادگیری ماشین از داده شروع می‌شود. داده می‌تواند از یک منبع داده تأمین شود یا ایجاد گردد. داده‌ها به دو صورت ساختاریافته و بدون ساختار وجود دارند.
 
-Data can be found in small or big format. Most of the data types we will get have been covered in the file handling section.
+داده‌ها را می‌توان در قالب‌های کوچک یا بزرگ یافت. بیشتر انواع داده‌هایی که با آنها مواجه خواهیم شد در بخش مدیریت فایل‌ها پوشش داده شده‌اند.
 
-## Statistics Module
+## ماژول Statistics
 
-The Python _statistics_ module provides functions for calculating mathematical statistics of numerical data. The module is not intended to be a competitor to third-party libraries such as NumPy, SciPy, or proprietary full-featured statistics packages aimed at professional statisticians such as Minitab, SAS and Matlab. It is aimed at the level of graphing and scientific calculators.
+ماژول _statistics_ پایتون توابعی برای محاسبه آمار ریاضی داده‌های عددی فراهم می‌کند. این ماژول قصد رقابت با کتابخانه‌های شخص ثالث مانند NumPy، SciPy یا بسته‌های آماری کامل و اختصاصی برای آماردانان حرفه‌ای مانند Minitab، SAS و Matlab را ندارد. هدف آن در سطح ماشین‌حساب‌های گرافیکی و علمی است.
 
 # NumPy
 
-In the first section we defined Python as a great general-purpose programming language on its own, but with the help of other popular libraries as(numpy, scipy, matplotlib, pandas etc) it becomes a powerful environment for scientific computing.
+در بخش اول، ما پایتون را به خودی خود یک زبان برنامه‌نویسی همه‌منظوره عالی تعریف کردیم، اما با کمک کتابخانه‌های محبوب دیگر مانند (numpy، scipy، matplotlib، pandas و غیره) به یک محیط قدرتمند برای محاسبات علمی تبدیل می‌شود.
 
-NumPy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and tools for working with arrays.
+NumPy کتابخانه اصلی برای محاسبات علمی در پایتون است. این کتابخانه یک شیء آرایه چندبعدی با کارایی بالا و ابزارهایی برای کار با آرایه‌ها فراهم می‌کند.
 
-So far, we have been using vscode but from now on I would recommend using Jupyter Notebook. To access jupyter notebook let's install [anaconda](https://www.anaconda.com/). If you are using anaconda most of the common packages are included and you don't have install packages if you installed anaconda.
+تا به حال، ما از vscode استفاده می‌کردیم اما از این به بعد توصیه می‌کنم از Jupyter Notebook استفاده کنید. برای دسترسی به Jupyter Notebook، بیایید [anaconda](https://www.anaconda.com/) را نصب کنیم. اگر از anaconda استفاده می‌کنید، بیشتر بسته‌های رایج در آن گنجانده شده‌اند و نیازی به نصب بسته‌ها نخواهید داشت.
 
 ```sh
 asabeneh@Asabeneh:~/Desktop/30DaysOfPython$ pip install numpy
 ```
 
-## Importing NumPy
+## وارد کردن (Importing) NumPy
 
-Jupyter notebook is available if your are in favor of [jupyter notebook](https://github.com/Asabeneh/data-science-for-everyone/blob/master/numpy/numpy.ipynb)
+Jupyter notebook در دسترس است اگر به [jupyter notebook](https://github.com/Asabeneh/data-science-for-everyone/blob/master/numpy/numpy.ipynb) علاقه‌مند هستید.
 
 ```py
-    # How to import numpy
+    # نحوه وارد کردن numpy
     import numpy as np
-    # How to check the version of the numpy package
+    # نحوه بررسی نسخه بسته numpy
     print('numpy:', np.__version__)
-    # Checking the available methods
+    # بررسی متدهای موجود
     print(dir(np))
 ```
 
-## Creating numpy array using
+## ایجاد آرایه numpy
 
-### Creating int numpy arrays
+### ایجاد آرایه‌های int در numpy
 
 ```py
-    # Creating python List
-    python_list = [1,2,3,4,5]
+    # ایجاد لیست پایتون
+    python_list =
 
-    # Checking data types
+    # بررسی انواع داده
     print('Type:', type (python_list)) # <class 'list'>
     #
-    print(python_list) # [1, 2, 3, 4, 5]
+    print(python_list) #
 
-    two_dimensional_list = [[0,1,2], [3,4,5], [6,7,8]]
+    two_dimensional_list = [,,]
 
-    print(two_dimensional_list)  # [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+    print(two_dimensional_list)  # [,,]
 
-    # Creating Numpy(Numerical Python) array from python list
+    # ایجاد آرایه Numpy (Numerical Python) از لیست پایتون
 
     numpy_array_from_list = np.array(python_list)
     print(type (numpy_array_from_list))   # <class 'numpy.ndarray'>
-    print(numpy_array_from_list) # array([1, 2, 3, 4, 5])
+    print(numpy_array_from_list) # array()
 ```
 
-### Creating float numpy arrays
+### ایجاد آرایه‌های float در numpy
 
-Creating a float numpy array from list with a float data type parameter
+ایجاد یک آرایه float در numpy از لیست با پارامتر نوع داده float
 
 ```py
-    # Python list
-    python_list = [1,2,3,4,5]
+    # لیست پایتون
+    python_list =
 
     numy_array_from_list2 = np.array(python_list, dtype=float)
     print(numy_array_from_list2) # array([1., 2., 3., 4., 5.])
 ```
 
-### Creating boolean numpy arrays
+### ایجاد آرایه‌های boolean در numpy
 
-Creating a boolean a numpy array from list
+ایجاد یک آرایه boolean در numpy از لیست
 
 ```py
     numpy_bool_array = np.array([0, 1, -1, 0, 0], dtype=bool)
     print(numpy_bool_array) # array([False,  True,  True, False, False])
 ```
 
-### Creating multidimensional array using numpy
+### ایجاد آرایه چندبعدی با استفاده از numpy
 
-A numpy array may have one or multiple rows and columns
+یک آرایه numpy ممکن است یک یا چند سطر و ستون داشته باشد
 
 ```py
-    two_dimensional_list = [[0,1,2], [3,4,5], [6,7,8]]
+    two_dimensional_list = [,,]
     numpy_two_dimensional_list = np.array(two_dimensional_list)
     print(type (numpy_two_dimensional_list))
     print(numpy_two_dimensional_list)
@@ -134,10 +134,10 @@ A numpy array may have one or multiple rows and columns
      [6 7 8]]
 ```
 
-### Converting numpy array to list
+### تبدیل آرایه numpy به لیست
 
 ```python
-# We can always convert an array back to a python list using tolist().
+# ما همیشه می‌توانیم یک آرایه را با استفاده از tolist() به یک لیست پایتون تبدیل کنیم.
 np_to_list = numpy_array_from_list.tolist()
 print(type (np_to_list))
 print('one dimensional array:', np_to_list)
@@ -146,15 +146,15 @@ print('two dimensional array: ', numpy_two_dimensional_list.tolist())
 
 ```sh
     <class 'list'>
-    one dimensional array: [1, 2, 3, 4, 5]
-    two dimensional array:  [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+    one dimensional array:
+    two dimensional array:  [,,]
 ```
 
-### Creating numpy array from tuple
+### ایجاد آرایه numpy از تاپل
 
 ```py
-# Numpy array from tuple
-# Creating tuple in Python
+# آرایه Numpy از تاپل
+# ایجاد تاپل در پایتون
 python_tuple = (1,2,3,4,5)
 print(type (python_tuple)) # <class 'tuple'>
 print('python_tuple: ', python_tuple) # python_tuple:  (1, 2, 3, 4, 5)
@@ -164,19 +164,19 @@ print(type (numpy_array_from_tuple)) # <class 'numpy.ndarray'>
 print('numpy_array_from_tuple: ', numpy_array_from_tuple) # numpy_array_from_tuple:  [1 2 3 4 5]
 ```
 
-### Shape of numpy array
+### شکل (Shape) آرایه numpy
 
-The shape method provide the shape of the array as a tuple. The first is the row and the second is the column. If the array is just one dimensional it returns the size of the array.
+متد shape، شکل آرایه را به صورت یک تاپل ارائه می‌دهد. اولین عنصر سطر و دومین عنصر ستون است. اگر آرایه فقط یک بعدی باشد، اندازه آرایه را برمی‌گرداند.
 
 ```py
-    nums = np.array([1, 2, 3, 4, 5])
+    nums = np.array()
     print(nums)
     print('shape of nums: ', nums.shape)
     print(numpy_two_dimensional_list)
     print('shape of numpy_two_dimensional_list: ', numpy_two_dimensional_list.shape)
-    three_by_four_array = np.array([[0, 1, 2, 3],
-        [4,5,6,7],
-        [8,9,10, 11]])
+    three_by_four_array = np.array([,
+       ,
+       ])
     print(three_by_four_array.shape)
 ```
 
@@ -190,9 +190,9 @@ The shape method provide the shape of the array as a tuple. The first is the row
     (3, 4)
 ```
 
-### Data type of numpy array
+### نوع داده (Data type) آرایه numpy
 
-Type of data types: str, int, float, complex, bool, list, None
+انواع داده: str، int، float، complex، bool، list، None
 
 ```py
 int_lists = [-3, -2, -1, 0, 1, 2,3]
@@ -212,19 +212,18 @@ print(float_array.dtype)
     float64
 ```
 
-### Size of a numpy array
+### اندازه (Size) یک آرایه numpy
 
-In numpy to know the number of items in a numpy array list we use size
+در numpy برای دانستن تعداد آیتم‌ها در یک آرایه numpy از size استفاده می‌کنیم.
 
 ```py
-numpy_array_from_list = np.array([1, 2, 3, 4, 5])
-two_dimensional_list = np.array([[0, 1, 2],
-                              [3, 4, 5],
-                              [6, 7, 8]])
+numpy_array_from_list = np.array()
+two_dimensional_list = np.array([,
+                             ,
+                             ])
 
 print('The size:', numpy_array_from_list.size) # 5
 print('The size:', two_dimensional_list.size)  # 3
-
 ```
 
 ```sh
@@ -232,29 +231,28 @@ print('The size:', two_dimensional_list.size)  # 3
     The size: 9
 ```
 
-## Mathematical Operation using numpy
+## عملیات ریاضی با استفاده از numpy
 
-NumPy array is not like exactly like python list. To do mathematical operation in Python list we have to loop through the items but numpy can allow to do any mathematical operation without looping.
-Mathematical Operation:
+آرایه NumPy دقیقاً مانند لیست پایتون نیست. برای انجام عملیات ریاضی در لیست پایتون باید روی آیتم‌ها حلقه بزنیم اما numpy اجازه می‌دهد هر عملیات ریاضی را بدون حلقه زدن انجام دهیم.
+عملیات ریاضی:
 
-- Addition (+)
-- Subtraction (-)
-- Multiplication (\*)
-- Division (/)
-- Modules (%)
-- Floor Division(//)
-- Exponential(\*\*)
+-   جمع (+)
+-   تفریق (-)
+-   ضرب (*)
+-   تقسیم (/)
+-   باقیمانده (%)
+-   تقسیم صحیح (//)
+-   توان (**)
 
-### Addition
+### جمع
 
 ```py
-# Mathematical Operation
-# Addition
-numpy_array_from_list = np.array([1, 2, 3, 4, 5])
+# عملیات ریاضی
+# جمع
+numpy_array_from_list = np.array()
 print('original array: ', numpy_array_from_list)
 ten_plus_original = numpy_array_from_list  + 10
 print(ten_plus_original)
-
 ```
 
 ```sh
@@ -262,26 +260,25 @@ print(ten_plus_original)
     [11 12 13 14 15]
 ```
 
-### Subtraction
+### تفریق
 
 ```python
-# Subtraction
-numpy_array_from_list = np.array([1, 2, 3, 4, 5])
+# تفریق
+numpy_array_from_list = np.array()
 print('original array: ', numpy_array_from_list)
 ten_minus_original = numpy_array_from_list  - 10
-print(ten_minus_original)
-```
+print(ten_minus_original)```
 
 ```sh
     original array:  [1 2 3 4 5]
     [-9 -8 -7 -6 -5]
 ```
 
-### Multiplication
+### ضرب
 
 ```python
-# Multiplication
-numpy_array_from_list = np.array([1, 2, 3, 4, 5])
+# ضرب
+numpy_array_from_list = np.array()
 print('original array: ', numpy_array_from_list)
 ten_times_original = numpy_array_from_list * 10
 print(ten_times_original)
@@ -292,11 +289,11 @@ print(ten_times_original)
     [10 20 30 40 50]
 ```
 
-### Division
+### تقسیم
 
 ```python
-# Division
-numpy_array_from_list = np.array([1, 2, 3, 4, 5])
+# تقسیم
+numpy_array_from_list = np.array()
 print('original array: ', numpy_array_from_list)
 ten_times_original = numpy_array_from_list / 10
 print(ten_times_original)
@@ -307,11 +304,11 @@ print(ten_times_original)
     [0.1 0.2 0.3 0.4 0.5]
 ```
 
-### Modulus
+### باقیمانده (Modulus)
 
 ```python
-# Modulus; Finding the remainder
-numpy_array_from_list = np.array([1, 2, 3, 4, 5])
+# باقیمانده؛ یافتن باقیمانده تقسیم
+numpy_array_from_list = np.array()
 print('original array: ', numpy_array_from_list)
 ten_times_original = numpy_array_from_list % 3
 print(ten_times_original)
@@ -322,21 +319,21 @@ print(ten_times_original)
     [1 2 0 1 2]
 ```
 
-### Floor Division
+### تقسیم صحیح (Floor Division)
 
 ```py
-# Floor division: the division result without the remainder
-numpy_array_from_list = np.array([1, 2, 3, 4, 5])
+# تقسیم صحیح: نتیجه تقسیم بدون باقیمانده
+numpy_array_from_list = np.array()
 print('original array: ', numpy_array_from_list)
 ten_times_original = numpy_array_from_list // 10
 print(ten_times_original)
 ```
 
-### Exponential
+### توان (Exponential)
 
 ```py
-# Exponential is finding some number the power of another:
-numpy_array_from_list = np.array([1, 2, 3, 4, 5])
+# توان، به معنای به توان رساندن یک عدد به عدد دیگر است:
+numpy_array_from_list = np.array()
 print('original array: ', numpy_array_from_list)
 ten_times_original = numpy_array_from_list  ** 2
 print(ten_times_original)
@@ -347,11 +344,11 @@ print(ten_times_original)
     [ 1  4  9 16 25]
 ```
 
-## Checking data types
+## بررسی انواع داده
 
 ```py
-#Int,  Float numbers
-numpy_int_arr = np.array([1,2,3,4])
+# اعداد صحیح، اعشاری
+numpy_int_arr = np.array()
 numpy_float_arr = np.array([1.1, 2.0,3.2])
 numpy_bool_arr = np.array([-3, -2, 0, 1,2,3], dtype='bool')
 
@@ -366,20 +363,20 @@ print(numpy_bool_arr.dtype)
     bool
 ```
 
-### Converting types
+### تبدیل انواع
 
-We can convert the data types of numpy array
+ما می‌توانیم انواع داده آرایه‌های numpy را تبدیل کنیم.
 
-1. Int to Float
+1.  Int به Float
 
 ```py
-numpy_int_arr = np.array([1,2,3,4], dtype = 'float')
+numpy_int_arr = np.array(, dtype = 'float')
 numpy_int_arr
 ```
 
     array([1., 2., 3., 4.])
 
-2. Float to Int
+2.  Float به Int
 
 ```py
 numpy_int_arr = np.array([1., 2., 3., 4.], dtype = 'int')
@@ -387,21 +384,20 @@ numpy_int_arr
 ```
 
 ```sh
-    array([1, 2, 3, 4])
+    array()
 ```
 
-3. Int ot boolean
+3.  Int به boolean
 
 ```py
 np.array([-3, -2, 0, 1,2,3], dtype='bool')
-
 ```
 
 ```sh
     array([ True,  True, False,  True,  True,  True])
 ```
 
-4. Int to str
+4.  Int به str
 
 ```py
 numpy_float_list.astype('int').astype('str')
@@ -411,10 +407,10 @@ numpy_float_list.astype('int').astype('str')
     array(['1', '2', '3'], dtype='<U21')
 ```
 
-## Multi-dimensional Arrays
+## آرایه‌های چندبعدی
 
 ```py
-# 2 Dimension Array
+# آرایه ۲ بعدی
 two_dimension_array = np.array([(1,2,3),(4,5,6), (7,8,9)])
 print(type (two_dimension_array))
 print(two_dimension_array)
@@ -433,14 +429,14 @@ print('Data type:', two_dimension_array.dtype)
     Data type: int64
 ```
 
-### Getting items from a numpy array
+### دریافت آیتم‌ها از یک آرایه numpy
 
 ```py
-# 2 Dimension Array
-two_dimension_array = np.array([[1,2,3],[4,5,6], [7,8,9]])
-first_row = two_dimension_array[0]
-second_row = two_dimension_array[1]
-third_row = two_dimension_array[2]
+# آرایه ۲ بعدی
+two_dimension_array = np.array([,,])
+first_row = two_dimension_array
+second_row = two_dimension_array
+third_row = two_dimension_array
 print('First row:', first_row)
 print('Second row:', second_row)
 print('Third row: ', third_row)
@@ -460,7 +456,6 @@ print('First column:', first_column)
 print('Second column:', second_column)
 print('Third column: ', third_column)
 print(two_dimension_array)
-
 ```
 
 ```sh
@@ -472,12 +467,12 @@ print(two_dimension_array)
      [7 8 9]]
 ```
 
-## Slicing Numpy array
+## برش (Slicing) آرایه Numpy
 
-Slicing in numpy is similar to slicing in python list
+برش در numpy شبیه به برش در لیست پایتون است.
 
 ```py
-two_dimension_array = np.array([[1,2,3],[4,5,6], [7,8,9]])
+two_dimension_array = np.array([,,])
 first_two_rows_and_columns = two_dimension_array[0:2, 0:2]
 print(first_two_rows_and_columns)
 ```
@@ -487,37 +482,37 @@ print(first_two_rows_and_columns)
      [4 5]]
 ```
 
-### How to reverse the rows and the whole array?
+### چگونه سطرها و کل آرایه را معکوس کنیم؟
 
 ```py
 two_dimension_array[::]
 ```
 
 ```sh
-    array([[1, 2, 3],
-           [4, 5, 6],
-           [7, 8, 9]])
+    array([,
+          ,
+          ])
 ```
 
-### Reverse the row and column positions
+### معکوس کردن موقعیت سطر و ستون
 
 ```py
-    two_dimension_array = np.array([[1,2,3],[4,5,6], [7,8,9]])
+    two_dimension_array = np.array([,,])
     two_dimension_array[::-1,::-1]
 ```
 
 ```sh
-    array([[9, 8, 7],
-           [6, 5, 4],
-           [3, 2, 1]])
+    array([,
+          ,
+          ])
 ```
 
-## How to represent missing values ?
+## چگونه مقادیر گمشده را نمایش دهیم؟
 
 ```python
     print(two_dimension_array)
-    two_dimension_array[1,1] = 55
-    two_dimension_array[1,2] =44
+    two_dimension_array = 55
+    two_dimension_array =44
     print(two_dimension_array)
 ```
 
@@ -531,20 +526,20 @@ two_dimension_array[::]
 ```
 
 ```py
-    # Numpy Zeroes
+    # صفرهای Numpy
     # numpy.zeros(shape, dtype=float, order='C')
     numpy_zeroes = np.zeros((3,3),dtype=int,order='C')
     numpy_zeroes
 ```
 
 ```sh
-    array([[0, 0, 0],
-           [0, 0, 0],
-           [0, 0, 0]])
+    array([,
+          ,
+          ])
 ```
 
 ```py
-# Numpy Zeroes
+# یک‌های Numpy
 numpy_ones = np.ones((3,3),dtype=int,order='C')
 print(numpy_ones)
 ```
@@ -556,17 +551,15 @@ print(numpy_ones)
 ```
 
 ```py
-twoes = numpy_ones * 2
-```
+twoes = numpy_ones * 2```
 
 ```py
-# Reshape
+# تغییر شکل (Reshape)
 # numpy.reshape(), numpy.flatten()
 first_shape  = np.array([(1,2,3), (4,5,6)])
 print(first_shape)
 reshaped = first_shape.reshape(3,2)
 print(reshaped)
-
 ```
 
 ```sh
@@ -583,13 +576,13 @@ flattened
 ```
 
 ```sh
-    array([1, 2, 3, 4, 5, 6])
+    array()
 ```
 
 ```py
-    ## Horitzontal Stack
-    np_list_one = np.array([1,2,3])
-    np_list_two = np.array([4,5,6])
+    ## پشته افقی (Horitzontal Stack)
+    np_list_one = np.array()
+    np_list_two = np.array()
 
     print(np_list_one + np_list_two)
 
@@ -602,19 +595,18 @@ flattened
 ```
 
 ```py
-    ## Vertical Stack
+    ## پشته عمودی (Vertical Stack)
     print('Vertical Append:', np.vstack((np_list_one, np_list_two)))
 ```
 
 ```sh
     Vertical Append: [[1 2 3]
-     [4 5 6]]
-```
+     [4 5 6]]```
 
-#### Generating Random Numbers
+#### تولید اعداد تصادفی
 
 ```py
-    # Generate a random float  number
+    # تولید یک عدد اعشاری تصادفی
     random_float = np.random.random()
     random_float
 ```
@@ -624,7 +616,7 @@ flattened
 ```
 
 ```py
-    # Generate a random float  number
+    # تولید اعداد اعشاری تصادفی
     random_floats = np.random.random(5)
     random_floats
 ```
@@ -634,8 +626,7 @@ flattened
 ```
 
 ```py
-    # Generating a random integers between 0 and 10
-
+    # تولید یک عدد صحیح تصادفی بین ۰ و ۱۰
     random_int = np.random.randint(0, 11)
     random_int
 ```
@@ -645,34 +636,33 @@ flattened
 ```
 
 ```py
-    # Generating a random integers between 2 and 11, and creating a one row array
+    # تولید اعداد صحیح تصادفی بین ۲ و ۱۱ و ایجاد یک آرایه یک سطری
     random_int = np.random.randint(2,10, size=4)
     random_int
 ```
 
 ```sh
-    array([8, 8, 8, 2])
+    array()
 ```
 
 ```py
-    # Generating a random integers between 0 and 10
+    # تولید اعداد صحیح تصادفی بین ۰ و ۱۰
     random_int = np.random.randint(2,10, size=(3,3))
     random_int
 ```
 
 ```sh
-    array([[3, 5, 3],
-           [7, 3, 6],
-           [2, 3, 3]])
+    array([,
+          ,
+          ])
 ```
 
-### Generationg random numbers
+### تولید اعداد تصادفی
 
 ```py
     # np.random.normal(mu, sigma, size)
     normal_array = np.random.normal(79, 15, 80)
     normal_array
-
 ```
 
 ```sh
@@ -698,7 +688,7 @@ flattened
             70.81087439,  83.90130623,  87.58555972,  59.95462521])
 ```
 
-## Numpy and Statistics
+## Numpy و آمار
 
 ```py
 import matplotlib.pyplot as plt
@@ -724,13 +714,11 @@ plt.hist(normal_array, color="grey", bins=50)
             105.78564833, 107.46296277, 109.14027721, 110.81759164,
             112.49490608, 114.17222052, 115.84953495, 117.52684939,
             119.20416383, 120.88147826, 122.5587927 ]),
-     <a list of 50 Patch objects>)
-```
+     <a list of 50 Patch objects>)```
 
-### Matrix in numpy
+### ماتریس در numpy
 
 ```py
-
 four_by_four_matrix = np.matrix(np.ones((4,4), dtype=float))
 ```
 
@@ -746,26 +734,25 @@ matrix([[1., 1., 1., 1.],
 ```
 
 ```py
-np.asarray(four_by_four_matrix)[2] = 2
+np.asarray(four_by_four_matrix) = 2
 four_by_four_matrix
 ```
 
 ```sh
-
 matrix([[1., 1., 1., 1.],
             [1., 1., 1., 1.],
             [2., 2., 2., 2.],
             [1., 1., 1., 1.]])
 ```
 
-### Numpy numpy.arange()
+### تابع numpy.arange()
 
-#### What is Arrange?
+#### Arrange چیست؟
 
-Sometimes, you want to create values that are evenly spaced within a defined interval. For instance, you want to create values from 1 to 10; you can use numpy.arange() function
+گاهی اوقات، شما می‌خواهید مقادیری ایجاد کنید که در یک بازه تعریف شده به طور مساوی فاصله داشته باشند. به عنوان مثال، اگر می‌خواهید مقادیر از ۱ تا ۱۰ ایجاد کنید؛ می‌توانید از تابع numpy.arange() استفاده کنید.
 
 ```py
-# creating list using range(starting, stop, step)
+# ایجاد لیست با استفاده از range(شروع, توقف, گام)
 lst = range(0, 11, 2)
 lst
 ```
@@ -779,7 +766,8 @@ for l in lst:
     print(l)
 ```
 
-```sh 0
+```sh
+    0
     2
     4
     6
@@ -788,10 +776,9 @@ for l in lst:
 ```
 
 ```py
-# Similar to range arange numpy.arange(start, stop, step)
+# مشابه range، arange در numpy.arange(شروع, توقف, گام)
 whole_numbers = np.arange(0, 20, 1)
-whole_numbers
-```
+whole_numbers```
 
 ```sh
 array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
@@ -809,8 +796,7 @@ odd_numbers
 ```
 
 ```sh
-    array([ 1,  3,  5,  7,  9, 11, 13, 15, 17, 19])
-```
+    array([ 1,  3,  5,  7,  9, 11, 13, 15, 17, 19])```
 
 ```py
 even_numbers = np.arange(2, 20, 2)
@@ -821,14 +807,13 @@ even_numbers
     array([ 2,  4,  6,  8, 10, 12, 14, 16, 18])
 ```
 
-### Creating sequence of numbers using linspace
+### ایجاد دنباله‌ای از اعداد با استفاده از linspace
 
 ```py
 # numpy.linspace()
-# numpy.logspace() in Python with Example
-# For instance, it can be used to create 10 values from 1 to 5 evenly spaced.
-np.linspace(1.0, 5.0, num=10)
-```
+# numpy.logspace() در پایتون با مثال
+# به عنوان مثال، می‌توان از آن برای ایجاد ۱۰ مقدار با فاصله یکسان از ۱ تا ۵ استفاده کرد.
+np.linspace(1.0, 5.0, num=10)```
 
 ```sh
     array([1.        , 1.44444444, 1.88888889, 2.33333333, 2.77777778,
@@ -836,7 +821,7 @@ np.linspace(1.0, 5.0, num=10)
 ```
 
 ```py
-# not to include the last value in the interval
+# برای عدم شامل کردن آخرین مقدار در بازه
 np.linspace(1.0, 5.0, num=5, endpoint=False)
 ```
 
@@ -846,9 +831,9 @@ array([1. , 1.8, 2.6, 3.4, 4.2])
 
 ```py
 # LogSpace
-# LogSpace returns even spaced numbers on a log scale. Logspace has the same parameters as np.linspace.
+# LogSpace اعداد با فاصله یکسان را در مقیاس لگاریتمی برمی‌گرداند. Logspace پارامترهای مشابهی با np.linspace دارد.
 
-# Syntax:
+# سینتکس:
 
 # numpy.logspace(start, stop, num, endpoint)
 
@@ -861,8 +846,8 @@ array([  100.        ,   464.15888336,  2154.43469003, 10000.        ])
 ```
 
 ```py
-# to check the size of an array
-x = np.array([1,2,3], dtype=np.complex128)
+# برای بررسی اندازه یک آرایه
+x = np.array(, dtype=np.complex128)
 ```
 
 ```py
@@ -882,34 +867,30 @@ x.itemsize
 ```
 
 ```py
-# indexing and Slicing NumPy Arrays in Python
+# اندیس‌گذاری و برش آرایه‌های NumPy در پایتون
 np_list = np.array([(1,2,3), (4,5,6)])
 np_list
-
 ```
 
 ```sh
-    array([[1, 2, 3],
-           [4, 5, 6]])
+    array([,
+          ])
 ```
 
 ```py
-print('First row: ', np_list[0])
-print('Second row: ', np_list[1])
-
+print('First row: ', np_list)
+print('Second row: ', np_list)
 ```
 
 ```sh
-
     First row:  [1 2 3]
     Second row:  [4 5 6]
 ```
 
-```p
+```py
 print('First column: ', np_list[:,0])
 print('Second column: ', np_list[:,1])
 print('Third column: ', np_list[:,2])
-
 ```
 
 ```sh
@@ -918,21 +899,21 @@ print('Third column: ', np_list[:,2])
     Third column:  [3 6]
 ```
 
-### NumPy Statistical Functions with Example
+### توابع آماری NumPy با مثال
 
-NumPy has quite useful statistical functions for finding minimum, maximum, mean, median, percentile,standard deviation and variance, etc from the given elements in the array.
-The functions are explained as follows −
-Statistical function
-Numpy is equipped with the robust statistical function as listed below
+NumPy دارای توابع آماری بسیار مفیدی برای یافتن حداقل، حداکثر، میانگین، میانه، صدک، انحراف معیار و واریانس و غیره از عناصر داده شده در آرایه است.
+این توابع به شرح زیر توضیح داده شده‌اند -
+توابع آماری
+Numpy به توابع آماری قدرتمندی مجهز است که در زیر لیست شده‌اند:
 
-- Numpy Functions
-  - Min np.min()
-  - Max np.max()
-  - Mean np.mean()
-  - Median np.median()
-  - Varience
-  - Percentile
-  - Standard deviation np.std()
+-   توابع Numpy
+    -   حداقل np.min()
+    -   حداکثر np.max()
+    -   میانگین np.mean()
+    -   میانه np.median()
+    -   واریانس
+    -   صدک
+    -   انحراف معیار np.std()
 
 ```python
 np_normal_dis = np.random.normal(5, 0.5, 100)
@@ -975,26 +956,25 @@ print('Row with maximum: ', np.amax(two_dimension_array,axis=1))
     Row with minimum:  [1 4 7]
     Row with maximum:  [ 3 55  9]
 
-### How to create repeating sequences?
+### چگونه دنباله‌های تکراری ایجاد کنیم؟
 
 ```python
-a = [1,2,3]
+a =
 
-# Repeat whole of 'a' two times
+# کل 'a' را دو بار تکرار کن
 print('Tile:   ', np.tile(a, 2))
 
-# Repeat each element of 'a' two times
+# هر عنصر از 'a' را دو بار تکرار کن
 print('Repeat: ', np.repeat(a, 2))
-
 ```
 
     Tile:    [1 2 3 1 2 3]
     Repeat:  [1 1 2 2 3 3]
 
-### How to generate random numbers?
+### چگونه اعداد تصادفی تولید کنیم؟
 
 ```python
-# One random number between [0,1)
+# یک عدد تصادفی بین [۰,۱)
 one_random_num = np.random.random()
 one_random_in = np.random
 print(one_random_num)
@@ -1009,8 +989,8 @@ print(one_random_num)
     0.4763968133790438
 
 ```python
-# Random numbers between [0,1) of shape 2,3
-r = np.random.random(size=[2,3])
+# اعداد تصادفی بین [۰,۱) با شکل ۲,۳
+r = np.random.random(size=)
 print(r)
 ```
 
@@ -1030,7 +1010,7 @@ print(np.random.choice(['a', 'e', 'i', 'o', 'u'], size=10))
     ['iueoaieuoi']
 
 ```python
-## Random numbers between [0, 1] of shape 2, 2
+## اعداد تصادفی بین [۰, ۱] با شکل ۲, ۲
 rand = np.random.rand(2,2)
 rand
 ```
@@ -1041,15 +1021,14 @@ rand
 ```python
 rand2 = np.random.randn(2,2)
 rand2
-
 ```
 
     array([[ 1.65593322, -0.52326621],
            [ 0.39071179, -2.03649407]])
 
 ```python
-# Random integers between [0, 10) of shape 2,5
-rand_int = np.random.randint(0, 10, size=[5,3])
+# اعداد صحیح تصادفی بین [۰, ۱۰) با شکل ۵,۳
+rand_int = np.random.randint(0, 10, size=)
 rand_int
 ```
 
@@ -1061,7 +1040,7 @@ rand_int
 
 ```py
 from scipy import stats
-np_normal_dis = np.random.normal(5, 0.5, 1000) # mean, standard deviation, number of samples
+np_normal_dis = np.random.normal(5, 0.5, 1000) # میانگین، انحراف معیار، تعداد نمونه‌ها
 np_normal_dis
 ## min, max, mean, median, sd
 print('min: ', np.min(np_normal_dis))
@@ -1073,14 +1052,12 @@ print('sd: ', np.std(np_normal_dis))
 ```
 
 ```sh
-
     min:  3.557811005458804
     max:  6.876317743643499
     mean:  5.035832048106663
     median:  5.020161980441937
-    mode:  ModeResult(mode=array([3.55781101]), count=array([1]))
+    mode:  ModeResult(mode=array([3.55781101]), count=array())
     sd:  0.489682424165213
-
 ```
 
 ```python
@@ -1091,47 +1068,47 @@ plt.show()
 ![png](../test_files/test_121_0.png)
 
 ```python
-# numpy.dot(): Dot Product in Python using Numpy
-# Dot Product
-# Numpy is powerful library for matrices computation. For instance, you can compute the dot product with np.dot
+# numpy.dot(): ضرب داخلی در پایتون با استفاده از Numpy
+# ضرب داخلی
+# Numpy کتابخانه‌ای قدرتمند برای محاسبات ماتریسی است. به عنوان مثال، می‌توانید ضرب داخلی را با np.dot محاسبه کنید.
 
-# Syntax
+# سینتکس
 
 # numpy.dot(x, y, out=None)
 ```
 
-### Linear Algebra
+### جبر خطی
 
-1. Dot Product
+1.  ضرب داخلی (Dot Product)
 
 ```python
-## Linear algebra
-### Dot product: product of two arrays
-f = np.array([1,2,3])
-g = np.array([4,5,3])
+## جبر خطی
+### ضرب داخلی: حاصل‌ضرب دو آرایه
+f = np.array()
+g = np.array()
 ### 1*4+2*5 + 3*6
 np.dot(f, g)  # 23
 ```
 
-### NumPy Matrix Multiplication with np.matmul()
+### ضرب ماتریسی NumPy با np.matmul()
 
 ```python
-### Matmul: matruc product of two arrays
-h = [[1,2],[3,4]]
-i = [[5,6],[7,8]]
+### Matmul: ضرب ماتریسی دو آرایه
+h = [,]
+i = [,]
 ### 1*5+2*7 = 19
 np.matmul(h, i)
 ```
 
 ```sh
-    array([[19, 22],
-           [43, 50]])
-
+    array([,
+          ])
 ```
 
 ```py
-## Determinant 2*2 matrix
-### 5*8-7*6np.linalg.det(i)
+## دترمینان ماتریس ۲*۲
+### 5*8-7*6
+np.linalg.det(i)
 ```
 
 ```python
@@ -1170,7 +1147,7 @@ new_list
     [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 ```python
-[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
 ```
 
     [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -1182,10 +1159,10 @@ np_arr + 2
 
 array([ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
-We use linear equation for quantities which have linear relationship. Let's see the example below:
+ما از معادلات خطی برای کمیت‌هایی که رابطه خطی دارند استفاده می‌کنیم. بیایید مثال زیر را ببینیم:
 
 ```python
-temp = np.array([1,2,3,4,5])
+temp = np.array()
 pressure = temp * 2 + 5
 pressure
 ```
@@ -1203,7 +1180,7 @@ plt.show()
 
 ![png](../test_files/test_141_0.png)
 
-To draw the Gaussian normal distribution using numpy. As you can see below, the numpy can generate random numbers. To create random sample, we need the mean(mu), sigma(standard deviation), mumber of data points.
+برای رسم توزیع نرمال گوسی با استفاده از numpy. همانطور که در زیر مشاهده می‌کنید، numpy می‌تواند اعداد تصادفی تولید کند. برای ایجاد نمونه تصادفی، به میانگین (mu)، انحراف معیار (sigma) و تعداد نقاط داده نیاز داریم.
 
 ```python
 mu = 28
@@ -1218,20 +1195,20 @@ plt.show()
 
 ![png](../test_files/test_143_0.png)
 
-# Summary
+# خلاصه
 
-To summarize, the main differences with python lists are:
+به طور خلاصه، تفاوت‌های اصلی با لیست‌های پایتون عبارتند از:
 
-1. Arrays support vectorized operations, while lists don’t.
-1. Once an array is created, you cannot change its size. You will have to create a new array or overwrite the existing one.
-1. Every array has one and only one dtype. All items in it should be of that dtype.
-1. An equivalent numpy array occupies much less space than a python list of lists.
-1. numpy arrays support boolean indexing.
+1.  آرایه‌ها از عملیات برداری (vectorized operations) پشتیبانی می‌کنند، در حالی که لیست‌ها این‌طور نیستند.
+2.  پس از ایجاد یک آرایه، نمی‌توانید اندازه آن را تغییر دهید. باید یک آرایه جدید ایجاد کنید یا روی آرایه موجود بازنویسی کنید.
+3.  هر آرایه یک و فقط یک dtype دارد. همه آیتم‌های آن باید از آن dtype باشند.
+4.  یک آرایه numpy معادل، فضای بسیار کمتری نسبت به یک لیست از لیست‌های پایتون اشغال می‌کند.
+5.  آرایه‌های numpy از اندیس‌گذاری بولی (boolean indexing) پشتیبانی می‌کنند.
 
-## 💻 Exercises: Day 24
+## 💻 تمرین‌ها: روز ۲۴
 
-1. Repeat all the examples
+۱. تمام مثال‌ها را تکرار کنید.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک! 🎉
 
-[<< Day 23](../23_Day_Virtual_environment/23_virtual_environment.md) | [Day 25 >>](../25_Day_Pandas/25_pandas.md)
+[>> روز ۲۳](../23_Day_Virtual_environment/23_virtual_environment.md) | [روز ۲۵ >>](../25_Day_Pandas/25_pandas.md)
