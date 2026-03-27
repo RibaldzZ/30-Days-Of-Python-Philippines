@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 27 - Python with MongoDB </h1>
+  <h1> ۳۰ روز با پایتون: روز ۲۷ - پایتون با MongoDB </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,191 +7,191 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> Second Edition: July, 2021</small>
+<small> ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 
 </div>
 
-[<< Day 26](../26_Day_Python_web/26_python_web.md) | [Day 28 >>](../28_Day_API/28_API.md)
+[>> روز ۲۶](../26_Day_Python_web/26_python_web.md) | [روز ۲۸ <<](../28_Day_API/28_API.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 27](#-day-27)
-- [Python with MongoDB](#python-with-mongodb)
+- [📘 روز ۲۷](#-روز-۲۷)
+- [پایتون با MongoDB](#پایتون-با-mongodb)
   - [MongoDB](#mongodb)
-    - [SQL versus NoSQL](#sql-versus-nosql)
-    - [Getting Connection String(MongoDB URI)](#getting-connection-stringmongodb-uri)
-    - [Connecting Flask application to MongoDB Cluster](#connecting-flask-application-to-mongodb-cluster)
-    - [Creating a database and collection](#creating-a-database-and-collection)
-    - [Inserting many documents to collection](#inserting-many-documents-to-collection)
-    - [MongoDB Find](#mongodb-find)
-    - [Find with Query](#find-with-query)
-    - [Find query with modifier](#find-query-with-modifier)
-    - [Limiting documents](#limiting-documents)
-    - [Find with sort](#find-with-sort)
-    - [Update with query](#update-with-query)
-    - [Delete Document](#delete-document)
-    - [Drop a collection](#drop-a-collection)
-  - [💻 Exercises: Day 27](#-exercises-day-27)
+    - [SQL در مقابل NoSQL](#sql-در-مقابل-nosql)
+    - [دریافت رشته اتصال (MongoDB URI)](#دریافت-رشته-اتصال-mongodb-uri)
+    - [اتصال اپلیکیشن Flask به کلاستر MongoDB](#اتصال-اپلیکیشن-flask-به-کلاستر-mongodb)
+    - [ایجاد پایگاه داده و کالکشن](#ایجاد-پایگاه-داده-و-کالکشن)
+    - [درج چندین سند در کالکشن](#درج-چندین-سند-در-کالکشن)
+    - [جستجو در MongoDB](#جستجو-در-mongodb)
+    - [جستجو با کوئری](#جستجو-با-کوئری)
+    - [کوئری جستجو با اصلاح‌کننده](#کوئری-جستجو-با-اصلاحکننده)
+    - [محدود کردن اسناد](#محدود-کردن-اسناد)
+    - [جستجو با مرتب‌سازی](#جستجو-با-مرتبسازی)
+    - [به‌روزرسانی با کوئری](#بهروزرسانی-با-کوئری)
+    - [حذف سند](#حذف-سند)
+    - [حذف یک کالکشن](#حذف-یک-کالکشن)
+  - [💻 تمرینات: روز ۲۷](#-تمرینات-روز-۲۷)
 
-# 📘 Day 27
+# 📘 روز ۲۷
 
-# Python with MongoDB
+# پایتون با MongoDB
 
-Python is a backend technology and it can be connected with different data base applications. It can be connected to both SQL and noSQL databases. In this section, we connect Python with MongoDB database which is noSQL database. 
+پایتون یک تکنولوژی بک‌اند است و می‌تواند به برنامه‌های پایگاه داده مختلفی متصل شود. این زبان می‌تواند هم به پایگاه‌های داده SQL و هم noSQL متصل شود. در این بخش، ما پایتون را به پایگاه داده MongoDB که یک پایگاه داده noSQL است متصل می‌کنیم.
 
 ## MongoDB
 
-MongoDB is a NoSQL database. MongoDB stores data in a JSON like document which make MongoDB very flexible and scalable. Let us see the different terminologies of SQL and NoSQL databases. The following table will make the difference between SQL versus NoSQL databases.
+MongoDB یک پایگاه داده NoSQL است. MongoDB داده‌ها را در یک سند شبیه به JSON ذخیره می‌کند که MongoDB را بسیار انعطاف‌پذیر و مقیاس‌پذیر می‌سازد. بیایید به اصطلاحات مختلف پایگاه‌های داده SQL و NoSQL نگاهی بیندازیم. جدول زیر تفاوت بین پایگاه‌های داده SQL و NoSQL را مشخص می‌کند.
 
-### SQL versus NoSQL
+### SQL در مقابل NoSQL
 
-![SQL versus NoSQL](../images/mongoDB/sql-vs-nosql.png)
+![SQL در مقابل NoSQL](../images/mongoDB/sql-vs-nosql.png)
 
-In this section, we will focus on a NoSQL database MongoDB. Lets sign up on [mongoDB](https://www.mongodb.com/) by click on the sign in button then click register on the next page.
+در این بخش، ما بر روی پایگاه داده NoSQL یعنی MongoDB تمرکز خواهیم کرد. بیایید با کلیک بر روی دکمه sign in و سپس کلیک بر روی register در صفحه بعد، در [mongoDB](https://www.mongodb.com/) ثبت‌نام کنیم.
 
-![MongoDB Sign up pages](../images/mongoDB/mongodb-signup-page.png)
+![صفحات ثبت‌نام MongoDB](../images/mongoDB/mongodb-signup-page.png)
 
-Complete the fields and click continue
+فیلدها را کامل کرده و روی continue کلیک کنید
 
-![Mongodb register](../images/mongoDB/mongodb-register.png)
+![ثبت‌نام Mongodb](../images/mongoDB/mongodb-register.png)
 
-Select the free plan
+طرح رایگان را انتخاب کنید
 
-![Mongodb free plan](../images/mongoDB/mongodb-free.png)
+![طرح رایگان Mongodb](../images/mongoDB/mongodb-free.png)
 
-Choose the proximate free region and give any name for you cluster.
+نزدیک‌ترین منطقه رایگان را انتخاب کرده و نامی برای کلاستر خود انتخاب کنید.
 
-![Mongodb cluster name](../images/mongoDB/mongodb-cluster-name.png)
+![نام کلاستر Mongodb](../images/mongoDB/mongodb-cluster-name.png)
 
-Now, a free sandbox is created
+اکنون، یک sandbox رایگان ایجاد شده است
 
-![Mongodb sandbox](../images/mongoDB/mongodb-sandbox.png)
+![sandbox در Mongodb](../images/mongoDB/mongodb-sandbox.png)
 
-All local host access
+دسترسی از تمام هاست‌های محلی
 
-![Mongodb allow ip access](../images/mongoDB/mongodb-allow-ip-access.png)
+![اجازه دسترسی IP در Mongodb](../images/mongoDB/mongodb-allow-ip-access.png)
 
-Add user and password
+کاربر و رمز عبور را اضافه کنید
 
-![Mongodb add user](../images/mongoDB/mongodb-add-user.png)
+![افزودن کاربر در Mongodb](../images/mongoDB/mongodb-add-user.png)
 
-Create a mongoDB uri link
+یک لینک uri برای mongoDB ایجاد کنید
 
-![Mongodb create uri](../images/mongoDB/mongodb-create-uri.png)
+![ایجاد uri در Mongodb](../images/mongoDB/mongodb-create-uri.png)
 
-Select Python 3.6 or above driver
+درایور پایتون نسخه ۳.۶ یا بالاتر را انتخاب کنید
 
-![Mongodb python driver](../images/mongoDB/mongodb-python-driver.png)
+![درایور پایتون برای Mongodb](../images/mongoDB/mongodb-python-driver.png)
 
-### Getting Connection String(MongoDB URI)
+### دریافت رشته اتصال (MongoDB URI)
 
-Copy the connection string link and you will get something like this:
+لینک رشته اتصال را کپی کنید و چیزی شبیه به این دریافت خواهید کرد:
 
 ```sh
 mongodb+srv://asabeneh:<password>@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
 ```
 
-Do not worry about the url, it is a means to connect your application with mongoDB.
-Let us replace the password placeholder with the password you used to add a user.
+نگران url نباشید، این وسیله‌ای برای اتصال اپلیکیشن شما به mongoDB است.
+بیایید جایگزین `password` را با رمز عبوری که برای افزودن کاربر استفاده کردید، جایگزین کنیم.
 
-**Example:**
+**مثال:**
 
 ```sh
 mongodb+srv://asabeneh:123123123@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
 ```
 
-Now, I replaced everything and the password is 123123 and the name of the database is *thirty_days_python*. This is just an example, your password must be stronger than the example password.
+اکنون، من همه چیز را جایگزین کردم و رمز عبور 123123 و نام پایگاه داده `thirty_days_python` است. این فقط یک مثال است، رمز عبور شما باید قوی‌تر از رمز عبور مثال باشد.
 
-Python needs a mongoDB driver to access mongoDB database. We will use _pymongo_ with _dnspython_ to connect our application with mongoDB base . Inside your project directory install pymongo and dnspython.
+پایتون برای دسترسی به پایگاه داده mongoDB به یک درایور mongoDB نیاز دارد. ما از `_pymongo_` به همراه `_dnspython_` برای اتصال اپلیکیشن خود به پایگاه داده mongoDB استفاده خواهیم کرد. داخل دایرکتوری پروژه خود `pymongo` و `dnspython` را نصب کنید.
 
 ```sh
 pip install pymongo dnspython
 ```
 
-The "dnspython" module must be installed to use mongodb+srv:// URIs. The dnspython is a DNS toolkit for Python. It supports almost all record types.
+ماژول "dnspython" باید برای استفاده از URIهای `mongodb+srv://` نصب شود. `dnspython` یک جعبه ابزار DNS برای پایتون است. تقریباً از همه انواع رکوردها پشتیبانی می‌کند.
 
-### Connecting Flask application to MongoDB Cluster
+### اتصال اپلیکیشن Flask به کلاستر MongoDB
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 print(client.list_database_names())
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 
 ```
 
-When we run the above code we get the default mongoDB databases.
+وقتی کد بالا را اجرا می‌کنیم، پایگاه‌های داده پیش‌فرض mongoDB را دریافت می‌کنیم.
 
 ```sh
 ['admin', 'local']
 ```
 
-### Creating a database and collection
+### ایجاد پایگاه داده و کالکشن
 
-Let us create a database, database and collection in mongoDB will be created if it doesn't exist. Let's create a data base name *thirty_days_of_python* and *students* collection.
+بیایید یک پایگاه داده ایجاد کنیم، پایگاه داده و کالکشن در mongoDB در صورت عدم وجود ایجاد می‌شوند. بیایید یک پایگاه داده به نام `thirty_days_of_python` و یک کالکشن `students` ایجاد کنیم.
 
-To create a database:
+برای ایجاد یک پایگاه داده:
 
 ```sh
-db = client.name_of_databse # we can create a database like this or the second way
+db = client.name_of_databse # می‌توانیم یک پایگاه داده را به این صورت یا به روش دوم ایجاد کنیم
 db = client['name_of_database']
 ```
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-# Creating database
+# ایجاد پایگاه داده
 db = client.thirty_days_of_python
-# Creating students collection and inserting a document
+# ایجاد کالکشن students و درج یک سند
 db.students.insert_one({'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250})
 print(client.list_database_names())
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
 
-After we create a database, we also created a students collection and we used *insert_one()* method to insert a document.
-Now, the database *thirty_days_of_python* and *students* collection have been created and the document has been inserted.
-Check your mongoDB cluster and you will see both the database and the collection. Inside the collection, there will be a document.
+پس از ایجاد پایگاه داده، ما همچنین یک کالکشن `students` ایجاد کردیم و از متد `insert_one()` برای درج یک سند استفاده کردیم.
+اکنون، پایگاه داده `thirty_days_of_python` و کالکشن `students` ایجاد شده و سند درج شده است.
+کلاستر mongoDB خود را بررسی کنید و هم پایگاه داده و هم کالکشن را خواهید دید. داخل کالکشن، یک سند وجود خواهد داشت.
 
 ```sh
 ['thirty_days_of_python', 'admin', 'local']
 ```
 
-If you see this on the mongoDB cluster, it means you have successfully created a database and a collection.
+اگر این را در کلاستر mongoDB ببینید، به این معنی است که شما با موفقیت یک پایگاه داده و یک کالکشن ایجاد کرده‌اید.
 
-![Creating database and collection](../images/mongoDB/mongodb-creating_database.png)
+![ایجاد پایگاه داده و کالکشن](../images/mongoDB/mongodb-creating_database.png)
 
-If you have seen on the figure, the document has been created with a long id which acts as a primary key. Every time we create a document mongoDB create and unique id for it.
+اگر در تصویر دیده باشید، سند با یک id طولانی ایجاد شده است که به عنوان کلید اصلی عمل می‌کند. هر بار که ما یک سند ایجاد می‌کنیم، mongoDB یک id منحصربه‌فرد برای آن ایجاد می‌کند.
 
-### Inserting many documents to collection
+### درج چندین سند در کالکشن
 
-The *insert_one()*  method inserts one item at a time if we want to insert many documents at once either we use *insert_many()* method or for loop.
-We can use for loop to inset many documents at once.
+متد `insert_one()` در هر بار یک آیتم را درج می‌کند. اگر بخواهیم چندین سند را به یکباره درج کنیم، یا از متد `insert_many()` یا از حلقه for استفاده می‌کنیم.
+ما می‌توانیم از حلقه for برای درج چندین سند به یکباره استفاده کنیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 
@@ -206,34 +206,34 @@ for student in students:
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
 
-### MongoDB Find
+### جستجو در MongoDB
 
-The *find()* and *findOne()* methods are common method to find data in a collection in mongoDB database. It is similar to the SELECT statement in a MySQL database.
-Let us use the _find_one()_ method to get a document in a database collection.
+متدهای `find()` و `findOne()` متدهای رایجی برای یافتن داده در یک کالکشن در پایگاه داده mongoDB هستند. این مشابه دستور SELECT در پایگاه داده MySQL است.
+بیایید از متد `_find_one()_` برای دریافت یک سند در یک کالکشن پایگاه داده استفاده کنیم.
 
-- \*find_one({"\_id": ObjectId("id"}): Gets the first occurrence if an id is not provided
+- `_find_one({"_id": ObjectId("id"})`: اگر id ارائه نشود، اولین رخداد را دریافت می‌کند
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 student = db.students.find_one()
 print(student)
 
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 
@@ -243,24 +243,24 @@ if __name__ == '__main__':
 {'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Helsinki', 'city': 'Helsinki', 'age': 250}
 ```
 
-The above query returns the first entry but we can target specific document using specific \_id. Let us do one example, use David's id to get David object.
-'\_id':ObjectId('5df68a23f106fe2d315bbc8c')
+کوئری بالا اولین ورودی را برمی‌گرداند اما ما می‌توانیم با استفاده از `_id` خاص، سند خاصی را هدف قرار دهیم. بیایید یک مثال انجام دهیم، از id دیوید برای دریافت شیء دیوید استفاده کنیم.
+`'_id':ObjectId('5df68a23f106fe2d315bbc8c')`
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
-from bson.objectid import ObjectId # id object
+import os # وارد کردن ماژول سیستم عامل
+from bson.objectid import ObjectId # شیء id
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 student = db.students.find_one({'_id':ObjectId('5df68a23f106fe2d315bbc8c')})
 print(student)
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -269,26 +269,26 @@ if __name__ == '__main__':
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 ```
 
-We have seen, how to use _find_one()_ using the above examples. Let's move one to _find()_
+ما دیدیم که چگونه از `_find_one()_` با استفاده از مثال‌های بالا استفاده کنیم. بیایید به `_find()_` برویم
 
-- _find()_: returns all the occurrence from a collection if we don't pass a query object. The object is pymongo.cursor object.
+- `_find()`: در صورتی که یک شیء کوئری ارسال نکنیم، تمام رخدادها را از یک کالکشن برمی‌گرداند. این شیء از نوع `pymongo.cursor` است.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 students = db.students.find()
 for student in students:
     print(student)
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -300,24 +300,24 @@ if __name__ == '__main__':
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
 ```
 
-We can specify which fields to return by passing second object in the _find({}, {})_. 0 means not include and 1 means include but we can not mix 0 and 1, except for \_id.
+ما می‌توانیم با ارسال یک شیء دوم در `_find({}, {})_` مشخص کنیم که کدام فیلدها برگردانده شوند. 0 به معنای عدم نمایش و ۱ به معنای نمایش است، اما نمی‌توانیم 0 و 1 را با هم ترکیب کنیم، به جز برای `_id`.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
-students = db.students.find({}, {"_id":0,  "name": 1, "country":1}) # 0 means not include and 1 means include
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
+students = db.students.find({}, {"_id":0,  "name": 1, "country":1}) # 0 به معنای عدم نمایش و ۱ به معنای نمایش است
 for student in students:
     print(student)
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -329,18 +329,18 @@ if __name__ == '__main__':
 {'name': 'Sami', 'country': 'Finland'}
 ```
 
-### Find with Query
+### جستجو با کوئری
 
-In mongoDB find take a query object. We can pass a query object and we can filter the documents we like to filter out.
+در mongoDB، متد `find` یک شیء کوئری می‌گیرد. ما می‌توانیم یک شیء کوئری ارسال کرده و اسنادی را که می‌خواهیم فیلتر کنیم، فیلتر کنیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 query = {
     "country":"Finland"
@@ -353,8 +353,8 @@ for student in students:
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -364,17 +364,17 @@ if __name__ == '__main__':
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
 ```
 
-Query with modifiers
+کوئری با اصلاح‌کننده‌ها
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 query = {
     "city":"Helsinki"
@@ -386,8 +386,8 @@ for student in students:
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -397,17 +397,17 @@ if __name__ == '__main__':
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
 ```
 
-### Find query with modifier
+### کوئری جستجو با اصلاح‌کننده
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 query = {
     "country":"Finland",
     "city":"Helsinki"
@@ -419,8 +419,8 @@ for student in students:
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -430,17 +430,17 @@ if __name__ == '__main__':
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
 ```
 
-Query with modifiers
+کوئری با اصلاح‌کننده‌ها
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 query = {"age":{"$gt":30}}
 students = db.students.find(query)
 for student in students:
@@ -448,8 +448,8 @@ for student in students:
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -460,15 +460,15 @@ if __name__ == '__main__':
 ```
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
-query = {"age":{"$gt":30}}
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
+query = {"age":{"$lt":30}}
 students = db.students.find(query)
 for student in students:
     print(student)
@@ -479,35 +479,35 @@ for student in students:
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
 ```
 
-### Limiting documents
+### محدود کردن اسناد
 
-We can limit the number of documents we return using the _limit()_ method.
+ما می‌توانیم تعداد اسنادی که برمی‌گردانیم را با استفاده از متد `_limit()_` محدود کنیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 db.students.find().limit(3)
 ```
 
-### Find with sort
+### جستجو با مرتب‌سازی
 
-By default, sort is in ascending order. We can change the sorting to descending order by adding -1 parameter.
+به طور پیش‌فرض، مرتب‌سازی به صورت صعودی است. ما می‌توانیم با افزودن پارامتر 1-، مرتب‌سازی را به نزولی تغییر دهیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 students = db.students.find().sort('name')
 for student in students:
     print(student)
@@ -527,13 +527,12 @@ for student in students:
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
-```
+    app.run(debug=True, host='0.0.0.0', port=port)```
 
-Ascending order
+ترتیب صعودی
 
 ```sh
 {'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
@@ -542,7 +541,7 @@ Ascending order
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
 ```
 
-Descending order
+ترتیب نزولی
 
 ```sh
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
@@ -551,34 +550,34 @@ Descending order
 {'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
 ```
 
-### Update with query
+### به‌روزرسانی با کوئری
 
-We will use *update_one()* method to update one item. It takes two object one is a query and the second is the new object.
-The first person, Asabeneh got a very implausible age. Let us update Asabeneh's age.
+ما از متد `update_one()` برای به‌روزرسانی یک آیتم استفاده خواهیم کرد. این متد دو شیء می‌گیرد، یکی کوئری و دیگری شیء جدید است.
+سن شخص اول، Asabeneh، بسیار غیرمحتمل است. بیایید سن Asabeneh را به‌روزرسانی کنیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 query = {'age':250}
 new_value = {'$set':{'age':38}}
 
 db.students.update_one(query, new_value)
-# lets check the result if the age is modified
+# بیایید نتیجه را بررسی کنیم که آیا سن اصلاح شده است یا خیر
 for student in db.students.find():
     print(student)
 
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -590,37 +589,37 @@ if __name__ == '__main__':
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
 ```
 
-When we want to update many documents at once we use *upate_many()* method.
+وقتی می‌خواهیم چندین سند را به یکباره به‌روزرسانی کنیم، از متد `upate_many()` استفاده می‌کنیم.
 
-### Delete Document
+### حذف سند
 
-The method *delete_one()* deletes one document. The *delete_one()* takes a query object parameter. It only removes the first occurrence.
-Let us remove one John from the collection.
+متد `delete_one()` یک سند را حذف می‌کند. متد `delete_one()` یک پارامتر شیء کوئری می‌گیرد. این متد فقط اولین رخداد را حذف می‌کند.
+بیایید جان را از کالکشن حذف کنیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 
 query = {'name':'John'}
 db.students.delete_one(query)
 
 for student in db.students.find():
     print(student)
-# lets check the result if the age is modified
+# بیایید نتیجه را بررسی کنیم که آیا سن اصلاح شده است یا خیر
 for student in db.students.find():
     print(student)
 
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    # for deployment we use the environ
-    # to make it work for both production and development
+    # برای استقرار از environ استفاده می‌کنیم
+    # تا هم برای تولید و هم برای توسعه کار کند
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
@@ -631,30 +630,30 @@ if __name__ == '__main__':
 {'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
 ```
 
-As you can see John has been removed from the collection.
+همانطور که می‌بینید جان از کالکشن حذف شده است.
 
-When we want to delete many documents we use *delete_many()* method, it takes a query object. If we pass an empty query object to *delete_many({})* it will delete all the documents in the collection.
+وقتی می‌خواهیم چندین سند را حذف کنیم، از متد `delete_many()` استفاده می‌کنیم، که یک شیء کوئری می‌گیرد. اگر یک شیء کوئری خالی به `delete_many({})` ارسال کنیم، تمام اسناد موجود در کالکشن را حذف خواهد کرد.
 
-### Drop a collection
+### حذف یک کالکشن
 
-Using the _drop()_ method we can delete a collection from a database.
+با استفاده از متد `_drop()` می‌توانیم یک کالکشن را از پایگاه داده حذف کنیم.
 
 ```py
-# let's import the flask
+# فلاسک را وارد می‌کنیم
 from flask import Flask, render_template
-import os # importing operating system module
+import os # وارد کردن ماژول سیستم عامل
 import pymongo
 
 MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
-db = client['thirty_days_of_python'] # accessing the database
+db = client['thirty_days_of_python'] # دسترسی به پایگاه داده
 db.students.drop()
 ```
 
-Now, we have deleted the students collection from the database.
+اکنون، ما کالکشن `students` را از پایگاه داده حذف کرده‌ایم.
 
-## 💻 Exercises: Day 27
+## 💻 تمرینات: روز ۲۷
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم ! 🎉
 
-[<< Day 26](../26_Day_Python_web/26_python_web.md) | [Day 28 >>](../28_Day_API/28_API.md)
+[>> روز ۲۶](../26_Day_Python_web/26_python_web.md) | [روز ۲۸ <<](../28_Day_API/28_API.md)
