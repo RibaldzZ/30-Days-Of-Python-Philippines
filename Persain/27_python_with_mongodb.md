@@ -14,7 +14,7 @@
 
 </div>
 
-[>> روز ۲۶](../26_Day_Python_web/26_python_web.md) | [روز ۲۸ <<](../28_Day_API/28_API.md)
+[>> روز ۲۶](../26_python_web.md) | [روز ۲۸ <<](../28_API.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -656,4 +656,4 @@ db.students.drop()
 
 🎉 تبریک می‌گویم ! 🎉
 
-[>> روز ۲۶](../26_Day_Python_web/26_python_web.md) | [روز ۲۸ <<](../28_Day_API/28_API.md)
+[>> روز ۲۶](../26_python_web.md) | [روز ۲۸ <<](../28_API.md)

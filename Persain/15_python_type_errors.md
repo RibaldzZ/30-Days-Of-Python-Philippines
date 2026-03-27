@@ -14,7 +14,7 @@
 </div>
 </div>
 
-[>> روز ۱۴](../14_higher_order_functions.md) | [روز ۱۶ <<](../16_Day_Python_date_time/16_python_datetime.md)
+[>> روز ۱۴](../14_higher_order_functions.md) | [روز ۱۶ <<](../16_python_datetime.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 - [📘 روز ۱۵](#-روز-۱۵)
@@ -358,4 +358,4 @@ ZeroDivisionError: division by zero
 
 🎉 تبریک می‌گویم! 🎉
 
-[>> روز ۱۴](../14_higher_order_functions.md) | [روز ۱۶ <<](../16_Day_Python_date_time/16_python_datetime.md)
+[>> روز ۱۴](../14_higher_order_functions.md) | [روز ۱۶ <<](../16_python_datetime.md)

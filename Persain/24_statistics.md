@@ -13,7 +13,7 @@
 </sub>
 </div>
 
-[>> روز ۲۳](../23_Day_Virtual_environment/23_virtual_environment.md) | [روز ۲۵ >>](../25_Day_Pandas/25_pandas.md)
+[>> روز ۲۳](../23_virtual_environment.md) | [روز ۲۵ >>](../25_pandas.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -1211,4 +1211,4 @@ plt.show()
 
 🎉 تبریک! 🎉
 
-[>> روز ۲۳](../23_Day_Virtual_environment/23_virtual_environment.md) | [روز ۲۵ >>](../25_Day_Pandas/25_pandas.md)
+[>> روز ۲۳](../23_virtual_environment.md) | [روز ۲۵ >>](../25_pandas.md)

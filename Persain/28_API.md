@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[>> روز ۲۷](../27_Day_Python_with_mongodb/27_python_with_mongodb.md) | [روز ۲۹ <<](../29_Day_Building_API/29_building_API.md)
+[>> روز ۲۷](../27_python_with_mongodb.md) | [روز ۲۹ <<](../29_building_API.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -159,4 +159,4 @@ GET، POST، PUT و DELETE متدهای درخواست HTTP هستند که ما
 
 🎉 تبریک می‌گویم ! 🎉
 
-[>> روز ۲۷](../27_Day_Python_with_mongodb/27_python_with_mongodb.md) | [روز ۲۹ <<](../29_Day_Building_API/29_building_API.md)
+[>> روز ۲۷](../27_python_with_mongodb.md) | [روز ۲۹ <<](../29_building_API.md)

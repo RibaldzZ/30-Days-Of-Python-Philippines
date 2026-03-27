@@ -14,7 +14,7 @@
 </div>
 </div>
 
-[<< روز ۱۳](../13_list_comprehension.md) | [روز ۱۵>>](../15_Day_Python_type_errors/15_python_type_errors.md)
+[<< روز ۱۳](../13_list_comprehension.md) | [روز ۱۵>>](../15_python_type_errors.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 - [📘 روز ۱۴](#-روز-۱۴)
@@ -364,4 +364,4 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 🎉 تبریک می‌گویم! 🎉
 
-[<< روز ۱۳](../13_list_comprehension.md) | [روز ۱۵>>](../15_Day_Python_type_errors/15_python_type_errors.md)
+[<< روز ۱۳](../13_list_comprehension.md) | [روز ۱۵>>](../15_python_type_errors.md)

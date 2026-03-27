@@ -14,7 +14,7 @@
 </div>
 </div>
 
-[>> روز ۱۹](../19_Day_File_handling/19_file_handling.md) | [<< روز ۱۷](../17_Day_Exception_handling/17_exception_handling.md)
+[>> روز ۱۹](../19_file_handling.md) | [<< روز ۱۷](../17_exception_handling.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -456,4 +456,4 @@ distance = 8 -(-12) # 20
 
 🎉 تبریک می‌گویم! 🎉
 
-[>> روز ۱۹](../19_Day_File_handling/19_file_handling.md) | [<< روز ۱۷](../17_Day_Exception_handling/17_exception_handling.md)
+[>> روز ۱۹](../19_file_handling.md) | [<< روز ۱۷](../17_exception_handling.md)

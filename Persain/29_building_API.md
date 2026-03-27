@@ -14,7 +14,7 @@
 
 </div>
 
-[>> روز ۲۸](../28_Day_API/28_API.md) | [روز ۳۰ <<](../30_Day_Conclusions/30_conclusions.md)
+[>> روز ۲۸](../28_API.md) | [روز ۳۰ <<](../30_conclusions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -498,4 +498,4 @@ if __name__ == '__main__':
 
 🎉 تبریک می‌گویم ! 🎉
 
-[>> روز ۲۸](../28_Day_API/28_API.md) | [روز ۳۰ <<](../30_Day_Conclusions/30_conclusions.md)
+[>> روز ۲۸](../28_API.md) | [روز ۳۰ <<](../30_conclusions.md)

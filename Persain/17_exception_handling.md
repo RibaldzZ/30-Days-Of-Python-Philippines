@@ -13,7 +13,7 @@
   </sub>
 </div>
 
-[>> روز ۱۸](../18_Day_Regular_expressions/18_regular_expressions.md) | [<< روز ۱۶](../16_Day_Python_date_time/16_python_datetime.md)
+[>> روز ۱۸](../18_regular_expressions.md) | [<< روز ۱۶](../16_python_datetime.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -302,4 +302,4 @@ print(fruits_and_veges)
 
 🎉 تبریک می‌گویم! 🎉
 
-[>> روز ۱۸](../18_Day_Regular_expressions/18_regular_expressions.md) | [<< روز ۱۶](../16_Day_Python_date_time/16_python_datetime.md)
+[>> روز ۱۸](../18_regular_expressions.md) | [<< روز ۱۶](../16_python_datetime.md)
