@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 28 - API </h1>
+  <h1> ۳۰ روز با پایتون: روز ۲۸ - API </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,113 +7,113 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
+<small>ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 
 </div>
 </div>
 
-[<< Day 27](../27_Day_Python_with_mongodb/27_python_with_mongodb.md) | [Day 29 >>](../29_Day_Building_API/29_building_API.md)
+[>> روز ۲۷](../27_Day_Python_with_mongodb/27_python_with_mongodb.md) | [روز ۲۹ <<](../29_Day_Building_API/29_building_API.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 28](#-day-28)
-- [Application Programming Interface(API)](#application-programming-interfaceapi)
+- [📘 روز ۲۸](#-روز-۲۸)
+- [واسط برنامه‌نویسی کاربردی (API)](#واسط-برنامهنویسی-کاربردی-api)
   - [API](#api)
-  - [Building API](#building-api)
-  - [HTTP(Hypertext Transfer Protocol)](#httphypertext-transfer-protocol)
-  - [Structure of HTTP](#structure-of-http)
-  - [Initial Request Line(Status Line)](#initial-request-linestatus-line)
-    - [Initial Response Line(Status Line)](#initial-response-linestatus-line)
-    - [Header Fields](#header-fields)
-    - [The message body](#the-message-body)
-    - [Request Methods](#request-methods)
-  - [💻 Exercises: Day 28](#-exercises-day-28)
+  - [ساخت API](#ساخت-api)
+  - [HTTP (پروتکل انتقال ابرمتن)](#http-پروتکل-انتقال-ابرمتن)
+  - [ساختار HTTP](#ساختار-http)
+  - [خط درخواست اولیه (خط وضعیت)](#خط-درخواست-اولیه-خط-وضعیت)
+    - [خط پاسخ اولیه (خط وضعیت)](#خط-پاسخ-اولیه-خط-وضعیت)
+    - [فیلدهای سرآیند](#فیلدهای-سرآیند)
+    - [بدنه پیام](#بدنه-پیام)
+    - [متدهای درخواست](#متدهای-درخواست)
+  - [💻 تمرینات: روز ۲۸](#-تمرینات-روز-۲۸)
 
-# 📘 Day 28
+# 📘 روز ۲۸
 
-# Application Programming Interface(API)
+# واسط برنامه‌نویسی کاربردی (API)
 
 ## API
 
-API stands for Application Programming Interface. The kind of API we will cover in this section is going to be Web APIs.
-Web APIs are the defined interfaces through which interactions happen between an enterprise and applications that use its assets, which also is a Service Level Agreement (SLA) to specify the functional provider and expose the service path or URL for its API users.
+API مخفف Application Programming Interface (واسط برنامه‌نویسی کاربردی) است. نوعی از API که در این بخش به آن خواهیم پرداخت، APIهای وب (Web APIs) خواهند بود.
+APIهای وب، واسط‌های تعریف‌شده‌ای هستند که از طریق آن‌ها تعاملات بین یک شرکت و برنامه‌هایی که از دارایی‌های آن استفاده می‌کنند، رخ می‌دهد، که همچنین یک توافق‌نامه سطح خدمات (SLA) برای مشخص کردن ارائه‌دهنده عملکردی و افشای مسیر سرویس یا URL برای کاربران API آن است.
 
-In the context of web development, an API is defined as a set of specifications, such as Hypertext Transfer Protocol (HTTP) request messages, along with a definition of the structure of response messages, usually in an XML or a JavaScript Object Notation (JSON) format.
+در زمینه توسعه وب، API به عنوان مجموعه‌ای از مشخصات، مانند پیام‌های درخواست پروتکل انتقال ابرمتن (HTTP)، به همراه تعریفی از ساختار پیام‌های پاسخ، معمولاً در قالب XML یا نشانه‌گذاری شیء جاوا اسکریپت (JSON) تعریف می‌شود.
 
-Web API has been moving away from Simple Object Access Protocol (SOAP) based web services and service-oriented architecture (SOA) towards more direct representational state transfer (REST) style web resources.
+API وب از خدمات وب مبتنی بر پروتکل دسترسی ساده به اشیاء (SOAP) و معماری سرویس‌گرا (SOA) به سمت منابع وب با سبک انتقال حالت بازنمودی (REST) مستقیم‌تر حرکت کرده است.
 
-Social media services, web APIs have allowed web communities to share content and data between communities and different platforms. 
+در سرویس‌های رسانه‌های اجتماعی، APIهای وب به جوامع وب اجازه داده‌اند تا محتوا و داده‌ها را بین جوامع و پلتفرم‌های مختلف به اشتراک بگذارند.
 
-Using API, content that is created in one place dynamically can be posted and updated to multiple locations on the web.
+با استفاده از API، محتوایی که در یک مکان به صورت پویا ایجاد می‌شود، می‌تواند در چندین مکان در وب پست و به‌روز شود.
 
-For example, Twitter's REST API allows developers to access core Twitter data and the Search API provides methods for developers to interact with Twitter Search and trends data.
+به عنوان مثال، REST API توییتر به توسعه‌دهندگان اجازه می‌دهد تا به داده‌های اصلی توییتر دسترسی داشته باشند و Search API متدهایی را برای تعامل توسعه‌دهندگان با داده‌های جستجو و ترندهای توییتر فراهم می‌کند.
 
-Many applications provide API end points. Some  examples of API such as the countries [API](https://restcountries.eu/rest/v2/all), [cat's breed API](https://api.thecatapi.com/v1/breeds).
+بسیاری از برنامه‌ها نقاط پایانی (end points) API ارائه می‌دهند. برخی از نمونه‌های API مانند [API کشورها](https://restcountries.eu/rest/v2/all) و [API نژاد گربه‌ها](https://api.thecatapi.com/v1/breeds).
 
-In this section, we will cover a RESTful API that uses HTTP request methods to GET, PUT, POST and DELETE data.
+در این بخش، ما یک API به سبک RESTful را پوشش خواهیم داد که از متدهای درخواست HTTP برای دریافت (GET)، قرار دادن (PUT)، ارسال (POST) و حذف (DELETE) داده‌ها استفاده می‌کند.
 
-## Building API
+## ساخت API
 
-RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. In the previous sections, we have learned about python, flask and mongoDB. We will use the knowledge we acquire to develop a RESTful API using Python flask and mongoDB database. Every application which has CRUD(Create, Read, Update, Delete) operation has an API to create data, to get data, to update data or to delete data from a database.
+API به سبک RESTful یک واسط برنامه‌نویسی کاربردی (API) است که از درخواست‌های HTTP برای دریافت (GET)، قرار دادن (PUT)، ارسال (POST) و حذف (DELETE) داده‌ها استفاده می‌کند. در بخش‌های قبلی، ما با پایتون، فلسک و مانگو‌دی‌بی آشنا شدیم. ما از دانشی که به دست آورده‌ایم برای توسعه یک API به سبک RESTful با استفاده از پایتون فلسک و پایگاه داده مانگو‌دی‌بی استفاده خواهیم کرد. هر برنامه‌ای که عملیات CRUD (ایجاد، خواندن، به‌روزرسانی، حذف) را دارد، یک API برای ایجاد داده، دریافت داده، به‌روزرسانی داده یا حذف داده از پایگاه داده دارد.
 
-To build an API, it is good to understand HTTP protocol and HTTP request and response cycle.
+برای ساخت یک API، خوب است که پروتکل HTTP و چرخه درخواست و پاسخ HTTP را درک کنید.
 
-## HTTP(Hypertext Transfer Protocol)
+## HTTP (پروتکل انتقال ابرمتن)
 
-HTTP is an established communication protocol between a client and a server. A client in this case is a browser and server is the place where you access data. HTTP is a network protocol used to deliver resources which could be files on the World Wide Web, whether they are HTML files, image files, query results, scripts, or other file types.
+HTTP یک پروتکل ارتباطی تثبیت‌شده بین یک کلاینت و یک سرور است. کلاینت در این مورد یک مرورگر و سرور مکانی است که شما به داده‌ها دسترسی پیدا می‌کنید. HTTP یک پروتکل شبکه است که برای تحویل منابع، که می‌تواند فایل‌هایی در وب جهان‌گستر باشد، استفاده می‌شود، چه این منابع فایل‌های HTML، فایل‌های تصویری، نتایج کوئری، اسکریپت‌ها یا انواع دیگر فایل‌ها باشند.
 
-A browser is an HTTP client because it sends requests to an HTTP server (Web server), which then sends responses back to the client.
+یک مرورگر یک کلاینت HTTP است زیرا درخواست‌ها را به یک سرور HTTP (وب سرور) ارسال می‌کند، که سپس پاسخ‌ها را به کلاینت باز می‌گرداند.
 
-## Structure of HTTP
+## ساختار HTTP
 
-HTTP uses client-server model. An HTTP client opens a connection and sends a request message to an HTTP server and the HTTP server returns response message which is the requested resources. When the request response cycle completes the server closes the connection.
+HTTP از مدل کلاینت-سرور استفاده می‌کند. یک کلاینت HTTP یک اتصال را باز کرده و یک پیام درخواست به یک سرور HTTP ارسال می‌کند و سرور HTTP یک پیام پاسخ را که همان منابع درخواستی است، برمی‌گرداند. هنگامی که چرخه درخواست و پاسخ کامل می‌شود، سرور اتصال را می‌بندد.
 
-![HTTP request response cycle](../images/http_request_response_cycle.png)
+![چرخه درخواست و پاسخ HTTP](../images/http_request_response_cycle.png)
 
-The format of the request and response messages are similar. Both kinds of messages have
+فرمت پیام‌های درخواست و پاسخ مشابه است. هر دو نوع پیام دارای:
 
-- an initial line,
-- zero or more header lines,
-- a blank line (i.e. a CRLF by itself), and
-- an optional message body (e.g. a file, or query data, or query output).
+- یک خط اولیه،
+- صفر یا چند خط سرآیند،
+- یک خط خالی (یعنی یک CRLF به تنهایی)، و
+- یک بدنه پیام اختیاری (به عنوان مثال، یک فایل، یا داده‌های کوئری، یا خروجی کوئری).
 
-Let us an example of request and response messages by navigating this site:https://thirtydaysofpython-v1-final.herokuapp.com/. This site has been deployed on Heroku free dyno and in some months may not work because of high request. Support this work to make the server run all the time. 
+بیایید با مراجعه به این سایت یک مثال از پیام‌های درخواست و پاسخ را ببینیم: https://thirtydaysofpython-v1-final.herokuapp.com/. این سایت بر روی داینو رایگان Heroku مستقر شده است و ممکن است در برخی ماه‌ها به دلیل درخواست بالا کار نکند. از این کار حمایت کنید تا سرور همیشه در حال اجرا باشد.
 
-![Request and Response header](../images/request_response_header.png)
+![سرآیند درخواست و پاسخ](../images/request_response_header.png)
 
-## Initial Request Line(Status Line)
+## خط درخواست اولیه (خط وضعیت)
 
-The initial request line is different from the response.
-A request line has three parts, separated by spaces:
+خط درخواست اولیه با خط پاسخ متفاوت است.
+یک خط درخواست دارای سه بخش است که با فاصله از هم جدا شده‌اند:
 
-- method name(GET, POST, HEAD)
-- path of the requested resource,
-- the version of HTTP being used. eg GET / HTTP/1.1
+- نام متد (GET, POST, HEAD)
+- مسیر منبع درخواستی،
+- نسخه HTTP مورد استفاده. به عنوان مثال GET / HTTP/1.1
 
-GET is the most common HTTP that helps to get or read resource and POST is a common request method to create resource.
+GET رایج‌ترین متد HTTP است که به دریافت یا خواندن منبع کمک می‌کند و POST یک متد درخواست رایج برای ایجاد منبع است.
 
-### Initial Response Line(Status Line)
+### خط پاسخ اولیه (خط وضعیت)
 
-The initial response line, called the status line, also has three parts separated by spaces:
+خط پاسخ اولیه که خط وضعیت نامیده می‌شود، نیز دارای سه بخش است که با فاصله از هم جدا شده‌اند:
 
-- HTTP version
-- Response status code that gives the result of the request, and a reason which describes the status code. Example of status lines are:
+- نسخه HTTP
+- کد وضعیت پاسخ که نتیجه درخواست را می‌دهد، و یک دلیل که کد وضعیت را توصیف می‌کند. نمونه‌هایی از خطوط وضعیت عبارتند از:
   HTTP/1.0 200 OK
-  or
+  یا
   HTTP/1.0 404 Not Found
-  Notes:
+  نکات:
 
-The most common status codes are:
-200 OK: The request succeeded, and the resulting resource (e.g. file or script output) is returned in the message body.
-500 Server Error
-A complete list of HTTP status code can be found [here](https://httpstatuses.com/). It can be also found [here](https://httpstatusdogs.com/).
+رایج‌ترین کدهای وضعیت عبارتند از:
+200 OK: درخواست با موفقیت انجام شد و منبع حاصل (مثلاً فایل یا خروجی اسکریپت) در بدنه پیام بازگردانده می‌شود.
+500 خطای سرور
+لیست کاملی از کدهای وضعیت HTTP را می‌توان در [اینجا](https://httpstatuses.com/) یافت. همچنین می‌توان آن را در [اینجا](https://httpstatusdogs.com/) پیدا کرد.
 
-### Header Fields
+### فیلدهای سرآیند
 
-As you have seen in the above screenshot, header lines provide information about the request or response, or about the object sent in the message body.
+همانطور که در تصویر بالا مشاهده کردید، خطوط سرآیند اطلاعاتی در مورد درخواست یا پاسخ، یا در مورد شیء ارسال شده در بدنه پیام ارائه می‌دهند.
 
 ```sh
 GET / HTTP/1.1
@@ -132,31 +132,31 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: en-GB,en;q=0.9,fi-FI;q=0.8,fi;q=0.7,en-CA;q=0.6,en-US;q=0.5,fr;q=0.4
 ```
 
-### The message body
+### بدنه پیام
 
-An HTTP message may have a body of data sent after the header lines. In a response, this is where the requested resource is returned to the client (the most common use of the message body), or perhaps explanatory text if there's an error. In a request, this is where user-entered data or uploaded files are sent to the server.
+یک پیام HTTP ممکن است دارای بدنه‌ای از داده باشد که پس از خطوط سرآیند ارسال می‌شود. در یک پاسخ، اینجاست که منبع درخواستی به کلاینت بازگردانده می‌شود (رایج‌ترین استفاده از بدنه پیام)، یا شاید متنی توضیحی در صورت وجود خطا. در یک درخواست، اینجاست که داده‌های وارد شده توسط کاربر یا فایل‌های آپلود شده به سرور ارسال می‌شوند.
 
-If an HTTP message includes a body, there are usually header lines in the message that describe the body. In particular,
+اگر یک پیام HTTP شامل بدنه باشد، معمولاً خطوط سرآیندی در پیام وجود دارد که بدنه را توصیف می‌کند. به طور خاص،
 
-The Content-Type: header gives the MIME-type of the data in the body(text/html, application/json, text/plain, text/css, image/gif).
-The Content-Length: header gives the number of bytes in the body.
+سرآیند Content-Type: نوع MIME داده‌های موجود در بدنه را می‌دهد (text/html, application/json, text/plain, text/css, image/gif).
+سرآیند Content-Length: تعداد بایت‌های موجود در بدنه را می‌دهد.
 
-### Request Methods
+### متدهای درخواست
 
-The GET, POST, PUT and DELETE are the HTTP request methods which we are going to implement an API or a CRUD operation application.
+GET، POST، PUT و DELETE متدهای درخواست HTTP هستند که ما برای پیاده‌سازی یک API یا یک برنامه با عملیات CRUD از آنها استفاده خواهیم کرد.
 
-1. GET: GET method is used to retrieve and get information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.
+1. GET: متد GET برای بازیابی و دریافت اطلاعات از سرور مشخص با استفاده از یک URI مشخص استفاده می‌شود. درخواست‌هایی که از GET استفاده می‌کنند فقط باید داده‌ها را بازیابی کنند و نباید هیچ تأثیر دیگری بر داده‌ها داشته باشند.
 
-2. POST: POST request is used to create data and send data to the server, for example, creating a new post, file upload, etc. using HTML forms.
+2. POST: درخواست POST برای ایجاد داده و ارسال داده به سرور استفاده می‌شود، به عنوان مثال، ایجاد یک پست جدید، آپلود فایل و غیره با استفاده از فرم‌های HTML.
 
-3. PUT: Replaces all current representations of the target resource with the uploaded content and we use it modify or update data.
+3. PUT: تمام بازنمایی‌های فعلی منبع هدف را با محتوای آپلود شده جایگزین می‌کند و ما از آن برای تغییر یا به‌روزرسانی داده‌ها استفاده می‌کنیم.
 
-4. DELETE: Removes data
+4. DELETE: داده‌ها را حذف می‌کند.
 
-## 💻 Exercises: Day 28
+## 💻 تمرینات: روز ۲۸
 
-1. Read about API and HTTP
+1. در مورد API و HTTP مطالعه کنید.
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم ! 🎉
 
-[<< Day 27](../27_Day_Python_with_mongodb/27_python_with_mongodb.md) | [Day 29 >>](../29_Day_Building_API/29_building_API.md)
+[>> روز ۲۷](../27_Day_Python_with_mongodb/27_python_with_mongodb.md) | [روز ۲۹ <<](../29_Day_Building_API/29_building_API.md)
