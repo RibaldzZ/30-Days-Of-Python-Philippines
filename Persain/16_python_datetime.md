@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 16 - Python Date time </h1>
+  <h1> ۳۰ روز پایتون: روز ۱۶ - تاریخ و زمان در پایتون </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,31 +7,31 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Author:
+  <sub>نویسنده:
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small>Second Edition: July, 2021</small>
+  <small>ویرایش دوم: جولای، ۲۰۲۱</small>
   </sub>
 
 </div>
 
-[<< Day 15](../15_Day_Python_type_errors/15_python_type_errors.md) | [Day 17 >>](../17_Day_Exception_handling/17_exception_handling.md)
+[>> روز ۱۷](../17_Day_Exception_handling/17_exception_handling.md) | [<< روز ۱۵](../15_Day_Python_type_errors/15_python_type_errors.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
-- [📘 Day 16](#-day-16)
-  - [Python *datetime*](#python-datetime)
-    - [Getting *datetime* Information](#getting-datetime-information)
-    - [Formatting Date Output Using *strftime*](#formatting-date-output-using-strftime)
-    - [String to Time Using *strptime*](#string-to-time-using-strptime)
-    - [Using *date* from *datetime*](#using-date-from-datetime)
-    - [Time Objects to Represent Time](#time-objects-to-represent-time)
-    - [Difference Between Two Points in Time Using](#difference-between-two-points-in-time-using)
-    - [Difference Between Two Points in Time Using *timedelta*](#difference-between-two-points-in-time-using-timedelta)
-  - [💻 Exercises: Day 16](#-exercises-day-16)
-# 📘 Day 16
+- [📘 روز ۱۶](#-روز-۱۶)
+  - [ *datetime* پایتون](#-datetime-پایتون)
+    - [دریافت اطلاعات *datetime*](#دریافت-اطلاعات-datetime)
+    - [قالب‌بندی خروجی تاریخ با استفاده از *strftime*](#قالب‌بندی-خروجی-تاریخ-با-استفاده-از-strftime)
+    - [تبدیل رشته به زمان با استفاده از *strptime*](#تبدیل-رشته-به-زمان-با-استفاده-از-strptime)
+    - [استفاده از *date* از ماژول *datetime*](#استفاده-از-date-از-ماژول-datetime)
+    - [اشیاء Time برای نمایش زمان](#اشیاء-time-برای-نمایش-زمان)
+    - [محاسبه تفاوت بین دو نقطه زمانی با استفاده از](#محاسبه-تفاوت-بین-دو-نقطه-زمانی-با-استفاده-از)
+    - [محاسبه تفاوت بین دو نقطه زمانی با استفاده از *timedelta*](#محاسبه-تفاوت-بین-دو-نقطه-زمانی-با-استفاده-از-timedelta)
+  - [💻 تمرین‌ها: روز ۱۶](#-تمرین‌ها-روز-۱۶)
+# 📘 روز ۱۶
 
-## Python *datetime*
+## *datetime* پایتون
 
-Python has got _datetime_ module to handle date and time.
+پایتون ماژول _datetime_ را برای کار با تاریخ و زمان دارد.
 
 ```py
 import datetime
@@ -39,9 +39,9 @@ print(dir(datetime))
 ['MAXYEAR', 'MINYEAR', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'date', 'datetime', 'datetime_CAPI', 'sys', 'time', 'timedelta', 'timezone', 'tzinfo']
 ```
 
-With dir or help built-in commands it is possible to know the available functions in a certain module. As you can see, in the datetime module there are many functions, but we will focus on _date_, _datetime_, _time_ and _timedelta_. Let se see them one by one.
+با دستورات داخلی dir یا help می‌توان توابع موجود در یک ماژول خاص را شناخت. همانطور که می‌بینید، در ماژول datetime توابع زیادی وجود دارد، اما ما بر روی _date_، _datetime_، _time_ و _timedelta_ تمرکز خواهیم کرد. بیایید آنها را یک به یک ببینیم.
 
-### Getting *datetime* Information
+### دریافت اطلاعات *datetime*
 
 ```py
 from datetime import datetime
@@ -59,9 +59,9 @@ print('timestamp', timestamp)
 print(f'{day}/{month}/{year}, {hour}:{minute}')  # 8/7/2021, 7:38
 ```
 
-Timestamp or Unix timestamp is the number of seconds elapsed from 1st of January 1970 UTC.
+Timestamp یا Unix timestamp تعداد ثانیه‌های سپری شده از اول ژانویه ۱۹۷۰ به وقت UTC است.
 
-### Formatting Date Output Using *strftime*
+### قالب‌بندی خروجی تاریخ با استفاده از *strftime*
 
 ```py
 from datetime import datetime
@@ -78,19 +78,19 @@ print(f'{day}/{month}/{year}, {hour}:{minute}')  # 1/1/2020, 0:0
 
 ```
 
-Formatting date time using *strftime* method and the documentation can be found [here](https://strftime.org/).
+قالب‌بندی تاریخ و زمان با استفاده از متد *strftime* انجام می‌شود و مستندات آن را می‌توانید [اینجا](https://strftime.org/) پیدا کنید.
 
 ```py
 from datetime import datetime
-# current date and time
+# تاریخ و زمان فعلی
 now = datetime.now()
 t = now.strftime("%H:%M:%S")
 print("time:", t)
 time_one = now.strftime("%m/%d/%Y, %H:%M:%S")
-# mm/dd/YY H:M:S format
+# فرمت mm/dd/YY H:M:S
 print("time one:", time_one)
 time_two = now.strftime("%d/%m/%Y, %H:%M:%S")
-# dd/mm/YY H:M:S format
+# فرمت dd/mm/YY H:M:S
 print("time two:", time_two)
 ```
 
@@ -100,12 +100,12 @@ time one: 12/05/2019, 01:05:01
 time two: 05/12/2019, 01:05:01
 ```
 
-Here are all the _strftime_ symbols we use to format time. An example of all the formats for this module.
+در اینجا تمام نمادهای _strftime_ که برای قالب‌بندی زمان استفاده می‌کنیم، آورده شده است. مثالی از تمام فرمت‌های این ماژول.
 
 ![strftime](../images/strftime.png)
 
-### String to Time Using *strptime*
-Here is a [documentation](https://www.programiz.com/python-programming/datetime/strptimet) hat helps to understand the format. 
+### تبدیل رشته به زمان با استفاده از *strptime*
+در اینجا [مستنداتی](https://www.programiz.com/python-programming/datetime/strptimet) وجود دارد که به درک فرمت کمک می‌کند.
 
 ```py
 from datetime import datetime
@@ -120,21 +120,21 @@ date_string = 5 December, 2019
 date_object = 2019-12-05 00:00:00
 ```
 
-### Using *date* from *datetime*
+### استفاده از *date* از ماژول *datetime*
 
 ```py
 from datetime import date
 d = date(2020, 1, 1)
 print(d)
 print('Current date:', d.today())    # 2019-12-05
-# date object of today's date
+# شیء date از تاریخ امروز
 today = date.today()
 print("Current year:", today.year)   # 2019
 print("Current month:", today.month) # 12
 print("Current day:", today.day)     # 5
 ```
 
-### Time Objects to Represent Time
+### اشیاء Time برای نمایش زمان
 
 ```py
 from datetime import time
@@ -152,13 +152,13 @@ d = time(10, 30, 50, 200555)
 print("d =", d)
 ```
 
-output  
-a = 00:00:00  
-b = 10:30:50  
-c = 10:30:50  
+خروجی
+a = 00:00:00
+b = 10:30:50
+c = 10:30:50
 d = 10:30:50.200555
 
-### Difference Between Two Points in Time Using
+### محاسبه تفاوت بین دو نقطه زمانی با استفاده از
 
 ```py
 today = date(year=2019, month=12, day=5)
@@ -173,7 +173,7 @@ diff = t2 - t1
 print('Time left for new year:', diff) # Time left for new year: 26 days, 23: 01: 00
 ```
 
-### Difference Between Two Points in Time Using *timedelta*
+### محاسبه تفاوت بین دو نقطه زمانی با استفاده از *timedelta*
 
 ```py
 from datetime import timedelta
@@ -189,20 +189,20 @@ print("t3 =", t3)
     t3 = 86 days, 22:56:50
 ```
 
-🌕 You are an extraordinary. You are 16 steps a head to your way to greatness. Now do some exercises for your brain and muscles.
+🌕 شما فوق‌العاده هستید. شما ۱۶ قدم در مسیر خود به سوی بزرگی پیش رفته‌اید. اکنون برای مغز و عضلات خود چند تمرین انجام دهید.
 
-## 💻 Exercises: Day 16
+## 💻 تمرین‌ها: روز ۱۶
 
-1. Get the current day, month, year, hour, minute and timestamp from datetime module
-1. Format the current date using this format: "%m/%d/%Y, %H:%M:%S")
-1. Today is 5 December, 2019. Change this time string to time.
-1. Calculate the time difference between now and new year.
-1. Calculate the time difference between 1 January 1970 and now.
-1. Think, what can you use the datetime module for? Examples:
-   - Time series analysis
-   - To get a timestamp of any activities in an application
-   - Adding posts on a blog 
+۱. روز، ماه، سال، ساعت، دقیقه و timestamp فعلی را از ماژول datetime بگیرید.
+۲. تاریخ فعلی را با استفاده از این فرمت قالب‌بندی کنید: "%m/%d/%Y, %H:%M:%S")
+۳. امروز ۵ دسامبر ۲۰۱۹ است. این رشته زمانی را به زمان تبدیل کنید.
+۴. تفاوت زمانی بین حال و سال نو را محاسبه کنید.
+۵. تفاوت زمانی بین ۱ ژانویه ۱۹۷۰ و حال را محاسبه کنید.
+۶. فکر کنید، از ماژول datetime برای چه کارهایی می‌توانید استفاده کنید؟ مثال‌ها:
+   - تحلیل سری‌های زمانی
+   - برای گرفتن timestamp از هر فعالیتی در یک برنامه
+   - افزودن پست‌ها در یک وبلاگ
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم! 🎉
 
-[<< Day 15](../15_Day_Python_type_errors/15_python_type_errors.md) | [Day 17 >>](../17_Day_Exception_handling/17_exception_handling.md)
+[>> روز ۱۷](../17_Day_Exception_handling/17_exception_handling.md) | [<< روز ۱۵](../15_Day_Python_type_errors/15_python_type_errors.md)
