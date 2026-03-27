@@ -16,19 +16,19 @@
 
 [\>\> روز پنجم](./05_Day_Lists/05_lists.md) | [روز هفتم \<\<](./07_Day_Sets/07_sets.md)
 
-  - [روز ششم:](https://www.google.com/search?q=%23%D8%B1%D9%88%D8%B2-%D8%B4%D8%B4%D9%85)
-      - [تاپل‌ها](https://www.google.com/search?q=%23%D8%AA%D8%A7%D9%BE%D9%84%E2%80%8C%D9%87%D8%A7)
-          - [ایجاد یک تاپل](https://www.google.com/search?q=%23%D8%A7%DB%8C%D8%AC%D8%A7%D8%AF-%DB%8C%DA%A9-%D8%AA%D8%A7%D9%BE%D9%84)
-          - [طول تاپل](https://www.google.com/search?q=%23%D8%B7%D9%88%D9%84-%D8%AA%D8%A7%D9%BE%D9%84)
-          - [دسترسی به آیتم‌های تاپل](https://www.google.com/search?q=%23%D8%AF%D8%B3%D8%AA%D8%B1%D8%B3%DB%8C-%D8%A8%D9%87-%D8%A2%DB%8C%D8%AA%D9%85%E2%80%8C%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D9%BE%D9%84)
-          - [برش زدن تاپل‌ها](https://www.google.com/search?q=%23%D8%A8%D8%B1%D8%B4-%D8%B2%D8%AF%D9%86-%D8%AA%D8%A7%D9%BE%D9%84%E2%80%8C%D9%87%D8%A7)
-          - [تبدیل تاپل‌ها به لیست‌ها](https://www.google.com/search?q=%23%D8%AA%D8%A8%D8%AF%DB%8C%D9%84-%D8%AA%D8%A7%D9%BE%D9%84%E2%80%8C%D9%87%D8%A7-%D8%A8%D9%87-%D9%84%DB%8C%D8%B3%D8%AA%E2%80%8C%D9%87%D8%A7)
-          - [بررسی یک آیتم در یک تاپل](https://www.google.com/search?q=%23%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%DB%8C%DA%A9-%D8%A2%DB%8C%D8%AA%D9%85-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%AA%D8%A7%D9%BE%D9%84)
-          - [پیوستن تاپل‌ها](https://www.google.com/search?q=%23%D9%BE%DB%8C%D9%88%D8%B3%D8%AA%D9%86-%D8%AA%D8%A7%D9%BE%D9%84%E2%80%8C%D9%87%D8%A7)
-          - [حذف تاپل‌ها](https://www.google.com/search?q=%23%D8%AD%D8%B0%D9%81-%D8%AA%D8%A7%D9%BE%D9%84%E2%80%8C%D9%87%D8%A7)
-      - [💻 تمرینات: روز ششم](https://www.google.com/search?q=%23-%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%B1%D9%88%D8%B2-%D8%B4%D8%B4%D9%85)
-          - [تمرینات: سطح ۱](https://www.google.com/search?q=%23%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%B3%D8%B7%D8%AD-%DB%B1)
-          - [تمرینات: سطح ۲](https://www.google.com/search?q=%23%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%B3%D8%B7%D8%AD-%DB%B2)
+- [روز ششم:](#روز-ششم)
+  - [تاپل‌ها](#تاپل‌ها)
+    - [ایجاد یک تاپل](#ایجاد-یک-تاپل)
+    - [طول تاپل](#طول-تاپل)
+    - [دسترسی به آیتم‌های تاپل](#دسترسی-به-آیتم‌های-تاپل)
+    - [برش زدن تاپل‌ها](#برش-زدن-تاپل‌ها)
+    - [تبدیل تاپل‌ها به لیست‌ها](#تبدیل-تاپل‌ها-به-لیست‌ها)
+    - [بررسی یک آیتم در یک تاپل](#بررسی-یک-آیتم-در-یک-تاپل)
+    - [پیوستن تاپل‌ها](#پیوستن-تاپل‌ها)
+    - [حذف تاپل‌ها](#حذف-تاپل‌ها)
+  - [💻 تمرینات: روز ششم](#-تمرینات-روز-ششم)
+    - [تمرینات: سطح ۱](#تمرینات-سطح-۱)
+    - [تمرینات: سطح ۲](#تمرینات-سطح-۲)
 
 # روز ششم:
 
