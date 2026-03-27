@@ -1,72 +1,72 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 19 - File Handling </h1>
+  <h1> ۳۰ روز با پایتون: روز ۱۹ - کار با فایل‌ها </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
   <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
-<sub>Author:
+<sub>نویسنده:
 <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
+<small>ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 </div>
 
-[<< Day 18](../18_Day_Regular_expressions/18_regular_expressions.md) | [Day 20 >>](../20_Day_Python_package_manager/20_python_package_manager.md)
+[>> روز ۲۰](../20_Day_Python_package_manager/20_python_package_manager.md) | [<< روز ۱۸](../18_Day_Regular_expressions/18_regular_expressions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 19](#-day-19)
-  - [File Handling](#file-handling)
-    - [Opening Files for Reading](#opening-files-for-reading)
-    - [Opening Files for Writing and Updating](#opening-files-for-writing-and-updating)
-    - [Deleting Files](#deleting-files)
-  - [File Types](#file-types)
-    - [File with txt Extension](#file-with-txt-extension)
-    - [File with json Extension](#file-with-json-extension)
-    - [Changing JSON to Dictionary](#changing-json-to-dictionary)
-    - [Changing Dictionary to JSON](#changing-dictionary-to-json)
-    - [Saving as JSON File](#saving-as-json-file)
-    - [File with csv Extension](#file-with-csv-extension)
-    - [File with xlsx Extension](#file-with-xlsx-extension)
-    - [File with xml Extension](#file-with-xml-extension)
-  - [💻 Exercises: Day 19](#-exercises-day-19)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+- [📘 روز ۱۹](#-روز-۱۹)
+  - [کار با فایل‌ها](#کار-با-فایلها)
+    - [باز کردن فایل‌ها برای خواندن](#باز-کردن-فایلها-برای-خواندن)
+    - [باز کردن فایل‌ها برای نوشتن و به‌روزرسانی](#باز-کردن-فایلها-برای-نوشتن-و-بهروزرسانی)
+    - [حذف فایل‌ها](#حذف-فایلها)
+  - [انواع فایل](#انواع-فایل)
+    - [فایل با پسوند txt](#فایل-با-پسوند-txt)
+    - [فایل با پسوند json](#فایل-با-پسوند-json)
+    - [تبدیل JSON به دیکشنری](#تبدیل-json-به-دیکشنری)
+    - [تبدیل دیکشنری به JSON](#تبدیل-دیکشنری-به-json)
+    - [ذخیره به عنوان فایل JSON](#ذخیره-به-عنوان-فایل-json)
+    - [فایل با پسوند csv](#فایل-با-پسوند-csv)
+    - [فایل با پسوند xlsx](#فایل-با-پسوند-xlsx)
+    - [فایل با پسوند xml](#فایل-با-پسوند-xml)
+  - [💻 تمرین‌ها: روز ۱۹](#-تمرینها-روز-۱۹)
+    - [تمرین‌ها: سطح ۱](#تمرینها-سطح-۱)
+    - [تمرین‌ها: سطح ۲](#تمرینها-سطح-۲)
+    - [تمرین‌ها: سطح ۳](#تمرینها-سطح-۳)
 
-# 📘 Day 19
+# 📘 روز ۱۹
 
-## File Handling
+## کار با فایل‌ها
 
-So far we have seen different Python data types. We usually store our data in different file formats. In addition to handling files, we will also see different file formats(.txt, .json, .xml, .csv, .tsv, .excel) in this section. First, let us get familiar with handling files with common file format(.txt).
+تاکنون انواع مختلف داده در پایتون را دیده‌ایم. ما معمولاً داده‌های خود را در فرمت‌های فایل مختلف ذخیره می‌کنیم. علاوه بر کار با فایل‌ها، در این بخش با فرمت‌های مختلف فایل (.txt, .json, .xml, .csv, .tsv, .excel) نیز آشنا خواهیم شد. ابتدا، بیایید با کار با فایل‌ها با فرمت رایج (.txt) آشنا شویم.
 
-File handling is an import part of programming which allows us to create, read, update and delete files. In Python to handle data we use _open()_ built-in function.
+کار با فایل‌ها بخش مهمی از برنامه‌نویسی است که به ما امکان ایجاد، خواندن، به‌روزرسانی و حذف فایل‌ها را می‌دهد. در پایتون برای کار با داده‌ها از تابع داخلی _open()_ استفاده می‌کنیم.
 
 ```py
-# Syntax
-open('filename', mode) # mode(r, a, w, x, t,b)  could be to read, write, update
+# سینتکس
+open('filename', mode) # mode (r, a, w, x, t, b) می‌تواند برای خواندن، نوشتن، به‌روزرسانی باشد
 ```
 
-- "r" - Read - Default value. Opens a file for reading, it returns an error if the file does not exist
-- "a" - Append - Opens a file for appending, creates the file if it does not exist
-- "w" - Write - Opens a file for writing, creates the file if it does not exist
-- "x" - Create - Creates the specified file, returns an error if the file exists
-- "t" - Text - Default value. Text mode
-- "b" - Binary - Binary mode (e.g. images)
+- "r" - خواندن (Read) - مقدار پیش‌فرض. فایلی را برای خواندن باز می‌کند، اگر فایل وجود نداشته باشد خطا برمی‌گرداند.
+- "a" - الصاق (Append) - فایلی را برای الصاق باز می‌کند، اگر فایل وجود نداشته باشد آن را ایجاد می‌کند.
+- "w" - نوشتن (Write) - فایلی را برای نوشتن باز می‌کند، اگر فایل وجود نداشته باشد آن را ایجاد می‌کند.
+- "x" - ایجاد (Create) - فایل مشخص شده را ایجاد می‌کند، اگر فایل وجود داشته باشد خطا برمی‌گرداند.
+- "t" - متنی (Text) - مقدار پیش‌فرض. حالت متنی.
+- "b" - باینری (Binary) - حالت باینری (مثلاً برای تصاویر).
 
-### Opening Files for Reading
+### باز کردن فایل‌ها برای خواندن
 
-The default mode of _open_ is reading, so we do not have to specify 'r' or 'rt'. I have created and saved a file named reading_file_example.txt in the files directory. Let us see how it is done:
+حالت پیش‌فرض _open_ خواندن است، بنابراین لازم نیست 'r' یا 'rt' را مشخص کنیم. من فایلی به نام reading_file_example.txt را در پوشه files ایجاد و ذخیره کرده‌ام. بیایید ببینیم چگونه انجام می‌شود:
 
 ```py
 f = open('./files/reading_file_example.txt')
 print(f) # <_io.TextIOWrapper name='./files/reading_file_example.txt' mode='r' encoding='UTF-8'>
 ```
 
-As you can see in the example above, I printed the opened file and it gave  some information about it. Opened file has different reading methods: _read()_, _readline_, _readlines_. An opened file has to be closed with _close()_ method.
+همانطور که در مثال بالا می‌بینید، من فایل باز شده را چاپ کردم و اطلاعاتی در مورد آن به من داد. فایل باز شده متدهای مختلف خواندن دارد: _read()_، _readline_، _readlines_. یک فایل باز شده باید با متد _close()_ بسته شود.
 
-- _read()_: read the whole text as string. If we want to limit the number of characters we want to read, we can limit it by passing int value to the *read(number)* method.
+- _read()_: کل متن را به صورت رشته می‌خواند. اگر بخواهیم تعداد کاراکترهایی را که می‌خواهیم بخوانیم محدود کنیم، می‌توانیم با ارسال یک مقدار int به متد *read(number)* آن را محدود کنیم.
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -77,13 +77,13 @@ f.close()
 ```
 
 ```sh
-# output
+# خروجی
 <class 'str'>
 This is an example to show how to open a file and read.
 This is the second line of the text.
 ```
 
-Instead of printing all the text, let us print the first 10 characters of the text file.
+به جای چاپ کل متن، بیایید ۱۰ کاراکتر اول فایل متنی را چاپ کنیم.
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -94,12 +94,12 @@ f.close()
 ```
 
 ```sh
-# output
+# خروجی
 <class 'str'>
 This is an
 ```
 
-- _readline()_: read only the first line
+- _readline()_: فقط خط اول را می‌خواند.
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -110,12 +110,12 @@ f.close()
 ```
 
 ```sh
-# output
+# خروجی
 <class 'str'>
 This is an example to show how to open a file and read.
 ```
 
-- _readlines()_: read all the text line by line and returns a list of lines
+- _readlines()_: تمام متن را خط به خط می‌خواند و لیستی از خطوط را برمی‌گرداند.
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -126,12 +126,12 @@ f.close()
 ```
 
 ```sh
-# output
+# خروجی
 <class 'list'>
 ['This is an example to show how to open a file and read.\n', 'This is the second line of the text.']
 ```
 
-Another way to get all the lines as a list is using _splitlines()_:
+روش دیگر برای گرفتن تمام خطوط به صورت لیست، استفاده از _splitlines()_ است:
 
 ```py
 f = open('./files/reading_file_example.txt')
@@ -142,12 +142,12 @@ f.close()
 ```
 
 ```sh
-# output
+# خروجی
 <class 'list'>
 ['This is an example to show how to open a file and read.', 'This is the second line of the text.']
 ```
 
-After we open a file, we should close it. There is a high tendency of forgetting to close them. There is a new way of opening files using _with_ - closes the files by itself. Let us rewrite the the previous example with the _with_ method:
+بعد از باز کردن یک فایل، باید آن را ببندیم. احتمال فراموش کردن بستن آن‌ها زیاد است. روش جدیدی برای باز کردن فایل‌ها با استفاده از _with_ وجود دارد - که فایل‌ها را به طور خودکار می‌بندد. بیایید مثال قبلی را با روش _with_ بازنویسی کنیم:
 
 ```py
 with open('./files/reading_file_example.txt') as f:
@@ -157,35 +157,35 @@ with open('./files/reading_file_example.txt') as f:
 ```
 
 ```sh
-# output
+# خروجی
 <class 'list'>
 ['This is an example to show how to open a file and read.', 'This is the second line of the text.']
 ```
 
-### Opening Files for Writing and Updating
+### باز کردن فایل‌ها برای نوشتن و به‌روزرسانی
 
-To write to an existing file, we must add a mode as parameter to the _open()_ function:
+برای نوشتن در یک فایل موجود، باید یک حالت به عنوان پارامتر به تابع _open()_ اضافه کنیم:
 
-- "a" - append - will append to the end of the file, if the file does not it creates a new file.
-- "w" - write - will overwrite any existing content, if the file does not exist it creates.
+- "a" - الصاق (append) - به انتهای فایل اضافه می‌کند، اگر فایل وجود نداشته باشد یک فایل جدید ایجاد می‌کند.
+- "w" - نوشتن (write) - هر محتوای موجود را بازنویسی می‌کند، اگر فایل وجود نداشته باشد آن را ایجاد می‌کند.
 
-Let us append some text to the file we have been reading:
+بیایید متنی را به فایلی که در حال خواندن آن بودیم اضافه کنیم:
 
 ```py
 with open('./files/reading_file_example.txt','a') as f:
     f.write('This text has to be appended at the end')
 ```
 
-The method below creates a new file, if the file does not exist:
+متد زیر یک فایل جدید ایجاد می‌کند، اگر فایل وجود نداشته باشد:
 
 ```py
 with open('./files/writing_file_example.txt','w') as f:
     f.write('This text will be written in a newly created file')
 ```
 
-### Deleting Files
+### حذف فایل‌ها
 
-We have seen in previous section, how to make and remove a directory using _os_ module. Again now, if we want to remove a file we use _os_ module.
+در بخش قبلی دیدیم که چگونه با استفاده از ماژول _os_ یک پوشه را ایجاد و حذف کنیم. حالا دوباره، اگر بخواهیم فایلی را حذف کنیم از ماژول _os_ استفاده می‌کنیم.
 
 ```py
 import os
@@ -193,7 +193,7 @@ os.remove('./files/example.txt')
 
 ```
 
-If the file does not exist, the remove method will raise an error, so it is good to use a condition like this:
+اگر فایل وجود نداشته باشد، متد remove خطا ایجاد می‌کند، بنابراین خوب است که از شرطی مانند این استفاده کنیم:
 
 ```py
 import os
@@ -203,30 +203,30 @@ else:
     print('The file does not exist')
 ```
 
-## File Types
+## انواع فایل
 
-### File with txt Extension
+### فایل با پسوند txt
 
-File with _txt_ extension is a very common form of data and we have covered it in the previous section. Let us move to the JSON file
+فایل با پسوند _txt_ یک فرمت بسیار رایج از داده است و ما آن را در بخش قبلی پوشش دادیم. بیایید به فایل JSON برویم.
 
-### File with json Extension
+### فایل با پسوند json
 
-JSON stands for JavaScript Object Notation. Actually, it is a stringified JavaScript object or Python dictionary.
+JSON مخفف JavaScript Object Notation است. در واقع، این یک شیء جاوا اسکریپت یا دیکشنری پایتون است که به رشته تبدیل شده است.
 
-_Example:_
+_مثال:_
 
 ```py
-# dictionary
+# دیکشنری
 person_dct= {
     "name":"Asabeneh",
     "country":"Finland",
     "city":"Helsinki",
     "skills":["JavaScrip", "React","Python"]
 }
-# JSON: A string form a dictionary
+# JSON: یک رشته از یک دیکشنری
 person_json = "{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}"
 
-# we use three quotes and make it multiple line to make it more readable
+# ما از سه نقل قول استفاده می‌کنیم و آن را چند خطی می‌کنیم تا خواناتر شود
 person_json = '''{
     "name":"Asabeneh",
     "country":"Finland",
@@ -235,9 +235,9 @@ person_json = '''{
 }'''
 ```
 
-### Changing JSON to Dictionary
+### تبدیل JSON به دیکشنری
 
-To change a JSON to a dictionary, first we import the json module and then we use _loads_ method.
+برای تبدیل JSON به دیکشنری، ابتدا ماژول json را وارد می‌کنیم و سپس از متد _loads_ استفاده می‌کنیم.
 
 ```py
 import json
@@ -248,7 +248,7 @@ person_json = '''{
     "city": "Helsinki",
     "skills": ["JavaScrip", "React", "Python"]
 }'''
-# let's change JSON to dictionary
+# بیایید JSON را به دیکشنری تبدیل کنیم
 person_dct = json.loads(person_json)
 print(type(person_dct))
 print(person_dct)
@@ -256,35 +256,35 @@ print(person_dct['name'])
 ```
 
 ```sh
-# output
+# خروجی
 <class 'dict'>
 {'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}
 Asabeneh
 ```
 
-### Changing Dictionary to JSON
+### تبدیل دیکشنری به JSON
 
-To change a dictionary to a JSON we use _dumps_ method from the json module.
+برای تبدیل دیکشنری به JSON از متد _dumps_ از ماژول json استفاده می‌کنیم.
 
 ```py
 import json
-# python dictionary
+# دیکشنری پایتون
 person = {
     "name": "Asabeneh",
     "country": "Finland",
     "city": "Helsinki",
     "skills": ["JavaScrip", "React", "Python"]
 }
-# let's convert it to  json
-person_json = json.dumps(person, indent=4) # indent could be 2, 4, 8. It beautifies the json
+# بیایید آن را به json تبدیل کنیم
+person_json = json.dumps(person, indent=4) # indent می‌تواند ۲، ۴، ۸ باشد. این json را زیباتر می‌کند
 print(type(person_json))
 print(person_json)
 ```
 
 ```sh
-# output
-# when you print it, it does not have the quote, but actually it is a string
-# JSON does not have type, it is a string type.
+# خروجی
+# وقتی آن را چاپ می‌کنید، نقل قول ندارد، اما در واقع یک رشته است
+# JSON نوع ندارد، یک نوع رشته است.
 <class 'str'>
 {
     "name": "Asabeneh",
@@ -298,13 +298,13 @@ print(person_json)
 }
 ```
 
-### Saving as JSON File
+### ذخیره به عنوان فایل JSON
 
-We can also save our data as a json file. Let us save it as a json file using the following steps. For writing a json file, we use the json.dump() method, it can take dictionary, output file, ensure_ascii and indent.
+ما همچنین می‌توانیم داده‌های خود را به عنوان یک فایل json ذخیره کنیم. بیایید آن را با استفاده از مراحل زیر به عنوان یک فایل json ذخیره کنیم. برای نوشتن یک فایل json، از متد json.dump() استفاده می‌کنیم، که می‌تواند دیکشنری، فایل خروجی، ensure_ascii و indent را بگیرد.
 
 ```py
 import json
-# python dictionary
+# دیکشنری پایتون
 person = {
     "name": "Asabeneh",
     "country": "Finland",
@@ -315,59 +315,59 @@ with open('./files/json_example.json', 'w', encoding='utf-8') as f:
     json.dump(person, f, ensure_ascii=False, indent=4)
 ```
 
-In the code above, we use encoding and indentation. Indentation makes the json file easy to read.
+در کد بالا، از encoding و indentation استفاده کردیم. Indentation خواندن فایل json را آسان می‌کند.
 
-### File with csv Extension
+### فایل با پسوند csv
 
-CSV stands for comma separated values. CSV is a simple file format used to store tabular data, such as a spreadsheet or database. CSV is a very common data format in data science.
+CSV مخفف Comma Separated Values (مقادیر جدا شده با کاما) است. CSV یک فرمت فایل ساده است که برای ذخیره داده‌های جدولی مانند یک صفحه گسترده یا پایگاه داده استفاده می‌شود. CSV یک فرمت داده بسیار رایج در علم داده است.
 
-**Example:**
+**مثال:**
 
 ```csv
 "name","country","city","skills"
 "Asabeneh","Finland","Helsinki","JavaScript"
 ```
 
-**Example:**
+**مثال:**
 
 ```py
 import csv
 with open('./files/csv_example.csv') as f:
-    csv_reader = csv.reader(f, delimiter=',') # w use, reader method to read csv
+    csv_reader = csv.reader(f, delimiter=',') # از متد reader برای خواندن csv استفاده می‌کنیم
     line_count = 0
     for row in csv_reader:
         if line_count == 0:
-            print(f'Column names are :{", ".join(row)}')
+            print(f'نام ستون‌ها: {", ".join(row)}')
             line_count += 1
         else:
             print(
-                f'\t{row[0]} is a teachers. He lives in {row[1]}, {row[2]}.')
+                f'\t{row} یک معلم است. او در {row}، {row} زندگی می‌کند.')
             line_count += 1
-    print(f'Number of lines:  {line_count}')
+    print(f'تعداد خطوط: {line_count}')
 ```
 
 ```sh
-# output:
-Column names are :name, country, city, skills
-        Asabeneh is a teacher. He lives in Finland, Helsinki.
-Number of lines:  2
+# خروجی:
+نام ستون‌ها: name, country, city, skills
+        Asabeneh یک معلم است. او در Finland، Helsinki زندگی می‌کند.
+تعداد خطوط: 2
 ```
 
-### File with xlsx Extension
+### فایل با پسوند xlsx
 
-To read excel files we need to install _xlrd_ package. We will cover this after we cover package installing using pip.
+برای خواندن فایل‌های اکسل باید بسته _xlrd_ را نصب کنیم. این موضوع را بعد از پوشش نصب بسته با استفاده از pip پوشش خواهیم داد.
 
 ```py
 import xlrd
-excel_book = xlrd.open_workbook('sample.xls)
+excel_book = xlrd.open_workbook('sample.xls')
 print(excel_book.nsheets)
 print(excel_book.sheet_names)
 ```
 
-### File with xml Extension
+### فایل با پسوند xml
 
-XML is another structured data format which looks like HTML. In XML the tags are not predefined. The first line is an XML declaration. The person tag is the root of the XML. The person has a gender attribute.
-**Example:XML**
+XML یک فرمت داده ساختاریافته دیگر است که شبیه HTML است. در XML تگ‌ها از پیش تعریف نشده‌اند. خط اول یک اعلان XML است. تگ person ریشه XML است. person یک ویژگی gender دارد.
+**مثال: XML**
 
 ```xml
 <?xml version="1.0"?>
@@ -383,43 +383,43 @@ XML is another structured data format which looks like HTML. In XML the tags are
 </person>
 ```
 
-For more information on how to read an XML file check the [documentation](https://docs.python.org/2/library/xml.etree.elementtree.html)
+برای اطلاعات بیشتر در مورد نحوه خواندن یک فایل XML [مستندات](https://docs.python.org/2/library/xml.etree.elementtree.html) را بررسی کنید.
 
 ```py
 import xml.etree.ElementTree as ET
 tree = ET.parse('./files/xml_example.xml')
 root = tree.getroot()
-print('Root tag:', root.tag)
-print('Attribute:', root.attrib)
+print('تگ ریشه:', root.tag)
+print('ویژگی:', root.attrib)
 for child in root:
-    print('field: ', child.tag)
+    print('فیلد: ', child.tag)
 ```
 
 ```sh
-# output
-Root tag: person
-Attribute: {'gender': 'male'}
-field: name
-field: country
-field: city
-field: skills
+# خروجی
+تگ ریشه: person
+ویژگی: {'gender': 'male'}
+فیلد: name
+فیلد: country
+فیلد: city
+فیلد: skills
 ```
 
-🌕 You are making a big progress. Maintain your momentum, keep the good work. Now do some exercises for your brain and muscles.
+🌕 شما در حال پیشرفت بزرگی هستید. شتاب خود را حفظ کنید، کار خوب را ادامه دهید. اکنون چند تمرین برای مغز و عضلات خود انجام دهید.
 
-## 💻 Exercises: Day 19
+## 💻 تمرین‌ها: روز ۱۹
 
-### Exercises: Level 1
+### تمرین‌ها: سطح ۱
 
-1. Write a function which count number of lines and number of words in a text. All the files are in the data the folder:
-   a) Read obama_speech.txt file and count number of lines and words
-   b) Read michelle_obama_speech.txt file and count number of lines and words
-   c) Read donald_speech.txt file and count number of lines and words
-   d) Read melina_trump_speech.txt file and count number of lines and words
-2. Read the countries_data.json data file in data directory, create a function that finds the ten most spoken languages
+1. تابعی بنویسید که تعداد خطوط و تعداد کلمات یک متن را بشمارد. همه فایل‌ها در پوشه data قرار دارند:
+   الف) فایل obama_speech.txt را بخوانید و تعداد خطوط و کلمات را بشمارید.
+   ب) فایل michelle_obama_speech.txt را بخوانید و تعداد خطوط و کلمات را بشمارید.
+   ج) فایل donald_speech.txt را بخوانید و تعداد خطوط و کلمات را بشمارید.
+   د) فایل melina_trump_speech.txt را بخوانید و تعداد خطوط و کلمات را بشمارید.
+2. فایل داده countries_data.json را در پوشه data بخوانید، تابعی ایجاد کنید که ده زبان پرگویشور را پیدا کند.
 
    ```py
-   # Your output should look like this
+   # خروجی شما باید به این شکل باشد
    print(most_spoken_languages(filename='./data/countries_data.json', 10))
    [(91, 'English'),
    (45, 'French'),
@@ -433,17 +433,17 @@ field: skills
    (4, 'Swahili'),
    (4, 'Serbian')]
 
-   # Your output should look like this
+   # خروجی شما باید به این شکل باشد
    print(most_spoken_languages(filename='./data/countries_data.json', 3))
    [(91, 'English'),
    (45, 'French'),
    (25, 'Arabic')]
    ```
 
-3. Read the countries_data.json data file in data directory, create a function that creates a list of the ten most populated countries
+3. فایل داده countries_data.json را در پوشه data بخوانید، تابعی ایجاد کنید که لیستی از ده کشور پرجمعیت را ایجاد کند.
 
    ```py
-   # Your output should look like this
+   # خروجی شما باید به این شکل باشد
    print(most_populated_countries(filename='./data/countries_data.json', 10))
 
    [
@@ -459,7 +459,7 @@ field: skills
    {'country': 'Japan', 'population': 126960000}
    ]
 
-   # Your output should look like this
+   # خروجی شما باید به این شکل باشد
 
    print(most_populated_countries(filename='./data/countries_data.json', 3))
    [
@@ -469,13 +469,13 @@ field: skills
    ]
    ```
 
-### Exercises: Level 2
+### تمرین‌ها: سطح ۲
 
-4. Extract all incoming email addresses as a list from the email_exchange_big.txt file.
-5. Find the most common words in the English language. Call the name of your function find_most_common_words, it will take two parameters - a string or a file and a positive integer, indicating the number of words. Your function will return an array of tuples in descending order. Check the output
+4. تمام آدرس‌های ایمیل ورودی را به صورت یک لیست از فایل email_exchange_big.txt استخراج کنید.
+5. رایج‌ترین کلمات در زبان انگلیسی را پیدا کنید. نام تابع خود را find_most_common_words بگذارید، این تابع دو پارامتر می‌گیرد - یک رشته یا یک فایل و یک عدد صحیح مثبت که تعداد کلمات را نشان می‌دهد. تابع شما باید آرایه‌ای از تاپل‌ها را به ترتیب نزولی برگرداند. خروجی را بررسی کنید.
 
 ```py
-    # Your output should look like this
+    # خروجی شما باید به این شکل باشد
     print(find_most_common_words('sample.txt', 10))
     [(10, 'the'),
     (8, 'be'),
@@ -488,7 +488,7 @@ field: skills
     (2, 'have'),
     (2, 'I')]
 
-    # Your output should look like this
+    # خروجی شما باید به این شکل باشد
     print(find_most_common_words('sample.txt', 5))
 
     [(10, 'the'),
@@ -498,20 +498,20 @@ field: skills
     (5, 'and')]
 ```
 
-6. Use the function, find_most_frequent_words to find:
-   a) The ten most frequent words used in [Obama's speech](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/obama_speech.txt)
-   b) The ten most frequent words used in [Michelle's speech](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt)
-   c) The ten most frequent words used in [Trump's speech](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/donald_speech.txt)
-   d) The ten most frequent words used in [Melina's speech](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt)
-7. Write a python application that checks similarity between two texts. It takes a file or a string as a parameter and it will evaluate the similarity of the two texts. For instance check the similarity between the transcripts of [Michelle's](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt) and [Melina's](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt) speech. You may need a couple of functions, function to clean the text(clean_text), function to remove support words(remove_support_words) and finally to check the similarity(check_text_similarity). List of [stop words](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/stop_words.py) are in the data directory
-8. Find the 10 most repeated words in the romeo_and_juliet.txt
-9. Read the [hacker news csv](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/hacker_news.csv) file and find out:
-   a) Count the number of lines containing python or Python
-   b) Count the number lines containing JavaScript, javascript or Javascript
-   c) Count the number lines containing Java and not JavaScript
+6. از تابع find_most_frequent_words برای پیدا کردن موارد زیر استفاده کنید:
+   الف) ده کلمه پرتکرار استفاده شده در [سخنرانی اوباما](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/obama_speech.txt)
+   ب) ده کلمه پرتکرار استفاده شده در [سخنرانی میشل](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt)
+   ج) ده کلمه پرتکرار استفاده شده در [سخنرانی ترامپ](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/donald_speech.txt)
+   د) ده کلمه پرتکرار استفاده شده در [سخنرانی ملانیا](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt)
+7. یک برنامه پایتون بنویسید که شباهت بین دو متن را بررسی کند. این برنامه یک فایل یا یک رشته را به عنوان پارامتر می‌گیرد و شباهت دو متن را ارزیابی می‌کند. به عنوان مثال، شباهت بین متن سخنرانی‌های [میشل](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt) و [ملانیا](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt) را بررسی کنید. ممکن است به چند تابع نیاز داشته باشید، تابعی برای تمیز کردن متن (clean_text)، تابعی برای حذف کلمات کمکی (remove_support_words) و در نهایت تابعی برای بررسی شباهت متن (check_text_similarity). لیست [کلمات ایست (stop words)](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/stop_words.py) در پوشه data قرار دارد.
+8. ۱۰ کلمه پرتکرار در فایل romeo_and_juliet.txt را پیدا کنید.
+9. فایل [hacker news csv](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/hacker_news.csv) را بخوانید و موارد زیر را پیدا کنید:
+   الف) تعداد خطوط حاوی python یا Python را بشمارید.
+   ب) تعداد خطوط حاوی JavaScript، javascript یا Javascript را بشمارید.
+   ج) تعداد خطوط حاوی Java و نه JavaScript را بشمارید.
 
-### Exercises: Level 3
+### تمرین‌ها: سطح ۳
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم! 🎉
 
-[<< Day 18](../18_Day_Regular_expressions/18_regular_expressions.md) | [Day 20 >>](../20_Day_Python_package_manager/20_python_package_manager.md)
+[>> روز ۲۰](../20_Day_Python_package_manager/20_python_package_manager.md) | [<< روز ۱۸](../18_Day_Regular_expressions/18_regular_expressions.md)
