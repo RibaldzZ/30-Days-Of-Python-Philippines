@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 18 - Regular Expressions </h1>
+  <h1> ۳۰ روز با پایتون: روز ۱۸ - عبارات باقاعده </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,90 +7,90 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Author:
+  <sub>نویسنده:
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small> First Edition: Nov 22 - Dec 22, 2019</small>
+  <small> ویرایش اول: نوامبر ۲۲ - دسامبر ۲۲، ۲۰۱۹</small>
   </sub>
 </div>
 </div>
 
-[<< Day 17](../17_Day_Exception_handling/17_exception_handling.md) | [Day 19>>](../19_Day_File_handling/19_file_handling.md)
+[>> روز ۱۹](../19_Day_File_handling/19_file_handling.md) | [<< روز ۱۷](../17_Day_Exception_handling/17_exception_handling.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [📘 Day 18](#-day-18)
-  - [Regular Expressions](#regular-expressions)
-    - [The *re* Module](#the-re-module)
-    - [Methods in *re* Module](#methods-in-re-module)
+- [📘 روز ۱۸](#-روز-۱۸)
+  - [عبارات باقاعده](#عبارات-باقاعده)
+    - [ماژول *re*](#ماژول-re)
+    - [متدها در ماژول *re*](#متدها-در-ماژول-re)
       - [Match](#match)
       - [Search](#search)
-      - [Searching for All Matches Using *findall*](#searching-for-all-matches-using-findall)
-      - [Replacing a Substring](#replacing-a-substring)
-  - [Splitting Text Using RegEx Split](#splitting-text-using-regex-split)
-  - [Writing RegEx Patterns](#writing-regex-patterns)
-    - [Square Bracket](#square-bracket)
-    - [Escape character(\\) in RegEx](#escape-character-in-regex)
-    - [One or more times(+)](#one-or-more-times)
-    - [Period(.)](#period)
-    - [Zero or more times(\*)](#zero-or-more-times)
-    - [Zero or one time(?)](#zero-or-one-time)
-    - [Quantifier in RegEx](#quantifier-in-regex)
-    - [Cart ^](#cart-)
-  - [💻 Exercises: Day 18](#-exercises-day-18)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+      - [جستجوی همه تطابق‌ها با استفاده از *findall*](#جستجوی-همه-تطابقها-با-استفاده-از-findall)
+      - [جایگزینی یک زیررشته](#جایگزینی-یک-زیررشته)
+  - [تقسیم متن با استفاده از RegEx Split](#تقسیم-متن-با-استفاده-از-regex-split)
+  - [نوشتن الگوهای RegEx](#نوشتن-الگوهای-regex)
+    - [براکت مربعی](#براکت-مربعی)
+    - [کاراکتر گریز (\\) در RegEx](#کاراکتر-گریز--در-regex)
+    - [یک یا چند بار (+)](#یک-یا-چند-بار-)
+    - [نقطه (.)](#نقطه-)
+    - [صفر یا چند بار (\*)](#صفر-یا-چند-بار-)
+    - [صفر یا یک بار (؟)](#صفر-یا-یک-بار-)
+    - [کمیت‌سنج (Quantifier) در RegEx](#کمیتسنج-quantifier-در-regex)
+    - [کلاه ^](#کلاه-)
+  - [💻 تمرین‌ها: روز ۱۸](#-تمرینها-روز-۱۸)
+    - [تمرین‌ها: سطح ۱](#تمرینها-سطح-۱)
+    - [تمرین‌ها: سطح ۲](#تمرینها-سطح-۲)
+    - [تمرین‌ها: سطح ۳](#تمرینها-سطح-۳)
 
-# 📘 Day 18
+# 📘 روز ۱۸
 
-## Regular Expressions
+## عبارات باقاعده
 
-A regular expression or RegEx is a special text string that helps to find patterns in data. A RegEx can be used to check if some pattern exists in a different data type. To use RegEx in python first we should import the RegEx module which is called *re*.
+عبارت باقاعده یا RegEx یک رشته متنی خاص است که به یافتن الگوها در داده‌ها کمک می‌کند. از RegEx می‌توان برای بررسی وجود یک الگو در انواع داده‌های مختلف استفاده کرد. برای استفاده از RegEx در پایتون، ابتدا باید ماژول RegEx را که *re* نامیده می‌شود، وارد کنیم.
 
-### The *re* Module
+### ماژول *re*
 
-After importing the module we can use it to detect or find patterns.
+پس از وارد کردن ماژول، می‌توانیم از آن برای شناسایی یا یافتن الگوها استفاده کنیم.
 
 ```py
 import re
 ```
 
-### Methods in *re* Module
+### متدها در ماژول *re*
 
-To find a pattern we use different set of *re* character sets that allows to search for a match in a string.
+برای یافتن یک الگو، از مجموعه‌های مختلف کاراکترهای *re* استفاده می‌کنیم که امکان جستجوی یک تطابق در یک رشته را فراهم می‌کنند.
 
-- *re.match()*: searches only in the beginning of the first line of the string and returns matched objects if  found, else returns None.
-- *re.search*: Returns a match object if there is one anywhere in the string, including multiline strings.
-- *re.findall*: Returns a list containing all matches
-- *re.split*: Takes a string, splits it at the match points, returns a list
-- *re.sub*:  Replaces one or many matches within a string
+- *re.match()*: فقط در ابتدای خط اول رشته جستجو می‌کند و در صورت یافتن، اشیاء تطبیق‌یافته را برمی‌گرداند، در غیر این صورت None برمی‌گرداند.
+- *re.search*: در صورت وجود تطابق در هر جای رشته، از جمله رشته‌های چندخطی، یک شیء تطبیق را برمی‌گرداند.
+- *re.findall*: لیستی حاوی تمام تطابق‌ها را برمی‌گرداند.
+- *re.split*: یک رشته را می‌گیرد، آن را در نقاط تطابق تقسیم می‌کند و یک لیست برمی‌گرداند.
+- *re.sub*: یک یا چند تطابق را در یک رشته جایگزین می‌کند.
 
 #### Match
 
 ```py
-# syntac
+# سینتکس
 re.match(substring, string, re.I)
-# substring is a string or a pattern, string is the text we look for a pattern , re.I is case ignore
+# substring یک رشته یا الگو است، string متنی است که در آن به دنبال الگو می‌گردیم، re.I برای نادیده گرفتن حروف بزرگ و کوچک است
 ```
 
 ```py
 import re
 
 txt = 'I love to teach python and javaScript'
-# It returns an object with span, and match
+# یک شیء با span و match برمی‌گرداند
 match = re.match('I love to teach', txt, re.I)
 print(match)  # <re.Match object; span=(0, 15), match='I love to teach'>
-# We can get the starting and ending position of the match as tuple using span
+# می‌توانیم موقعیت شروع و پایان تطابق را به صورت یک تاپل با استفاده از span بدست آوریم
 span = match.span()
 print(span)     # (0, 15)
-# Lets find the start and stop position from the span
+# بیایید موقعیت شروع و پایان را از span پیدا کنیم
 start, end = span
 print(start, end)  # 0, 15
 substring = txt[start:end]
 print(substring)       # I love to teach
 ```
 
-As you can see from the example above, the pattern we are looking for (or the substring we are looking for) is *I love to teach*. The match function returns an object **only** if the text starts with the pattern.
+همانطور که از مثال بالا می‌بینید، الگویی که به دنبال آن هستیم (یا زیررشته‌ای که به دنبال آن هستیم) *I love to teach* است. تابع match **فقط** در صورتی که متن با الگو شروع شود، یک شیء برمی‌گرداند.
 
 ```py
 import re
@@ -100,14 +100,14 @@ match = re.match('I like to teach', txt, re.I)
 print(match)  # None
 ```
 
-The string does not string with *I like to teach*, therefore there was no match and the match method returned None.
+رشته با *I like to teach* شروع نمی‌شود، بنابراین هیچ تطابقی وجود نداشت و متد match مقدار None را برگرداند.
 
 #### Search
 
 ```py
-# syntax
-re.match(substring, string, re.I)
-# substring is a pattern, string is the text we look for a pattern , re.I is case ignore flag
+# سینتکس
+re.search(substring, string, re.I)
+# substring یک الگو است، string متنی است که در آن به دنبال الگو می‌گردیم، re.I پرچم نادیده گرفتن حروف بزرگ و کوچک است
 ```
 
 ```py
@@ -116,48 +116,48 @@ import re
 txt = '''Python is the most beautiful language that a human being has ever created.
 I recommend python for a first programming language'''
 
-# It returns an object with span and match
+# یک شیء با span و match برمی‌گرداند
 match = re.search('first', txt, re.I)
 print(match)  # <re.Match object; span=(100, 105), match='first'>
-# We can get the starting and ending position of the match as tuple using span
+# می‌توانیم موقعیت شروع و پایان تطابق را به صورت یک تاپل با استفاده از span بدست آوریم
 span = match.span()
 print(span)     # (100, 105)
-# Lets find the start and stop position from the span
+# بیایید موقعیت شروع و پایان را از span پیدا کنیم
 start, end = span
 print(start, end)  # 100 105
 substring = txt[start:end]
 print(substring)       # first
 ```
 
-As you can see, search is much better than match because it can look for the pattern throughout the text. Search returns a match object with a first match that was found, otherwise it returns *None*. A much better *re* function is *findall*. This function checks for the pattern through the whole string and returns all the matches as a list.
+همانطور که می‌بینید، search بسیار بهتر از match است زیرا می‌تواند الگو را در سراسر متن جستجو کند. Search یک شیء تطبیق با اولین تطابقی که پیدا شده است برمی‌گرداند، در غیر این صورت *None* برمی‌گرداند. یک تابع *re* بسیار بهتر *findall* است. این تابع الگو را در کل رشته بررسی می‌کند و تمام تطابق‌ها را به صورت یک لیست برمی‌گرداند.
 
-#### Searching for All Matches Using *findall*
+#### جستجوی همه تطابق‌ها با استفاده از *findall*
 
-*findall()* returns all the matches as a list
+*findall()* تمام تطابق‌ها را به صورت یک لیست برمی‌گرداند.
 
 ```py
 txt = '''Python is the most beautiful language that a human being has ever created.
 I recommend python for a first programming language'''
 
-# It return a list
+# یک لیست برمی‌گرداند
 matches = re.findall('language', txt, re.I)
 print(matches)  # ['language', 'language']
 ```
 
-As you can see, the word *language* was found two times in the string. Let us practice some more.
-Now we will look for both Python and python words in the string:
+همانطور که می‌بینید، کلمه *language* دو بار در رشته پیدا شد. بیایید کمی بیشتر تمرین کنیم.
+اکنون به دنبال کلمات Python و python در رشته خواهیم بود:
 
 ```py
 txt = '''Python is the most beautiful language that a human being has ever created.
 I recommend python for a first programming language'''
 
-# It returns list
+# یک لیست برمی‌گرداند
 matches = re.findall('python', txt, re.I)
 print(matches)  # ['Python', 'python']
 
 ```
 
-Since we are using *re.I* both lowercase and uppercase letters are included. If we do not have the re.I flag, then we will have to write our pattern differently. Let us check it out:
+از آنجایی که از *re.I* استفاده می‌کنیم، هم حروف کوچک و هم حروف بزرگ شامل می‌شوند. اگر پرچم re.I را نداشته باشیم، باید الگوی خود را به طور متفاوتی بنویسیم. بیایید آن را بررسی کنیم:
 
 ```py
 txt = '''Python is the most beautiful language that a human being has ever created.
@@ -172,7 +172,7 @@ print(matches)  # ['Python', 'python']
 
 ```
 
-#### Replacing a Substring
+#### جایگزینی یک زیررشته
 
 ```py
 txt = '''Python is the most beautiful language that a human being has ever created.
@@ -180,12 +180,12 @@ I recommend python for a first programming language'''
 
 match_replaced = re.sub('Python|python', 'JavaScript', txt, re.I)
 print(match_replaced)  # JavaScript is the most beautiful language that a human being has ever created.
-# OR
+# یا
 match_replaced = re.sub('[Pp]ython', 'JavaScript', txt, re.I)
 print(match_replaced)  # JavaScript is the most beautiful language that a human being has ever created.
 ```
 
-Let us add one more example. The following string is really hard to read unless we remove the % symbol. Replacing the % with an empty string will clean the text.
+بیایید یک مثال دیگر اضافه کنیم. خواندن رشته زیر واقعاً دشوار است مگر اینکه نماد % را حذف کنیم. جایگزینی % با یک رشته خالی متن را تمیز می‌کند.
 
 ```py
 
@@ -204,24 +204,24 @@ There is nothing as rewarding as educating and empowering people.
 I found teaching more interesting than any other jobs. Does this motivate you to be a teacher?
 ```
 
-## Splitting Text Using RegEx Split
+## تقسیم متن با استفاده از RegEx Split
 
 ```py
 txt = '''I am teacher and  I love teaching.
 There is nothing as rewarding as educating and empowering people.
 I found teaching more interesting than any other jobs.
 Does this motivate you to be a teacher?'''
-print(re.split('\n', txt)) # splitting using \n - end of line symbol
+print(re.split('\n', txt)) # تقسیم با استفاده از \n - نماد پایان خط
 ```
 
 ```sh
 ['I am teacher and  I love teaching.', 'There is nothing as rewarding as educating and empowering people.', 'I found teaching more interesting than any other jobs.', 'Does this motivate you to be a teacher?']
 ```
 
-## Writing RegEx Patterns
+## نوشتن الگوهای RegEx
 
-To declare a string variable we use a single or double quote. To declare RegEx variable *r''*.
-The following pattern only identifies apple with lowercase, to make it case insensitive either we should rewrite our pattern or we should add a flag.  
+برای تعریف یک متغیر رشته‌ای از نقل قول تکی یا دوتایی استفاده می‌کنیم. برای تعریف متغیر RegEx از *r''* استفاده می‌کنیم.
+الگوی زیر فقط apple را با حروف کوچک شناسایی می‌کند، برای اینکه آن را نسبت به حروف بزرگ و کوچک غیرحساس کنیم، باید یا الگوی خود را بازنویسی کنیم یا یک پرچم اضافه کنیم.
 
 ```py
 import re
@@ -231,169 +231,169 @@ txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor w
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['apple']
 
-# To make case insensitive adding flag '
+# برای غیرحساس کردن نسبت به حروف بزرگ و کوچک، پرچم اضافه می‌کنیم
 matches = re.findall(regex_pattern, txt, re.I)
 print(matches)  # ['Apple', 'apple']
-# or we can use a set of characters method
-regex_pattern = r'[Aa]pple'  # this mean the first letter could be Apple or apple
+# یا می‌توانیم از روش مجموعه کاراکترها استفاده کنیم
+regex_pattern = r'[Aa]pple'  # این یعنی حرف اول می‌تواند Apple یا apple باشد
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['Apple', 'apple']
 
 ```
 
-* []:  A set of characters
-  - [a-c] means, a or b or c
-  - [a-z] means, any letter from a to z
-  - [A-Z] means, any character from A to Z
-  - [0-3] means, 0 or 1 or 2 or 3
-  - [0-9] means any number from 0 to 9
-  - [A-Za-z0-9] any single character, that is a to z, A to Z or 0 to 9
-- \\:  uses to escape special characters
-  - \d means: match where the string contains digits (numbers from 0-9)
-  - \D means: match where the string does not contain digits
-- . : any character except new line character(\n)
-- ^: starts with
-  - r'^substring' eg r'^love', a sentence that starts with a word love
-  - r'[^abc] means not a, not b, not c.
-- $: ends with
-  - r'substring$' eg r'love$', sentence  that ends with a word love
-- *: zero or more times
-  - r'[a]*' means a optional or it can occur many times.
-- +: one or more times
-  - r'[a]+' means at least once (or more)
-- ?: zero or one time
-  - r'[a]?' means zero times or once
-- {3}: Exactly 3 characters
-- {3,}: At least 3 characters
-- {3,8}: 3 to 8 characters
-- |: Either or
-  - r'apple|banana' means either apple or a banana
-- (): Capture and group
+* []:  مجموعه‌ای از کاراکترها
+  - [a-c] یعنی a یا b یا c
+  - [a-z] یعنی هر حرفی از a تا z
+  - [A-Z] یعنی هر کاراکتری از A تا Z
+  - [0-3] یعنی 0 یا 1 یا 2 یا 3
+  - [0-9] یعنی هر عددی از 0 تا 9
+  - [A-Za-z0-9] هر کاراکتر تکی که از a تا z، A تا Z یا 0 تا 9 باشد
+- \\:  برای گریز از کاراکترهای خاص استفاده می‌شود
+  - \d یعنی: تطابق جایی که رشته حاوی ارقام باشد (اعداد از 0-9)
+  - \D یعنی: تطابق جایی که رشته حاوی ارقام نباشد
+- . : هر کاراکتری به جز کاراکتر خط جدید (\n)
+- ^: شروع می‌شود با
+  - r'^substring' مثلاً r'^love'، جمله‌ای که با کلمه love شروع می‌شود
+  - r'[^abc] یعنی نه a، نه b، نه c.
+- $: پایان می‌یابد با
+  - r'substring$' مثلاً r'love$'، جمله‌ای که با کلمه love پایان می‌یابد
+- *: صفر یا چند بار
+  - r'[a]*' یعنی a اختیاری است یا می‌تواند چندین بار تکرار شود.
+- +: یک یا چند بار
+  - r'[a]+' یعنی حداقل یک بار (یا بیشتر)
+- ?: صفر یا یک بار
+  - r'[a]?' یعنی صفر بار یا یک بار
+- {3}: دقیقاً ۳ کاراکتر
+- {3,}: حداقل ۳ کاراکتر
+- {3,8}: ۳ تا ۸ کاراکتر
+- |: یا این یا آن
+  - r'apple|banana' یعنی یا apple یا banana
+- (): گرفتن و گروه‌بندی کردن
 
 ![Regular Expression cheat sheet](../images/regex.png)
 
-Let us use examples to clarify the meta characters above
+بیایید از مثال‌ها برای روشن کردن فراکاراکترهای بالا استفاده کنیم.
 
-### Square Bracket
+### براکت مربعی
 
-Let us use square bracket to include lower and upper case
+بیایید از براکت مربعی برای شامل کردن حروف کوچک و بزرگ استفاده کنیم.
 
 ```py
-regex_pattern = r'[Aa]pple' # this square bracket mean either A or a
+regex_pattern = r'[Aa]pple' # این براکت مربعی یعنی یا A یا a
 txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away.'
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['Apple', 'apple']
 ```
 
-If we want to look for the banana, we write the pattern as follows:
+اگر بخواهیم به دنبال banana بگردیم، الگو را به صورت زیر می‌نویسیم:
 
 ```py
-regex_pattern = r'[Aa]pple|[Bb]anana' # this square bracket means either A or a
+regex_pattern = r'[Aa]pple|[Bb]anana' # این براکت مربعی یعنی یا A یا a
 txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away.'
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['Apple', 'banana', 'apple', 'banana']
 ```
 
-Using the square bracket and or operator , we manage to extract Apple, apple, Banana and banana.
+با استفاده از براکت مربعی و عملگر or، موفق شدیم Apple، apple، Banana و banana را استخراج کنیم.
 
-### Escape character(\\) in RegEx
+### کاراکتر گریز (\\) در RegEx
 
 ```py
-regex_pattern = r'\d'  # d is a special character which means digits
+regex_pattern = r'\d'  # d یک کاراکتر خاص است که به معنی ارقام است
 txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
 matches = re.findall(regex_pattern, txt)
-print(matches)  # ['6', '2', '0', '1', '9', '8', '2', '0', '2', '1'], this is not what we want
+print(matches)  # ['6', '2', '0', '1', '9', '8', '2', '0', '2', '1'], این چیزی نیست که ما می‌خواهیم
 ```
 
-### One or more times(+)
+### یک یا چند بار (+)
 
 ```py
-regex_pattern = r'\d+'  # d is a special character which means digits, + mean one or more times
+regex_pattern = r'\d+'  # d یک کاراکتر خاص است که به معنی ارقام است، + یعنی یک یا چند بار
 txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
 matches = re.findall(regex_pattern, txt)
-print(matches)  # ['6', '2019', '8', '2021'] - now, this is better!
+print(matches)  # ['6', '2019', '8', '2021'] - حالا بهتر شد!
 ```
 
-### Period(.)
+### نقطه (.)
 
 ```py
-regex_pattern = r'[a].'  # this square bracket means a and . means any character except new line
+regex_pattern = r'[a].'  # این براکت مربعی یعنی a و . یعنی هر کاراکتری به جز خط جدید
 txt = '''Apple and banana are fruits'''
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['an', 'an', 'an', 'a ', 'ar']
 
-regex_pattern = r'[a].+'  # . any character, + any character one or more times 
+regex_pattern = r'[a].+'  # . هر کاراکتر، + هر کاراکتر یک یا چند بار 
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['and banana are fruits']
 ```
 
-### Zero or more times(\*)
+### صفر یا چند بار (*)
 
-Zero or many times. The pattern could may not occur or it can occur many times.
+صفر یا چند بار. الگو ممکن است وجود نداشته باشد یا می‌تواند چندین بار تکرار شود.
 
 ```py
-regex_pattern = r'[a].*'  # . any character, * any character zero or more times 
+regex_pattern = r'[a].*'  # . هر کاراکتر، * هر کاراکتر صفر یا چند بار 
 txt = '''Apple and banana are fruits'''
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['and banana are fruits']
 ```
 
-### Zero or one time(?)
+### صفر یا یک بار (؟)
 
-Zero or one time. The pattern may not occur or it may occur once.
+صفر یا یک بار. الگو ممکن است وجود نداشته باشد یا ممکن است یک بار تکرار شود.
 
 ```py
 txt = '''I am not sure if there is a convention how to write the word e-mail.
 Some people write it as email others may write it as Email or E-mail.'''
-regex_pattern = r'[Ee]-?mail'  # ? means here that '-' is optional
+regex_pattern = r'[Ee]-?mail'  # ? در اینجا به این معنی است که '-' اختیاری است
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['e-mail', 'email', 'Email', 'E-mail']
 ```
 
-### Quantifier in RegEx
+### کمیت‌سنج (Quantifier) در RegEx
 
-We can specify the length of the substring we are looking for in a text, using a curly bracket. Let us imagine, we are interested in a substring with a length of 4 characters:
+می‌توانیم طول زیررشته‌ای را که در یک متن به دنبال آن هستیم، با استفاده از آکولاد مشخص کنیم. بیایید تصور کنیم که به یک زیررشته با طول ۴ کاراکتر علاقه‌مندیم:
 
 ```py
 txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
-regex_pattern = r'\d{4}'  # exactly four times
+regex_pattern = r'\d{4}'  # دقیقاً چهار بار
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['2019', '2021']
 
 txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
-regex_pattern = r'\d{1, 4}'   # 1 to 4
+regex_pattern = r'\d{1, 4}'   # ۱ تا ۴
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['6', '2019', '8', '2021']
 ```
 
-### Cart ^
+### کلاه ^
 
-- Starts with
+- شروع می‌شود با
   
 ```py
 txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
-regex_pattern = r'^This'  # ^ means starts with
+regex_pattern = r'^This'  # ^ به معنی شروع می‌شود با
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['This']
 ```
 
-- Negation
+- نفی
 
 ```py
 txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
-regex_pattern = r'[^A-Za-z ]+'  # ^ in set character means negation, not A to Z, not a to z, no space
+regex_pattern = r'[^A-Za-z ]+'  # ^ در مجموعه کاراکترها به معنی نفی است، نه A تا Z، نه a تا z، نه فاصله
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['6,', '2019', '8', '2021']
 ```
 
-## 💻 Exercises: Day 18
+## 💻 تمرین‌ها: روز ۱۸
 
-### Exercises: Level 1
+### تمرین‌ها: سطح ۱
 
- 1. What is the most frequent word in the following paragraph?
+ ۱. پرتکرارترین کلمه در پاراگراف زیر چیست؟
 
 ```py
-    paragraph = 'I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.
+    paragraph = 'I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.'
 ```
 
 ```sh
@@ -423,17 +423,17 @@ print(matches)  # ['6,', '2019', '8', '2021']
     ]
 ```
 
-2. The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.
+2. موقعیت برخی از ذرات در محور افقی x برابر با ۱۲-، ۴-، ۳- و ۱- در جهت منفی، ۰ در مبدأ، ۴ و ۸ در جهت مثبت است. این اعداد را از کل این متن استخراج کرده و فاصله بین دو ذره دورتر را پیدا کنید.
 
 ```py
 points = ['-12', '-4', '-3', '-1', '0', '4', '8']
-sorted_points =  [-12, -4, -3, -1, -1, 0, 2, 4, 8]
+sorted_points =  [-12, -4, -3, -1, 0, 4, 8]
 distance = 8 -(-12) # 20
 ```
 
-### Exercises: Level 2
+### تمرین‌ها: سطح ۲
 
-1. Write a pattern which identifies if a string is a valid python variable
+1. الگویی بنویسید که مشخص کند آیا یک رشته یک متغیر معتبر پایتون است یا خیر.
 
     ```sh
     is_valid_variable('first_name') # True
@@ -442,9 +442,9 @@ distance = 8 -(-12) # 20
     is_valid_variable('firstname') # True
     ```
 
-### Exercises: Level 3
+### تمرین‌ها: سطح ۳
 
-1. Clean the following text. After cleaning, count three most frequent words in the string.
+1. متن زیر را تمیز کنید. پس از تمیز کردن، سه کلمه پرتکرار در رشته را بشمارید.
 
     ```py
     sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
@@ -454,6 +454,6 @@ distance = 8 -(-12) # 20
     print(most_frequent_words(cleaned_text)) # [(3, 'I'), (2, 'teaching'), (2, 'teacher')]
     ```
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 تبریک می‌گویم! 🎉
 
-[<< Day 17](../17_Day_Exception_handling/17_exception_handling.md) | [Day 19>>](../19_Day_File_handling/19_file_handling.md)
+[>> روز ۱۹](../19_Day_File_handling/19_file_handling.md) | [<< روز ۱۷](../17_Day_Exception_handling/17_exception_handling.md)
