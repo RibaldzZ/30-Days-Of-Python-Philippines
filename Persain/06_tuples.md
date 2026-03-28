@@ -90,7 +90,7 @@ len(tpl)
     first_fruit = fruits[0]
     second_fruit = fruits[1]
     last_index =len(fruits) - 1
-    last_fruit = fruits[las_index]
+    last_fruit = fruits[last_index]
     ```
 
   - اندیس‌گذاری منفی
@@ -234,8 +234,8 @@ del fruits
 2.  تاپل‌های میوه‌ها، سبزیجات و محصولات حیوانی ایجاد کنید. سه تاپل را به هم بپیوندید و آن را به متغیری به نام `food_stuff_tp` اختصاص دهید.
 3.  تاپل `food_stuff_tp` را به یک لیست به نام `food_stuff_lt` تغییر دهید.
 4.  آیتم یا آیتم‌های میانی را از تاپل `food_stuff_tp` یا لیست `food_stuff_lt` برش دهید.
-5.  سه آیتم اول و سه آیتم آخر را از لیست `food_staff_lt` برش دهید.
-6.  تاپل `food_staff_tp` را به طور کامل حذف کنید.
+5.  سه آیتم اول و سه آیتم آخر را از لیست `food_stuff_lt` برش دهید.
+6.  تاپل `food_stuff_tp` را به طور کامل حذف کنید.
 7.  بررسی کنید که آیا یک آیتم در تاپل وجود دارد:
 
 <!-- end list -->
