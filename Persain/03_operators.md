@@ -169,7 +169,7 @@ print(weight, 'N')                         # افزودن واحد به وزن
 mass = 75 # به کیلوگرم
 volume = 0.075 # به متر مکعب
 density = mass / volume # 1000 Kg/m^3
-
+print(density, 'Kg/m^3') # افزودن واحد به چگالی
 ```
 
 ### عملگرهای مقایسه‌ای
@@ -207,7 +207,7 @@ print('False == False:', False == False)
   - `is`: اگر هر دو متغیر یک شیء یکسان باشند، true برمی‌گرداند (x is y)
   - `is not`: اگر هر دو متغیر یک شیء یکسان نباشند، true برمی‌گرداند (x is not y)
   - `in`: اگر لیست مورد نظر شامل یک آیتم خاص باشد، True برمی‌گرداند (x in y)
-  - `not in`: اگر لیست مورد نظر شامل یک آیتم خاص نباشد، True برمی‌گرداند (x in y)
+  - `not in`: اگر لیست مورد نظر شامل یک آیتم خاص نباشد، True برمی‌گرداند (x not in y)
 
 <!-- end list -->
 
@@ -215,7 +215,7 @@ print('False == False:', False == False)
 print('1 is 1', 1 is 1)                   # True - چون مقادیر داده یکسان هستند
 print('1 is not 2', 1 is not 2)           # True - چون 1 برابر 2 نیست
 print('A in Asabeneh', 'A' in 'Asabeneh') # True - A در رشته پیدا شد
-print('B in Asabeneh', 'B' in 'Asabeneh') # False - حرف بزرگ B وجود ندارد
+print('B not in Asabeneh', 'B' in 'Asabeneh') # False - حرف بزرگ B وجود ندارد
 print('coding' in 'coding for all') # True - چون coding for all کلمه coding را دارد
 print('a in an:', 'a' in 'an')      # True
 print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
