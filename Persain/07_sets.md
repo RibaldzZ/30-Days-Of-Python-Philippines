@@ -46,7 +46,7 @@
 
 ### ایجاد یک مجموعه
 
-ما از تابع داخلی `_set()_` استفاده می‌کنیم.
+برای ایجاد یک مجموعه خالی، از تابع set() استفاده می‌کنیم. استفاده از آکولاد خالی {} یک دیکشنری ایجاد می‌کند.
 
   - ایجاد یک مجموعه خالی
 
@@ -232,8 +232,8 @@ fruits = set(fruits) # {'mango', 'lemon', 'banana', 'orange'}
 
 ### ادغام مجموعه‌ها
 
-ما می‌توانیم دو مجموعه را با استفاده از متد `_union()_` یا `_update()_` ادغام کنیم.
-
+ما می‌توانیم دو مجموعه را با استفاده از متدهای _union()_ یا _update()_ یا نماد _|_ با هم ادغام کنیم.
+z
   - Union (اجتماع)
     این متد یک مجموعه جدید را برمی‌گرداند.
 
@@ -243,7 +243,7 @@ fruits = set(fruits) # {'mango', 'lemon', 'banana', 'orange'}
 # syntax
 st1 = {'item1', 'item2', 'item3', 'item4'}
 st2 = {'item5', 'item6', 'item7', 'item8'}
-st3 = st1.union(st2)
+st3 = st1.union(st2) #st3 = st1 | st2
 ```
 
 **مثال:**
@@ -252,6 +252,8 @@ st3 = st1.union(st2)
 fruits = {'banana', 'orange', 'mango', 'lemon'}
 vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
 print(fruits.union(vegetables)) # {'lemon', 'carrot', 'tomato', 'banana', 'mango', 'orange', 'cabbage', 'potato', 'onion'}
+# یا با استفاده از این
+print(fruits | vegetables)
 ```
 
   - Update
@@ -277,13 +279,14 @@ print(fruits) # {'lemon', 'carrot', 'tomato', 'banana', 'mango', 'orange', 'cabb
 
 ### پیدا کردن آیتم‌های اشتراک
 
-اشتراک (Intersection) مجموعه‌ای از آیتم‌ها را که در هر دو مجموعه وجود دارند برمی‌گرداند. مثال را ببینید.
+اشتراک (Intersection) یک مجموعه شامل آیتم‌هایی که در هر دو مجموعه وجود دارند را برمی‌گرداند یا می‌توان از نماد _&_ استفاده کرد. به مثال زیر توجه کنید
 
 ```py
 # syntax
 st1 = {'item1', 'item2', 'item3', 'item4'}
 st2 = {'item3', 'item2'}
 st1.intersection(st2) # {'item3', 'item2'}
+# یا با استفاده از این: st1 & st2
 ```
 
 **مثال:**
@@ -296,6 +299,7 @@ whole_numbers.intersection(even_numbers) # {0, 2, 4, 6, 8, 10}
 python = {'p', 'y', 't', 'h', 'o','n'}
 dragon = {'d', 'r', 'a', 'g', 'o','n'}
 python.intersection(dragon)     # {'o', 'n'}
+# python & dragon
 ```
 
 ### بررسی زیرمجموعه و ابرمجموعه
@@ -330,14 +334,14 @@ python.issubset(dragon)     # False
 
 ### بررسی تفاضل بین دو مجموعه
 
-این متد تفاضل بین دو مجموعه را برمی‌گرداند.
+این متد تفاضل بین دو مجموعه را برمی‌گرداند یا می‌توان از نماد _-_ برای این کار استفاده کرد.
 
 ```py
 # syntax
 st1 = {'item1', 'item2', 'item3', 'item4'}
 st2 = {'item2', 'item3'}
-st2.difference(st1) # set()
-st1.difference(st2) # {'item1', 'item4'} => st1\st2
+st2.difference(st1) # set() : st2 - st1
+st1.difference(st2) # {'item1', 'item4'} => st1\st2 : st2 - st1
 ```
 
 **مثال:**
@@ -350,7 +354,9 @@ whole_numbers.difference(even_numbers) # {1, 3, 5, 7, 9}
 python = {'p', 'y', 't', 'o','n'}
 dragon = {'d', 'r', 'a', 'g', 'o','n'}
 python.difference(dragon)     # {'p', 'y', 't'}  - نتیجه نامرتب است (ویژگی مجموعه‌ها)
+# python - dragon
 dragon.difference(python)     # {'d', 'r', 'a', 'g'}
+# dragon - python
 ```
 
 ### یافتن تفاضل متقارن بین دو مجموعه
@@ -362,7 +368,7 @@ dragon.difference(python)     # {'d', 'r', 'a', 'g'}
 st1 = {'item1', 'item2', 'item3', 'item4'}
 st2 = {'item2', 'item3'}
 # به معنی (A\B)∪(B\A) است
-st2.symmetric_difference(st1) # {'item1', 'item4'}
+st2.symmetric_difference(st1) # {'item1', 'item4'} : st2 ^ st1
 ```
 
 **مثال:**
@@ -375,6 +381,7 @@ whole_numbers.symmetric_difference(some_numbers) # {0, 6, 7, 8, 9, 10}
 python = {'p', 'y', 't', 'h', 'o','n'}
 dragon = {'d', 'r', 'a', 'g', 'o','n'}
 python.symmetric_difference(dragon)  # {'r', 't', 'p', 'y', 'g', 'a', 'd', 'h'}
+# python ^ dragon
 ```
 
 ### مجموعه‌های مجزا
