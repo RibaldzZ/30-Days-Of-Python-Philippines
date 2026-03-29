@@ -1,7 +1,5 @@
 # 🐍 ۳۰ روز پایتون
 
-**با پیوستن به [\<em\>بوت‌کمپ کدنویسی\</em\>](https://docs.google.com/forms/d/e/1FAIpQLSf0oNIYR9XU1DCctfl-pY36KbWse-SQX5aQaUgetqSinFYnmQ/viewform) آینده، همراه با Asabeneh یاد بگیرید**
-
 |\# روز | سرفصل‌ها |
 |:---:|:---:|
 | 01 | [مقدمه](./readme.md)|
@@ -35,64 +33,66 @@
 | 29 | [ساخت API](./29_building_API.md)|
 | 30 | [نتیجه‌گیری](./30_conclusions.md)|
 
-**با پیوستن به [\<em\>بوت‌کمپ کدنویسی\</em\>](https://docs.google.com/forms/d/e/1FAIpQLSf0oNIYR9XU1DCctfl-pY36KbWse-SQX5aQaUgetqSinFYnmQ/viewform) آینده، همراه با Asabeneh یاد بگیرید**
+<small>🧡🧡🧡 کدنویسی خوشحال 🧡🧡🧡</small>
 
-🧡🧡🧡 کدنویسی خوش بگذره 🧡🧡🧡
+### 🙌 تبدیل شدن به حامی مالی
 
-\<div\>
-\<small\>از \<strong\>نویسنده\</strong\> برای تولید محتوای آموزشی بیشتر حمایت کنید\</small\> \<br /\>  
-\<a href = "https://www.paypal.me/asabeneh"\>\<img src='./images/paypal\_lg.png' alt='لوگوی پی‌پال' style="width:10%"/\>\</a\>
-\</div\>
+می‌توانید با تبدیل شدن به حامی در **[GitHub Sponsors](https://github.com/sponsors/asabeneh)** یا از طریق [PayPal](https://www.paypal.me/asabeneh) از این پروژه حمایت کنید.
 
-\<div align="center"\>
-\<h1\> ۳۰ روز پایتون: روز ۱ - مقدمه\</h1\>
-\<a class="header-badge" target="\_blank" href="https://www.linkedin.com/in/asabeneh/"\>
-\<img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn\&logo=linkedin\&style=social"\>
-\</a\>
-\<a class="header-badge" target="\_blank" href="https://twitter.com/Asabeneh"\>
-\<img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social"\>
-\</a\>
+هرگونه حمایت، چه کوچک چه بزرگ، تاثیر زیادی دارد. از حمایت شما سپاسگزاریم! 🌟
 
-\<sub\>نویسنده:
-\<a href="https://www.linkedin.com/in/asabeneh/" target="\_blank"\>Asabeneh Yetayeh\</a\>\<br\>
-\<small\> ویرایش دوم: جولای، ۲۰۲۱\</small\>
-\</sub\>
+---
 
-\</div\>
+<div align="center">
+  <h1> ۳۰ روز با پایتون: روز ۱ - مقدمه</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  </a>
 
-🇧🇷 [پرتغالی](./Portuguese/README.md)
-🇨🇳 [چینی](./Chinese/README.md)
+  <sub>نویسنده:
+  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <small> ویرایش دوم: جولای ۲۰۲۱</small>
+  </sub>
+</div>
+
+🇬🇧 [English](../README.md)
+🇧🇷 [Portuguese](../Portuguese/README.md)
+🇨🇳 [中文](../Chinese/README.md)
+
 
 [روز ۲ \>\>](./02_variables_builtin_functions.md)
 
-  - [🐍 ۳۰ روز پایتون](%23-%DB%B3%DB%B0-%D8%B1%D9%88%D8%B2-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
-  - [📘 روز ۱](%23-%D8%B1%D9%88%D8%B2-%DB%B1)
-      - [خوش‌آمدید](%23%D8%AE%D9%88%D8%B4%D8%A2%D9%85%D8%AF%DB%8C%D8%AF)
-      - [مقدمه](%23%D9%85%D9%82%D8%AF%D9%85%D9%87)
-      - [چرا پایتون؟](%23%DA%86%D8%B1%D8%A7-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
-      - [آماده‌سازی محیط](%23%D8%A2%D9%85%D8%A7%D8%AF%D9%87%D8%B3%D8%A7%D8%B2%DB%8C-%D9%85%D8%AD%DB%8C%D8%B7)
-          - [نصب پایتون](%23%D9%86%D8%B5%D8%A8-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
-          - [شل پایتون](%23%D8%B4%D9%84-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
-          - [نصب ویژوال استودیو کد](%23%D9%86%D8%B5%D8%A8-%D9%88%DB%8C%DA%98%D9%88%D8%A7%D9%84-%D8%A7%D8%B3%D8%AA%D9%88%D8%AF%DB%8C%D9%88-%DA%A9%D8%AF)
-              - [چگونه از ویژوال استودیو کد استفاده کنیم](%23%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A7%D8%B2-%D9%88%DB%8C%DA%98%D9%88%D8%A7%D9%84-%D8%A7%D8%B3%D8%AA%D9%88%D8%AF%DB%8C%D9%88-%DA%A9%D8%AF-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%DA%A9%D9%86%DB%8C%D9%85)
-      - [مبانی پایتون](%23%D9%85%D8%A8%D8%A7%D9%86%DB%8C-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
-          - [سینتکس پایتون](%23%D8%B3%DB%8C%D9%86%D8%AA%DA%A9%D8%B3-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
-          - [تورفتگی در پایتون](%23%D8%AA%D9%88%D8%B1%D9%81%D8%AA%DA%AF%DB%8C-%D8%AF%D8%B1-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
-          - [کامنت‌ها](%23%DA%A9%D8%A7%D9%85%D9%86%D8%AA%D9%87%D8%A7)
-          - [انواع داده](%23%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D8%AF%D9%87)
-              - [عدد](%23%D8%B9%D8%AF%D8%AF)
-              - [رشته](%23%D8%B1%D8%B4%D8%AA%D9%87)
-              - [بولین](%23%D8%A8%D9%88%D9%84%DB%8C%D9%86)
-              - [لیست](%23%D9%84%DB%8C%D8%B3%D8%AA)
-              - [دیکشنری](%23%D8%AF%DB%8C%DA%A9%D8%B4%D9%86%D8%B1%DB%8C)
-              - [تاپل](%23%D8%AA%D8%A7%D9%BE%D9%84)
-              - [مجموعه](%23%D9%85%D8%AC%D9%85%D9%88%D8%B9%D9%87)
-          - [بررسی انواع داده](%23%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D8%AF%D9%87)
-          - [فایل پایتون](%23%D9%81%D8%A7%DB%8C%D9%84-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86)
-      - [💻 تمرینات - روز ۱](%23-%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA---%D8%B1%D9%88%D8%B2-%DB%B1)
-          - [تمرین: سطح ۱](%23%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%B3%D8%B7%D8%AD-%DB%B1)
-          - [تمرین: سطح ۲](%23%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%B3%D8%B7%D8%AD-%DB%B2)
-          - [تمرین: سطح ۳](%23%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%B3%D8%B7%D8%AD-%DB%B3)
+- [🐍 ۳۰ روز پایتون](#-۳۰-روز-پایتون)
+- [📘 روز ۱](#-روز-۱)
+  - [خوش‌آمدید](#خوشآمدید)
+  - [مقدمه](#مقدمه)
+  - [چرا پایتون؟](#چرا-پایتون)
+  - [آماده‌سازی محیط](#آمادهسازی-محیط)
+    - [نصب پایتون](#نصب-پایتون)
+    - [شل پایتون](#شل-پایتون)
+    - [نصب ویژوال استودیو کد](#نصب-ویژوال-استودیو-کد)
+      - [چگونه از ویژوال استودیو کد استفاده کنیم](#چگونه-از-ویژوال-استودیو-کد-استفاده-کنیم)
+  - [مبانی پایتون](#مبانی-پایتون)
+    - [سینتکس پایتون](#سینتکس-پایتون)
+    - [تورفتگی در پایتون](#تورفتگی-در-پایتون)
+    - [کامنت‌ها](#کامنتها)
+    - [انواع داده](#انواع-داده)
+      - [عدد](#عدد)
+      - [رشته](#رشته-string)
+      - [بولین](#بولین-booleans)
+      - [لیست](#لیست-list)
+      - [دیکشنری](#دیکشنری-dictionary)
+      - [تاپل](#تاپل-tuple)
+      - [مجموعه](#مجموعه-set)
+    - [بررسی انواع داده](#بررسی-انواع-داده)
+    - [فایل پایتون](#فایل-پایتون)
+  - [💻 تمرینات - روز ۱](#-تمرینات---روز-۱)
+    - [تمرین: سطح ۱](#تمرین-سطح-۱)
+    - [تمرین: سطح ۲](#تمرین-سطح-۲)
+    - [تمرین: سطح ۳](#تمرین-سطح-۳)
 
 # 📘 روز ۱
 
@@ -124,11 +124,11 @@
 برای اجرای یک اسکریپت پایتون، باید پایتون را نصب کنید. بیایید پایتون را [دانلود](https://www.python.org/) کنیم.
 اگر کاربر ویندوز هستید، روی دکمه‌ای که با رنگ قرمز مشخص شده کلیک کنید.
 
-[](%5Bhttps://www.python.org/%5D\(https://www.python.org/\))
+[![نصب در ویندوز](../images/installing_on_windows.png)](https://www.python.org/)
 
 اگر کاربر macOS هستید، روی دکمه‌ای که با رنگ قرمز مشخص شده کلیک کنید.
 
-[](https://www.python.org/)
+[![نصب در macOS](../images/installing_on_macOS.png)](https://www.python.org/)
 
 برای بررسی اینکه آیا پایتون نصب شده است، دستور زیر را در ترمینال دستگاه خود بنویسید.
 
@@ -421,7 +421,7 @@ print(type((9.8, 3.14, 2.7)))    # Tuple
 ### تمرین: سطح ۳
 
 1.  برای انواع داده‌های مختلف پایتون مانند عدد (صحیح، اعشاری، مختلط)، رشته، بولین، لیست، تاپل، مجموعه و دیکشنری یک مثال بنویسید.
-2.  [فاصله اقلیدسی](https://en.wikipedia.org/wiki/Euclidean_distance%23:~:text%3DIn%2520mathematics%252C%2520the%2520Euclidean%2520distance,being%2520called%2520the%2520Pythagorean%2520distance.) بین (۲, ۳) و (۱۰, ۸) را پیدا کنید.
+2.  [فاصله اقلیدسی](https://en.wikipedia.org/wiki/Euclidean_distance) بین (۲, ۳) و (۱۰, ۸) را پیدا کنید.
 
 🎉 تبریک می‌گویم\! 🎉
 
