@@ -13,7 +13,6 @@
 </sub>
 
 </div>
-</div>
 
 [<< روز ۱۱](./11_functions.md) | [روز ۱۳ >>](./13_list_comprehension.md)
 
@@ -77,7 +76,7 @@ print(mymodule.generate_full_name('Asabeneh', 'Yetayeh')) # Asabeneh Yetayeh
 from mymodule import generate_full_name, sum_two_nums, person, gravity
 print(generate_full_name('Asabneh','Yetayeh'))
 print(sum_two_nums(1,9))
-mass = 100;
+mass = 100
 weight = mass * gravity
 print(weight)
 print(person['firstname'])
@@ -92,7 +91,7 @@ print(person['firstname'])
 from mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
 print(fullname('Asabneh','Yetayeh'))
 print(total(1, 9))
-mass = 100;
+mass = 100
 weight = mass * g
 print(weight)
 print(p)
@@ -249,7 +248,7 @@ print(randint(5, 20)) # یک عدد صحیح تصادفی بین [5, 20] به ص
 
 1.  تابعی بنویسید که یک random_user_id شش رقمی/کاراکتری تولید کند.
     ```py
-      print(random_user_id());
+      print(random_user_id())
       '1ee33d'
     ```
 2.  وظیفه قبلی را اصلاح کنید. تابعی به نام user_id_gen_by_user تعریف کنید. این تابع هیچ پارامتری نمی‌گیرد اما دو ورودی را با استفاده از input() دریافت می‌کند. یکی از ورودی‌ها تعداد کاراکترها و ورودی دوم تعداد IDهایی است که قرار است تولید شوند.
