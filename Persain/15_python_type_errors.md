@@ -11,7 +11,7 @@
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
   <small> ویرایش دوم: جولای، ۲۰۲۱</small>
   </sub>
-</div>
+
 </div>
 
 [<< روز ۱۴](./14_higher_order_functions.md) | [روز ۱۶ >>](./16_python_datetime.md)
@@ -183,7 +183,7 @@ AttributeError: module 'math' has no attribute 'PI'
 >>>
 ```
 
-همانطور که می‌بینید، من دوباره اشتباه کردم! به جای pi، سعی کردم یک تابع PI را از ماژول math فراخوانی کنم. این کار یک خطای attribute error ایجاد کرد، یعنی آن تابع در ماژول وجود ندارد. بیایید با تغییر PI به pi آن را اصلاح کنیم.
+همانطور که می‌بینید، دوباره اشتباه کردم! به جای `pi`، سعی کردم ثابت `PI` را از ماژول `math` فراخوانی کنم. این کار باعث بروز خطای `AttributeError` شد، به این معنی که این ویژگی در ماژول وجود ندارد. بیایید آن را با تغییر `PI` به `pi` اصلاح کنیم.
 
 ```py
 asabeneh@Asabeneh:~$ python
