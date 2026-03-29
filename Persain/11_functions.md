@@ -86,7 +86,7 @@ add_two_numbers()
 
 ### تابع بازگشت‌دهنده مقدار - بخش ۱
 
-تابع همچنین می‌تواند مقادیری را بازگرداند، اگر تابعی دستور return نداشته باشد، مقدار تابع None است. بیایید توابع بالا را با استفاده از return بازنویسی کنیم. از این به بعد، وقتی تابعی را فراخوانی و چاپ می‌کنیم، مقداری از تابع دریافت می‌کنیم.
+توابع با استفاده از دستور `return` مقادیر را برمی‌گردانند. اگر تابعی دستور `return` نداشته باشد، مقدار `None` را برمی‌گرداند. بیایید توابع بالا را با استفاده از `return` بازنویسی کنیم. از این به بعد، هنگام فراخوانی یک تابع، مقداری از آن دریافت می‌کنیم و آن را چاپ می‌کنیم.
 
 ```py
 def generate_full_name ():
@@ -149,7 +149,7 @@ def sum_of_numbers(n):
     total = 0
     for i in range(n+1):
         total+=i
-    print(total)
+    return total
 print(sum_of_numbers(10)) # 55
 print(sum_of_numbers(100)) # 5050
 ```
@@ -182,7 +182,7 @@ print('Sum of two numbers: ', sum_two_numbers(1, 9))
 
 def calculate_age (current_year, birth_year):
     age = current_year - birth_year
-    return age;
+    return age
 
 print('Age: ', calculate_age(2021, 1819))
 
@@ -213,11 +213,11 @@ def print_fullname(firstname, lastname):
     space = ' '
     full_name = firstname  + space + lastname
     print(full_name)
-print(print_fullname(firstname = 'Asabeneh', lastname = 'Yetayeh'))
+print_fullname(firstname = 'Asabeneh', lastname = 'Yetayeh')
 
 def add_two_numbers (num1, num2):
     total = num1 + num2
-    print(total)
+    return total
 print(add_two_numbers(num2 = 3, num1 = 2)) # ترتیب اهمیتی ندارد
 ```
 
@@ -252,7 +252,7 @@ print(add_two_numbers(2, 3))
 
 def calculate_age (current_year, birth_year):
     age = current_year - birth_year
-    return age;
+    return age
 print('Age: ', calculate_age(2019, 1819))
 ```
 
@@ -358,15 +358,53 @@ def generate_groups (team,*args):
     print(team)
     for i in args:
         print(i)
-print(generate_groups('Team-1','Asabeneh','Brook','David','Eyob'))
+generate_groups('Team-1','Asabeneh','Brook','David','Eyob')
 ```
+
+### بازکردن دیکشنری (Dictionary unpacking)
+
+می‌توانید تابعی که آرگومان‌های نام‌دار می‌گیرد را با یک دیکشنری که کلیدهایش با نام پارامترها یکی‌ست، صدا بزنید. برای این کار از ``**`` استفاده می‌کنیم.
+
+```py
+# تعریف تابعی که دو آرگومان می‌گیرد: 'name' و 'location'
+def greet(name, location):
+    # پیام خوش‌آمدگویی با استفاده از آرگومان‌های ورودی چاپ می‌کند
+    print("Hi there", name, "how is the weather in", location)
+
+# فراخوانی تابع با استفاده از آرگومان‌های کلیدی (keyword)
+greet(name="Alice", location="New York")  
+# خروجی: Hi there Alice how is the weather in New York
+
+# ساخت یک دیکشنری با کلیدهای برابر با نام پارامترها
+my_dict = {"name": "Alice", "location": "New York"}
+
+# فراخوانی تابع با بازکردن دیکشنری (Dictionary unpacking)
+greet(**my_dict)  
+# عملگر ** دیکشنری را باز می‌کند و جفت کلید-مقدارها را به صورت آرگومان نام‌دار ارسال می‌کند
+# خروجی: Hi there Alice how is the weather in New York
+```
+
+### تعداد دلخواه آرگومان‌های نام‌دار
+
+می‌توانید تابعی تعریف کنید که تعداد دلخواهی آرگومان نام‌دار بگیرد.
+
+```py
+def arbitrary_named_args(**args):
+    print("تعدادی آرگومان نام‌دار به صورت دلخواه گرفتم، مجموعاً", len(args))
+    print("آرگومان‌ها به صورت دیکشنری به تابع داده شده‌اند:", type(args))
+    print("بیایید آنها را چاپ کنیم:")
+    for k, v in args.items():
+        print(" * کلید:", k, "مقدار:", v)
+```
+
+در کل، مگر در مواقع ضروری، از این روش استفاده نکنید چون فهمیدن اینکه تابع چه آرگومان‌هایی می‌گیرد و چه کاری انجام می‌دهد را سخت می‌کند.
 
 ### تابع به عنوان پارامتر تابع دیگر
 
 ```py
 # می‌توانید توابع را به عنوان پارامتر بگذرانید
 def square_number (n):
-    return n * n
+    return n ** n
 def do_something(f, x):
     return f(x)
 print(do_something(square_number, 3)) # 27
@@ -374,9 +412,9 @@ print(do_something(square_number, 3)) # 27
 
 🌕 شما تا اینجا دستاوردهای زیادی داشته‌اید. ادامه دهید! شما چالش‌های روز ۱۱ را به پایان رساندید و ۱۱ گام جلوتر در مسیر بزرگی هستید. حالا چند تمرین برای مغز و عضلاتتان انجام دهید.
 
-## شهادت
+## اظهارات
 
-حالا زمان آن است که افکار خود را در مورد نویسنده و ۳۰روزپایتون بیان کنید. می‌توانید شهادت خود را در این [لینک](https://testimonial-s3sw.onrender.com/) بگذارید.
+حالا زمان آن است که افکار خود را در مورد نویسنده و ۳۰روزپایتون بیان کنید. می‌توانید اظهارات خود را در این [لینک](https://testimonial-s3sw.onrender.com/) بگذارید.
 
 ## 💻 تمرین‌ها: روز ۱۱
 
@@ -395,7 +433,7 @@ print(do_something(square_number, 3)) # 27
 ```py
 print(reverse_list([1, 2, 3, 4, 5]))
 # [5, 4, 3, 2, 1]
-print(reverse_list1(["A", "B", "C"]))
+print(reverse_list(["A", "B", "C"]))
 # ["C", "B", "A"]
 ```
 
@@ -403,17 +441,17 @@ print(reverse_list1(["A", "B", "C"]))
 ۱۱. تابعی به نام add_item اعلام کنید. یک لیست و یک پارامتر آیتم می‌گیرد. لیستی با آیتم اضافه‌شده در انتها برمی‌گرداند.
 
 ```py
-food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
-print(add_item(food_staff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat']
+food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(food_stuff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat']
 numbers = [2, 3, 7, 9]
-print(add_item(numbers, 5))      [2, 3, 7, 9, 5]
+print(add_item(numbers, 5))    #  [2, 3, 7, 9, 5]
 ```
 
 ۱۲. تابعی به نام remove_item اعلام کنید. یک لیست و یک پارامتر آیتم می‌گیرد. لیستی با آیتم حذف‌شده از آن برمی‌گرداند.
 
 ```py
-food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
-print(remove_item(food_staff, 'Mango'))  # ['Potato', 'Tomato', 'Milk'];
+food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(food_stuff, 'Mango'))  # ['Potato', 'Tomato', 'Milk'];
 numbers = [2, 3, 7, 9]
 print(remove_item(numbers, 3))  # [2, 7, 9]
 ```
@@ -439,17 +477,32 @@ print(sum_of_numbers(100)) # 5050
     # تعداد زوج‌ها ۵۱ است.
 ```
 
-۱. تابع خود را factorial بنامید، یک عدد صحیح را به عنوان پارامتر می‌گیرد و فاکتوریل عدد را برمی‌گرداند.
-۱. تابع خود را _is_empty_ بنامید، یک پارامتر می‌گیرد و بررسی می‌کند که آیا خالی است یا نه.
-۱. توابع مختلفی بنویسید که لیست‌ها را می‌گیرند. آنها باید میانگین، میانه، مد، دامنه، واریانس، انحراف استاندارد را محاسبه کنند.
+۲. تابع خود را به نام factorial صدا بزنید، یک عدد صحیح را به عنوان پارامتر می‌گیرد و فاکتوریل عدد را برمی‌گرداند.
+۳. تابع خود را با نام _is_empty_ صدا بزنید، یک پارامتر می‌گیرد و بررسی می‌کند آیا تهی است یا نه.
+۴. توابع مختلفی بنویسید که برای لیست‌ها به کار می‌روند. باید توابعی مانند calculate_mean، calculate_median، calculate_mode، calculate_range، calculate_variance و calculate_std (انحراف معیار) را بسازید.
+۵. تابعی به نام _greet_ بنویسید که یک آرگومان پیش‌فرض به نام _name_ می‌گیرد. اگر هیچ آرگومانی ارسال نشود، باید "Hello, Guest!" را چاپ کند، در غیر این صورت باید شخص را با نام مورد نظر خوشامد بگوید.
+
+```py
+    greet()
+    # "سلام، مهمان!"
+    greet("Alice")
+    # "سلام، Alice!"
+```
+۶. تابعی به نام _show_args_ بسازید که تعداد دلخواهی از آرگومان‌های نام‌دار را می‌گیرد و نام و مقدارشان را چاپ می‌کند.
+   ```py
+   show_args(name="Alice", age=30, city="New York")
+   # خروجی: نام: Alice، سن: 30، شهر: New York
+   show_args(name="Bob", pet="Fluffy, the bunny")
+   # خروجی: نام: Bob، حیوان خانگی: Fluffy, the bunny
+   ```
 
 ### تمرین‌ها: سطح ۳
 
 ۱. تابعی به نام is_prime بنویسید، که بررسی می‌کند آیا یک عدد اول است.
-۱. تابعی بنویسید که بررسی می‌کند آیا همه آیتم‌ها در لیست منحصر به فرد هستند.
-۱. تابعی بنویسید که بررسی می‌کند آیا همه آیتم‌های لیست از یک نوع داده هستند.
-۱. تابعی بنویسید که بررسی می‌کند آیا متغیر ارائه‌شده یک متغیر معتبر پایتون است.
-۱. به پوشه data بروید و به فایل countries-data.py دسترسی پیدا کنید.
+۲. تابعی بنویسید که بررسی می‌کند آیا همه آیتم‌ها در لیست منحصر به فرد هستند.
+۳. تابعی بنویسید که بررسی می‌کند آیا همه آیتم‌های لیست از یک نوع داده هستند.
+۴. تابعی بنویسید که بررسی می‌کند آیا متغیر ارائه‌شده یک متغیر معتبر پایتون است.
+۵. به پوشه data بروید و به فایل countries-data.py دسترسی پیدا کنید.
 
 - تابعی به نام most_spoken_languages در جهان ایجاد کنید. باید ۱۰ یا ۲۰ زبان پرگویش جهان را به ترتیب نزولی برگرداند.
 - تابعی به نام most_populated_countries ایجاد کنید. باید ۱۰ یا ۲۰ کشور پرجمعیت را به ترتیب نزولی برگرداند.
