@@ -1,20 +1,22 @@
-\<div align="center"\>
-\<h1\> ۳۰ روز با پایتون: روز چهارم - رشته‌ها\</h1\>
-\<a class="header-badge" target="\_blank" href="[https://www.linkedin.com/in/asabeneh/](https://www.linkedin.com/in/asabeneh/)"\>
-\<img src="[https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn\&logo=linkedin\&style=social](https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social)"\>
-\</a\>
-\<a class="header-badge" target="\_blank" href="[https://twitter.com/Asabeneh](https://twitter.com/Asabeneh)"\>
-\<img alt="Twitter Follow" src="[https://img.shields.io/twitter/follow/asabeneh?style=social](https://img.shields.io/twitter/follow/asabeneh?style=social)"\>
-\</a\>
+<div align="center">
+  <h1> ۳۰ روز با پایتون: روز چهارم - رشته‌ها</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  </a>
 
-\<sub\>نویسنده:
-\<a href="[https://www.linkedin.com/in/asabeneh/](https://www.linkedin.com/in/asabeneh/)" target="\_blank"\>Asabeneh Yetayeh\</a\>\<br\>
-\<small\> ویرایش دوم: جولای، ۲۰۲۱\</small\>
-\</sub\>
+<sub>نویسنده:
+<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<small> ویرایش دوم: ژوئیه ۲۰۲۱</small>
+</sub>
 
-\</div\>
+</div>
 
-[\>\> روز سوم](./03_operators.md) | [روز پنجم \<\<](./05_lists.md)
+[<< روز سوم](./03_operators.md) | [روز پنجم >>](./05_lists.md)
+
+![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
 - [روز چهارم](#روز-چهارم)
   - [رشته‌ها](#رشته‌ها)
@@ -648,4 +650,4 @@ The area of a circle with radius 10 is 314 meters square.
 
 🎉 تبریک می‌گویم\! 🎉
 
-[\>\> روز سوم](./03_operators.md) | [روز پنجم \<\<](./05_lists.md)
+[<< روز سوم](./03_operators.md) | [روز پنجم >>](./05_lists.md)

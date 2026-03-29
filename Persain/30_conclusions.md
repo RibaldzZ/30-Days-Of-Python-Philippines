@@ -16,7 +16,7 @@
 
 </div>
 
-[>> روز ۲۹](./29_building_API.md)
+[<< روز ۲۹](./29_building_API.md)
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
 - [روز ۳۰](#روز-۳۰)
@@ -38,4 +38,4 @@ http://thirtydayofpython-api.herokuapp.com/feedback
 
 🎉 تبریک می‌گویم ! 🎉
 
-[>> روز ۲۹](./29_building_API.md)
+[<< روز ۲۹](./29_building_API.md)

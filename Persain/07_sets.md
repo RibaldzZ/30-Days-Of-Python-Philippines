@@ -1,20 +1,22 @@
-\<div align="center"\>
-\<h1\> ۳۰ روز پایتون: روز ۷ - مجموعه‌ها\</h1\>
-\<a class="header-badge" target="\_blank" href="[https://www.linkedin.com/in/asabeneh/](https://www.linkedin.com/in/asabeneh/)"\>
-\<img src="[https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn\&logo=linkedin\&style=social](https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social)"\>
-\</a\>
-\<a class="header-badge" target="\_blank" href="[https://twitter.com/Asabeneh](https://twitter.com/Asabeneh)"\>
-\<img alt="Twitter Follow" src="[https://img.shields.io/twitter/follow/asabeneh?style=social](https://img.shields.io/twitter/follow/asabeneh?style=social)"\>
-\</a\>
+<div align="center">
+  <h1> ۳۰ روز پایتون: روز 7 - دیکشنری‌ها</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  </a>
 
-\<sub\>نویسنده:
-\<a href="[https://www.linkedin.com/in/asabeneh/](https://www.linkedin.com/in/asabeneh/)" target="\_blank"\>Asabeneh Yetayeh\</a\>\<br\>
-\<small\> ویرایش دوم: جولای، ۲۰۲۱\</small\>
-\</sub\>
+<sub>نویسنده:
+<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<small> ویرایش دوم: ژوئیه ۲۰۲۱</small>
+</sub>
 
-\</div\>
+</div>
 
 [\<\< روز ۶](./06_tuples.md) | [روز ۸ \>\>](./08_dictionaries.md)
+
+![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
 - [📘 روز ۷](#-روز-۷)
   - [مجموعه‌ها](#مجموعهها)

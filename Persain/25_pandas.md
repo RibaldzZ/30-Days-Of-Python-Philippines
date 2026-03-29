@@ -14,7 +14,7 @@
 
 </div>
 
-[>> روز ۲۴](./24_statistics.md) | [روز ۲۶ <<](./26_python_web.md)
+[<< روز ۲۴](./24_statistics.md) | [روز ۲۶ >>](./26_python_web.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -1210,4 +1210,4 @@ print(df[df['Ages'] < 120])
 
 🎉 تبریک می‌گویم ! 🎉
 
-[>> روز ۲۴](./24_statistics.md) | [روز ۲۶ <<](./26_python_web.md)
+[<< روز ۲۴](./24_statistics.md) | [روز ۲۶ >>](./26_python_web.md)

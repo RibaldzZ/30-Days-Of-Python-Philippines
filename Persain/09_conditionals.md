@@ -14,7 +14,7 @@
 
 </div>
 
-[>> روز ۸](./08_dictionaries.md) | [روز ۱۰ <<](./10_loops.md)
+[<< روز ۸](./08_dictionaries.md) | [روز ۱۰ >>](./10_loops.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -285,4 +285,4 @@ Enter number two: 3
 
 🎉 تبریک! 🎉
 
-[>> روز ۸](./08_dictionaries.md) | [روز ۱۰ <<](./10_loops.md)
+[<< روز ۸](./08_dictionaries.md) | [روز ۱۰ >>](./10_loops.md)

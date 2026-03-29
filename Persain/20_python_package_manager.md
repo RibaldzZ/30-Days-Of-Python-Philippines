@@ -13,7 +13,7 @@
 </sub>
 </div>
 
-[>> روز ۲۱](./21_classes_and_objects.md) | [<< روز ۱۹](./19_file_handling.md)
+[<< روز ۲۱](./21_classes_and_objects.md) | [روز ۱۹ >>](./19_file_handling.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -456,4 +456,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 🎉 تبریک می‌گویم! 🎉
 
-[>> روز ۲۱](./21_classes_and_objects.md) | [<< روز ۱۹](./19_file_handling.md)
+[<< روز ۲۱](./21_classes_and_objects.md) | [روز ۱۹ >>](./19_file_handling.md)

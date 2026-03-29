@@ -1,20 +1,22 @@
-\<div align="center"\>
-\<h1\> ۳۰ روز پایتون: روز ۳ - عملگرها\</h1\>
-\<a class="header-badge" target="\_blank" href="[https://www.linkedin.com/in/asabeneh/](https://www.linkedin.com/in/asabeneh/)"\>
-\<img src="[https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn\&logo=linkedin\&style=social](https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social)"\>
-\</a\>
-\<a class="header-badge" target="\_blank" href="[https://twitter.com/Asabeneh](https://twitter.com/Asabeneh)"\>
-\<img alt="دنبال کردن در توییتر" src="[https://img.shields.io/twitter/follow/asabeneh?style=social](https://img.shields.io/twitter/follow/asabeneh?style=social)"\>
-\</a\>
+<div align="center">
+  <h1> ۳۰ روز پایتون: روز ۳ - عملگرها</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  </a>
 
-\<sub\>نویسنده:
-\<a href="[https://www.linkedin.com/in/asabeneh/](https://www.linkedin.com/in/asabeneh/)" target="\_blank"\>Asabeneh Yetayeh\</a\>\<br\>
-\<small\> ویرایش دوم: جولای، ۲۰۲۱\</small\>
-\</sub\>
+<sub>نویسنده:
+<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<small> ویرایش دوم: ژوئیه ۲۰۲۱</small>
+</sub>
 
-\</div\>
+</div>
 
-[\<\< روز ۲](./02_variables_builtin_functions.md) | [روز ۴ \>\>](./04_strings.md)
+[<< روز ۲](./02_variables_builtin_functions.md) | [روز ۴ >>](./04_strings.md)
+
+![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
 - [📘 روز ۳](#-روز-۳)
   - [بولین](#بولین)
@@ -317,4 +319,4 @@ print(not not False) # False
 
 🎉 تبریک می‌گویم\! 🎉
 
-[\<\< روز ۲](./02_variables_builtin_functions.md) | [روز ۴ \>\>](./04_strings.md)
+[<< روز ۲](./02_variables_builtin_functions.md) | [روز ۴ >>](./04_strings.md)

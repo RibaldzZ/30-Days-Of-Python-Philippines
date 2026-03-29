@@ -14,7 +14,7 @@
 </div>
 </div>
 
-[>> روز ۲۵ ](./25_pandas.md) | [روز ۲۷ <<](./27_python_with_mongodb.md)
+[<< روز ۲۵ ](./25_pandas.md) | [روز ۲۷ >>](./27_python_with_mongodb.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -568,4 +568,4 @@ web: python app.py
 
 🎉 تبریک می‌گویم ! 🎉
 
-[>> روز ۲۵ ](./25_pandas.md) | [روز ۲۷ <<](./27_python_with_mongodb.md)
+[<< روز ۲۵ ](./25_pandas.md) | [روز ۲۷ >>](./27_python_with_mongodb.md)

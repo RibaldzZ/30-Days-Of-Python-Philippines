@@ -1,20 +1,23 @@
-\<div align="center"\>
-\<h1\> ۳۰ روز پایتون: روز ۲ - متغیرها، توابع داخلی\</h1\>
-\<a class="header-badge" target="\_blank" href="[https://www.linkedin.com/in/asabeneh/](https://www.linkedin.com/in/asabeneh/)"\>
-\<img src="[https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn\&logo=linkedin\&style=social](https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social)"\>
-\</a\>
-\<a class="header-badge" target="\_blank" href="[https://twitter.com/Asabeneh](https://twitter.com/Asabeneh)"\>
-\<img alt="دنبال کردن در توییتر" src="[https://img.shields.io/twitter/follow/asabeneh?style=social](https://img.shields.io/twitter/follow/asabeneh?style=social)"\>
-\</a\>
+<div align="center">
+  <h1> ۳۰ روز پایتون: روز ۲ - متغیرها، توابع داخلی</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  </a>
 
-\<sub\>نویسنده:
-\<a href="[https://www.linkedin.com/in/asabeneh/](https://www.linkedin.com/in/asabeneh/)" target="\_blank"\>Asabeneh Yetayeh\</a\>\<br\>
-\<small\> ویرایش دوم: جولای، ۲۰۲۱\</small\>
-\</sub\>
+<sub>نویسنده:
+<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<small> ویرایش دوم: ژوئیه ۲۰۲۱</small>
+</sub>
 
-\</div\>
+</div>
 
-[\<\< روز ۱](./readme.md) | [روز ۳ \>\>](./03_operators.md)
+
+[<< روز ۱](./readme.md) | [روز ۳ >>](./03_operators.md)
+
+![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
 - [📘 روز ۲](#-روز-۲)
   - [توابع داخلی](#توابع-داخلی)
@@ -295,4 +298,4 @@ print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 
 🎉 تبریک می‌گویم\! 🎉
 
-[\<\< روز ۱](./readme.md) | [روز ۳ \>\>](./03_operators.md)
+[<< روز ۱](./readme.md) | [روز ۳ >>](./03_operators.md)

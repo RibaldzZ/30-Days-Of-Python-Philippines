@@ -12,7 +12,7 @@
 </sub>
 </div>
 
-[>> روز ۲۰](./20_python_package_manager.md) | [<< روز ۱۸](./18_regular_expressions.md)
+[<< روز ۲۰](./20_python_package_manager.md) | [روز ۱۸ >>](./18_regular_expressions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -514,4 +514,4 @@ for child in root:
 
 🎉 تبریک می‌گویم! 🎉
 
-[>> روز ۲۰](./20_python_package_manager.md) | [<< روز ۱۸](./18_regular_expressions.md)
+[<< روز ۲۰](./20_python_package_manager.md) | [روز ۱۸ >>](./18_regular_expressions.md)

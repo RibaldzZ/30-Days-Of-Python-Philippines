@@ -8,7 +8,7 @@
   </a>
 
 <sub>نویسنده:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">آسابنه یتایه</a><br>
+<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
 <small> ویرایش دوم: ژوئیه، ۲۰۲۱</small>
 </sub>
 

@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[>> روز ۱۱](./11_functions.md) | [<< روز ۱۳](./13_list_comprehension.md)
+[<< روز ۱۱](./11_functions.md) | [روز ۱۳ >>](./13_list_comprehension.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -298,4 +298,4 @@ print(rgb_color_gen())
 
 🎉 تبریک می‌گویم! 🎉
 
-[>> روز ۱۱](./11_functions.md) | [<< روز ۱۳](./13_list_comprehension.md)
+[<< روز ۱۱](./11_functions.md) | [روز ۱۳ >>](./13_list_comprehension.md)

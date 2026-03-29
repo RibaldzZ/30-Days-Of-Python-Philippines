@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[>> روز ۱۲](./12_modules.md) | [<< روز ۱۴](./14_higher_order_functions.md)
+[<< روز ۱۲](./12_modules.md) | [روز ۱۴ >>](./14_higher_order_functions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -202,4 +202,4 @@ print(two_power_of_five)  # 32
 
 🎉 تبریک می‌گویم! 🎉
 
-[>> روز ۱۲](./12_modules.md) | [<< روز ۱۴](./14_higher_order_functions.md)
+[<< روز ۱۲](./12_modules.md) | [روز ۱۴ >>](./14_higher_order_functions.md)

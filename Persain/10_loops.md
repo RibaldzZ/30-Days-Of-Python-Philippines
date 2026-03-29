@@ -13,7 +13,7 @@
 </sub>
 </div>
 
-[>> روز ۹](./09_conditionals.md) | [روز ۱۱ <<](./11_functions.md)
+[<< روز ۹](./09_conditionals.md) | [روز ۱۱ >>](./11_functions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -460,4 +460,4 @@ The sum of all evens is 2550. And the sum of all odds is 2500.
 
 🎉 تبریک! 🎉
 
-[>> روز ۹](./09_conditionals.md) | [روز ۱۱ <<](./11_functions.md)
+[<< روز ۹](./09_conditionals.md) | [روز ۱۱ >>](./11_functions.md)

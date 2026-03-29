@@ -13,7 +13,7 @@
 </sub>
 </div>
 
-[>> روز ۲۱](./21_classes_and_objects.md) | [روز ۲۳ >>](./23_virtual_environment.md)
+[<< روز ۲۱](./21_classes_and_objects.md) | [روز ۲۳ >>](./23_virtual_environment.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -105,4 +105,4 @@ for td in table.find('tr').find_all('td'):
 
 🎉 تبریک! 🎉
 
-[>> روز ۲۱](./21_Day_Web_scraping/21_class_and_object.md) | [روز ۲۳ >>](./23_virtual_environment.md)
+[<< روز ۲۱](./21_classes_and_objects.md) | [روز ۲۳ >>](./23_virtual_environment.md)

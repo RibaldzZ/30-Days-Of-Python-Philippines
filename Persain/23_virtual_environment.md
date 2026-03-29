@@ -13,7 +13,7 @@
 </sub>
 </div>
 
-[>> روز ۲۲](./22_web_scraping.md) | [روز ۲۴ >>](./24_statistics.md)
+[<< روز ۲۲](./22_web_scraping.md) | [روز ۲۴ >>](./24_statistics.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
@@ -111,4 +111,4 @@ Werkzeug==0.16.0
 
 🎉 تبریک! 🎉
 
-[>> روز ۲۲](./22_web_scraping.md) | [روز ۲۴ >>](./24_statistics.md)
+[<< روز ۲۲](./22_web_scraping.md) | [روز ۲۴ >>](./24_statistics.md)

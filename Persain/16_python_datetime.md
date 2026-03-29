@@ -14,7 +14,7 @@
 
 </div>
 
-[>> روز ۱۷](./17_exception_handling.md) | [<< روز ۱۵](./15_python_type_errors.md)
+[<< روز ۱۷](./17_exception_handling.md) | [روز ۱۵ >>](./15_python_type_errors.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 - [📘 روز ۱۶](#-روز-۱۶)
@@ -205,4 +205,4 @@ print("t3 =", t3)
 
 🎉 تبریک می‌گویم! 🎉
 
-[>> روز ۱۷](./17_exception_handling.md) | [<< روز ۱۵](./15_python_type_errors.md)
+[<< روز ۱۷](./17_exception_handling.md) | [روز ۱۵ >>](./15_python_type_errors.md)
