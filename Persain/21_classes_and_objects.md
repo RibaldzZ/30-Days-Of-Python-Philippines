@@ -330,7 +330,7 @@ print('Count:', data.count()) # 25
 print('Sum: ', data.sum()) # 744
 print('Min: ', data.min()) # 24
 print('Max: ', data.max()) # 38
-print('Range: ', data.range() # 14
+print('Range: ', data.range()) # 14
 print('Mean: ', data.mean()) # 30
 print('Median: ', data.median()) # 29
 print('Mode: ', data.mode()) # {'mode': 26, 'count': 5}
@@ -357,10 +357,7 @@ Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34
 
 ### تمرین‌ها: سطح ۲
 
-1.  کلاسی به نام PersonAccount ایجاد کنید. این کلاس دارای خصوصیات firstname, lastname, incomes, expenses و متدهای total_income, total_expense, account_info, add_income, add_expense و account_balance است. Incomes مجموعه‌ای از درآمدها و توضیحات آنهاست. همین امر در مورد expenses نیز صدق می‌کند.
-
-### تمرین‌ها: سطح ۳
-
+۱. یک کلاس به نام `PersonAccount` بسازید. این کلاس دارای ویژگی‌های `firstname` (نام)، `lastname` (نام خانوادگی)، `incomes` (درآمدها) و `expenses` (هزینه‌ها) است. همچنین دارای متدهای `total_income` (مجموع درآمد)، `total_expense` (مجموع هزینه)، `account_info` (اطلاعات حساب)، `add_income` (افزودن درآمد)، `add_expense` (افزودن هزینه) و `account_balance` (موجودی حساب) می‌باشد. درآمدها مجموعه‌ای از مبالغ درآمد به همراه توضیحات آن‌هاست. همین امر در مورد هزینه‌ها نیز صادق است.
 
 🎉 تبریک! 🎉
 
