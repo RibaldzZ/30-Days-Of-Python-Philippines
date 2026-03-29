@@ -349,6 +349,7 @@ with open('./files/csv_example.csv') as f:
 ```sh
 # خروجی:
 نام ستون‌ها: name, country, city, skills
+تعداد خطوط: 1
         Asabeneh یک معلم است. او در Finland، Helsinki زندگی می‌کند.
 تعداد خطوط: 2
 ```
@@ -471,8 +472,8 @@ for child in root:
 
 ### تمرین‌ها: سطح ۲
 
-4. تمام آدرس‌های ایمیل ورودی را به صورت یک لیست از فایل email_exchange_big.txt استخراج کنید.
-5. رایج‌ترین کلمات در زبان انگلیسی را پیدا کنید. نام تابع خود را find_most_common_words بگذارید، این تابع دو پارامتر می‌گیرد - یک رشته یا یک فایل و یک عدد صحیح مثبت که تعداد کلمات را نشان می‌دهد. تابع شما باید آرایه‌ای از تاپل‌ها را به ترتیب نزولی برگرداند. خروجی را بررسی کنید.
+1. تمام آدرس‌های ایمیل ورودی را به صورت یک لیست از فایل email_exchange_big.txt استخراج کنید.
+2. رایج‌ترین کلمات در زبان انگلیسی را پیدا کنید. نام تابع خود را find_most_common_words بگذارید، این تابع دو پارامتر می‌گیرد - یک رشته یا یک فایل و یک عدد صحیح مثبت که تعداد کلمات را نشان می‌دهد. تابع شما باید آرایه‌ای از تاپل‌ها را به ترتیب نزولی برگرداند. خروجی را بررسی کنید.
 
 ```py
     # خروجی شما باید به این شکل باشد
@@ -498,19 +499,17 @@ for child in root:
     (5, 'and')]
 ```
 
-6. از تابع find_most_frequent_words برای پیدا کردن موارد زیر استفاده کنید:
+3. از تابع find_most_frequent_words برای پیدا کردن موارد زیر استفاده کنید:
    الف) ده کلمه پرتکرار استفاده شده در [سخنرانی اوباما](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/obama_speech.txt)
    ب) ده کلمه پرتکرار استفاده شده در [سخنرانی میشل](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt)
    ج) ده کلمه پرتکرار استفاده شده در [سخنرانی ترامپ](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/donald_speech.txt)
    د) ده کلمه پرتکرار استفاده شده در [سخنرانی ملانیا](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt)
-7. یک برنامه پایتون بنویسید که شباهت بین دو متن را بررسی کند. این برنامه یک فایل یا یک رشته را به عنوان پارامتر می‌گیرد و شباهت دو متن را ارزیابی می‌کند. به عنوان مثال، شباهت بین متن سخنرانی‌های [میشل](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt) و [ملانیا](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt) را بررسی کنید. ممکن است به چند تابع نیاز داشته باشید، تابعی برای تمیز کردن متن (clean_text)، تابعی برای حذف کلمات کمکی (remove_support_words) و در نهایت تابعی برای بررسی شباهت متن (check_text_similarity). لیست [کلمات ایست (stop words)](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/stop_words.py) در پوشه data قرار دارد.
+4. یک برنامه پایتون بنویسید که شباهت بین دو متن را بررسی کند. این برنامه یک فایل یا یک رشته را به عنوان پارامتر می‌گیرد و شباهت دو متن را ارزیابی می‌کند. به عنوان مثال، شباهت بین متن سخنرانی‌های [میشل](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt) و [ملانیا](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt) را بررسی کنید. ممکن است به چند تابع نیاز داشته باشید، تابعی برای تمیز کردن متن (clean_text)، تابعی برای حذف کلمات کمکی (remove_support_words) و در نهایت تابعی برای بررسی شباهت متن (check_text_similarity). لیست [کلمات ایست (stop words)](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/stop_words.py) در پوشه data قرار دارد.
 8. ۱۰ کلمه پرتکرار در فایل romeo_and_juliet.txt را پیدا کنید.
 9. فایل [hacker news csv](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/hacker_news.csv) را بخوانید و موارد زیر را پیدا کنید:
    الف) تعداد خطوط حاوی python یا Python را بشمارید.
    ب) تعداد خطوط حاوی JavaScript، javascript یا Javascript را بشمارید.
    ج) تعداد خطوط حاوی Java و نه JavaScript را بشمارید.
-
-### تمرین‌ها: سطح ۳
 
 🎉 تبریک می‌گویم! 🎉
 
