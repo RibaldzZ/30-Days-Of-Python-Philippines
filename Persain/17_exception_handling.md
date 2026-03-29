@@ -266,14 +266,14 @@ for index, item in enumerate():
 ```
 
 ```py
+countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
 for index, i in enumerate(countries):
-    print('hi')
     if i == 'Finland':
-        print(f'کشور {i} در اندیس {index} پیدا شد')
+        print(f'The country {i} has been found at index {index}')
 ```
 
 ```sh
-کشور Finland در اندیس 1 پیدا شد.
+The country Finland has been found at index 0.
 ```
 
 ## Zip
