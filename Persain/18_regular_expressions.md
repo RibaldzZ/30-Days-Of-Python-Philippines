@@ -11,7 +11,7 @@
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
   <small> ویرایش اول: نوامبر ۲۲ - دسامبر ۲۲، ۲۰۱۹</small>
   </sub>
-</div>
+
 </div>
 
 [<< روز ۱۹](./19_file_handling.md) | [روز ۱۷ >>](./17_exception_handling.md)
@@ -179,19 +179,21 @@ txt = '''Python is the most beautiful language that a human being has ever creat
 I recommend python for a first programming language'''
 
 match_replaced = re.sub('Python|python', 'JavaScript', txt, re.I)
-print(match_replaced)  # JavaScript is the most beautiful language that a human being has ever created.
+print(match_replaced)  # JavaScript is the most beautiful language that a human being has ever created.I recommend python for a first programming language
+
 # یا
+
 match_replaced = re.sub('[Pp]ython', 'JavaScript', txt, re.I)
-print(match_replaced)  # JavaScript is the most beautiful language that a human being has ever created.
+print(match_replaced)  # JavaScript is the most beautiful language that a human being has ever created.I recommend python for a first programming language
 ```
 
 بیایید یک مثال دیگر اضافه کنیم. خواندن رشته زیر واقعاً دشوار است مگر اینکه نماد % را حذف کنیم. جایگزینی % با یک رشته خالی متن را تمیز می‌کند.
 
 ```py
 
-txt = '''%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing. 
+txt = '''%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing.
 T%he%re i%s n%o%th%ing as r%ewarding a%s e%duc%at%i%ng a%n%d e%m%p%ow%er%ing p%e%o%ple.
-I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs. 
+I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs.
 D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher?'''
 
 matches = re.sub('%', '', txt)
@@ -200,7 +202,7 @@ print(matches)
 
 ```sh
 I am teacher and I love teaching.
-There is nothing as rewarding as educating and empowering people. 
+There is nothing as rewarding as educating and empowering people.
 I found teaching more interesting than any other jobs. Does this motivate you to be a teacher?
 ```
 
@@ -361,7 +363,7 @@ matches = re.findall(regex_pattern, txt)
 print(matches)  # ['2019', '2021']
 
 txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
-regex_pattern = r'\d{1, 4}'   # ۱ تا ۴
+regex_pattern = r'\d{1, 4}'
 matches = re.findall(regex_pattern, txt)
 print(matches)  # ['6', '2019', '8', '2021']
 ```
