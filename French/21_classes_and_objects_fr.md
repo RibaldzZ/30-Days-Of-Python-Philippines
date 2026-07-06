@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 21 - Classes et Objets</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -43,7 +43,7 @@ Nous avons travaillé avec des classes et des objets depuis le début de ce déf
 Vérifions si tout en Python est une classe :
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -113,7 +113,7 @@ class Person:
         # self permet d'attacher un paramètre à la classe
           self.name =name
 
-p = Person('Asabeneh')
+p = Person('Mark')
 print(p.name)
 print(p)
 ```
@@ -136,7 +136,7 @@ class Person:
           self.city = city
 
 
-p = Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+p = Person('Mark', 'Ribaldz', 250, 'Finland', 'Helsinki')
 print(p.firstname)
 print(p.lastname)
 print(p.age)
@@ -170,13 +170,13 @@ class Person:
       def person_info(self):
         return f'{self.firstname} {self.lastname} a {self.age} ans. Il habite à {self.city}, {self.country}'
 
-p = Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+p = Person('Mark', 'Ribaldz', 250, 'Finland', 'Helsinki')
 print(p.person_info())
 ```
 
 ```sh
 # sortie
-Asabeneh Yetayeh a 250 ans. Il habite à Helsinki, Finland
+Mark Anthony Ribaldo a 250 ans. Il habite à Helsinki, Finland
 ```
 
 ### Méthodes par défaut d'un objet
@@ -187,7 +187,7 @@ Parfois, vous pouvez vouloir avoir des valeurs par défaut pour les méthodes de
 
 ```py
 class Person:
-      def __init__(self, firstname='Asabeneh', lastname='Yetayeh', age=250, country='Finland', city='Helsinki'):
+      def __init__(self, firstname='Mark', lastname='Ribaldz', age=250, country='Finland', city='Helsinki'):
           self.firstname = firstname
           self.lastname = lastname
           self.age = age
@@ -205,7 +205,7 @@ print(p2.person_info())
 
 ```sh
 # sortie
-Asabeneh Yetayeh a 250 ans. Il habite à Helsinki, Finland.
+Mark Anthony Ribaldo a 250 ans. Il habite à Helsinki, Finland.
 John Doe a 30 ans. Il habite à Noman city, Nomanland.
 ```
 
@@ -215,7 +215,7 @@ Dans l'exemple ci-dessous, la classe Person a toutes les valeurs par défaut pou
 
 ```py
 class Person:
-      def __init__(self, firstname='Asabeneh', lastname='Yetayeh', age=250, country='Finland', city='Helsinki'):
+      def __init__(self, firstname='Mark', lastname='Ribaldz', age=250, country='Finland', city='Helsinki'):
           self.firstname = firstname
           self.lastname = lastname
           self.age = age
@@ -241,7 +241,7 @@ print(p2.skills)
 
 ```sh
 # sortie
-Asabeneh Yetayeh a 250 ans. Il habite à Helsinki, Finland.
+Mark Anthony Ribaldo a 250 ans. Il habite à Helsinki, Finland.
 John Doe a 30 ans. Il habite à Noman city, Nomanland.
 ['HTML', 'CSS', 'JavaScript']
 []
@@ -257,7 +257,7 @@ class Student(Person):
     pass
 
 
-s1 = Student('Eyob', 'Yetayeh', 30, 'Finland', 'Helsinki')
+s1 = Student('Eyob', 'Ribaldz', 30, 'Finland', 'Helsinki')
 s2 = Student('Lidiya', 'Teklemariam', 28, 'Finland', 'Espoo')
 print(s1.person_info())
 s1.add_skill('JavaScript')
@@ -288,14 +288,14 @@ Nous pouvons ajouter une nouvelle méthode à l'enfant ou nous pouvons surcharge
 
 ```py
 class Student(Person):
-    def __init__ (self, firstname='Asabeneh', lastname='Yetayeh', age=250, country='Finland', city='Helsinki', gender='male'):
+    def __init__ (self, firstname='Mark', lastname='Ribaldz', age=250, country='Finland', city='Helsinki', gender='male'):
         self.gender = gender
         super().__init__(firstname, lastname, age, country, city)
     def person_info(self):
         gender = 'Il' if self.gender == 'male' else 'Elle'
         return f'{self.firstname} {self.lastname} a {self.age} ans. {gender} habite à {self.city}, {self.country}.'
 
-s1 = Student('Eyob', 'Yetayeh', 30, 'Finland', 'Helsinki','male')
+s1 = Student('Eyob', 'Ribaldz', 30, 'Finland', 'Helsinki','male')
 s2 = Student('Lidiya', 'Teklemariam', 28, 'Finland', 'Espoo', 'female')
 print(s1.person_info())
 s1.add_skill('JavaScript')

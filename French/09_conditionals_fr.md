@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 9 - Conditionnels</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -263,10 +263,10 @@ Entrez le nombre deux : 3
 
 ```py
     person={
-    'first_name': 'Asabeneh',
-    'last_name': 'Yetayeh',
+    'first_name': 'Mark',
+    'last_name': 'Ribaldz',
     'age': 250,
-    'country': 'Finland',
+    'country': 'Philippines',
     'is_married': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
@@ -282,7 +282,7 @@ Entrez le nombre deux : 3
     * Si la personne est mariée et vit en Finlande, affichez les informations au format suivant :
 
 ```py
-    Asabeneh Yetayeh vit en Finlande. Il est marié.
+    Mark Anthony Ribaldo vit en Finlande. Il est marié.
 ```
 
 🎉 FÉLICITATIONS ! 🎉

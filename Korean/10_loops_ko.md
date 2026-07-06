@@ -1,6 +1,6 @@
-<div align="center">   <h1> 30 Days Of Python: Day 10 - Loops</h1>   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&amp;logo=linkedin&amp;style=social">   </a>   <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">   <img src="https://img.shields.io/twitter/follow/asabeneh?style=social" alt="Twitter Follow">   </a>
+<div align="center">   <h1> 30 Days Of Python: Day 10 - Loops</h1>   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&amp;logo=linkedin&amp;style=social">   </a>   <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">   <img src="https://img.shields.io/twitter/follow/ribzcoi?style=social" alt="Twitter Follow">   </a>
 </div>
-<p data-md-type="paragraph"><sub data-md-type="raw_html">Author: <a data-md-type="raw_html" href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br> <small data-md-type="raw_html"> Second Edition: July, 2021</small></sub></p>
+<p data-md-type="paragraph"><sub data-md-type="raw_html">Author: <a data-md-type="raw_html" href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br> <small data-md-type="raw_html"> First Edition: July, 2026</small></sub></p>
 <div data-md-type="block_html"></div>
 
 [&lt;&lt; Day 9](../09_Day_Conditionals/09_conditionals.md) | [Day 11 &gt;&gt;](../11_Day_Functions/11_functions.md)
@@ -189,10 +189,10 @@ for iterator in dct:
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -314,10 +314,10 @@ for x in y:
 
 ```py
 person = {
-    'first_name': 'Asabeneh',
-    'last_name': 'Yetayeh',
+    'first_name': 'Mark',
+    'last_name': 'Ribaldz',
     'age': 250,
-    'country': 'Finland',
+    'country': 'Philippines',
     'is_marred': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
@@ -436,9 +436,9 @@ The sum of all numbers is 5050.
 
 ### Exercises: Level 3
 
-1. 데이터 폴더로 이동하여 [countries.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) 파일을 사용합니다. 국가를 순환하고 단어 *land* 를 포함하는 모든 국가를 추출합니다.
+1. 데이터 폴더로 이동하여 [countries.py](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries.py) 파일을 사용합니다. 국가를 순환하고 단어 *land* 를 포함하는 모든 국가를 추출합니다.
 2. 이것은 과일 목록입니다. ['banana', 'orange', 'mango', 'lemon'] 루프를 사용하여 순서를 뒤집습니다.
-3. 데이터 폴더로 이동하여 [countries_data.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) 파일을 사용합니다.
+3. 데이터 폴더로 이동하여 [countries_data.py](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries-data.py) 파일을 사용합니다.
     1. 데이터의 총 언어 수는 얼마입니까?
     2. 데이터에서 가장 많이 사용되는 10개 언어 찾기
     3. 세계에서 인구가 가장 많은 10개 국가 찾기

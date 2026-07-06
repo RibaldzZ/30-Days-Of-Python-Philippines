@@ -64,20 +64,20 @@ pip install virtualenv
 Paso 2:
 
 ```sh
-asabeneh@Asabeneh:~/Desktop$ mkdir python_for_web
-asabeneh@Asabeneh:~/Desktop$ cd python_for_web/
-asabeneh@Asabeneh:~/Desktop/python_for_web$ virtualenv venv
-asabeneh@Asabeneh:~/Desktop/python_for_web$ source venv/bin/activate
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip install Flask
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
+ribzcoi@Asabeneh:~/Desktop$ mkdir python_for_web
+ribzcoi@Asabeneh:~/Desktop$ cd python_for_web/
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ virtualenv venv
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ source venv/bin/activate
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip install Flask
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze
 Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$
 ```
 
 Hemos creado un directorio de proyecto llamado python_for_web. Dentro del proyecto, hemos creado un entorno virtual llamado *venv*, que puede tener cualquier nombre. Luego, activamos el entorno virtual. Usamos pip freeze para verificar los paquetes instalados en el directorio del proyecto. El resultado de pip freeze está vacío porque aún no se han instalado paquetes.
@@ -681,12 +681,12 @@ Heroku ofrece un servicio de alojamiento gratuito. Si deseas desplegar una aplic
 #### Iniciar sesión en Heroku
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/python_for_web$ heroku login
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ heroku login
 heroku: Press any key to open up the browser to login or q to exit:
 Opening browser to https://cli-auth.heroku.com/auth/cli/browser/ec0972d5-d8c6-4adf-b004-a42a22dd09a8
 Logging in... done
-Logged in as asabeneh@gmail.com
-asabeneh@Asabeneh:~/Desktop/python_for_web$
+Logged in as ribzcoi@gmail.com
+ribzcoi@Asabeneh:~/Desktop/python_for_web$
 ```
 
 #### Crear requirements y Procfile
@@ -694,21 +694,21 @@ asabeneh@Asabeneh:~/Desktop/python_for_web$
 Antes de desplegar la aplicación, necesitamos informar a Heroku qué dependencias instalar y cómo ejecutar la aplicación. Heroku utiliza el archivo requirements.txt para obtener información sobre las dependencias de la aplicación. Usa el comando pip freeze para listar todas las dependencias y sus versiones, y escríbelas en requirements.txt.
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze
 Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
-asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze > requirements.txt
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze > requirements.txt
 ```
 
 Procfile le dice a Heroku cómo ejecutar la aplicación. En este caso, usamos Gunicorn como servidor HTTP WSGI para ejecutar aplicaciones web en Python. Necesitamos agregar Gunicorn a nuestras dependencias.
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/python_for_web$ pip install gunicorn
-asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze > requirements.txt
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip install gunicorn
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze > requirements.txt
 ```
 
 Ahora, creemos un Procfile y agreguemos el siguiente contenido:
@@ -720,16 +720,16 @@ web: gunicorn app:app
 #### Enviar el proyecto a Heroku
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/python_for_web$ heroku create 30-days-of-python-app
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ heroku create 30-days-of-python-app
 Creating ⬢ 30-days-of-python-app... done
 https://30-days-of-python-app.herokuapp.com/ | https://git.heroku.com/30-days-of-python-app.git
-asabeneh@Asabeneh:~/Desktop/python_for_web$ git init
-Initialized empty Git repository in /home/asabeneh/Desktop/python_for_web/.git/
-asabeneh@Asabeneh:~/Desktop/python_for_web$ heroku git:remote -a 30-days-of-python-app
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ git init
+Initialized empty Git repository in /home/ribzcoi/Desktop/python_for_web/.git/
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ heroku git:remote -a 30-days-of-python-app
 set git remote heroku to https://git.heroku.com/30-days-of-python-app.git
-asabeneh@Asabeneh:~/Desktop/python_for_web$ echo -e "venv\n.vscode" > .gitignore
-asabeneh@Asabeneh:~/Desktop/python_for_web$ git add .
-asabeneh@Asabeneh:~/Desktop/python_for_web$ git commit -m "primer aplicación web en python"
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ echo -e "venv\n.vscode" > .gitignore
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ git add .
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ git commit -m "primer aplicación web en python"
 [master (root-commit) 9dfcc6a] primer aplicación web en python
  9 files changed, 403 insertions(+)
  create mode 100644 .gitignore
@@ -742,7 +742,7 @@ asabeneh@Asabeneh:~/Desktop/python_for_web$ git commit -m "primer aplicación we
  create mode 100644 templates/layout.html
  create mode 100644 templates/post.html
  create mode 100644 templates/result.html
-asabeneh@Asabeneh:~/Desktop/python_for_web$ git push heroku master
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ git push heroku master
 Enumerating objects: 14, done.
 Counting objects: 100% (14/14), done.
 Delta compression using up to 2 threads
@@ -785,7 +785,7 @@ remote:
 remote: Verifying deploy... done.
 To https://git.heroku.com/30-days-of-python-app.git
  * [new branch]      master -> master
-asabeneh@Asabeneh:~/Desktop/python_for_web$
+ribzcoi@Asabeneh:~/Desktop/python_for_web$
 ```
 
 Como puedes ver, hemos creado con éxito nuestra primera aplicación web, la hemos desplegado y la hemos alojado en Heroku. Puedes probar esta aplicación usando este [enlace](https://30-days-of-python-app.herokuapp.com/).

@@ -73,7 +73,7 @@ Selecciona el driver para Python 3.6 o superior
 Copia la cadena de conexión; obtendrás algo similar a esto:
 
 ```sh
-mongodb+srv://asabeneh:<password>@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
+mongodb+srv://ribzcoi:<password>@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
 ```
 
 No te preocupes por esta URL; es la forma de conectar tu aplicación con MongoDB.
@@ -82,7 +82,7 @@ Reemplaza el marcador de contraseña con la contraseña que creaste al añadir e
 Ejemplo:
 
 ```sh
-mongodb+srv://asabeneh:123123123@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
+mongodb+srv://ribzcoi:123123123@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
 ```
 
 En este ejemplo reemplacé todo y la contraseña es 123123123; el nombre de la base de datos es *thirty_days_python*. Esto solo es un ejemplo; tu contraseña debe ser más segura.
@@ -101,7 +101,7 @@ Para usar el URI mongodb+srv:// debes instalar el módulo "dnspython". dnspython
 # importar flask
 from flask import Flask, render_template
 import os # importar el módulo os
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 print(client.list_database_names())
 
@@ -134,12 +134,12 @@ db = client['name_of_database']
 # importar flask
 from flask import Flask, render_template
 import os # importar el módulo os
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 # crear la base de datos
 db = client.thirty_days_of_python
 # crear la colección students e insertar un documento
-db.students.insert_one({'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250})
+db.students.insert_one({'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250})
 print(client.list_database_names())
 
 app = Flask(__name__)
@@ -173,13 +173,13 @@ Podemos usar un bucle for para insertar varios documentos a la vez.
 # importar flask
 from flask import Flask, render_template
 import os # importar el módulo os
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 
 students = [
         {'name':'David','country':'UK','city':'London','age':34},
         {'name':'John','country':'Sweden','city':'Stockholm','age':28},
-        {'name':'Sami','country':'Finland','city':'Helsinki','age':25},
+        {'name':'Sami','country':'Philippines','city':'Helsinki','age':25},
     ]
 for student in students:
     db.students.insert_one(student)
@@ -203,7 +203,7 @@ Usemos _find_one()_ para obtener un documento de la colección.
 # importar flask
 from flask import Flask, render_template
 import os # importar el módulo os
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 student = db.students.find_one()
@@ -218,7 +218,7 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 ```
 
 La consulta anterior devuelve la primera entrada, pero podemos usar un _id_ específico para ubicar un documento concreto. Por ejemplo, usemos el id de David para obtener el objeto David.
@@ -229,7 +229,7 @@ La consulta anterior devuelve la primera entrada, pero podemos usar un _id_ espe
 from flask import Flask, render_template
 import os # importar el módulo os
 from bson.objectid import ObjectId # objeto id
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 student = db.students.find_one({'_id':ObjectId('5df68a23f106fe2d315bbc8c')})
@@ -256,7 +256,7 @@ Hemos visto cómo usar _find_one()_. Veamos ahora _find()_.
 from flask import Flask, render_template
 import os # importar el módulo os
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 students = db.students.find()
@@ -272,10 +272,10 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 Podemos especificar los campos a devolver pasando un segundo objeto a _find({}, {})_. 0 significa excluir, 1 incluir; no se puede mezclar 0 y 1 excepto para _id.
@@ -285,7 +285,7 @@ Podemos especificar los campos a devolver pasando un segundo objeto a _find({}, 
 from flask import Flask, render_template
 import os # importar el módulo os
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 students = db.students.find({}, {"_id":0,  "name": 1, "country":1}) # 0 excluir, 1 incluir
@@ -301,10 +301,10 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'name': 'Asabeneh', 'country': 'Finland'}
+{'name': 'Mark', 'country': 'Philippines'}
 {'name': 'David', 'country': 'UK'}
 {'name': 'John', 'country': 'Sweden'}
-{'name': 'Sami', 'country': 'Finland'}
+{'name': 'Sami', 'country': 'Philippines'}
 ```
 
 ### Buscar usando una consulta
@@ -316,12 +316,12 @@ En MongoDB, find acepta un objeto de consulta. Podemos pasar ese objeto para fil
 from flask import Flask, render_template
 import os # importar el módulo os
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 
 query = {
-    "country":"Finland"
+    "country":"Philippines"
 }
 students = db.students.find(query)
 
@@ -337,8 +337,8 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 ### Buscar con modificadores
@@ -349,7 +349,7 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 
@@ -369,8 +369,8 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 ### Buscar con modificadores (combinados)
@@ -381,11 +381,11 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 query = {
-    "country":"Finland",
+    "country":"Philippines",
     "city":"Helsinki"
 }
 students = db.students.find(query)
@@ -401,8 +401,8 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 Ejemplos con operadores:
@@ -413,7 +413,7 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 query = {"age":{"$gt":30}}
@@ -430,7 +430,7 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 ```
 
@@ -440,7 +440,7 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 query = {"age":{"$lt":30}}
@@ -451,7 +451,7 @@ for student in students:
 
 ```sh
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 ### Limitar la cantidad de documentos
@@ -464,7 +464,7 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 db.students.find().limit(3)
@@ -480,7 +480,7 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 students = db.students.find().sort('name')
@@ -510,19 +510,19 @@ if __name__ == '__main__':
 Ascendente
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 Descendente
 
 ```sh
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 ```
 
 ### Actualizar usando una consulta
@@ -536,7 +536,7 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 
@@ -557,10 +557,10 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 38}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 38}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 Si queremos actualizar varios documentos a la vez usamos *update_many()*.
@@ -576,7 +576,7 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 
@@ -596,9 +596,9 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 38}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 38}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 Como puedes ver, John ha sido eliminado de la colección.
@@ -615,7 +615,7 @@ from flask import Flask, render_template
 import os # importar el módulo os
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
 db.students.drop()

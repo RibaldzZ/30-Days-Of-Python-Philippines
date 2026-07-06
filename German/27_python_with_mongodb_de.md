@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Tage Python: Tag 27 - Python mit MongoDB</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Zweite Edition: Juli 2021</small>
 </sub>
 
@@ -75,7 +75,7 @@ collection = db.studenten
 
 #### Einfügen (Create)
 ```python
-student = {'name': 'Asabeneh', 'land': 'Finnland', 'alter': 250}
+student = {'name': 'Mark', 'land': 'Finnland', 'alter': 250}
 collection.insert_one(student) # Ein Dokument einfügen
 ```
 
@@ -95,14 +95,14 @@ for s in collection.find({'land': 'Finnland'}):
 
 #### Aktualisieren (Update)
 ```python
-query = {'name': 'Asabeneh'}
+query = {'name': 'Mark'}
 neue_werte = {'$set': {'alter': 38}}
 collection.update_one(query, neue_werte)
 ```
 
 #### Löschen (Delete)
 ```python
-collection.delete_one({'name': 'Asabeneh'})
+collection.delete_one({'name': 'Mark'})
 # collection.drop() # Löscht die gesamte Kollektion
 ```
 

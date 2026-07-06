@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 días de Python: Día 9 - Sentencias condicionales</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>Segunda edición: julio de 2021</small>
 </sub>
 
@@ -256,8 +256,8 @@ Introduce el segundo número: 3
 
 ```py
 person = {
-    'first_name': 'Asabeneh',
-    'last_name': 'Yetayeh',
+    'first_name': 'Mark',
+    'last_name': 'Ribaldz',
     'age': 250,
     'country': 'Finlandia',
     'is_married': True,
@@ -275,7 +275,7 @@ person = {
 - Si la persona está casada y vive en Finlandia, imprime la siguiente línea:
 
 ```py
-print('Asabeneh Yetayeh vive en Finlandia. Está casado.')
+print('Mark Anthony Ribaldo vive en Finlandia. Está casado.')
 ```
 
 🎉 ¡Felicidades! 🎉

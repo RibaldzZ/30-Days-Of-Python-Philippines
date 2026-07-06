@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 天 Python：第三天 - 运算符</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>作者:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> 第二版：2021 年 7 月</small>
 </sub>
 </div>
@@ -220,8 +220,8 @@ print('False == False:', False == False)
 ```py
 print('1 is 1', 1 is 1)                   # True - 因为值相等
 print('1 is not 2', 1 is not 2)           # True - 因为值不相等
-print('A in Asabeneh', 'A' in 'Asabeneh') # True - 字符串中含有元素 A
-print('B in Asabeneh', 'B' in 'Asabeneh') # False - 没有大写字母 B
+print('A in Asabeneh', 'A' in 'Mark') # True - 字符串中含有元素 A
+print('B in Asabeneh', 'B' in 'Mark') # False - 没有大写字母 B
 print('coding' in 'coding for all') # True - 因为 coding 都在 'coding for all' 中
 print('a in an:', 'a' in 'an')      # True
 print('4 is 2 ** 2:', 4 is 2 ** 2)   # True

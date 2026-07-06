@@ -1,14 +1,14 @@
 <div align="center">
   <h1>30 Días de Python: Día 14 - Funciones de orden superior</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>Segunda edición: julio de 2021</small>
 </sub>
 
@@ -202,7 +202,7 @@ def print_full_name(first_name, last_name, country):
     print("I am {} {}. I love to teach.".format(
         first_name, last_name, country))
 
-print_full_name("Asabeneh", "Yetayeh",'Finland')
+print_full_name("Mark", "Ribaldz",'Finland')
 ```
 
 ## Funciones integradas de orden superior
@@ -243,7 +243,7 @@ print(list(numbers_int))    # [1, 2, 3, 4, 5]
 **Ejemplo 3**
 
 ```py
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']  # iterable
 
 def change_to_upper(name):
     return name.upper()
@@ -298,14 +298,14 @@ print(list(odd_numbers))       # [1, 3, 5]
 
 ```py
 # filtrar nombres largos
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']  # iterable
 def is_name_long(name):
     if len(name) > 7:
         return True
     return False
 
 long_names = filter(is_name_long, names)
-print(list(long_names))         # ['Asabeneh']
+print(list(long_names))         # ['Mark']
 ```
 
 ### Python - función reduce
@@ -327,7 +327,7 @@ print(total)    # 15
 
 ```py
 countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
@@ -360,7 +360,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 ### Ejercicios: Avanzado
 
-1. Usando el archivo countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py), completa lo siguiente:
+1. Usando el archivo countries_data.py (https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries-data.py), completa lo siguiente:
    - Ordena los países por nombre, capital y población.
    - Ordena y obtiene los diez idiomas más usados.
    - Ordena y obtiene los diez países con mayor población.

@@ -1,16 +1,16 @@
 <div align="center">
 
   <h1> 30 Jours de Python : Jour 30 - Conclusions</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -28,10 +28,10 @@
 
 ## Conclusions
 
-Dans le processus de préparation de ce matériel, j'ai beaucoup appris et vous m'avez inspiré à faire plus. Félicitations d'être arrivé à ce niveau. Si vous avez fait tous les exercices et les projets, vous êtes maintenant capable de suivre les voies de l'analyse de données, de la science des données, de l'apprentissage automatique ou du développement web. [Soutenez l'auteur pour plus de matériel pédagogique](https://www.paypal.com/paypalme/asabeneh).
+Dans le processus de préparation de ce matériel, j'ai beaucoup appris et vous m'avez inspiré à faire plus. Félicitations d'être arrivé à ce niveau. Si vous avez fait tous les exercices et les projets, vous êtes maintenant capable de suivre les voies de l'analyse de données, de la science des données, de l'apprentissage automatique ou du développement web. [Soutenez l'auteur pour plus de matériel pédagogique](https://www.paypal.com/paypalme/ribzcoi).
 
 ## Témoignage
-Il est maintenant temps d'exprimer vos pensées sur l'auteur et 30DaysOfPython. Vous pouvez laisser votre témoignage sur ce [lien](https://www.asabeneh.com/testimonials).
+Il est maintenant temps d'exprimer vos pensées sur l'auteur et 30DaysOfPython. Vous pouvez laisser votre témoignage sur ce [lien]().
 
 DONNEZ VOTRE AVIS :
 http://thirtydayofpython-api.herokuapp.com/feedback

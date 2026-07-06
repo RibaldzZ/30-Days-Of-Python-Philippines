@@ -1,13 +1,13 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 19 - Gestion de fichiers </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>Deuxième édition : juillet 2021</small>
 </sub>
 </div>
@@ -218,18 +218,18 @@ _Exemple :_
 ```py
 # dictionnaire
 personne_dct = {
-    "name":"Asabeneh",
-    "country":"Finland",
+    "name":"Mark",
+    "country":"Philippines",
     "city":"Helsinki",
     "skills":["JavaScrip", "React","Python"]
 }
 # JSON : une chaîne représentant un dictionnaire
-personne_json = "{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}"
+personne_json = "{'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}"
 
 # nous utilisons trois guillemets et plusieurs lignes pour le rendre plus lisible
 personne_json = '''{
-    "name":"Asabeneh",
-    "country":"Finland",
+    "name":"Mark",
+    "country":"Philippines",
     "city":"Helsinki",
     "skills":["JavaScrip", "React","Python"]
 }'''
@@ -243,8 +243,8 @@ Pour convertir du JSON en dictionnaire, nous importons d'abord le module json, p
 import json
 # JSON
 personne_json = '''{
-    "name": "Asabeneh",
-    "country": "Finland",
+    "name": "Mark",
+    "country": "Philippines",
     "city": "Helsinki",
     "skills": ["JavaScrip", "React", "Python"]
 }'''
@@ -258,7 +258,7 @@ print(personne_dct['name'])
 ```sh
 # sortie
 <class 'dict'>
-{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}
+{'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}
 Asabeneh
 ```
 
@@ -270,8 +270,8 @@ Pour convertir un dictionnaire en JSON, nous utilisons la méthode _dumps_ du mo
 import json
 # dictionnaire python
 personne = {
-    "name": "Asabeneh",
-    "country": "Finland",
+    "name": "Mark",
+    "country": "Philippines",
     "city": "Helsinki",
     "skills": ["JavaScrip", "React", "Python"]
 }
@@ -287,8 +287,8 @@ print(personne_json)
 # JSON n'a pas de type, c'est un type chaîne
 <class 'str'>
 {
-    "name": "Asabeneh",
-    "country": "Finland",
+    "name": "Mark",
+    "country": "Philippines",
     "city": "Helsinki",
     "skills": [
         "JavaScrip",
@@ -306,8 +306,8 @@ Nous pouvons également sauvegarder nos données sous forme de fichier json. Sau
 import json
 # dictionnaire python
 personne = {
-    "name": "Asabeneh",
-    "country": "Finland",
+    "name": "Mark",
+    "country": "Philippines",
     "city": "Helsinki",
     "skills": ["JavaScrip", "React", "Python"]
 }
@@ -325,7 +325,7 @@ CSV signifie Comma Separated Values (valeurs séparées par des virgules). CSV e
 
 ```csv
 "name","country","city","skills"
-"Asabeneh","Finland","Helsinki","JavaScript"
+"Mark","Finland","Helsinki","JavaScript"
 ```
 
 **Exemple :**
@@ -501,13 +501,13 @@ champ : skills
 ```
 
 3. Utilisez la fonction find_most_frequent_words pour trouver :
-   1) Les dix mots les plus fréquents utilisés dans le discours d'[Obama](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/obama_speech.txt)
-   2) Les dix mots les plus fréquents utilisés dans le discours de [Michelle](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt)
-   3) Les dix mots les plus fréquents utilisés dans le discours de [Trump](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/donald_speech.txt)
-   4) Les dix mots les plus fréquents utilisés dans le discours de [Melina](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt)
-4. Écrivez une application Python qui vérifie la similarité entre deux textes. Elle prend un fichier ou une chaîne comme paramètre et évaluera la similarité des deux textes. Par exemple, vérifiez la similarité entre les transcriptions du discours de [Michelle](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt) et de [Melina](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt). Vous aurez besoin de quelques fonctions : une fonction pour nettoyer le texte (clean_text), une fonction pour supprimer les mots vides (remove_support_words) et enfin pour vérifier la similarité (check_text_similarity). La liste des [mots vides](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/stop_words.py) se trouve dans le dossier data.
+   1) Les dix mots les plus fréquents utilisés dans le discours d'[Obama](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/obama_speech.txt)
+   2) Les dix mots les plus fréquents utilisés dans le discours de [Michelle](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/michelle_obama_speech.txt)
+   3) Les dix mots les plus fréquents utilisés dans le discours de [Trump](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/donald_speech.txt)
+   4) Les dix mots les plus fréquents utilisés dans le discours de [Melina](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/melina_trump_speech.txt)
+4. Écrivez une application Python qui vérifie la similarité entre deux textes. Elle prend un fichier ou une chaîne comme paramètre et évaluera la similarité des deux textes. Par exemple, vérifiez la similarité entre les transcriptions du discours de [Michelle](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/michelle_obama_speech.txt) et de [Melina](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/melina_trump_speech.txt). Vous aurez besoin de quelques fonctions : une fonction pour nettoyer le texte (clean_text), une fonction pour supprimer les mots vides (remove_support_words) et enfin pour vérifier la similarité (check_text_similarity). La liste des [mots vides](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/stop_words.py) se trouve dans le dossier data.
 5. Trouvez les 10 mots les plus répétés dans le fichier romeo_and_juliet.txt
-6. Lisez le fichier [hacker news csv](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/hacker_news.csv) et trouvez :
+6. Lisez le fichier [hacker news csv](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/hacker_news.csv) et trouvez :
    1) Comptez le nombre de lignes contenant python ou Python
    2) Comptez le nombre de lignes contenant JavaScript, javascript ou Javascript
    3) Comptez le nombre de lignes contenant Java et pas JavaScript

@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Tage Python: Tag 21 - Klassen und Objekte (OOP)</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Zweite Edition: Juli 2021</small>
 </sub>
 
@@ -64,7 +64,7 @@ class Person:
         self.firstname = firstname
         self.lastname = lastname
 
-p = Person('Asabeneh', 'Yetayeh')
+p = Person('Mark', 'Ribaldz')
 print(p.firstname) # Asabeneh
 ```
 
@@ -82,7 +82,7 @@ class Person:
     def info(self):
         return f'{self.firstname} ist {self.age} Jahre alt.'
 
-p = Person('Asabeneh', 'Yetayeh', 250)
+p = Person('Mark', 'Ribaldz', 250)
 print(p.info())
 ```
 
@@ -96,7 +96,7 @@ class Student(Person): # Student erbt von Person
         super().__init__(firstname, lastname, age) # Ruft den Konstruktor der Elternklasse auf
         self.student_id = student_id
 
-s = Student('Eyob', 'Yetayeh', 30, 'S12345')
+s = Student('Eyob', 'Ribaldz', 30, 'S12345')
 print(s.info()) # Nutzt die Methode von Person
 ```
 

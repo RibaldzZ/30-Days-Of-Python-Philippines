@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 8 - Dictionnaires</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -56,10 +56,10 @@ dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -85,10 +85,10 @@ print(len(dct)) # 4
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_married':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -115,10 +115,10 @@ print(dct['key4']) # value4
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -138,10 +138,10 @@ Accéder à un élément par son nom de clé génère une erreur si la clé n'ex
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -169,10 +169,10 @@ dct['key5'] = 'value5'
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -199,10 +199,10 @@ dct['key1'] = 'value-one'
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -244,10 +244,10 @@ del dct['key2'] # supprime l'élément key2
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{

@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز پایتون: روز ۱۴ - توابع مرتبه بالا</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
   <sub>نویسنده:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
   <small>ویرایش دوم: جولای ۲۰۲۱</small>
   </sub>
   
@@ -199,7 +199,7 @@ def print_full_name(first_name, last_name, country):
     print("I am {} {}. I love to teach.".format(
         first_name, last_name))
 
-print_full_name("Asabeneh", "Yetayeh",'Finland')
+print_full_name("Mark", "Ribaldz",'Finland')
 ```
 
 ## توابع داخلی مرتبه بالا
@@ -240,7 +240,7 @@ print(list(numbers_int))    # [1, 2, 3, 4, 5]
 **مثال ۳:**
 
 ```py
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']  # iterable
 
 def change_to_upper(name):
     return name.upper()
@@ -295,14 +295,14 @@ print(list(odd_numbers))       # [1, 3, 5]
 
 ```py
 # فیلتر کردن نام‌های طولانی
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']  # iterable
 def is_name_long(name):
     if len(name) > 7:
         return True
     return False
 
 long_names = filter(is_name_long, names)
-print(list(long_names))         # ['Asabeneh']
+print(list(long_names))         # ['Mark']
 ```
 
 ### پایتون - تابع Reduce
@@ -325,7 +325,7 @@ print(total)    # 15
 
 ```py
 countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
@@ -351,14 +351,14 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 1. تابعی به نام get_string_lists تعریف کنید که یک لیست به عنوان پارامتر می‌گیرد و سپس لیستی را برمی‌گرداند که فقط شامل آیتم‌های رشته‌ای است.
 1. از reduce برای جمع کردن تمام اعداد در لیست numbers استفاده کنید.
 1. از reduce برای الحاق تمام کشورها و تولید این جمله استفاده کنید: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
-1. تابعی به نام categorize_countries تعریف کنید که لیستی از کشورها با الگوی مشترک را برمی‌گرداند (شما می‌توانید [لیست کشورها](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) را در این مخزن به عنوان countries.js پیدا کنید (مثلاً 'land', 'ia', 'island', 'stan')).
+1. تابعی به نام categorize_countries تعریف کنید که لیستی از کشورها با الگوی مشترک را برمی‌گرداند (شما می‌توانید [لیست کشورها](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries.py) را در این مخزن به عنوان countries.js پیدا کنید (مثلاً 'land', 'ia', 'island', 'stan')).
 1. تابعی ایجاد کنید که یک دیکشنری برمی‌گرداند، که در آن کلیدها حروف ابتدایی کشورها و مقادیر تعداد نام کشورهایی است که با آن حرف شروع می‌شوند.
 2. تابعی به نام get_first_ten_countries تعریف کنید - این تابع لیستی از ده کشور اول را از لیست countries.js در پوشه data برمی‌گرداند.
 1. تابعی به نام get_last_ten_countries تعریف کنید که ده کشور آخر در لیست countries را برمی‌گرداند.
 
 ### تمرین‌ها: سطح ۳
 
-1. از فایل countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) استفاده کنید و وظایف زیر را دنبال کنید:
+1. از فایل countries_data.py (https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries-data.py) استفاده کنید و وظایف زیر را دنبال کنید:
    - کشورها را بر اساس نام، پایتخت، جمعیت مرتب کنید.
    - ده زبان پرتکلم را بر اساس موقعیت مکانی مرتب کنید.
    - ده کشور پرجمعیت را مرتب کنید.

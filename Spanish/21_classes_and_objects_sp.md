@@ -24,7 +24,7 @@ Python es un lenguaje orientado a objetos. En Python todo es un objeto con atrib
 Desde el inicio de este reto hemos estado usando clases y objetos sin darnos cuenta. Cada elemento en un programa Python es un objeto perteneciente a alguna clase. Veamos que todo en Python pertenece a una clase:
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -94,7 +94,7 @@ class Person:
         # self permite ligar parámetros a la instancia
         self.name = name
 
-p = Person('Asabeneh')
+p = Person('Mark')
 print(p.name)
 print(p)
 ```
@@ -116,7 +116,7 @@ class Person:
         self.country = country
         self.city = city
 
-p = Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+p = Person('Mark', 'Ribaldz', 250, 'Finland', 'Helsinki')
 print(p.firstname)
 print(p.lastname)
 print(p.age)
@@ -150,13 +150,13 @@ class Person:
     def person_info(self):
         return f'{self.firstname} {self.lastname} tiene {self.age} años. Vive en {self.city}, {self.country}.'
 
-p = Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+p = Person('Mark', 'Ribaldz', 250, 'Finland', 'Helsinki')
 print(p.person_info())
 ```
 
 ```sh
 # salida
-Asabeneh Yetayeh tiene 250 años. Vive en Helsinki, Finland.
+Mark Anthony Ribaldo tiene 250 años. Vive en Helsinki, Finland.
 ```
 
 ### Valores por defecto de los objetos
@@ -167,7 +167,7 @@ A veces queremos proporcionar valores por defecto a los parámetros del construc
 
 ```py
 class Person:
-    def __init__(self, firstname='Asabeneh', lastname='Yetayeh', age=250, country='Finland', city='Helsinki'):
+    def __init__(self, firstname='Mark', lastname='Ribaldz', age=250, country='Finland', city='Helsinki'):
         self.firstname = firstname
         self.lastname = lastname
         self.age = age
@@ -185,7 +185,7 @@ print(p2.person_info())
 
 ```sh
 # salida
-Asabeneh Yetayeh tiene 250 años. Vive en Helsinki, Finland.
+Mark Anthony Ribaldo tiene 250 años. Vive en Helsinki, Finland.
 John Doe tiene 30 años. Vive en Noman city, Nomanland.
 ```
 
@@ -195,7 +195,7 @@ En el siguiente ejemplo todos los parámetros del constructor tienen valores por
 
 ```py
 class Person:
-    def __init__(self, firstname='Asabeneh', lastname='Yetayeh', age=250, country='Finland', city='Helsinki'):
+    def __init__(self, firstname='Mark', lastname='Ribaldz', age=250, country='Finland', city='Helsinki'):
         self.firstname = firstname
         self.lastname = lastname
         self.age = age
@@ -221,7 +221,7 @@ print(p2.skills)
 
 ```sh
 # salida
-Asabeneh Yetayeh tiene 250 años. Vive en Helsinki, Finland.
+Mark Anthony Ribaldo tiene 250 años. Vive en Helsinki, Finland.
 John Doe tiene 30 años. Vive en Noman city, Nomanland.
 ['HTML', 'CSS', 'JavaScript']
 []
@@ -243,7 +243,7 @@ Ejemplo:
 class Student(Person):
     pass
 
-s1 = Student('Eyob', 'Yetayeh', 30, 'Finland', 'Helsinki')
+s1 = Student('Eyob', 'Ribaldz', 30, 'Finland', 'Helsinki')
 s2 = Student('Lidiya', 'Teklemariam', 28, 'Finland', 'Espoo')
 print(s1.person_info())
 s1.add_skill('JavaScript')
@@ -269,14 +269,14 @@ No hemos definido nuevos métodos en Student, pero puede usar los métodos del p
 
 ```py
 class Student(Person):
-    def __init__(self, firstname='Asabeneh', lastname='Yetayeh', age=250, country='Finland', city='Helsinki', gender='male'):
+    def __init__(self, firstname='Mark', lastname='Ribaldz', age=250, country='Finland', city='Helsinki', gender='male'):
         self.gender = gender
         super().__init__(firstname, lastname, age, country, city)
     def person_info(self):
         gender = 'él' if self.gender == 'male' else 'ella'
         return f'{self.firstname} {self.lastname} tiene {self.age} años. {gender.capitalize()} vive en {self.city}, {self.country}.'
 
-s1 = Student('Eyob', 'Yetayeh', 30, 'Finland', 'Helsinki', 'male')
+s1 = Student('Eyob', 'Ribaldz', 30, 'Finland', 'Helsinki', 'male')
 s2 = Student('Lidiya', 'Teklemariam', 28, 'Finland', 'Espoo', 'female')
 print(s1.person_info())
 s1.add_skill('JavaScript')

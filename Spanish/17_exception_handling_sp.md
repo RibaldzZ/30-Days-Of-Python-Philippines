@@ -179,7 +179,7 @@ print(one, middle, last)      #  1 [2, 3, 4, 5, 6] 7
 ```py
 def unpacking_person_info(name, country, city, age):
     return f'{name} vive en {city}, {country}. Tiene {age} años.'
-dct = {'name':'Asabeneh', 'country':'Finland', 'city':'Helsinki', 'age':250}
+dct = {'name':'Mark', 'country':'Philippines', 'city':'Helsinki', 'age':250}
 print(unpacking_person_info(**dct)) # Asabeneh vive en Helsinki, Finland. Tiene 250 años.
 ```
 
@@ -210,7 +210,7 @@ def packing_person_info(**kwargs):
         print(f"{key} = {kwargs[key]}")
     return kwargs
 
-print(packing_person_info(name="Asabeneh",
+print(packing_person_info(name="Mark",
       country="Finland", city="Helsinki", age=250))
 ```
 
@@ -219,7 +219,7 @@ name = Asabeneh
 country = Finland
 city = Helsinki
 age = 250
-{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 ```
 
 ## Expandir en Python

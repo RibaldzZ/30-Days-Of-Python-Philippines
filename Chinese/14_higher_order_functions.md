@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30天Python：第14天 - 高阶函数</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>作者:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>第二版：2021 年 7 月</small>
 </sub>
 
@@ -201,7 +201,7 @@ def print_full_name(first_name, last_name, country):
     print("I am {} {}. I love to teach.".format(
         first_name, last_name, country))
 
-print_full_name("Asabeneh", "Yetayeh",'Finland')
+print_full_name("Mark", "Ribaldz",'Finland')
 ```
 
 ## 内置高阶函数
@@ -242,7 +242,7 @@ print(list(numbers_int))    # [1, 2, 3, 4, 5]
 **示例：3**
 
 ```py
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # 可迭代对象
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']  # 可迭代对象
 
 def change_to_upper(name):
     return name.upper()
@@ -297,14 +297,14 @@ print(list(odd_numbers))       # [1, 3, 5]
 
 ```py
 # 过滤长名称
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # 可迭代对象
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']  # 可迭代对象
 def is_name_long(name):
     if len(name) > 7:
         return True
     return False
 
 long_names = filter(is_name_long, names)
-print(list(long_names))         # ['Asabeneh']
+print(list(long_names))         # ['Mark']
 ```
 
 ### Python - Reduce 函数
@@ -325,7 +325,7 @@ print(total)    # 15
 
 ```py
 countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
@@ -358,7 +358,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 ### 练习：高级
 
-1. 使用 countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) 文件，完成以下任务：
+1. 使用 countries_data.py (https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries-data.py) 文件，完成以下任务：
    - 按国家名称、首都和人口排序国家
    - 按位置排序出前十个最常用语言。
    - 排序出前十个人口最多的国家。

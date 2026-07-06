@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 5 - Listes</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -123,7 +123,7 @@ Nombre de pays: 5
 - Les listes peuvent contenir des éléments de différents types
 
 ```py
- lst = ['Asabeneh', 250, True, {'country':'Finland', 'city':'Helsinki'}] # liste contenant différents types de données
+ lst = ['Mark', 250, True, {'country':'Philippines', 'city':'Helsinki'}] # liste contenant différents types de données
 ```
 
 ### Accéder aux éléments d'une liste par indice positif
@@ -580,7 +580,7 @@ ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 - Trouvez l'étendue des âges (max moins min).
 - Comparez la valeur de (min - moyenne) et (max - moyenne), en utilisant _abs()_.
 
-2. Trouvez le(s) pays du milieu dans la [liste des pays](https://github.com/Asabeneh/30-Days-Of-Python/tree/master/data/countries.py).
+2. Trouvez le(s) pays du milieu dans la [liste des pays](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/tree/master/data/countries.py).
 3. Divisez la liste des pays en deux listes égales ; si le nombre est impair, un pays de plus pour la première moitié.
 4. `['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']`. Dépaquetez les trois premiers pays et le reste comme pays scandinaves.
 

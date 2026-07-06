@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Tage Python: Tag 4 - Zeichenketten (Strings)</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Zweite Edition: Juli 2021</small>
 </sub>
 
@@ -61,10 +61,10 @@ Deshalb habe ich 30 Tage Python erstellt.'''
 
 Du kannst Strings miteinander verbinden. Das nennt man Konkatenation.
 ```python
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Mark'
+last_name = 'Ribaldz'
 full_name = first_name + ' ' + last_name
-print(full_name) # Asabeneh Yetayeh
+print(full_name) # Mark Anthony Ribaldo
 ```
 
 ### Escape-Sequenzen in Strings
@@ -81,8 +81,8 @@ Ein Backslash (`\`) gefolgt von einem Zeichen ist eine Escape-Sequenz:
 #### Alter Stil (% Operator)
 Hierbei werden Platzhalter wie `%s` (String), `%d` (Integer) oder `%f` (Float) genutzt.
 ```python
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Mark'
+last_name = 'Ribaldz'
 language = 'Python'
 formatted_string = 'Ich bin %s %s. Ich unterrichte %s' %(first_name, last_name, language)
 ```

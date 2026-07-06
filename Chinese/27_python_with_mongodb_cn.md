@@ -73,7 +73,7 @@ MongoDB是一种NoSQL数据库。MongoDB以类似JSON的文档形式存储数据
 复制连接字符串链接，你将获得类似这样的内容：
 
 ```sh
-mongodb+srv://asabeneh:<password>@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
+mongodb+srv://ribzcoi:<password>@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
 ```
 
 不要担心这个URL，它是连接你的应用程序与mongoDB的一种方式。
@@ -82,7 +82,7 @@ mongodb+srv://asabeneh:<password>@30daysofpython-twxkr.mongodb.net/test?retryWri
 **示例：**
 
 ```sh
-mongodb+srv://asabeneh:123123123@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
+mongodb+srv://ribzcoi:123123123@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority
 ```
 
 现在，我已经替换了所有内容，密码是123123123，数据库名称是*thirty_days_python*。这只是一个示例，你的密码必须比示例密码更强。
@@ -101,7 +101,7 @@ pip install pymongo dnspython
 # 导入flask
 from flask import Flask, render_template
 import os # 导入操作系统模块
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 print(client.list_database_names())
 
@@ -134,12 +134,12 @@ db = client['name_of_database']
 # 导入flask
 from flask import Flask, render_template
 import os # 导入操作系统模块
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 # 创建数据库
 db = client.thirty_days_of_python
 # 创建students集合并插入文档
-db.students.insert_one({'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250})
+db.students.insert_one({'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250})
 print(client.list_database_names())
 
 app = Flask(__name__)
@@ -173,13 +173,13 @@ if __name__ == '__main__':
 # 导入flask
 from flask import Flask, render_template
 import os # 导入操作系统模块
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 
 students = [
         {'name':'David','country':'UK','city':'London','age':34},
         {'name':'John','country':'Sweden','city':'Stockholm','age':28},
-        {'name':'Sami','country':'Finland','city':'Helsinki','age':25},
+        {'name':'Sami','country':'Philippines','city':'Helsinki','age':25},
     ]
 for student in students:
     db.students.insert_one(student)
@@ -203,7 +203,7 @@ if __name__ == '__main__':
 # 导入flask
 from flask import Flask, render_template
 import os # 导入操作系统模块
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 student = db.students.find_one()
@@ -218,7 +218,7 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Helsinki', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Helsinki', 'city': 'Helsinki', 'age': 250}
 ```
 
 上面的查询返回第一个条目，但我们可以使用特定的\_id来定位特定的文档。让我们做一个例子，使用David的id来获取David对象。
@@ -229,7 +229,7 @@ if __name__ == '__main__':
 from flask import Flask, render_template
 import os # 导入操作系统模块
 from bson.objectid import ObjectId # id对象
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 student = db.students.find_one({'_id':ObjectId('5df68a23f106fe2d315bbc8c')})
@@ -256,7 +256,7 @@ if __name__ == '__main__':
 from flask import Flask, render_template
 import os # 导入操作系统模块
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 students = db.students.find()
@@ -272,10 +272,10 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 我们可以通过在_find({}, {})_中传递第二个对象来指定要返回的字段。0表示不包含，1表示包含，但我们不能混合使用0和1，除了\_id。
@@ -285,7 +285,7 @@ if __name__ == '__main__':
 from flask import Flask, render_template
 import os # 导入操作系统模块
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 students = db.students.find({}, {"_id":0,  "name": 1, "country":1}) # 0表示不包含，1表示包含
@@ -301,10 +301,10 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'name': 'Asabeneh', 'country': 'Finland'}
+{'name': 'Mark', 'country': 'Philippines'}
 {'name': 'David', 'country': 'UK'}
 {'name': 'John', 'country': 'Sweden'}
-{'name': 'Sami', 'country': 'Finland'}
+{'name': 'Sami', 'country': 'Philippines'}
 ```
 
 ### 使用查询进行查找
@@ -316,12 +316,12 @@ if __name__ == '__main__':
 from flask import Flask, render_template
 import os # 导入操作系统模块
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 
 query = {
-    "country":"Finland"
+    "country":"Philippines"
 }
 students = db.students.find(query)
 
@@ -337,8 +337,8 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 带有修饰符的查询
@@ -349,7 +349,7 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 
@@ -369,8 +369,8 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 ### 使用修饰符的查询查找
@@ -381,11 +381,11 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 query = {
-    "country":"Finland",
+    "country":"Philippines",
     "city":"Helsinki"
 }
 students = db.students.find(query)
@@ -401,8 +401,8 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 带有修饰符的查询
@@ -413,7 +413,7 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 query = {"age":{"$gt":30}}
@@ -430,7 +430,7 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 ```
 
@@ -440,7 +440,7 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 query = {"age":{"$lt":30}}
@@ -451,7 +451,7 @@ for student in students:
 
 ```sh
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 ### 限制文档数量
@@ -464,7 +464,7 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 db.students.find().limit(3)
@@ -480,7 +480,7 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 students = db.students.find().sort('name')
@@ -510,19 +510,19 @@ if __name__ == '__main__':
 升序
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 降序
 
 ```sh
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 ```
 
 ### 使用查询进行更新
@@ -536,7 +536,7 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 
@@ -557,10 +557,10 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 38}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 38}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8d'), 'name': 'John', 'country': 'Sweden', 'city': 'Stockholm', 'age': 28}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 当我们想要一次更新多个文档时，我们使用*upate_many()*方法。
@@ -576,7 +576,7 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 
@@ -598,9 +598,9 @@ if __name__ == '__main__':
 ```
 
 ```sh
-{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 38}
+{'_id': ObjectId('5df68a21f106fe2d315bbc8b'), 'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 38}
 {'_id': ObjectId('5df68a23f106fe2d315bbc8c'), 'name': 'David', 'country': 'UK', 'city': 'London', 'age': 34}
-{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Finland', 'city': 'Helsinki', 'age': 25}
+{'_id': ObjectId('5df68a23f106fe2d315bbc8e'), 'name': 'Sami', 'country': 'Philippines', 'city': 'Helsinki', 'age': 25}
 ```
 
 如你所见，John已经从集合中删除。
@@ -617,7 +617,7 @@ from flask import Flask, render_template
 import os # 导入操作系统模块
 import pymongo
 
-MONGODB_URI = 'mongodb+srv://asabeneh:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI = 'mongodb+srv://ribzcoi:your_password_goes_here@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 db.students.drop()

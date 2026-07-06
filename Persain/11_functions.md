@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز پایتون: روز ۱۱ - توابع</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>نویسنده:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> ویرایش دوم: ژوئیه، ۲۰۲۱</small>
 </sub>
 
@@ -69,8 +69,8 @@ function_name()
 
 ```py
 def generate_full_name ():
-    first_name = 'Asabeneh'
-    last_name = 'Yetayeh'
+    first_name = 'Mark'
+    last_name = 'Ribaldz'
     space = ' '
     full_name = first_name + space + last_name
     print(full_name)
@@ -90,8 +90,8 @@ add_two_numbers()
 
 ```py
 def generate_full_name ():
-    first_name = 'Asabeneh'
-    last_name = 'Yetayeh'
+    first_name = 'Mark'
+    last_name = 'Ribaldz'
     space = ' '
     full_name = first_name + space + last_name
     return full_name
@@ -128,7 +128,7 @@ def greetings (name):
     message = name + ', welcome to Python for Everyone!'
     return message
 
-print(greetings('Asabeneh'))
+print(greetings('Mark'))
 
 def add_ten(num):
     ten = 10
@@ -173,7 +173,7 @@ def generate_full_name (first_name, last_name):
     space = ' '
     full_name = first_name + space + last_name
     return full_name
-print('Full Name: ', generate_full_name('Asabeneh','Yetayeh'))
+print('Full Name: ', generate_full_name('Mark','Ribaldz'))
 
 def sum_two_numbers (num_one, num_two):
     sum = num_one + num_two
@@ -213,7 +213,7 @@ def print_fullname(firstname, lastname):
     space = ' '
     full_name = firstname  + space + lastname
     print(full_name)
-print_fullname(firstname = 'Asabeneh', lastname = 'Yetayeh')
+print_fullname(firstname = 'Mark', lastname = 'Ribaldz')
 
 def add_two_numbers (num1, num2):
     total = num1 + num2
@@ -231,13 +231,13 @@ print(add_two_numbers(num2 = 3, num1 = 2)) # ترتیب اهمیتی ندارد
 ```py
 def print_name(firstname):
     return firstname
-print_name('Asabeneh') # Asabeneh
+print_name('Mark') # Asabeneh
 
 def print_full_name(firstname, lastname):
     space = ' '
     full_name = firstname  + space + lastname
     return full_name
-print_full_name(firstname='Asabeneh', lastname='Yetayeh')
+print_full_name(firstname='Mark', lastname='Ribaldz')
 ```
 
 - بازگشت یک عدد:
@@ -304,9 +304,9 @@ def greetings (name = 'Peter'):
     message = name + ', welcome to Python for Everyone!'
     return message
 print(greetings())
-print(greetings('Asabeneh'))
+print(greetings('Mark'))
 
-def generate_full_name (first_name = 'Asabeneh', last_name = 'Yetayeh'):
+def generate_full_name (first_name = 'Mark', last_name = 'Ribaldz'):
     space = ' '
     full_name = first_name + space + last_name
     return full_name
@@ -358,7 +358,7 @@ def generate_groups (team,*args):
     print(team)
     for i in args:
         print(i)
-generate_groups('Team-1','Asabeneh','Brook','David','Eyob')
+generate_groups('Team-1','Mark','Brook','David','Eyob')
 ```
 
 ### بازکردن دیکشنری (Dictionary unpacking)

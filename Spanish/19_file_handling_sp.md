@@ -201,17 +201,17 @@ _Ejemplo:_
 ```py
 # diccionario
 person_dct= {
-    "name":"Asabeneh",
-    "country":"Finland",
+    "name":"Mark",
+    "country":"Philippines",
     "city":"Helsinki",
     "skills":["JavaScript", "React","Python"]
 }
 # JSON: la forma en cadena del diccionario
-person_json = "{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}"
+person_json = "{'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}"
 # Usamos triple comillas para que sea multilínea y más legible
 person_json = '''{
-    "name":"Asabeneh",
-    "country":"Finland",
+    "name":"Mark",
+    "country":"Philippines",
     "city":"Helsinki",
     "skills":["JavaScript", "React","Python"]
 }'''
@@ -225,8 +225,8 @@ Para convertir JSON a diccionario importamos el módulo json y usamos _loads_.
 import json
 # JSON
 person_json = '''{
-    "name": "Asabeneh",
-    "country": "Finland",
+    "name": "Mark",
+    "country": "Philippines",
     "city": "Helsinki",
     "skills": ["JavaScript", "React", "Python"]
 }'''
@@ -240,7 +240,7 @@ print(person_dct['name'])
 ```sh
 # salida
 <class 'dict'>
-{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}
+{'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}
 Asabeneh
 ```
 
@@ -252,8 +252,8 @@ Para convertir un diccionario a JSON usamos _dumps_.
 import json
 # diccionario en Python
 person = {
-    "name": "Asabeneh",
-    "country": "Finland",
+    "name": "Mark",
+    "country": "Philippines",
     "city": "Helsinki",
     "skills": ["JavaScript", "React", "Python"]
 }
@@ -267,8 +267,8 @@ print(person_json)
 # salida
 <class 'str'>
 {
-    "name": "Asabeneh",
-    "country": "Finland",
+    "name": "Mark",
+    "country": "Philippines",
     "city": "Helsinki",
     "skills": [
         "JavaScript",
@@ -286,8 +286,8 @@ También podemos guardar los datos en un archivo JSON:
 import json
 # diccionario en Python
 person = {
-    "name": "Asabeneh",
-    "country": "Finland",
+    "name": "Mark",
+    "country": "Philippines",
     "city": "Helsinki",
     "skills": ["JavaScript", "React", "Python"]
 }
@@ -331,7 +331,7 @@ _Ejemplo CSV:_
 
 ```csv
 "name","country","city","skills"
-"Asabeneh","Finland","Helsinki","JavaScript"
+"Mark","Finland","Helsinki","JavaScript"
 ```
 
 Ejemplo de lectura:
@@ -367,7 +367,7 @@ with open('./files/csv_example.csv', 'w', encoding='UTF8', newline='') as f:
     # escribir encabezados
     writer.writerow(['name', 'country', 'city', 'skills'])
     # escribir datos
-    writer.writerow(['Asabeneh', 'Finland', 'Helsinki', 'JavaScript'])
+    writer.writerow(['Mark', 'Finland', 'Helsinki', 'JavaScript'])
 ```
 
 ### Archivos con extensión xlsx

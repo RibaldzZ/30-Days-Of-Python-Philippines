@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 12 - Modules</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -65,7 +65,7 @@ Pour importer le fichier, nous utilisons le mot-clé _import_ et uniquement le n
 ```py
 # main.py file
 import mymodule
-print(mymodule.generate_full_name('Asabeneh', 'Yetayeh')) # Asabeneh Yetayeh
+print(mymodule.generate_full_name('Mark', 'Ribaldz')) # Mark Anthony Ribaldo
 ```
 
 ### Importer des fonctions depuis un module
@@ -75,7 +75,7 @@ Nous pouvons avoir plusieurs fonctions dans un fichier et nous pouvons les impor
 ```py
 # main.py file
 from mymodule import generate_full_name, sum_two_nums, person, gravity
-print(generate_full_name('Asabneh','Yetayeh'))
+print(generate_full_name('Asabneh','Ribaldz'))
 print(sum_two_nums(1,9))
 mass = 100
 weight = mass * gravity
@@ -90,7 +90,7 @@ Lors de l'importation, nous pouvons renommer le module.
 ```py
 # main.py file
 from mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
-print(fullname('Asabneh','Yetayeh'))
+print(fullname('Asabneh','Ribaldz'))
 print(total(1, 9))
 mass = 100 
 weight = mass * g

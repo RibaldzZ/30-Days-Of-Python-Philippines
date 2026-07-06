@@ -27,7 +27,7 @@ Revisemos los tipos de error más comunes uno por uno. Primero, abre el intérpr
 **Ejemplo 1: SyntaxError**
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -42,7 +42,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello w
 Como ves, cometimos un error de sintaxis porque olvidamos encerrar la cadena entre paréntesis; Python incluso sugiere la corrección. Arreglémoslo.
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -63,7 +63,7 @@ Ese fue un SyntaxError. Tras corregirlo, el código se ejecuta correctamente. Ve
 **Ejemplo 1: NameError**
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -77,7 +77,7 @@ NameError: name 'age' is not defined
 El mensaje indica que el nombre age no está definido. En efecto, no hemos declarado age pero intentamos imprimirlo. Solucionémoslo declarando la variable y asignándole un valor.
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -98,7 +98,7 @@ Ese fue un NameError. Lo depuramos definiendo la variable.
 **Ejemplo 1: IndexError**
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -117,7 +117,7 @@ En este ejemplo Python lanzó un IndexError porque los índices válidos de la l
 **Ejemplo 1: ModuleNotFoundError**
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -131,7 +131,7 @@ ModuleNotFoundError: No module named 'maths'
 Aquí añadí intencionadamente una 's' extra a math, lo que produjo un ModuleNotFoundError. Corrijámoslo quitando la 's'.
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -150,7 +150,7 @@ Lo hemos corregido y ahora podemos usar el módulo math.
 **Ejemplo 1: AttributeError**
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -169,7 +169,7 @@ AttributeError: module 'math' has no attribute 'PI'
 Aquí intenté acceder a math.PI en lugar de math.pi, lo que produjo un AttributeError porque ese atributo no existe. Corrijámoslo usando el nombre correcto:
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -194,11 +194,11 @@ Ahora la llamada devuelve el valor esperado.
 **Ejemplo 1: KeyError**
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> users = {'name':'Asab', 'age':250, 'country':'Finland'}
+>>> users = {'name':'Asab', 'age':250, 'country':'Philippines'}
 >>> users['name']
 'Asab'
 >>> users['county']
@@ -211,11 +211,11 @@ KeyError: 'county'
 Aquí hay un error de ortografía en la clave usada para obtener un valor del diccionario. Es un KeyError; la solución es usar la clave correcta.
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> user = {'name':'Asab', 'age':250, 'country':'Finland'}
+>>> user = {'name':'Asab', 'age':250, 'country':'Philippines'}
 >>> user['name']
 'Asab'
 >>> user['county']
@@ -234,7 +234,7 @@ Error depurado; el código devuelve el resultado esperado.
 **Ejemplo 1: TypeError**
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -248,7 +248,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 En este caso aparece un TypeError porque no podemos sumar un entero y una cadena. Una solución es convertir la cadena a int o float; otra es convertir el entero a cadena para concatenarlos. Probemos la primera solución:
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -270,7 +270,7 @@ El error desaparece y obtenemos el resultado esperado.
 **Ejemplo 1: ImportError**
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -284,7 +284,7 @@ ImportError: cannot import name 'power' from 'math'
 El módulo math no tiene una función llamada power; la función correcta es pow. Corrijámoslo:
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -301,7 +301,7 @@ ImportError: cannot import name 'power' from 'math'
 ### ValueError (Error de valor)
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -317,7 +317,7 @@ No podemos convertir la cadena dada a número porque contiene la letra 'a'.
 ### ZeroDivisionError (Error de división por cero)
 
 ```python
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.

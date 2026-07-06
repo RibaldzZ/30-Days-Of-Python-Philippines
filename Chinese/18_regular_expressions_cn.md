@@ -402,12 +402,12 @@ HTML can embed programs written in a scripting language such as JavaScript, whic
 
 ```py
 email_address = '''
-asabeneh@gmail.com
+ribzcoi@gmail.com
 alex@yahoo.com
 kofi@yahoo.com
 doe@arc.gov
-asabeneh.com
-asabeneh@gmail
+ribzcoi.com
+ribzcoi@gmail
 alex@yahoo
 '''
 ```

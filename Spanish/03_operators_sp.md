@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 días de Python: Día 3 - Operadores</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Segunda edición: julio de 2021</small>
 </sub>
 </div>
@@ -220,8 +220,8 @@ Además de los operadores de comparación anteriores, Python también utiliza：
 ```py
 print('1 is 1', 1 is 1)                   # True - porque los objetos son idénticos
 print('1 is not 2', 1 is not 2)           # True - porque los objetos no son idénticos
-print('A in Asabeneh', 'A' in 'Asabeneh') # True - la cadena contiene 'A'
-print('B in Asabeneh', 'B' in 'Asabeneh') # False - no hay 'B' mayúscula
+print('A in Asabeneh', 'A' in 'Mark') # True - la cadena contiene 'A'
+print('B in Asabeneh', 'B' in 'Mark') # False - no hay 'B' mayúscula
 print('coding' in 'coding for all') # True - 'coding' está en 'coding for all'
 print('a in an:', 'a' in 'an')      # True
 print('4 is 2 ** 2:', 4 is 2 ** 2)   # True

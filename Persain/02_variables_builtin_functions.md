@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز پایتون: روز ۲ - متغیرها، توابع داخلی</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>نویسنده:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> ویرایش دوم: ژوئیه ۲۰۲۱</small>
 </sub>
 
@@ -94,17 +94,17 @@ num-1
 
 ```py
 # متغیرها در پایتون
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
+first_name = 'Mark'
+last_name = 'Ribaldz'
+country = 'Philippines'
 city = 'Helsinki'
 age = 250
 is_married = True
 skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
 person_info = {
-   'firstname':'Asabeneh',
-   'lastname':'Yetayeh',
-   'country':'Finland',
+   'firstname':'Mark',
+   'lastname':'Ribaldz',
+   'country':'Philippines',
    'city':'Helsinki'
    }
 ```
@@ -145,7 +145,7 @@ print('Person information: ', person_info)
 **مثال:**
 
 ```py
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsinki', 250, True
+first_name, last_name, country, age, is_married = 'Mark', 'Ribaldz', 'Helsinki', 250, True
 
 print(first_name, last_name, country, age, is_married)
 print('First name:', first_name)
@@ -181,21 +181,21 @@ print(age)
 # انواع داده مختلف در پایتون
 # بیایید متغیرهایی با انواع داده گوناگون تعریف کنیم
 
-first_name = 'Asabeneh'     # str
-last_name = 'Yetayeh'       # str
-country = 'Finland'         # str
+first_name = 'Mark'     # str
+last_name = 'Ribaldz'       # str
+country = 'Philippines'         # str
 city= 'Helsinki'            # str
 age = 250                   # int، این سن واقعی من نیست، نگران نباشید
 
 # چاپ انواع داده
-print(type('Asabeneh'))          # str
+print(type('Mark'))          # str
 print(type(first_name))          # str
 print(type(10))                  # int
 print(type(3.14))                # float
 print(type(1 + 1j))              # complex
 print(type(True))                # bool
 print(type([1, 2, 3, 4]))        # list
-print(type({'name':'Asabeneh'})) # dict
+print(type({'name':'Mark'})) # dict
 print(type((1,2)))               # tuple
 print(type(zip([1,2],[3,4])))    # zip
 ```
@@ -234,8 +234,8 @@ num_int = int(num_float)
 print('num_int', int(num_int))      # 10
 
 # تبدیل str به list
-first_name = 'Asabeneh'
-print(first_name)               # 'Asabeneh'
+first_name = 'Mark'
+print(first_name)               # 'Mark'
 first_name_to_list = list(first_name)
 print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 ```

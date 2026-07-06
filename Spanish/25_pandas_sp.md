@@ -141,7 +141,7 @@ dtype: object
 ### Crear serie de Pandas a partir de un diccionario
 
 ```python
-dct = {'name':'Asabeneh','country':'Finland','city':'Helsinki'}
+dct = {'name':'Mark','country':'Philippines','city':'Helsinki'}
 ```
 
 ```python
@@ -204,7 +204,7 @@ Pandas DataFrame se puede crear de diferentes maneras:
 
 ```python
 data = [
-    ['Asabeneh', 'Finland', 'Helsinki'], 
+    ['Mark', 'Finland', 'Helsinki'], 
     ['David', 'UK', 'London'],
     ['John', 'Sweden', 'Stockholm']
 ]
@@ -222,7 +222,7 @@ print(df)
 ### Crear DataFrame a partir de un diccionario
 
 ```python
-data = {'Name': ['Asabeneh', 'David', 'John'], 'Country':[
+data = {'Name': ['Mark', 'David', 'John'], 'Country':[
     'Finland', 'UK', 'Sweden'], 'City': ['Helsinki', 'London', 'Stockholm']}
 df = pd.DataFrame(data)
 print(df)
@@ -239,7 +239,7 @@ print(df)
 
 ```python
 data = [
-    {'Name': 'Asabeneh', 'Country': 'Finland', 'City': 'Helsinki'},
+    {'Name': 'Mark', 'Country': 'Finland', 'City': 'Helsinki'},
     {'Name': 'David', 'Country': 'UK', 'City': 'London'},
     {'Name': 'John', 'Country': 'Sweden', 'City': 'Stockholm'}]
 df = pd.DataFrame(data)

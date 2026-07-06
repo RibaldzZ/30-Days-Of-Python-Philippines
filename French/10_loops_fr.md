@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 10 - Boucles</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -204,10 +204,10 @@ for iterator in dct:
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -335,10 +335,10 @@ for x in y:
 
 ```py
 person = {
-    'first_name': 'Asabeneh',
-    'last_name': 'Yetayeh',
+    'first_name': 'Mark',
+    'last_name': 'Ribaldz',
     'age': 250,
-    'country': 'Finland',
+    'country': 'Philippines',
     'is_marred': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
@@ -453,9 +453,9 @@ The sum of all numbers is 5050.
 
 ### Exercices : Niveau 3
 
-1. Allez dans le dossier data et utilisez le fichier [countries.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py). Parcourez les pays et extrayez tous ceux contenant le mot _land_.
+1. Allez dans le dossier data et utilisez le fichier [countries.py](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries.py). Parcourez les pays et extrayez tous ceux contenant le mot _land_.
 2. Voici une liste de fruits, ['banana', 'orange', 'mango', 'lemon']. Inversez l'ordre en utilisant une boucle.
-3. Allez dans le dossier data et utilisez le fichier [countries_data.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py).
+3. Allez dans le dossier data et utilisez le fichier [countries_data.py](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries-data.py).
    1. Quel est le nombre total de langues dans les données ?
    2. Trouvez les dix langues les plus parlées dans les données.
    3. Trouvez les 10 pays les plus peuplés du monde.

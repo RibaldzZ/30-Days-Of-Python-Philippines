@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 días de Python: Día 2 - Variables y funciones integradas</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Segunda edición: julio de 2021</small>
 </sub>
 
@@ -103,17 +103,17 @@ _Ejemplo:_
 
 ```py
 # Variables en Python
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
+first_name = 'Mark'
+last_name = 'Ribaldz'
+country = 'Philippines'
 city = 'Helsinki'
 age = 250
 is_married = True
 skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
 person_info = {
-   'firstname':'Asabeneh',
-   'lastname':'Yetayeh',
-   'country':'Finland',
+   'firstname':'Mark',
+   'lastname':'Ribaldz',
+   'country':'Philippines',
    'city':'Helsinki'
    }
 ```
@@ -155,7 +155,7 @@ También se pueden declarar múltiples variables en la misma línea：
 **Ejemplo:**
 
 ```py
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+first_name, last_name, country, age, is_married = 'Mark', 'Ribaldz', 'Helsink', 250, True
 
 print(first_name, last_name, country, age, is_married)
 print('First name:', first_name)
@@ -191,21 +191,21 @@ Hay varios tipos de datos en Python. Para identificar el tipo de un dato usamos 
 # Diferentes tipos de datos en Python
 # Declaramos algunas variables con distintos tipos de datos
 
-first_name = 'Asabeneh'     # str
-last_name = 'Yetayeh'       # str
-country = 'Finland'         # str
+first_name = 'Mark'     # str
+last_name = 'Ribaldz'       # str
+country = 'Philippines'         # str
 city= 'Helsinki'            # str
 age = 250                   # int, no se preocupe, esta no es mi edad real :) 
 
 # Printing out types
-print(type('Asabeneh'))     # str
+print(type('Mark'))     # str
 print(type(first_name))     # str
 print(type(10))             # int
 print(type(3.14))           # float
 print(type(1 + 1j))         # complex
 print(type(True))           # bool
 print(type([1, 2, 3, 4]))     # list
-print(type({'name':'Asabeneh','age':250, 'is_married':250}))    # dict
+print(type({'name':'Mark','age':250, 'is_married':250}))    # dict
 print(type((1,2)))                                              # tuple
 print(type(zip([1,2],[3,4])))                                   # set
 ```
@@ -239,8 +239,8 @@ print('num_int', int(num_str))      # 10
 print('num_float', float(num_str))  # 10.6
 
 # De cadena a lista
-first_name = 'Asabeneh'
-print(first_name)               # 'Asabeneh'
+first_name = 'Mark'
+print(first_name)               # 'Mark'
 first_name_to_list = list(first_name)
 print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 ```

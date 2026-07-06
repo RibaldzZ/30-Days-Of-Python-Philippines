@@ -47,8 +47,8 @@
 <div align="center">
   <a href="https://ref.wisprflow.ai/MPMzRGE" target="_blank" rel="noopener noreferrer">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/Wispr_Flow-Logo-white.png" />
-      <img src="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/Wispr_Flow-logo.png" width="400px" alt="Wispr Flow Logo" title="Wispr Flow" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/ribzcoi/master/images/Wispr_Flow-Logo-white.png" />
+      <img src="https://raw.githubusercontent.com/Asabeneh/ribzcoi/master/images/Wispr_Flow-logo.png" width="400px" alt="Wispr Flow Logo" title="Wispr Flow" />
     </picture>
   </a>
 
@@ -68,8 +68,8 @@
 <div align="center">
   <a href="https://client.petrosky.io/aff.php?aff=402" target="_blank" rel="noopener noreferrer">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/petrosky-logo-white.png" />
-      <img src="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/petrosky-logo-black.png" width="400px" alt="Petrosky Logo" title="Petrosky" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/ribzcoi/master/images/petrosky-logo-white.png" />
+      <img src="https://raw.githubusercontent.com/Asabeneh/ribzcoi/master/images/petrosky-logo-black.png" width="400px" alt="Petrosky Logo" title="Petrosky" />
     </picture>
   </a>
 
@@ -90,7 +90,7 @@
 
 ### 🙌 Devenir Sponsor
 
-Vous pouvez soutenir ce projet en devenant sponsor sur **[GitHub Sponsors](https://github.com/sponsors/asabeneh)** ou via [PayPal](https://www.paypal.me/asabeneh).
+Vous pouvez soutenir ce projet en devenant sponsor sur **[GitHub Sponsors](https://github.com/sponsors/RibaldzZ)** ou via [PayPal]().
 
 Chaque contribution, petite ou grande, fait une énorme différence. Merci pour votre soutien ! 🌟
 
@@ -98,15 +98,15 @@ Chaque contribution, petite ou grande, fait une énorme différence. Merci pour 
 
 <div align="center">
   <h1> 30 Jours de Python : Jour 1 - Introduction</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -154,7 +154,7 @@ Chaque contribution, petite ou grande, fait une énorme différence. Merci pour 
 
 **Félicitations** pour avoir décidé de participer au défi de programmation *30 Jours de Python*. Dans ce défi, vous apprendrez tout ce dont vous avez besoin pour devenir un programmeur Python et assimilerez l'ensemble des concepts fondamentaux de la programmation. À la fin du défi, vous recevrez un certificat de réussite *30DaysOfPython*.
 
-Si vous souhaitez participer activement, rejoignez le groupe Telegram [30DaysOfPython challenge](https://t.me/ThirtyDaysOfPython).
+Si vous souhaitez participer activement, rejoignez le groupe Telegram [30DaysOfPython challenge](https://t.me/+YourLinkHere).
 
 ## Introduction
 
@@ -162,9 +162,9 @@ Python est un langage de programmation de haut niveau, polyvalent, open source, 
 
 Le défi convient aussi bien aux grands débutants qu'aux professionnels qui souhaitent acquérir des compétences en Python. Le terminer peut prendre de 30 à 100 jours ; les membres actifs du groupe Telegram ont statistiquement beaucoup plus de chances d'aller jusqu'au bout.
 
-Ce défi a été initialement rédigé en anglais simple, puis traduit en plusieurs langues. Il est conçu pour être motivant, accessible et exigeant. Il demande un réel engagement pour être mené à bien. Si vous apprenez mieux avec des vidéos, visitez la chaîne Washera sur YouTube : <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw">Washera YouTube channel</a>. Vous pouvez commencer par la vidéo [Python for absolute beginners](https://youtu.be/OCCWZheOesI). Abonnez-vous, posez vos questions dans les commentaires et soyez proactif ; l'auteur finit toujours par remarquer les étudiants impliqués.
+Ce défi a été initialement rédigé en anglais simple, puis traduit en plusieurs langues. Il est conçu pour être motivant, accessible et exigeant. Il demande un réel engagement pour être mené à bien. Si vous apprenez mieux avec des vidéos, visitez la chaîne RibaldzZ Channel sur YouTube : <a href="https://www.youtube.com/@ribaldzz">RibaldzZ Channel YouTube channel</a>. Vous pouvez commencer par la vidéo [Python for absolute beginners](https://youtu.be/OCCWZheOesI). Abonnez-vous, posez vos questions dans les commentaires et soyez proactif ; l'auteur finit toujours par remarquer les étudiants impliqués.
 
-L'auteur apprécie grandement vos retours et le partage de son contenu. Vous pouvez laisser votre témoignage ici : [link](https://www.asabeneh.com/testimonials)
+L'auteur apprécie grandement vos retours et le partage de son contenu. Vous pouvez laisser votre témoignage ici : [link]()
 
 ## Pourquoi choisir Python ?
 
@@ -350,7 +350,7 @@ Une suite de caractères entourée de guillemets simples ou doubles. Pour un tex
 **Exemples :**
 
 ```py
-'Asabeneh'
+'Mark'
 'Finlande'
 'Python'
 "J'adore enseigner"
@@ -389,8 +389,8 @@ Une collection non ordonnée de données stockées sous la forme de paires `clé
 
 ```py
 {
-'first_name': 'Asabeneh',
-'last_name': 'Yetayeh',
+'first_name': 'Mark',
+'last_name': 'Ribaldz',
 'country': 'Finlande',
 'age': 250,
 'is_married': True,
@@ -405,7 +405,7 @@ Une collection ordonnée d'éléments, similaire à une liste, mais qui présent
 **Exemples :**
 
 ```py
-('Asabeneh', 'Pawel', 'Brook', 'Abraham', 'Lidiya')  # Liste de noms figée
+('Mark', 'Pawel', 'Brook', 'Abraham', 'Lidiya')  # Liste de noms figée
 ('Terre', 'Jupiter', 'Neptune', 'Mars', 'Vénus')  # Les planètes
 ```
 
@@ -449,9 +449,9 @@ print(3 // 2)            # Division entière (//)
 print(type(10))                  # <class 'int'> (Entier)
 print(type(3.14))                # <class 'float'> (Flottant)
 print(type(1 + 3j))              # <class 'complex'> (Nombre complexe)
-print(type('Asabeneh'))          # <class 'str'> (Chaîne de caractères)
+print(type('Mark'))          # <class 'str'> (Chaîne de caractères)
 print(type([1, 2, 3]))           # <class 'list'> (Liste)
-print(type({'name': 'Asabeneh'})) # <class 'dict'> (Dictionnaire)
+print(type({'name': 'Mark'})) # <class 'dict'> (Dictionnaire)
 print(type({9.8, 3.14, 2.7}))    # <class 'set'> (Ensemble)
 print(type((9.8, 3.14, 2.7)))    # <class 'tuple'> (Tuple)
 ```
@@ -485,7 +485,7 @@ Vous êtes incroyable ! Vous venez de terminer le Jour 1. C'est un excellent dé
    - `9.8`
    - `3.14`
    - `4 - 4j`
-   - `['Asabeneh', 'Python', 'Finlande']`
+   - `['Mark', 'Python', 'Finlande']`
    - Votre prénom
    - Votre nom de famille
    - Votre pays de résidence

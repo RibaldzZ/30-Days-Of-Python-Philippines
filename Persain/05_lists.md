@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز با پایتون: روز پنجم - لیست‌ها</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>نویسنده:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> ویرایش دوم: ژوئیه ۲۰۲۱</small>
 </sub>
 
@@ -129,7 +129,7 @@ Number of countries: 5
 <!-- end list -->
 
 ```py
-lst = ['Asabeneh', 250, True, {'country':'Finland', 'city':'Helsinki'}] # لیستی شامل انواع داده‌های مختلف
+lst = ['Mark', 250, True, {'country':'Philippines', 'city':'Helsinki'}] # لیستی شامل انواع داده‌های مختلف
 ```
 
 ### دسترسی به آیتم‌های لیست با استفاده از اندیس‌گذاری مثبت
@@ -617,7 +617,7 @@ ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 <!-- end list -->
 
-2.  کشور(های) میانی را در [لیست کشورها](https://github.com/Asabeneh/30-Days-Of-Python/tree/master/data/countries.py) پیدا کنید.
+2.  کشور(های) میانی را در [لیست کشورها](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/tree/master/data/countries.py) پیدا کنید.
 3.  لیست کشورها را به دو لیست مساوی تقسیم کنید اگر زوج است، در غیر این صورت یک کشور بیشتر برای نیمه اول.
 4.  `['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']`. سه کشور اول را باز کنید و بقیه را به عنوان کشورهای اسکاندیناوی در نظر بگیرید.
 

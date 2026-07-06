@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 26 - Python pour le web </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
   <sub>Auteur :
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
   <small>Deuxième édition : juillet 2021</small>
   </sub>
 </div>
@@ -82,20 +82,20 @@ pip install virtualenv
 Étape 2 :
 
 ```sh
-asabeneh@Asabeneh:~/Desktop$ mkdir python_for_web
-asabeneh@Asabeneh:~/Desktop$ cd python_for_web/
-asabeneh@Asabeneh:~/Desktop/python_for_web$ virtualenv venv
-asabeneh@Asabeneh:~/Desktop/python_for_web$ source venv/bin/activate
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip install Flask
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
+ribzcoi@Asabeneh:~/Desktop$ mkdir python_for_web
+ribzcoi@Asabeneh:~/Desktop$ cd python_for_web/
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ virtualenv venv
+ribzcoi@Asabeneh:~/Desktop/python_for_web$ source venv/bin/activate
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip install Flask
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze
 Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$
 ```
 
 Nous avons créé un dossier de projet nommé python_for_web. Dans le projet, nous avons créé un environnement virtuel *venv* (qui pourrait avoir n'importe quel nom mais je préfère l'appeler _venv_). Ensuite, nous avons activé l'environnement virtuel. Nous avons utilisé pip freeze pour vérifier les paquets installés dans le dossier du projet. Le résultat de pip freeze était vide car aucun paquet n'était encore installé.
@@ -495,19 +495,19 @@ Après avoir installé heroku, tapez la commande suivante :
 #### Se connecter à Heroku
 
 ```sh
-asabeneh@Asabeneh:~$ heroku login
+ribzcoi@Asabeneh:~$ heroku login
 heroku: Press any key to open up the browser to login or q to exit:
 ```
 
 Voyons le résultat en cliquant sur n'importe quelle touche du clavier. Lorsque vous appuyez sur n'importe quelle touche, cela ouvrira la page de connexion heroku et cliquez sur le bouton de connexion. Ensuite, votre machine locale sera connectée au serveur distant heroku. Si vous êtes connecté au serveur distant, vous verrez ceci.
 
 ```sh
-asabeneh@Asabeneh:~$ heroku login
+ribzcoi@Asabeneh:~$ heroku login
 heroku: Press any key to open up the browser to login or q to exit:
 Opening browser to https://cli-auth.heroku.com/auth/browser/be12987c-583a-4458-a2c2-ba2ce7f41610
 Logging in... done
-Logged in as asabeneh@gmail.com
-asabeneh@Asabeneh:~$
+Logged in as ribzcoi@gmail.com
+ribzcoi@Asabeneh:~$
 ```
 
 #### Créer requirements et Procfile
@@ -518,27 +518,27 @@ Avant de pousser notre code vers le serveur distant, nous avons besoin de :
 - Procfile
 
 ```sh
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze
 Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ touch requirements.txt
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze > requirements.txt
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ cat requirements.txt
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ touch requirements.txt
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ pip freeze > requirements.txt
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ cat requirements.txt
 Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ touch Procfile
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ ls
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ touch Procfile
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$ ls
 Procfile          env/              static/
 app.py            requirements.txt  templates/
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$
+(env) ribzcoi@Asabeneh:~/Desktop/python_for_web$
 ```
 
 Le Procfile contiendra la commande qui exécute l'application sur le serveur web, dans notre cas sur Heroku.

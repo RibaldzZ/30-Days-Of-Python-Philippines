@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Tage Python: Tag 12 - Module (Modules)</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Zweite Edition: Juli 2021</small>
 </sub>
 
@@ -59,7 +59,7 @@ Wir nutzen das Schlüsselwort `import`, gefolgt vom Dateinamen (ohne .py).
 ```python
 # main.py
 import mymodule
-print(mymodule.generate_full_name('Asabeneh', 'Yetayeh'))
+print(mymodule.generate_full_name('Mark', 'Ribaldz'))
 ```
 
 ### Funktionen gezielt importieren

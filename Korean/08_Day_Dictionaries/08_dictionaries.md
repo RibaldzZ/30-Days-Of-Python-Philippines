@@ -1,15 +1,15 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 8 - Dictionaries</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> Second Edition: July, 2021</small>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
+<small> First Edition: July, 2026</small>
 </sub>
 
 </div>
@@ -56,10 +56,10 @@ dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -85,10 +85,10 @@ print(len(dct)) # 4
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -115,10 +115,10 @@ print(dct['key4']) # value4
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -137,10 +137,10 @@ print(person['city'])       # Error
 존재하지 않는 키의 이름으로 아이템에 접근할 경우 에러가 발생할 수 있습니다. 이 에러를 피하기위해 우리는 우선 키가 존재하는지 확인해야합니다. 또는 _get_ 메서드를 사용할수 있습니다. get 메서드는 키가 존재하지 않을 경우, NoneType object 자료형인 None을 반환합니다.
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -168,10 +168,10 @@ dct['key5'] = 'value5'
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -198,10 +198,10 @@ dct['key1'] = 'value-one'
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -243,10 +243,10 @@ del dct['key2'] # removes key2 item
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{

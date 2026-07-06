@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 4 - Chaînes de caractères</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Deuxième édition : juillet 2021</small>
 </sub>
 
@@ -75,11 +75,11 @@ print(multiline_string)
 On peut connecter des chaînes entre elles. Fusionner ou connecter des chaînes s'appelle la concaténation. Voir l'exemple ci-dessous :
 
 ```py
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Mark'
+last_name = 'Ribaldz'
 space = ' '
 full_name = first_name  +  space + last_name
-print(full_name) # Asabeneh Yetayeh
+print(full_name) # Mark Anthony Ribaldo
 # Vérification de la longueur d'une chaîne avec len()
 print(len(first_name))  # 8
 print(len(last_name))   # 7
@@ -135,8 +135,8 @@ L'opérateur `%` permet de formater un ensemble de variables regroupées dans un
 
 ```py
 # Chaînes uniquement
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Mark'
+last_name = 'Ribaldz'
 language = 'Python'
 formated_string = 'I am %s %s. I teach %s' %(first_name, last_name, language)
 print(formated_string)
@@ -158,8 +158,8 @@ Ce format a été introduit dans Python 3.
 
 ```py
 
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Mark'
+last_name = 'Ribaldz'
 language = 'Python'
 formated_string = 'Je suis {} {}. J\'enseigne {}'.format(first_name, last_name, language)
 print(formated_string)
@@ -344,13 +344,13 @@ print(challenge.rfind('th')) # 17
   Plus d'informations sur le formatage des chaînes sur ce [lien](https://www.programiz.com/python-programming/methods/string/format)
 
 ```py
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Mark'
+last_name = 'Ribaldz'
 age = 250
 job = 'teacher'
-country = 'Finland'
+country = 'Philippines'
 sentence = 'Je suis {} {}. Je suis {}. J\'ai {} ans. J\'habite à {}.'.format(first_name, last_name, job, age, country)
-print(sentence) # Je suis Asabeneh Yetayeh. J'ai 250 ans. Je suis enseignant. J'habite en Finlande.
+print(sentence) # Je suis Mark Anthony Ribaldo. J'ai 250 ans. Je suis enseignant. J'habite en Finlande.
 
 radius = 10
 pi = 3.14

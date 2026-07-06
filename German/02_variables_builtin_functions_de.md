@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Tage Python: Tag 2 - Variablen, Eingebaute Funktionen</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Zweite Edition: Juli 2021</small>
 </sub>
 
@@ -86,16 +86,16 @@ Das Zuweisen eines Wertes zu einer Variable nennt man Deklaration. Das Gleichhei
 **Beispiel:**
 ```python
 # Variablen in Python
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Mark'
+last_name = 'Ribaldz'
 country = 'Finnland'
 city = 'Helsinki'
 age = 250
 is_married = True
 skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
 person_info = {
-   'firstname':'Asabeneh',
-   'lastname':'Yetayeh',
+   'firstname':'Mark',
+   'lastname':'Ribaldz',
    'country':'Finnland',
    'city':'Helsinki'
    }
@@ -116,7 +116,7 @@ Du kannst mehrere Variablen gleichzeitig deklarieren:
 
 **Beispiel:**
 ```python
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Finnland', 250, True
+first_name, last_name, country, age, is_married = 'Mark', 'Ribaldz', 'Finnland', 250, True
 
 print(first_name, last_name, country, age, is_married)
 ```
@@ -134,7 +134,7 @@ print(alter)
 
 - **Datentypen prüfen:** Nutze `type()`.
 ```python
-print(type('Asabeneh'))  # <class 'str'>
+print(type('Mark'))  # <class 'str'>
 print(type(10))          # <class 'int'>
 print(type(3.14))        # <class 'float'>
 ```

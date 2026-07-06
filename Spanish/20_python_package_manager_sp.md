@@ -98,9 +98,9 @@ import webbrowser  # módulo para abrir sitios web
 # lista de URLs de ejemplo
 url_lists = [
     'http://www.python.org',
-    'https://www.linkedin.com/in/asabeneh/',
+    'https://www.linkedin.com/in/mark-anthony-ribaldo/',
     'https://github.com/Asabeneh',
-    'https://twitter.com/Asabeneh',
+    'https://twitter.com/ribzcoi',
 ]
 
 # abrir cada URL en una nueva pestaña

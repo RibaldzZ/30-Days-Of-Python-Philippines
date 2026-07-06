@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز پایتون: روز ۱۲ - ماژول‌ها </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>نویسنده:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 
@@ -64,7 +64,7 @@ def generate_full_name(firstname, lastname):
 ```py
 # فایل main.py
 import mymodule
-print(mymodule.generate_full_name('Asabeneh', 'Yetayeh')) # Asabeneh Yetayeh
+print(mymodule.generate_full_name('Mark', 'Ribaldz')) # Mark Anthony Ribaldo
 ```
 
 ### وارد کردن توابع از یک ماژول
@@ -74,7 +74,7 @@ print(mymodule.generate_full_name('Asabeneh', 'Yetayeh')) # Asabeneh Yetayeh
 ```py
 # فایل main.py
 from mymodule import generate_full_name, sum_two_nums, person, gravity
-print(generate_full_name('Asabneh','Yetayeh'))
+print(generate_full_name('Asabneh','Ribaldz'))
 print(sum_two_nums(1,9))
 mass = 100
 weight = mass * gravity
@@ -89,7 +89,7 @@ print(person['firstname'])
 ```py
 # فایل main.py
 from mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
-print(fullname('Asabneh','Yetayeh'))
+print(fullname('Asabneh','Ribaldz'))
 print(total(1, 9))
 mass = 100
 weight = mass * g

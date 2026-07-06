@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 25 - Pandas </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
   <sub>Auteur :
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
   <small>Deuxième édition : juillet 2021</small>
   </sub>
 
@@ -158,7 +158,7 @@ print(fruits)
 ### Créer une série Pandas à partir d'un dictionnaire
 
 ```python
-dct = {'name':'Asabeneh','country':'Finland','city':'Helsinki'}
+dct = {'name':'Mark','country':'Philippines','city':'Helsinki'}
 ```
 
 ```python
@@ -216,7 +216,7 @@ Les data frames pandas peuvent être créés de différentes manières.
 
 ```python
 data = [
-    ['Asabeneh', 'Finland', 'Helsink'],
+    ['Mark', 'Finland', 'Helsink'],
     ['David', 'UK', 'London'],
     ['John', 'Sweden', 'Stockholm']
 ]
@@ -258,7 +258,7 @@ print(df)
 ### Créer un DataFrame avec un dictionnaire
 
 ```python
-data = {'Name': ['Asabeneh', 'David', 'John'], 'Country':[
+data = {'Name': ['Mark', 'David', 'John'], 'Country':[
     'Finland', 'UK', 'Sweden'], 'City': ['Helsiki', 'London', 'Stockholm']}
 df = pd.DataFrame(data)
 print(df)
@@ -299,7 +299,7 @@ print(df)
 
 ```python
 data = [
-    {'Name': 'Asabeneh', 'Country': 'Finland', 'City': 'Helsinki'},
+    {'Name': 'Mark', 'Country': 'Finland', 'City': 'Helsinki'},
     {'Name': 'David', 'Country': 'UK', 'City': 'London'},
     {'Name': 'John', 'Country': 'Sweden', 'City': 'Stockholm'}]
 df = pd.DataFrame(data)
@@ -342,7 +342,7 @@ print(df)
 Pour télécharger le fichier CSV nécessaire dans cet exemple, la console ou la ligne de commande suffit :
 
 ```sh
-curl -O https://raw.githubusercontent.com/Asabeneh/30-Days-Of-Python/master/data/weight-height.csv
+curl -O https://raw.githubusercontent.com/RibaldzZ/30-Days-Of-Python-Philippines/master/data/weight-height.csv
 ```
 
 Placez le fichier téléchargé dans votre répertoire de travail.
@@ -634,7 +634,7 @@ Comme toujours, nous importons d'abord les paquets nécessaires. Importons panda
 import pandas as pd
 import numpy as np
 data = [
-    {"Name": "Asabeneh", "Country":"Finland","City":"Helsinki"},
+    {"Name": "Mark", "Country":"Finland","City":"Helsinki"},
     {"Name": "David", "Country":"UK","City":"London"},
     {"Name": "John", "Country":"Sweden","City":"Stockholm"}]
 df = pd.DataFrame(data)

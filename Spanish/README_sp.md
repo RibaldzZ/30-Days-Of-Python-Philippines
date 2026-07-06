@@ -37,20 +37,20 @@
 
 <div>
 <small>Ayuda al <strong>autor</strong> a crear más material educativo</small> <br />  
-<a href="https://www.paypal.me/asabeneh"><img src='.././images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
+<a href=""><img src='.././images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
 </div>
 
 <div align="center">
   <h1> 30 Días de Python: Día 1 - Introducción</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Segunda edición: julio de 2021</small>
 </sub>
 
@@ -97,7 +97,7 @@
 
 **Felicidades** por decidir participar en el desafío de programación _30 Días de Python_. En este reto aprenderás todo lo necesario para convertirte en programador Python y la mayoría de los conceptos de programación. Al finalizar el reto recibirás un certificado del desafío _30DaysOfPython_.
 
-Si quieres participar activamente, únete al grupo de Telegram [30DaysOfPython challenge](https://t.me/ThirtyDaysOfPython).
+Si quieres participar activamente, únete al grupo de Telegram [30DaysOfPython challenge](https://t.me/+YourLinkHere).
 
 ## Introducción
 
@@ -105,10 +105,10 @@ Python es un lenguaje de programación de alto nivel, de propósito general. Es 
 
 El reto es adecuado para principiantes y profesionales que quieran aprender Python. Completar el reto puede tomar de 30 a 100 días; los miembros activos del grupo de Telegram tienen más probabilidades de terminarlo.
 
-Este reto fue escrito inicialmente en inglés sencillo, y luego traducido al chino. El reto es motivador, accesible y desafiante. Requiere dedicación para completarlo. Si aprendes mejor con vídeos, visita el canal Washera en YouTube: <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw">
-Washera YouTube channel</a>. Puedes empezar por el video [Python for absolute beginners](https://youtu.be/OCCWZheOesI). Suscríbete, deja tus preguntas en los comentarios y sé proactivo; el autor te podrá notar.
+Este reto fue escrito inicialmente en inglés sencillo, y luego traducido al chino. El reto es motivador, accesible y desafiante. Requiere dedicación para completarlo. Si aprendes mejor con vídeos, visita el canal RibaldzZ Channel en YouTube: <a href="https://www.youtube.com/@ribaldzz">
+RibaldzZ Channel YouTube channel</a>. Puedes empezar por el video [Python for absolute beginners](https://youtu.be/OCCWZheOesI). Suscríbete, deja tus preguntas en los comentarios y sé proactivo; el autor te podrá notar.
 
-El autor aprecia tus comentarios, que compartas el contenido y la retroalimentación sobre el reto 30DaysOfPython. Puedes dejar feedback aquí: [link](https://www.asabeneh.com/testimonials)
+El autor aprecia tus comentarios, que compartas el contenido y la retroalimentación sobre el reto 30DaysOfPython. Puedes dejar feedback aquí: [link]()
 
 ## ¿Por qué elegir Python?
 
@@ -295,7 +295,7 @@ Texto entre comillas simples o dobles; para multilínea se usan comillas triples
 **Ejemplos:**
 
 ```py
-'Asabeneh'
+'Mark'
 'Finland'
 'Python'
 'I love teaching'
@@ -334,9 +334,9 @@ Colección no ordenada de pares clave:valor.
 
 ```py
 {
-'first_name':'Asabeneh',
-'last_name':'Yetayeh',
-'country':'Finland',
+'first_name':'Mark',
+'last_name':'Ribaldz',
+'country':'Philippines',
 'age':250,
 'is_married':True,
 'skills':['JS', 'React', 'Node', 'Python']
@@ -350,7 +350,7 @@ Colección ordenada e inmutable.
 **Ejemplo:**
 
 ```py
-('Asabeneh', 'Pawel', 'Brook', 'Abraham', 'Lidiya') # nombres
+('Mark', 'Pawel', 'Brook', 'Abraham', 'Lidiya') # nombres
 ```
 
 ```py
@@ -399,9 +399,9 @@ print(3 // 2)            # División entera (//)
 print(type(10))          # entero
 print(type(3.14))        # flotante
 print(type(1 + 3j))      # complejo
-print(type('Asabeneh'))  # cadena
+print(type('Mark'))  # cadena
 print(type([1, 2, 3]))   # lista
-print(type({'name':'Asabeneh'})) # diccionario
+print(type({'name':'Mark'})) # diccionario
 print(type({9.8, 3.14, 2.7}))    # conjunto
 print(type((9.8, 3.14, 2.7)))    # tupla
 ```
@@ -435,7 +435,7 @@ Genial. Completaste el Día 1. Practica con los ejercicios siguientes.
    - 9.8
    - 3.14
    - 4 - 4j
-   - ['Asabeneh', 'Python', 'Finland']
+   - ['Mark', 'Python', 'Finland']
    - Tu nombre
    - Tu apellido
    - Tu país

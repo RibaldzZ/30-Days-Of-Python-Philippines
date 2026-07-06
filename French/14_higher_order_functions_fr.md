@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 14 - Fonctions d'ordre supérieur</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
   <sub>Auteur :
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
   <small>Deuxième édition : juillet 2021</small>
   </sub>
 
@@ -204,7 +204,7 @@ def print_full_name(first_name, last_name, country):
     print("Je suis {} {}. J'aime enseigner.".format(
         first_name, last_name))
 
-print_full_name("Asabeneh", "Yetayeh",'Finland')
+print_full_name("Mark", "Ribaldz",'Finland')
 ```
 
 ## Fonctions d'ordre supérieur intégrées
@@ -245,7 +245,7 @@ print(list(numbers_int))    # [1, 2, 3, 4, 5]
 **Exemple 3 :**
 
 ```py
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # itérable
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']  # itérable
 
 def change_to_upper(name):
     return name.upper()
@@ -300,14 +300,14 @@ print(list(odd_numbers))       # [1, 3, 5]
 
 ```py
 # Filtrer les noms longs
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # itérable
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']  # itérable
 def is_name_long(name):
     if len(name) > 7:
         return True
     return False
 
 long_names = filter(is_name_long, names)
-print(list(long_names))         # ['Asabeneh']
+print(list(long_names))         # ['Mark']
 ```
 
 ### Python - Fonction Reduce
@@ -329,7 +329,7 @@ print(total)    # 15
 
 ```py
 countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+names = ['Mark', 'Lidiya', 'Ermias', 'Abraham']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
@@ -355,14 +355,14 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 9. Déclarez une fonction appelée get_string_lists qui prend une liste en paramètre et retourne une liste contenant uniquement les éléments de type chaîne.
 10. Utilisez reduce pour additionner tous les nombres de la liste numbers.
 11. Utilisez reduce pour concaténer tous les pays et produire cette phrase : Estonie, Finlande, Suède, Danemark, Norvège et Islande sont des pays d'Europe du Nord.
-12. Déclarez une fonction appelée categorize_countries qui retourne une liste de pays ayant un motif commun (vous pouvez trouver la [liste des pays](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) dans ce dépôt sous countries.js (ex. 'land', 'ia', 'island', 'stan')).
+12. Déclarez une fonction appelée categorize_countries qui retourne une liste de pays ayant un motif commun (vous pouvez trouver la [liste des pays](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries.py) dans ce dépôt sous countries.js (ex. 'land', 'ia', 'island', 'stan')).
 13. Créez une fonction retournant un dictionnaire, où les clés représentent les lettres de début des pays et les valeurs sont le nombre de noms de pays commençant par cette lettre.
 14. Déclarez une fonction get_first_ten_countries - elle retourne une liste des dix premiers pays de la liste countries.js dans le dossier data.
 15. Déclarez une fonction get_last_ten_countries qui retourne les dix derniers pays de la liste countries.
 
 ### Exercices : Niveau 3
 
-1. Utilisez le fichier countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) et suivez les tâches ci-dessous :
+1. Utilisez le fichier countries_data.py (https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries-data.py) et suivez les tâches ci-dessous :
    - Triez les pays par nom, par capitale, par population.
    - Triez les dix langues les plus parlées par emplacement.
    - Triez les dix pays les plus peuplés.

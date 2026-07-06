@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 24 - Statistiques</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>Deuxième édition : juillet 2021</small>
 </sub>
 </div>
@@ -55,7 +55,7 @@ NumPy est la bibliothèque de base pour le calcul scientifique en Python. Elle f
 Jusqu'à présent, nous avons utilisé vscode, mais à partir de maintenant, je recommande d'utiliser Jupyter Notebook. Pour accéder à Jupyter Notebook, installons [anaconda](https://www.anaconda.com/). Si vous utilisez anaconda, la plupart des paquets courants sont inclus et vous n'avez pas besoin d'installer de paquets si vous avez installé anaconda.
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/30DaysOfPython$ pip install numpy
+ribzcoi@Asabeneh:~/Desktop/30DaysOfPython$ pip install numpy
 ```
 
 ## Importer NumPy

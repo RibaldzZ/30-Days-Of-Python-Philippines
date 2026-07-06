@@ -140,7 +140,7 @@ dtype: object
 ### 从字典创建Pandas系列
 
 ```python
-dct = {'name':'Asabeneh','country':'Finland','city':'Helsinki'}
+dct = {'name':'Mark','country':'Philippines','city':'Helsinki'}
 ```
 
 ```python
@@ -203,7 +203,7 @@ Pandas数据框可以以不同的方式创建：
 
 ```python
 data = [
-    ['Asabeneh', 'Finland', 'Helsinki'], 
+    ['Mark', 'Finland', 'Helsinki'], 
     ['David', 'UK', 'London'],
     ['John', 'Sweden', 'Stockholm']
 ]
@@ -221,7 +221,7 @@ print(df)
 ### 使用字典创建数据框
 
 ```python
-data = {'Name': ['Asabeneh', 'David', 'John'], 'Country':[
+data = {'Name': ['Mark', 'David', 'John'], 'Country':[
     'Finland', 'UK', 'Sweden'], 'City': ['Helsinki', 'London', 'Stockholm']}
 df = pd.DataFrame(data)
 print(df)
@@ -238,7 +238,7 @@ print(df)
 
 ```python
 data = [
-    {'Name': 'Asabeneh', 'Country': 'Finland', 'City': 'Helsinki'},
+    {'Name': 'Mark', 'Country': 'Finland', 'City': 'Helsinki'},
     {'Name': 'David', 'Country': 'UK', 'City': 'London'},
     {'Name': 'John', 'Country': 'Sweden', 'City': 'Stockholm'}]
 df = pd.DataFrame(data)

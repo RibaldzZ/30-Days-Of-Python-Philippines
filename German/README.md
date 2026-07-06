@@ -47,9 +47,9 @@
   <a href="https://ref.wisprflow.ai/MPMzRGE" target="_blank" rel="noopener noreferrer">
     <picture>
       <!-- Dark mode -->
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/Wispr_Flow-Logo-white.png" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/ribzcoi/master/images/Wispr_Flow-Logo-white.png" />
       <!-- Light mode (fallback) -->
-      <img src="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/Wispr_Flow-logo.png"
+      <img src="https://raw.githubusercontent.com/Asabeneh/ribzcoi/master/images/Wispr_Flow-logo.png"
            width="400px"
            alt="Wispr Flow Logo"
            title="Wispr Flow" />
@@ -73,9 +73,9 @@
   <a href="https://client.petrosky.io/aff.php?aff=402" target="_blank" rel="noopener noreferrer">
     <picture>
       <!-- Dark mode -->
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/petrosky-logo-white.png" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asabeneh/ribzcoi/master/images/petrosky-logo-white.png" />
       <!-- Light mode (fallback) -->
-      <img src="https://raw.githubusercontent.com/Asabeneh/asabeneh/master/images/petrosky-logo-black.png"
+      <img src="https://raw.githubusercontent.com/Asabeneh/ribzcoi/master/images/petrosky-logo-black.png"
            width="400px"
            alt="Petrosky Logo"
            title="Petrosky" />
@@ -99,7 +99,7 @@
 
 ### 🙌 Sponsor werden
 
-Du kannst dieses Projekt unterstützen, indem du Sponsor auf **[GitHub Sponsors](https://github.com/sponsors/asabeneh)** wirst oder über [PayPal](https://www.paypal.me/asabeneh) spendest.
+Du kannst dieses Projekt unterstützen, indem du Sponsor auf **[GitHub Sponsors](https://github.com/sponsors/RibaldzZ)** wirst oder über [PayPal]() spendest.
 
 Jeder Beitrag, egal wie klein, macht einen großen Unterschied. Vielen Dank für deine Unterstützung! 🌟
 
@@ -107,15 +107,15 @@ Jeder Beitrag, egal wie klein, macht einen großen Unterschied. Vielen Dank für
 
 <div align="center">
   <h1> 30 Tage Python: Tag 1 - Einführung</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
   <sub>Autor:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
   <small> Zweite Edition: Juli 2021</small>
   </sub>
 </div>
@@ -164,7 +164,7 @@ Jeder Beitrag, egal wie klein, macht einen großen Unterschied. Vielen Dank für
 
 **Herzlichen Glückwunsch** zu deiner Entscheidung, an der *30 Tage Python*-Herausforderung teilzunehmen. In dieser Challenge wirst du alles lernen, was du brauchst, um ein Python-Programmierer zu werden, und das gesamte Konzept der Programmierung verstehen. Am Ende der Herausforderung erhältst du ein *30DaysOfPython*-Zertifikat.
 
-Wenn du dich aktiv an der Herausforderung beteiligen möchtest, kannst du der [30DaysOfPython-Challenge Telegram-Gruppe](https://t.me/ThirtyDaysOfPython) beitreten.
+Wenn du dich aktiv an der Herausforderung beteiligen möchtest, kannst du der [30DaysOfPython-Challenge Telegram-Gruppe](https://t.me/+YourLinkHere) beitreten.
 
 ## Einführung
 
@@ -172,9 +172,9 @@ Python ist eine High-Level-Programmiersprache für allgemeine Programmierzwecke.
 
 Diese Herausforderung ist sowohl für Anfänger als auch für Profis konzipiert, die die Programmiersprache Python erlernen möchten. Es kann 30 bis 100 Tage dauern, um die Herausforderung abzuschließen. Menschen, die aktiv in der Telegram-Gruppe teilnehmen, haben eine hohe Wahrscheinlichkeit, die Herausforderung erfolgreich zu beenden.
 
-Dieser Kurs ist leicht zu lesen, in einem konversationellen Ton geschrieben, fesselnd, motivierend und gleichzeitig sehr fordernd. Du musst viel Zeit einplanen, um diese Herausforderung abzuschließen. Wenn du ein visueller Lerntyp bist, findest du Video-Lektionen auf dem YouTube-Kanal <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw">Washera</a>. Du kannst mit dem [Python für absolute Anfänger Video](https://youtu.be/OCCWZheOesI) beginnen. Abonniere den Kanal, kommentiere und stelle Fragen zu den Videos – der Autor wird dich schließlich bemerken.
+Dieser Kurs ist leicht zu lesen, in einem konversationellen Ton geschrieben, fesselnd, motivierend und gleichzeitig sehr fordernd. Du musst viel Zeit einplanen, um diese Herausforderung abzuschließen. Wenn du ein visueller Lerntyp bist, findest du Video-Lektionen auf dem YouTube-Kanal <a href="https://www.youtube.com/@ribaldzz">RibaldzZ Channel</a>. Du kannst mit dem [Python für absolute Anfänger Video](https://youtu.be/OCCWZheOesI) beginnen. Abonniere den Kanal, kommentiere und stelle Fragen zu den Videos – der Autor wird dich schließlich bemerken.
 
-Der Autor freut sich über deine Meinung zur Challenge. Teile deine Gedanken über die 30DaysOfPython-Herausforderung mit dem Autor. Du kannst dein Feedback unter diesem [Link](https://www.asabeneh.com/testimonials) hinterlassen.
+Der Autor freut sich über deine Meinung zur Challenge. Teile deine Gedanken über die 30DaysOfPython-Herausforderung mit dem Autor. Du kannst dein Feedback unter diesem [Link]() hinterlassen.
 
 ## Warum Python?
 
@@ -294,7 +294,7 @@ Wahrheitswerte: `True` oder `False`.
 Geordnete Sammlung: `[1, 2, 3, 'Banane']`
 
 #### Dictionaries
-Schlüssel-Wert-Paare: `{'name': 'Asabeneh', 'land': 'Finnland'}`
+Schlüssel-Wert-Paare: `{'name': 'Mark', 'land': 'Finnland'}`
 
 #### Tupel (Tuple)
 Wie Listen, aber nach Erstellung nicht mehr veränderbar: `(1, 2, 3)`
@@ -310,7 +310,7 @@ Ungeordnete Sammlung eindeutiger Werte: `{1, 2, 3}`
 1. Prüfe deine Python-Version.
 2. Führe in der Shell Operationen mit 3 und 4 durch (+, -, *, %, /, **, //).
 3. Schreibe deinen Namen, dein Land und "Ich genieße 30 Tage Python" als Strings in der Shell.
-4. Prüfe die Datentypen von: 10, 9.8, 3.14, 4-4j, ['Asabeneh', 'Python', 'Finnland'], deinem Namen und deinem Land.
+4. Prüfe die Datentypen von: 10, 9.8, 3.14, 4-4j, ['Mark', 'Python', 'Finnland'], deinem Namen und deinem Land.
 
 ### Übung: Level 2
 Erstelle einen Ordner `tag_1` und eine Datei `helloworld.py`. Wiederhole die Aufgaben von Level 1 dort mit der `print()` Funktion.

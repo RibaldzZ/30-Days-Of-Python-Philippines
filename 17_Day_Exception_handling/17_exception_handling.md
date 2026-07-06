@@ -1,15 +1,15 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 17 - Exception Handling </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
   <sub>Author:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small> Second Edition: July, 2021</small>
+  <a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
+  <small> First Edition: July, 2026</small>
   </sub>
 </div>
 
@@ -199,7 +199,7 @@ print(one, middle, last)      #  1 [2, 3, 4, 5, 6] 7
 ```py
 def unpacking_person_info(name, country, city, age):
     return f'{name} lives in {country}, {city}. He is {age} year old.'
-dct = {'name':'Asabeneh', 'country':'Finland', 'city':'Helsinki', 'age':250}
+dct = {'name':'Mark', 'country':'Philippines', 'city':'Helsinki', 'age':250}
 print(unpacking_person_info(**dct)) # Asabeneh lives in Finland, Helsinki. He is 250 years old.
 ```
 
@@ -230,7 +230,7 @@ def packing_person_info(**kwargs):
         print(f"{key} = {kwargs[key]}")
     return kwargs
 
-print(packing_person_info(name="Asabeneh",
+print(packing_person_info(name="Mark",
       country="Finland", city="Helsinki", age=250))
 ```
 
@@ -239,7 +239,7 @@ name = Asabeneh
 country = Finland
 city = Helsinki
 age = 250
-{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 ```
 
 ## Spreading in Python

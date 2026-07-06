@@ -1,15 +1,15 @@
 ![30DaysOfPython](./images/30DaysOfPython_banner3@2x.png)
 
-🧳 [Part 1: Day 1 - 3](https://github.com/Asabeneh/30-Days-Of-Python)  
-🧳 [Part 2: Day 4 - 6](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme4-6.md)  
-🧳 [Part 3: Day 7 - 9](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme7-9.md)  
-🧳 [Part 4: Day 10 - 12](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme10-12.md)  
-🧳 [Part 5: Day 13 - 15](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme13-15.md)  
-🧳 [Part 6: Day 16 - 18](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme16-18.md)  
-🧳 [Part 7: Day 19 - 21](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme19-21.md)  
-🧳 [Part 8: Day 22 - 24](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme22-24.md)  
-🧳 [Part 9: Day 25 - 27](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme25-27.md)  
-🧳 [Part 10: Day 28 - 30](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme28-30.md)  
+🧳 [Part 1: Day 1 - 3](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines)  
+🧳 [Part 2: Day 4 - 6](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme4-6.md)  
+🧳 [Part 3: Day 7 - 9](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme7-9.md)  
+🧳 [Part 4: Day 10 - 12](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme10-12.md)  
+🧳 [Part 5: Day 13 - 15](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme13-15.md)  
+🧳 [Part 6: Day 16 - 18](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme16-18.md)  
+🧳 [Part 7: Day 19 - 21](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme19-21.md)  
+🧳 [Part 8: Day 22 - 24](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme22-24.md)  
+🧳 [Part 9: Day 25 - 27](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme25-27.md)  
+🧳 [Part 10: Day 28 - 30](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme28-30.md)  
 - [📘 Day 28](#%f0%9f%93%98-day-28)
 - [Application Programming Interface(API)](#application-programming-interfaceapi)
   - [API](#api)
@@ -184,8 +184,8 @@ app = Flask(__name__)
 def students ():
     student_list = [
         {
-            'name':'Asabeneh',
-            'country':'Finland',
+            'name':'Mark',
+            'country':'Philippines',
             'city':'Helsinki',
             'skills':['HTML', 'CSS','JavaScript','Python']
         },
@@ -233,7 +233,7 @@ import pymongo
 app = Flask(__name__)
 
 # 
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # accessing the database
 
@@ -256,8 +256,8 @@ By connecting the flask, we can fetch students collection data from the thirty_d
         "_id": {
             "$oid": "5df68a21f106fe2d315bbc8b"
         },
-        "name": "Asabeneh",
-        "country": "Finland",
+        "name": "Mark",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 38
     },
@@ -275,7 +275,7 @@ By connecting the flask, we can fetch students collection data from the thirty_d
             "$oid": "5df68a23f106fe2d315bbc8e"
         },
         "name": "Sami",
-        "country": "Finland",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 25
     }
@@ -299,7 +299,7 @@ import pymongo
 app = Flask(__name__)
 
 # 
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # accessing the database
 
@@ -325,8 +325,8 @@ if __name__ == '__main__':
         "_id": {
             "$oid": "5df68a21f106fe2d315bbc8b"
         },
-        "name": "Asabeneh",
-        "country": "Finland",
+        "name": "Mark",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 38
     }
@@ -349,7 +349,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # 
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # accessing the database
 
@@ -405,7 +405,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # 
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # accessing the database
 
@@ -485,7 +485,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # 
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # accessing the database
 
@@ -586,7 +586,7 @@ GIVE FEEDBACK: http://thirtydayofpython-api.herokuapp.com/feedback
 
 
 
-[<< Part 9 ](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme25-25.md) | [Part 10 >>](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme28-30.md)
+[<< Part 9 ](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme25-25.md) | [Part 10 >>](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme28-30.md)
 
 ---
 

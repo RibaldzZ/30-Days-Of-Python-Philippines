@@ -1,15 +1,15 @@
 ![30DaysOfPython](./images/30DaysOfPython_banner3@2x.png)
 
-🧳 [Part 1: Day 1 - 3](https://github.com/Asabeneh/30-Days-Of-Python)  
-🧳 [Part 2: Day 4 - 6](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme4-6.md)  
-🧳 [Part 3: Day 7 - 9](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme7-9.md)  
-🧳 [Part 4: Day 10 - 12](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme10-12.md)  
-🧳 [Part 5: Day 13 - 15](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme13-15.md)  
-🧳 [Part 6: Day 16 - 18](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme16-18.md)  
-🧳 [Part 7: Day 19 - 21](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme19-21.md)  
-🧳 [Part 8: Day 22 - 24](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme22-24.md)  
-🧳 [Part 9: Day 25 - 27](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme25-27.md)  
-🧳 [Part 10: Day 28 - 30](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme28-30.md) 
+🧳 [Part 1: Day 1 - 3](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines)  
+🧳 [Part 2: Day 4 - 6](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme4-6.md)  
+🧳 [Part 3: Day 7 - 9](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme7-9.md)  
+🧳 [Part 4: Day 10 - 12](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme10-12.md)  
+🧳 [Part 5: Day 13 - 15](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme13-15.md)  
+🧳 [Part 6: Day 16 - 18](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme16-18.md)  
+🧳 [Part 7: Day 19 - 21](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme19-21.md)  
+🧳 [Part 8: Day 22 - 24](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme22-24.md)  
+🧳 [Part 9: Day 25 - 27](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme25-27.md)  
+🧳 [Part 10: Day 28 - 30](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme28-30.md) 
 
 ---
 
@@ -59,7 +59,7 @@
 
 **Congratulations** for deciding to participate in a **_30 days of Python_** programming challenge . In this challenge you will learn everything you need to be a python programmer and the whole concepts of programming. In the end of the challenge you will get a **_30DaysOfPython_** programming challenge certificate.
 
-[Join the telegram channel to get help](https://t.me/ThirtyDaysOfPython)
+[Join the telegram channel to get help](https://t.me/+YourLinkHere)
 
 ## Introduction
 
@@ -253,7 +253,7 @@ A collection of one or more characters under a single or double quote. If a stri
 **Example:**
 
 ```py
-'Asabeneh'
+'Mark'
 'Finland'
 'Python'
 'I love teaching'
@@ -289,7 +289,7 @@ A python dictionary object is an unordered collection of data in a key:value pai
 **Example:**
 
 ```py
-{'name':'Asabeneh', 'country':'Finland', age:250, 'is_married':True}
+{'name':'Mark', 'country':'Philippines', age:250, 'is_married':True}
 ```
 
 #### Tuple
@@ -299,7 +299,7 @@ A tuple is an ordered collection of different data types like list but tuples ca
 **Example**
 
 ```py
-('Asabeneh', 'Brook', 'Abraham', 'Lidiya')
+('Mark', 'Brook', 'Abraham', 'Lidiya')
 ```
 
 #### Set
@@ -342,9 +342,9 @@ print(3 // 2)            # Floor division operator(//)
 print(type(10))          # Int
 print(type(3.14))        # Float
 print(type(1 + 3j))      # Complex number
-print(type('Asabeneh'))  # String
+print(type('Mark'))  # String
 print(type([1, 2, 3]))   # List
-print(type({'name':'Asabeneh'})) # Dictionary
+print(type({'name':'Mark'})) # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Set
 print(type((9.8, 3.14, 2.7)))    # Tuple
 ```
@@ -374,7 +374,7 @@ print(type((9.8, 3.14, 2.7)))    # Tuple
    - 9.8
    - 3.14
    - 4 - 4j
-   - ['Asabeneh', 'Python', 'Finland']
+   - ['Mark', 'Python', 'Finland']
    - Your name
    - Your family name
    - Your country
@@ -449,17 +449,17 @@ _Example:_
 ```py
 # Variables in Python
 
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
+first_name = 'Mark'
+last_name = 'Ribaldz'
+country = 'Philippines'
 city = 'Helsinki'
 age = 250
 is_married = True
 skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
 person_info = {
-   'firstname':'Asabeneh',
-   'lastname':'Yetayeh',
-   'country':'Finland',
+   'firstname':'Mark',
+   'lastname':'Ribaldz',
+   'country':'Philippines',
    'city':'Helsinki'
    }
 ```
@@ -498,7 +498,7 @@ Variable can also be declared in one line:
 **Example:**
 
 ```py
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+first_name, last_name, country, age, is_married = 'Mark', 'Ribaldz', 'Helsink', 250, True
 
 print(first_name, last_name, country, age, is_married)
 print('First name:', first_name)
@@ -532,21 +532,21 @@ There are several data types in python. To identify the data type we use the _ty
 # Different python data types
 # Let's declare different data types
 
-first_name = 'Asabeneh'     # str
-last_name = 'Yetayeh'       # str
-country = 'Finland'         # str
+first_name = 'Mark'     # str
+last_name = 'Ribaldz'       # str
+country = 'Philippines'         # str
 city= 'Helsinki'            # str
 age = 250                   # int, it is not my real age, don't worry about it
 
 # Printing out types
-print(type('Asabeneh'))     # str
+print(type('Mark'))     # str
 print(type(first_name))     # str
 print(type(10))             # int
 print(type(3.14))           # float
 print(type(1 + 1j))         # complex
 print(type(True))           # bool
 print(type([1, 2,3,4]))     # list
-print(type({'name':'Asabeneh','age':250, 'is_married':250}))    # dict
+print(type({'name':'Mark','age':250, 'is_married':250}))    # dict
 print(type((1,2)))                                              # tuple
 print(type(zip([1,2],[3,4])))                                   # set
 ```
@@ -580,9 +580,9 @@ print('num_int', int(num_str))      # 10
 print('num_float', float(num_str))  # 10.6
 
 # str to list
-first = 'Asabeneh'
+first = 'Mark'
 print(first_name)
-print(first_name)                    # 'Asabeneh'
+print(first_name)                    # 'Mark'
 first_name_to_list = list(first_name)
 print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 ```
@@ -825,8 +825,8 @@ In addition to the above comparison operator python uses:
 ```py
 print('1 is 1', 1 is 1)                   # True - because the data values are the same
 print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
-print('A in Asabeneh', 'A' in 'Asabeneh') # True - A found in the string
-print('B in Asabeneh', 'B' in 'Asabeneh') # False -there is no uppercase B
+print('A in Asabeneh', 'A' in 'Mark') # True - A found in the string
+print('B in Asabeneh', 'B' in 'Mark') # False -there is no uppercase B
 print('coding' in 'coding for all') # True - because coding for all has the word coding
 print('a in an:', 'a' in 'an')      # True
 print('4 is 2 ** 2:', 4 is 2 **2)   # True
@@ -914,4 +914,4 @@ You lived 3153600000 seconds.
 5 1 5 25 125
 ```
 
-[Part 2 >>](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/readme4-6.md)
+[Part 2 >>](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/readme4-6.md)

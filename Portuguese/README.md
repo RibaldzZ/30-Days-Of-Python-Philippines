@@ -37,20 +37,20 @@
 
 <div>
 <small>Ajudem o <strong>autor</strong> a criar mais materiais educacionais</small> <br />  
-<a href = "https://www.paypal.me/asabeneh"><img src='.././images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
+<a href = ""><img src='.././images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
 </div>
 
 <div align="center">
   <h1> 30 Dias De Python: Dia 1 - Introdução</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
   <sub>Autor:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
   <small> Segunda Edição: July, 2021</small>
   </sub>
 </div>
@@ -94,7 +94,7 @@
 
 **Parabéns** por decidir participar do desafio de programação  _30 dias de Python_ . E nesse desafio você vai aprender tudo o que você precisa para se tornar um programador python e todo o conceito de programação. No final do desafio você receberá o certificado do desafio de programação _30DiasDePython_.
 
-Se você quiser se envolver ativamente no desafio, você pode se juntar ao grupo do telegram [30DaysOfPython challenge](https://t.me/ThirtyDaysOfPython).  
+Se você quiser se envolver ativamente no desafio, você pode se juntar ao grupo do telegram [30DaysOfPython challenge](https://t.me/+YourLinkHere).  
 
 ## Introdução
 
@@ -102,10 +102,10 @@ Python é uma linguagem de programação de alto nível para programação de us
 
 Este desafio foi desenvolvido para iniciantes e profissionais que desejam aprender a linguagem de programação python. Pode levar de 30 a 100 dias para completar o desafio, as pessoas que participam ativamente do grupo de telegramas têm grande probabilidade de completar o desafio.
 
-Este desafio é fácil de ler, escrito originalmente em inglês coloquial e traduzido para um português, envolvente, motivador e ao mesmo tempo muito exigente. Você precisa destinar muito tempo para terminar este desafio. Se você é um dos que aprendem melhor vendo, você pode assistir às vídeo-aulas em <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> 
-Canal do Youtube do Washera</a> Você pode começar pelo [Video de Python para iniciantes absolutos](https://youtu.be/OCCWZheOesI). Se inscreva no canal, comente suas dúvidas nos vídeos do YouTube e seja proativo, o autor eventualmente notará você.
+Este desafio é fácil de ler, escrito originalmente em inglês coloquial e traduzido para um português, envolvente, motivador e ao mesmo tempo muito exigente. Você precisa destinar muito tempo para terminar este desafio. Se você é um dos que aprendem melhor vendo, você pode assistir às vídeo-aulas em <a href="https://www.youtube.com/@ribaldzz"> 
+Canal do Youtube do RibaldzZ Channel</a> Você pode começar pelo [Video de Python para iniciantes absolutos](https://youtu.be/OCCWZheOesI). Se inscreva no canal, comente suas dúvidas nos vídeos do YouTube e seja proativo, o autor eventualmente notará você.
 
-O autor gosta de ouvir sua opinião sobre o desafio, compartilhe o artigo do autor dando um feedback com sua opinião sobre o desafio 30DiasDePython. E você pode deixar seu feedback sobre o artigo em: [link](https://www.asabeneh.com/testimonials)
+O autor gosta de ouvir sua opinião sobre o desafio, compartilhe o artigo do autor dando um feedback com sua opinião sobre o desafio 30DiasDePython. E você pode deixar seu feedback sobre o artigo em: [link]()
 
 ## Por quê Python?
 
@@ -295,7 +295,7 @@ Uma coleção de um ou mais caracteres entre aspas simples ou duplas são consid
 **Exemplo:**
 
 ```py
-'Asabeneh'
+'Mark'
 'Finland'
 'Python'
 'I love teaching'
@@ -334,9 +334,9 @@ Um objeto de dicionário Python é uma coleção não ordenada de dados em um fo
 
 ```py
 {
-'first_name':'Asabeneh',
-'last_name':'Yetayeh',
-'country':'Finland', 
+'first_name':'Mark',
+'last_name':'Ribaldz',
+'country':'Philippines', 
 'age':250, 
 'is_married':True,
 'skills':['JS', 'React', 'Node', 'Python']
@@ -350,7 +350,7 @@ Uma tupla é uma coleção ordenada de diferentes tipos de dados, como uma lista
 **Exemplo:**
 
 ```py
-('Asabeneh', 'Pawel', 'Brook', 'Abraham', 'Lidiya') # Names
+('Mark', 'Pawel', 'Brook', 'Abraham', 'Lidiya') # Names
 ```
 
 ```py
@@ -401,9 +401,9 @@ print(3 // 2)            # Floor division operator(//)
 print(type(10))          # Int
 print(type(3.14))        # Float
 print(type(1 + 3j))      # Complex number
-print(type('Asabeneh'))  # String
+print(type('Mark'))  # String
 print(type([1, 2, 3]))   # List
-print(type({'name':'Asabeneh'})) # Dictionary
+print(type({'name':'Mark'})) # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Set
 print(type((9.8, 3.14, 2.7)))    # Tuple
 ```
@@ -437,7 +437,7 @@ Para executar o arquivo python verifique a imagem abaixo. Você pode executar o 
    - 9.8
    - 3.14
    - 4 - 4j
-   - ['Asabeneh', 'Python', 'Finland']
+   - ['Mark', 'Python', 'Finland']
    - Seu nome
    - O seu sobrenome
    - Seu país

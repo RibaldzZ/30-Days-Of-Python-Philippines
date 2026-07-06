@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز پایتون: روز ۲۴ - آمار</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>نویسنده:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>ویرایش دوم: جولای، ۲۰۲۱</small>
 </sub>
 </div>
@@ -55,7 +55,7 @@ NumPy کتابخانه اصلی برای محاسبات علمی در پایتو
 تا به حال، ما از vscode استفاده می‌کردیم اما از این به بعد توصیه می‌کنم از Jupyter Notebook استفاده کنید. برای دسترسی به Jupyter Notebook، بیایید [anaconda](https://www.anaconda.com/) را نصب کنیم. اگر از anaconda استفاده می‌کنید، بیشتر بسته‌های رایج در آن گنجانده شده‌اند و نیازی به نصب بسته‌ها نخواهید داشت.
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/30DaysOfPython$ pip install numpy
+ribzcoi@Asabeneh:~/Desktop/30DaysOfPython$ pip install numpy
 ```
 
 ## وارد کردن (Importing) NumPy

@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Jours de Python : Jour 20 - PIP </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Auteur :
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small>Deuxième édition : juillet 2021</small>
 </sub>
 </div>
@@ -46,7 +46,7 @@ En programmation, nous n'avons pas à écrire chaque programme utilitaire, nous 
 Si vous n'avez pas installé pip, installons-le maintenant. Allez dans votre terminal ou invite de commande et copiez-collez ceci :
 
 ```sh
-asabeneh@Asabeneh:~$ pip install pip
+ribzcoi@Asabeneh:~$ pip install pip
 ```
 
 Vérifiez si pip est installé en tapant :
@@ -56,7 +56,7 @@ pip --version
 ```
 
 ```py
-asabeneh@Asabeneh:~$ pip --version
+ribzcoi@Asabeneh:~$ pip --version
 pip 21.1.3 from /usr/local/lib/python3.7/site-packages/pip (python 3.9.6)
 ```
 
@@ -75,13 +75,13 @@ Essayons d'installer _numpy_, appelé numeric python. C'est l'un des paquets les
   - des fonctionnalités utiles d'algèbre linéaire, de transformée de Fourier et de nombres aléatoires
 
 ```sh
-asabeneh@Asabeneh:~$ pip install numpy
+ribzcoi@Asabeneh:~$ pip install numpy
 ```
 
 Commençons à utiliser numpy. Ouvrez votre interpréteur Python interactif, tapez python puis importez numpy comme suit :
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -104,11 +104,11 @@ array([3, 4, 5, 6, 7])
 Pandas est une bibliothèque open source sous licence BSD qui fournit des structures de données haute performance et faciles à utiliser ainsi que des outils d'analyse de données pour le langage de programmation Python. Installons le grand frère de numpy, _pandas_ :
 
 ```sh
-asabeneh@Asabeneh:~$ pip install pandas
+ribzcoi@Asabeneh:~$ pip install pandas
 ```
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -125,9 +125,9 @@ import webbrowser # module navigateur web pour ouvrir des sites
 # liste d'urls : python
 url_lists = [
     'http://www.python.org',
-    'https://www.linkedin.com/in/asabeneh/',
+    'https://www.linkedin.com/in/mark-anthony-ribaldo/',
     'https://github.com/Asabeneh',
-    'https://twitter.com/Asabeneh',
+    'https://twitter.com/ribzcoi',
 ]
 
 # ouvre la liste de sites ci-dessus dans un onglet différent
@@ -160,7 +160,7 @@ pip show nom_paquet
 ```
 
 ```sh
-asabeneh@Asabeneh:~$ pip show pandas
+ribzcoi@Asabeneh:~$ pip show pandas
 Name: pandas
 Version: 1.2.3
 Summary: Powerful data structures for data analysis, time series, and statistics
@@ -176,7 +176,7 @@ Required-by:
 Si nous voulons encore plus de détails, ajoutez --verbose :
 
 ```sh
-asabeneh@Asabeneh:~$ pip show --verbose pandas
+ribzcoi@Asabeneh:~$ pip show --verbose pandas
 Name: pandas
 Version: 1.2.3
 Summary: Powerful data structures for data analysis, time series, and statistics
@@ -212,7 +212,7 @@ Entry-points:
 Génère une liste des paquets Python installés avec leur version, et la sortie convient pour l'utiliser dans un fichier requirements. Un fichier requirements.txt est un fichier qui devrait contenir tous les paquets Python installés dans un projet Python.
 
 ```sh
-asabeneh@Asabeneh:~$ pip freeze
+ribzcoi@Asabeneh:~$ pip freeze
 docutils==0.11
 Jinja2==2.7.2
 MarkupSafe==0.19
@@ -230,7 +230,7 @@ API signifie Application Program Interface (Interface de programmation d'applica
 Installons _requests_ :
 
 ```py
-asabeneh@Asabeneh:~$ pip install requests
+ribzcoi@Asabeneh:~$ pip install requests
 ```
 
 Nous verrons les méthodes _get_, _status_code_, _headers_, _text_ et _json_ dans le module _requests_ :
@@ -382,7 +382,7 @@ La structure de dossiers de votre paquet devrait ressembler à ceci :
 Ouvrons maintenant l'interpréteur Python interactif et essayons le paquet que nous avons créé :
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/30DaysOfPython$ python
+ribzcoi@Asabeneh:~/Desktop/30DaysOfPython$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -400,8 +400,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> arithmetics.power(5, 3)
 125
 >>> from mypackage import greet
->>> greet.greet_person('Asabeneh', 'Yetayeh')
-'Asabeneh Yetayeh, bienvenue au défi 30DaysOfPython !'
+>>> greet.greet_person('Mark', 'Ribaldz')
+'Mark Anthony Ribaldo, bienvenue au défi 30DaysOfPython !'
 >>>
 ```
 

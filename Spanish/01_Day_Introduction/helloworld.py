@@ -14,9 +14,9 @@ print(3 // 2)  # División de piso(//)
 print(type(10))                  # Int
 print(type(3.14))                # Float
 print(type(1 + 3j))              # Complejo
-print(type('Asabeneh'))          # Cadena
+print(type('Mark'))          # Cadena
 print(type([1, 2, 3]))           # Lista
-print(type({'name':'Asabeneh'})) # Diccionario
+print(type({'name':'Mark'})) # Diccionario
 print(type({9.8, 3.14, 2.7}))    # Conjunto
 print(type((9.8, 3.14, 2.7)))    # Tupla
 

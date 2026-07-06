@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز پایتون: روز ۱۵ - خطاهای نوع در پایتون </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
   <sub>نویسنده:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
   <small> ویرایش دوم: جولای، ۲۰۲۱</small>
   </sub>
 
@@ -44,7 +44,7 @@
 **مثال ۱: SyntaxError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -59,7 +59,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello w
 همانطور که می‌بینید، ما یک خطای نحوی (syntax error) داشتیم زیرا فراموش کردیم رشته را داخل پرانتز قرار دهیم و پایتون از قبل راه‌حل را پیشنهاد می‌دهد. بیایید آن را اصلاح کنیم.
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -80,7 +80,7 @@ hello world
 **مثال ۱: NameError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -94,7 +94,7 @@ NameError: name 'age' is not defined
 همانطور که از پیام بالا می‌بینید، نام age تعریف نشده است. بله، درست است که ما متغیر age را تعریف نکرده بودیم اما سعی داشتیم آن را طوری چاپ کنیم که گویی آن را تعریف کرده‌ایم. حالا، بیایید با تعریف و تخصیص یک مقدار به آن، این مشکل را برطرف کنیم.
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -115,7 +115,7 @@ NameError: name 'age' is not defined
 **مثال ۱: IndexError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -134,7 +134,7 @@ IndexError: list index out of range
 **مثال ۱: ModuleNotFoundError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -148,7 +148,7 @@ ModuleNotFoundError: No module named 'maths'
 در مثال بالا، من عمداً یک s اضافی به math اضافه کردم و خطای _ModuleNotFoundError_ ایجاد شد. بیایید با حذف s اضافی از math آن را اصلاح کنیم.
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -167,7 +167,7 @@ ModuleNotFoundError: No module named 'maths'
 **مثال ۱: AttributeError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -186,7 +186,7 @@ AttributeError: module 'math' has no attribute 'PI'
 همانطور که می‌بینید، دوباره اشتباه کردم! به جای `pi`، سعی کردم ثابت `PI` را از ماژول `math` فراخوانی کنم. این کار باعث بروز خطای `AttributeError` شد، به این معنی که این ویژگی در ماژول وجود ندارد. بیایید آن را با تغییر `PI` به `pi` اصلاح کنیم.
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -211,11 +211,11 @@ AttributeError: module 'math' has no attribute 'PI'
 **مثال ۱: KeyError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> users = {'name':'Asab', 'age':250, 'country':'Finland'}
+>>> users = {'name':'Asab', 'age':250, 'country':'Philippines'}
 >>> users['name']
 'Asab'
 >>> users['county']
@@ -228,11 +228,11 @@ KeyError: 'county'
 همانطور که می‌بینید، در کلیدی که برای گرفتن مقدار دیکشنری استفاده شد، یک غلط املایی وجود داشت. بنابراین، این یک key error است و رفع آن کاملاً ساده است. بیایید این کار را انجام دهیم!
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> user = {'name':'Asab', 'age':250, 'country':'Finland'}
+>>> user = {'name':'Asab', 'age':250, 'country':'Philippines'}
 >>> user['name']
 'Asab'
 >>> user['county']
@@ -251,7 +251,7 @@ KeyError: 'county'
 **مثال ۱: TypeError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -265,7 +265,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 در مثال بالا، یک TypeError ایجاد می‌شود زیرا ما نمی‌توانیم یک عدد را به یک رشته اضافه کنیم. راه‌حل اول این است که رشته را به int یا float تبدیل کنیم. راه‌حل دیگر این است که عدد را به یک رشته تبدیل کنیم (در این صورت نتیجه '43' خواهد بود). بیایید راه‌حل اول را دنبال کنیم.
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -287,7 +287,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 **مثال ۱: TypeError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -301,7 +301,7 @@ ImportError: cannot import name 'power' from 'math'
 تابعی به نام power در ماژول math وجود ندارد، نام آن چیز دیگری است: _pow_. بیایید آن را اصلاح کنیم:
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -318,7 +318,7 @@ ImportError: cannot import name 'power' from 'math'
 ### ValueError
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -334,7 +334,7 @@ ValueError: invalid literal for int() with base 10: '12a'
 ### ZeroDivisionError
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.

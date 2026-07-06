@@ -73,8 +73,8 @@ app = Flask(__name__)
 def students ():
     student_list = [
         {
-            'name':'Asabeneh',
-            'country':'Finland',
+            'name':'Mark',
+            'country':'Philippines',
             'city':'Helsinki',
             'skills':['HTML', 'CSS','JavaScript','Python']
         },
@@ -122,7 +122,7 @@ import pymongo
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 #Nota: nunca incluyas credenciales reales en el código.
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
@@ -148,8 +148,8 @@ Al conectar Flask con MongoDB podemos obtener la colección students de la base 
         "_id": {
             "$oid": "5df68a21f106fe2d315bbc8b"
         },
-        "name": "Asabeneh",
-        "country": "Finland",
+        "name": "Mark",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 38
     },
@@ -167,7 +167,7 @@ Al conectar Flask con MongoDB podemos obtener la colección students de la base 
             "$oid": "5df68a23f106fe2d315bbc8e"
         },
         "name": "Sami",
-        "country": "Finland",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 25
     }
@@ -193,7 +193,7 @@ import pymongo
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 #Nota: nunca incluyas credenciales reales en el código.
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
@@ -222,8 +222,8 @@ Respuesta de ejemplo:
         "_id": {
             "$oid": "5df68a21f106fe2d315bbc8b"
         },
-        "name": "Asabeneh",
-        "country": "Finland",
+        "name": "Mark",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 38
     }
@@ -250,7 +250,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 #Nota: nunca incluyas credenciales reales en el código.
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
@@ -309,7 +309,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 #Nota: nunca incluyas credenciales reales en el código.
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos
@@ -391,7 +391,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 #Nota: nunca incluyas credenciales reales en el código.
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # acceder a la base de datos

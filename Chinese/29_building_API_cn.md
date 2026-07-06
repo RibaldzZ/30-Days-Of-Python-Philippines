@@ -73,8 +73,8 @@ app = Flask(__name__)
 def students ():
     student_list = [
         {
-            'name':'Asabeneh',
-            'country':'Finland',
+            'name':'Mark',
+            'country':'Philippines',
             'city':'Helsinki',
             'skills':['HTML', 'CSS','JavaScript','Python']
         },
@@ -122,7 +122,7 @@ import pymongo
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 
@@ -147,8 +147,8 @@ if __name__ == '__main__':
         "_id": {
             "$oid": "5df68a21f106fe2d315bbc8b"
         },
-        "name": "Asabeneh",
-        "country": "Finland",
+        "name": "Mark",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 38
     },
@@ -166,7 +166,7 @@ if __name__ == '__main__':
             "$oid": "5df68a23f106fe2d315bbc8e"
         },
         "name": "Sami",
-        "country": "Finland",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 25
     }
@@ -192,7 +192,7 @@ import pymongo
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 
@@ -218,8 +218,8 @@ if __name__ == '__main__':
         "_id": {
             "$oid": "5df68a21f106fe2d315bbc8b"
         },
-        "name": "Asabeneh",
-        "country": "Finland",
+        "name": "Mark",
+        "country": "Philippines",
         "city": "Helsinki",
         "age": 38
     }
@@ -245,7 +245,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 
@@ -303,7 +303,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 
@@ -384,7 +384,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 #
-MONGODB_URI='mongodb+srv://asabeneh:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://ribzcoi:your_password@30daysofpython-twxkr.mongodb.net/test?retryWrites=true&w=majority'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client['thirty_days_of_python'] # 访问数据库
 

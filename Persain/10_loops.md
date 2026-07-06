@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز با پایتون: روز ۱۰ - حلقه‌ها</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>نویسنده:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> ویرایش دوم: جولای ۲۰۲۱</small>
 </sub>
 </div>
@@ -202,10 +202,10 @@ for iterator in dct:
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -333,10 +333,10 @@ for x in y:
 
 ```py
 person = {
-    'first_name': 'Asabeneh',
-    'last_name': 'Yetayeh',
+    'first_name': 'Mark',
+    'last_name': 'Ribaldz',
     'age': 250,
-    'country': 'Finland',
+    'country': 'Philippines',
     'is_marred': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
@@ -451,9 +451,9 @@ The sum of all evens is 2550. And the sum of all odds is 2500.
 
 ### تمرین‌ها: سطح ۳
 
-۱. به پوشه data بروید و از فایل [countries.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) استفاده کنید. کشورها را پیمایش کرده و همه کشورهایی که شامل کلمه _land_ هستند را استخراج کنید.
+۱. به پوشه data بروید و از فایل [countries.py](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries.py) استفاده کنید. کشورها را پیمایش کرده و همه کشورهایی که شامل کلمه _land_ هستند را استخراج کنید.
 ۱. این یک لیست میوه است: ['banana', 'orange', 'mango', 'lemon']. ترتیب آن را با استفاده از حلقه معکوس کنید.
-۲. به پوشه data بروید و از فایل [countries_data.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) استفاده کنید. 
+۲. به پوشه data بروید و از فایل [countries_data.py](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries-data.py) استفاده کنید. 
    ۱. تعداد کل زبان‌ها در داده‌ها چقدر است؟
    ۲. ده زبان پرگویشور از داده‌ها را پیدا کنید.
    ۳. ۱۰ کشور پرجمعیت جهان را پیدا کنید.

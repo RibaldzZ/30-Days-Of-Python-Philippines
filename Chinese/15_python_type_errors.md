@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30天Python：第15天——Python类型错误 </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>作者:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a>
 <br>
 <small> 第二版: 2021 年 7 月</small>
 </sub>
@@ -47,7 +47,7 @@
 **示例 1: SyntaxError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -62,7 +62,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello w
 如你所见，我们犯了一个语法错误，因为我们忘了用括号包裹字符串，Python 已经建议了解决办法。让我们修复它。
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -83,7 +83,7 @@ hello world
 **示例 1: NameError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -97,7 +97,7 @@ NameError: name 'age' is not defined
 如你所见，消息显示年龄变量未定义。确实，我们没有定义年龄变量，但我们试图打印它。现在，让我们通过定义并赋值它来修复它。
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -118,7 +118,7 @@ NameError: name 'age' is not defined
 **示例 1: IndexError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -137,7 +137,7 @@ IndexError: list index out of range
 **示例 1: ModuleNotFoundError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -151,7 +151,7 @@ ModuleNotFoundError: No module named 'maths'
 在上面的例子中，我故意在 math 后面多加了一个 s，所以引发了*ModuleNotFoundError*。让我们通过去掉多余的 s 来修复它。
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -170,7 +170,7 @@ ModuleNotFoundError: No module named 'maths'
 **示例 1: AttributeError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -190,7 +190,7 @@ AttributeError: module 'math' has no attribute 'PI'
 如你所见，我又犯了一个错误！我试图从 math 模块调用 PI 函数，但实际上它是 pi。它引发了属性错误，意味着该函数在模块中不存在。让我们通过将 PI 改为 pi 来修复它。
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -215,11 +215,11 @@ AttributeError: module 'math' has no attribute 'PI'
 **示例 1: KeyError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> users = {'name':'Asab', 'age':250, 'country':'Finland'}
+>>> users = {'name':'Asab', 'age':250, 'country':'Philippines'}
 >>> users['name']
 'Asab'
 >>> users['county']
@@ -232,11 +232,11 @@ KeyError: 'county'
 如你所见，用于获取字典值的键存在拼写错误。这是一个 key error，修复非常简单。让我们做一下！
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> user = {'name':'Asab', 'age':250, 'country':'Finland'}
+>>> user = {'name':'Asab', 'age':250, 'country':'Philippines'}
 >>> user['name']
 'Asab'
 >>> user['county']
@@ -255,7 +255,7 @@ KeyError: 'county'
 **示例 1: TypeError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -269,7 +269,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 在上面的例子中，引发了 TypeError，因为我们不能将数字和字符串相加。第一个解决方法是将字符串转换为 int 或 float。另一种解决方法是将数字转换为字符串（结果将是'43'）。让我们跟随第一种解决方案。
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -291,7 +291,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 **示例 1: TypeError**
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -305,7 +305,7 @@ ImportError: cannot import name 'power' from 'math'
 数学模块中没有函数叫做 power，它是以另一个名字存在: _pow_。让我们纠正它：
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -322,7 +322,7 @@ ImportError: cannot import name 'power' from 'math'
 ### ValueError
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -338,7 +338,7 @@ ValueError: invalid literal for int() with base 10: '12a'
 ### ZeroDivisionError
 
 ```py
-asabeneh@Asabeneh:~$ python
+ribzcoi@Asabeneh:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.

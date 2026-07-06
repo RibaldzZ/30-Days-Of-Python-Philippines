@@ -394,12 +394,12 @@ paragraph = '''I love teaching. If you do not love teaching what else can you lo
 
 ```py
 email_address = '''
-asabeneh@gmail.com
+ribzcoi@gmail.com
 alex@yahoo.com
 kofi@yahoo.com
 doe@arc.gov
-asabeneh.com
-asabeneh@gmail
+ribzcoi.com
+ribzcoi@gmail
 alex@yahoo
 '''
 ```

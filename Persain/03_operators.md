@@ -1,14 +1,14 @@
 <div align="center">
   <h1> ۳۰ روز پایتون: روز ۳ - عملگرها</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="دنبال کردن در توییتر" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>نویسنده:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> ویرایش دوم: ژوئیه ۲۰۲۱</small>
 </sub>
 
@@ -216,8 +216,8 @@ print('False == False:', False == False)
 ```py
 print('1 is 1', 1 is 1)                   # True - چون مقادیر داده یکسان هستند
 print('1 is not 2', 1 is not 2)           # True - چون 1 برابر 2 نیست
-print('A in Asabeneh', 'A' in 'Asabeneh') # True - A در رشته پیدا شد
-print('B not in Asabeneh', 'B' in 'Asabeneh') # False - حرف بزرگ B وجود ندارد
+print('A in Asabeneh', 'A' in 'Mark') # True - A در رشته پیدا شد
+print('B not in Asabeneh', 'B' in 'Mark') # False - حرف بزرگ B وجود ندارد
 print('coding' in 'coding for all') # True - چون coding for all کلمه coding را دارد
 print('a in an:', 'a' in 'an')      # True
 print('4 is 2 ** 2:', 4 is 2 ** 2)   # True

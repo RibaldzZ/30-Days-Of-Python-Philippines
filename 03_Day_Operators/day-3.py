@@ -109,8 +109,8 @@ print('True or False:', True or False)
 # True - because the data values are the same
 print('1 is 1', 1 is 1)
 print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
-print('A in Asabeneh', 'A' in 'Asabeneh')  # True - A found in the string
-print('B in Asabeneh', 'B' in 'Asabeneh')  # False -there is no uppercase B
+print('A in Asabeneh', 'A' in 'Mark')  # True - A found in the string
+print('B in Asabeneh', 'B' in 'Mark')  # False -there is no uppercase B
 # True - because coding for all has the word coding
 print('coding' in 'coding for all')
 print('a in an:', 'a' in 'an')      # True

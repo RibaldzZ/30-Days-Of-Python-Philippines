@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 días de Python: Día 10 - Bucles</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/mark-anthony-ribaldo/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/ribzcoi">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ribzcoi?style=social">
   </a>
 
 <sub>Autor:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/mark-anthony-ribaldo/" target="_blank">Mark Anthony Ribaldo</a><br>
 <small> Segunda edición: julio de 2021</small>
 </sub>
 
@@ -202,10 +202,10 @@ for iterator in dct:
 
 ```python
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Mark',
+    'last_name':'Ribaldz',
     'age':250,
-    'country':'Finland',
+    'country':'Philippines',
     'is_marred':True,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
@@ -328,10 +328,10 @@ for x in y:
 
 ```python
 person = {
-    'first_name': 'Asabeneh',
-    'last_name': 'Yetayeh',
+    'first_name': 'Mark',
+    'last_name': 'Ribaldz',
     'age': 250,
-    'country': 'Finland',
+    'country': 'Philippines',
     'is_marred': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
@@ -439,9 +439,9 @@ for number in range(6):
 
 ### Ejercicios: Nivel 3
 
-1. Ve a la carpeta data y usa el archivo [countries.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py). Itera los países y extrae aquellos que contienen la cadena `land`.
+1. Ve a la carpeta data y usa el archivo [countries.py](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries.py). Itera los países y extrae aquellos que contienen la cadena `land`.
 2. Dada la lista `fruits = ['banana', 'orange', 'mango', 'lemon']`, invierte los elementos usando un bucle.
-3. Ve a la carpeta data y usa el archivo [countries-data.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py).
+3. Ve a la carpeta data y usa el archivo [countries-data.py](https://github.com/RibaldzZ/30-Days-Of-Python-Philippines/blob/master/data/countries-data.py).
    1. ¿Cuántos idiomas distintos hay en los datos?
    2. ¿Cuál es el idioma usado por más países?
    3. Encuentra los diez países con mayor población.

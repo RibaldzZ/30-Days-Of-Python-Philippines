@@ -51,7 +51,7 @@ NumPy是Python中科学计算的核心库。它提供了高性能的多维数组
 到目前为止，我们一直在使用vscode，但从现在开始，我建议使用Jupyter Notebook。要访问jupyter notebook，让我们安装[anaconda](https://www.anaconda.com/)。如果你使用anaconda，大多数常用的包都已包含在内，如果你已安装anaconda，就不需要再安装这些包。
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/30DaysOfPython$ pip install numpy
+ribzcoi@Asabeneh:~/Desktop/30DaysOfPython$ pip install numpy
 ```
 
 ## 导入NumPy

@@ -180,7 +180,7 @@ print(one, middle, last)      #  1 [2, 3, 4, 5, 6] 7
 ```py
 def unpacking_person_info(name, country, city, age):
     return f'{name}住在{country}的{city}。他{age}岁。'
-dct = {'name':'Asabeneh', 'country':'Finland', 'city':'Helsinki', 'age':250}
+dct = {'name':'Mark', 'country':'Philippines', 'city':'Helsinki', 'age':250}
 print(unpacking_person_info(**dct)) # Asabeneh住在Finland的Helsinki。他250岁。
 ```
 
@@ -211,7 +211,7 @@ def packing_person_info(**kwargs):
         print(f"{key} = {kwargs[key]}")
     return kwargs
 
-print(packing_person_info(name="Asabeneh",
+print(packing_person_info(name="Mark",
       country="Finland", city="Helsinki", age=250))
 ```
 
@@ -220,7 +220,7 @@ name = Asabeneh
 country = Finland
 city = Helsinki
 age = 250
-{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'age': 250}
+{'name': 'Mark', 'country': 'Philippines', 'city': 'Helsinki', 'age': 250}
 ```
 
 ## Python中的展开
